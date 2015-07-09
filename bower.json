@@ -1,0 +1,23 @@
+{
+  "name": "makergirl",
+  "version": "0.0.0",
+  "homepage": "https://github.com/josephmilla/makergirl",
+  "authors": [
+    "Joseph Milla <jjtmilla@gmail.com>"
+  ],
+  "description": "MakerGirl's website",
+  "main": "index.html",
+  "keywords": [
+    "makergirl",
+    "uiuc",
+    "stem"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
