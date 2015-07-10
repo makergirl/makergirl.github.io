@@ -4,8 +4,26 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+<div class="container-fluid about">
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+  {% for member in site.data.members %}
+    {% assign loopindex = forloop.index | modulo: 3 %}
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+    {% if loopindex == 1 %}
+      <div class="row">
+    {% endif %}
+
+    <div class="col-md-4">
+      <h1>{{ member.name }}</h1>
+      <div>
+        <img src="/public/img/{{ member.name | downcase }}.png" class="img img-responsive full-width"/>
+      </div>
+      <p>{{ member.email }}</p>
+      <p>{{ member.bio }}</p>
+    </div>
+
+    {% if loopindex == 0 %}
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>

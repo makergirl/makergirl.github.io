@@ -1,0 +1,12 @@
+.about {
+  .col-md-4 > div {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100%;
+
+    img {
+      position:absolute;
+      width: 100%;
+    }
+  }
+}
