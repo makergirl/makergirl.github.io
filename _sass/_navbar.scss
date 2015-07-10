@@ -1,0 +1,29 @@
+$color: #FFFFFF;
+
+// Color Pallette
+$color-1: #FFCC00;
+$color-2: #CC0066;
+$color-3: #99CC00;
+$color-4: #0066FF;
+$color-5: #990066;
+
+.mg-navbar {
+  background: $color-2;
+  border: none;
+
+  .navbar-brand {
+    font-size: 32px;
+    font-weight: 800;
+    color: $color;
+    &:focus,
+    &:hover {
+
+    }
+    &:active {
+
+    }
+  }
+  .navbar-nav > li > a {
+    color: $color;
+  }
+}
