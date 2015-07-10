@@ -1,6 +1,6 @@
-- name: Lizzy
+- name: Elizabeth
   email: lizzyengele@gmail.com
-  bio: Lizzy Engele is a Senior majoring in Supply Chain Management and Marketing and minoring in Technology & Management. She is very passionate about discovering and using her own skills in creative ways to better the world which is why she is interested in social entrepreneurship. She created the MakerGirl concept because it enables young women to collaboratively explore how fun STEM fields can be, and it serves as a guide for parents to inspire their daughters to pursue these fields. It is her hope that MakerGirl helps girls realize that they can do anything with knowledge and a willingness to follow their unique passions.
+  bio: Elizabeth Engele is a Senior majoring in Supply Chain Management and Marketing and minoring in Technology & Management. She is very passionate about discovering and using her own skills in creative ways to better the world which is why she is interested in social entrepreneurship. She created the MakerGirl concept because it enables young women to collaboratively explore how fun STEM fields can be, and it serves as a guide for parents to inspire their daughters to pursue these fields. It is her hope that MakerGirl helps girls realize that they can do anything with knowledge and a willingness to follow their unique passions.
 
 - name: Sophie
   email: sophieli933@gmail.com
@@ -18,10 +18,6 @@
   email: grace.m.henderson@gmail.com
   bio: My name is Grace Henderson, I am from New Jersey and I am the oldest of five children. At U of I, I am involved in Engineering Council and I am a member of the Professional Business Fraternity, Phi Gamma Nu. I love playing and watching sports. I am a huge NY Giants football fan and I play on intramural flag football, basketball and soccer teams here in college. I also love dancing and listening to all kinds of music. I became interested in joining MakerGirl because I love the idea of promoting projects that involve math and science for younger girls. As a middle school student my school started a STEM program within the math and science departments and I loved all the areas of engineering that I was exposed to. I look forward to showing the girls who participate in MakerGirl all the exciting opportunities that engineering has in store for them.
 
-- name: Annie
-  email: amulcahey@gmail.com
-  bio: Annie Mulcahey is a freshman studying Material Science and Engineering at the University of Illinois. Here, she participates in Society of Women Engineers (SWE) and Kappa Kappa Gamma. She loves to sing and dance and all things theatrical. MakerGirl is a wonderful opportunity for her to show young girls how STEM can be fun and exciting, and not just for boys!
-
 - name: Winnie
   email: huilinyang4@gmail.com
   bio: Winnie Yang is a senior studying materials science and engineering and also pursuing a minor in the Hoeft Technology & Management program. She works as a Guru in the MakerLab and teaches the public about 3D printing using the MakerBots available.She's an active member of Society of Women Engineers and strives towards making STEM education more accessible to girls of all ages. In particular, she loves using the 3D printers for STEM education because it's very hands-on and allows people to customize designs to their needs.
@@ -36,4 +32,10 @@
 
 - name: Caitlyn
   email: caitlyndeegs@gmail.com
-  bio: Caitlyn Deegan is a freshman studying Materials Science and Engineering at the University of Illinois. She cannot wait to see what an education at Illinois will provide for her in the future. As a lover of dance, sports, and volunteering she is always participating in activities. On campus she is involved in the Society of Women Engineers, Kappa Kappa Gamma, as well as MakerGirl. Caitlyn enjoys offering new learning possibilities to young students and as an engineer she is excited to encourage young girls to come to the STEM fields and to help push past gender inequality.
+  photo: caitlyn.jpg
+  bio: Caitlyn Deegan is a sophomore studying Materials Science and Engineering at the University of Illinois. She cannot wait to see what an education at Illinois will provide for her in the future. As a lover of dance, sports, and volunteering she is always participating in activities. On campus she is involved in the Society of Women Engineers, Kappa Kappa Gamma, as well as MakerGirl. Caitlyn enjoys offering new learning possibilities to young students and as an engineer she is excited to encourage young girls to come to the STEM fields and to help push past gender inequality.
+
+- name: Charlotte
+  email: cisrael2@illinois.edu
+  photo: charlotte.jpg
+  bio: Charlotte is a sophomore studying Materials Science and Engineering at the University of Illinois. She cannot wait to see what an education at Illinois will provide for her in the future. As a lover of dance, sports, and volunteering she is always participating in activities. On campus she is involved in the Society of Women Engineers, Blah Blah Blah, as well as MakerGirl. Caitlyn enjoys offering new learning possibilities to young students and as an engineer she is excited to encourage young girls to come to the STEM fields and to help push past gender inequality.

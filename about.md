@@ -16,7 +16,7 @@ permalink: /about/
     <div class="col-md-4">
       <h1>{{ member.name }}</h1>
       <div>
-        <img src="/public/img/{{ member.name | downcase }}.png" class="img img-responsive full-width"/>
+        <img src="/public/img/{% if member.photo %}{{ member.photo }}{% else %}{{ member.name | downcase }}.png{% endif %}" class="img img-responsive full-width"/>
       </div>
       <p>{{ member.email }}</p>
       <p>{{ member.bio }}</p>
