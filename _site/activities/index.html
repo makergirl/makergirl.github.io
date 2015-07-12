@@ -48,7 +48,7 @@
 
   <body>
 
-    <nav class="navbar navbar-default mg-navbar">
+    <nav class="navbar navbar-default navbar-fixed-top mg-navbar">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -58,17 +58,23 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="/">
-        <img src="/public/mg-logo-vertical.png" width=150/>
+        <img src="/public/mg-logo-horizontal.png" width=150/>
       </a>
     </div>
 
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse" id="mg-navbar-target">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="/" style="border-color: #FFCC00;">Home</a></li>
-        <li><a href="/events" style="border-color: #FF3B19;">Events</a></li>
-        <li><a href="/activities" style="border-color: #99CC00;">Activities</a></li>
-        <li><a href="/about" style="border-color: #0066FF;">About Us</a></li>
-        <li><a href="/contact" style="border-color: #990066;">Contact Us</a></li>
+        <!-- <li><a href="/" style="border-color: #FFCC00;">Home</a></li>
+        <li><a href="#about-us" style="border-color: #FF3B19;">About Us</a></li>
+        <li><a href="#events" style="border-color: #99CC00;">Events</a></li>
+        <li><a href="#activities" style="border-color: #0066FF;">Activities</a></li>
+        <li><a href="#contact-us" style="border-color: #990066;">Contact Us</a></li> -->
+
+        <li><a href="/">Home</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#activities">Activities</a></li>
+        <li><a href="#contact-us">Contact Us</a></li>
       </ul>
     </div>
   </div>
@@ -119,6 +125,7 @@
 
 <script src="/bower_components/jquery/dist/jquery.min.js"></script>
 <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/public/js/script.js"></script>
 <script src="/public/js/ga.js"></script>
 
 
