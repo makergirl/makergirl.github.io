@@ -1,15 +1,9 @@
 $color: #FFFFFF;
 
-// Color Pallette
-$color-1: #FFCC00;
-$color-2: #CC0066;
-$color-3: #99CC00;
-$color-4: #0066FF;
-$color-5: #990066;
-
 .mg-navbar {
-  background: $color-2;
+  background: $color-20;
   border: none;
+  height: 65px;
 
   .navbar-brand {
     font-size: 32px;
@@ -24,6 +18,20 @@ $color-5: #990066;
     }
   }
   .navbar-nav > li > a {
-    color: $color;
+    color: $color !important;
+    padding-top: 23px;
+
+    &:focus,
+    &:hover {
+      border-bottom: 5px solid;
+      padding-bottom: 10px;
+      color: rgba(255, 255, 255, 0.75);
+    }
+
+    &:active {
+      border-bottom: 5px solid;
+      padding-bottom: 10px;
+      color: rgba(255, 255, 255, 0.90);
+    }
   }
 }
