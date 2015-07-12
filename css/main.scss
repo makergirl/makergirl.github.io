@@ -6,6 +6,7 @@
 
 // Our variables
 $base-font-family: 'Roboto', sans-serif;
+$secondary-font-family: 'Open Sans', sans-serif;
 $base-font-size: 16px;
 $small-font-size: $base-font-size * 0.875;
 $base-line-height: 1.5;
@@ -21,6 +22,14 @@ $grey-color-dark: darken($grey-color, 25%);
 $content-width: 800px;
 $on-palm: 600px;
 $on-laptop: 800px;
+
+// Color Pallette
+$color-1: #FFCC00;
+$color-2: #CC0066;
+$color-20: #ce0b7b;
+$color-3: #99CC00;
+$color-4: #0066FF;
+$color-5: #990066;
 
 // Using media queries with like this:
 // @include media-query($on-palm) {
@@ -43,4 +52,5 @@ $on-laptop: 800px;
   "fonts",
   "navbar",
   "foot",
-  "about";
+  "about",
+  "home";
