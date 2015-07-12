@@ -1,0 +1,36 @@
+.section {
+  height: 100vh;
+}
+
+.s1 {
+  // background: #ce0b7b;
+  background: #CCCCCC;
+  text-align: center;
+  padding-top: 40px;
+
+
+  img {
+    max-height: 50vh;
+    max-width: 80%;
+  }
+
+  h1 {
+    color: #FFFFFF;
+    font-family: $secondary-font-family;
+    font-size: $base-font-size;
+    line-height: 1.5;
+    padding-top: 50px;
+  }
+
+  .gears-section {
+    z-index: 10;
+    // height: 100px;
+    height: 100vh;
+  }
+
+  .main-section {
+    z-index: 5;
+    // height: 100px;
+    height: 100vh;
+  }
+}
