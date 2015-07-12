@@ -4,6 +4,7 @@ $color: #FFFFFF;
   background: $color-20;
   border: none;
   height: 65px;
+  display: none;
 
   .navbar-brand {
     font-size: 32px;
@@ -17,21 +18,85 @@ $color: #FFFFFF;
 
     }
   }
-  .navbar-nav > li > a {
-    color: $color !important;
-    padding-top: 23px;
 
-    &:focus,
-    &:hover {
-      border-bottom: 5px solid;
-      padding-bottom: 10px;
-      color: rgba(255, 255, 255, 0.75);
+  .navbar-nav {
+    > li {
+      > a {
+        color: $color !important;
+        padding-top: 23px;
+        background: none;
+
+        &:focus,
+        &:hover {
+          border-bottom: 5px solid;
+          padding-bottom: 10px;
+          color: rgba(255, 255, 255, 0.75);
+          // background-color: #333333 !important;
+        }
+
+        &:active {
+          border-bottom: 5px solid;
+          padding-bottom: 10px;
+          color: rgba(255, 255, 255, 0.90);
+          // background-color: #333333;
+        }
+      }
+
+      > a[href="/"] {
+        border-color: #FFCC00;
+      }
+
+      > a[href="#about-us"] {
+        border-color: #FF3B19;
+      }
+
+      > a[href="#events"] {
+        border-color: #99CC00;
+      }
+
+      > a[href="#activities"] {
+        border-color: #0066FF;
+      }
+
+      > a[href="#contact-us"] {
+        border-color: #990066;
+      }
     }
 
-    &:active {
-      border-bottom: 5px solid;
-      padding-bottom: 10px;
-      color: rgba(255, 255, 255, 0.90);
+    > .active {
+      > a {
+        border-bottom: 5px solid;
+        padding-bottom: 10px;
+        color: rgba(255, 255, 255, 0.75);
+        background: none;
+      }
+
+      > a[href="/"] {
+        border-color: #FFCC00;
+      }
+
+      > a[href="#about-us"] {
+        border-color: #FF3B19;
+      }
+
+      > a[href="#events"] {
+        border-color: #99CC00;
+      }
+
+      > a[href="#activities"] {
+        border-color: #0066FF;
+      }
+
+      > a[href="#contact-us"] {
+        border-color: #990066;
+      }
     }
   }
 }
+
+
+// .navbar-default .navbar-nav>.active>a,
+// .navbar-default .navbar-nav>.active>a:focus,
+// .navbar-default .navbar-nav>.active>a:hover {
+//   background-color: #333333;
+// }
