@@ -22,7 +22,6 @@ Temporary Items
 
 # Others
 .sass-cache
-bower_components
 node_modules
 *.bak
 *.psd
