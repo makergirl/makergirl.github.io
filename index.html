@@ -6,14 +6,14 @@ title: Home
 <div classs="container-fluid">
   <div id="home" class="row section">
     <!-- <div class="gears-section">
-      <img src="../public/gear2.png"/>
-      <img src="../public/gear3.png"/>
-      <img src="../public/gear4.png"/>
-      <img src="../public/gear5.png"/>
+      <img src="public/gear2.png"/>
+      <img src="public/gear3.png"/>
+      <img src="public/gear4.png"/>
+      <img src="public/gear5.png"/>
     </div> -->
 
     <div class="main-section">
-      <img src="../public/mg-logo.png"/>
+      <img src="public/mg-logo.png"/>
       <h1>Let's create and play more</h1>
     </div>
   </div>
@@ -48,7 +48,7 @@ title: Home
         <div class="col-md-4">
           <h1>{{ member.name }}</h1>
           <div>
-            <img src="../public/img/{% if member.photo %}{{ member.photo }}{% else %}{{ member.name | downcase }}.png{% endif %}" class="img img-responsive full-width"/>
+            <img src="public/img/{% if member.photo %}{{ member.photo }}{% else %}{{ member.name | downcase }}.png{% endif %}" class="img img-responsive full-width"/>
           </div>
           <span class="row">
             <span class="badge">
