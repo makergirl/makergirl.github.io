@@ -5,6 +5,20 @@ $color: #FFFFFF;
   border: none;
   height: 65px;
   display: none;
+  font-family: $font-2;
+  font-weight: 700;
+  color: $color;
+  text-transform: uppercase;
+
+  .navbar-toggle {
+    border-color: #FFFFFF !important;
+
+    .icon-bar {
+      background-color: #FFFFFF !important;
+      width: 25px;
+      height: 4px;
+    }
+  }
 
   .navbar-brand {
     font-size: 32px;
@@ -24,21 +38,21 @@ $color: #FFFFFF;
       > a {
         color: $color !important;
         padding-top: 23px;
-        background: none;
+        background: $color-20;
 
         &:focus,
         &:hover {
           border-bottom: 5px solid;
           padding-bottom: 10px;
           color: rgba(255, 255, 255, 0.75);
-          // background-color: #333333 !important;
+          background: $color-20;
         }
 
         &:active {
           border-bottom: 5px solid;
           padding-bottom: 10px;
           color: rgba(255, 255, 255, 0.90);
-          // background-color: #333333;
+          background: $color-20;
         }
       }
 
@@ -64,11 +78,18 @@ $color: #FFFFFF;
     }
 
     > .active {
+      background: $color-20;
+
       > a {
         border-bottom: 5px solid;
         padding-bottom: 10px;
         color: rgba(255, 255, 255, 0.75);
-        background: none;
+        background: $color-20;
+
+        &:hover,
+        &:focus {
+          background: $color-20;
+        }
       }
 
       > a[href="/"] {
