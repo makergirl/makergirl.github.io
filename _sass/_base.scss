@@ -1,3 +1,7 @@
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
 /**
  * Reset some basic elements
  */
@@ -14,7 +18,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-    font-family: $base-font-family;
+    font-family: $font-1;
     font-size: $base-font-size;
     line-height: $base-line-height;
     font-weight: 300;
@@ -218,8 +222,4 @@ pre {
             fill: $grey-color;
         }
     }
-}
-
-.section {
-  height: 100vh;
 }
