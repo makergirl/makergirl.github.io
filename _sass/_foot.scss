@@ -1,5 +1,17 @@
 .footer {
-  background: #CCCCCC;
+  //width: 100wh !important; // TODO: This is a bug 
+  background: #333333;
+  min-height: 25vh;
+  padding-top: 5vh;
+  color: #FFFFFF;
+
+  a {
+    color: inherit;
+  }
+
+  .copyright {
+    font-size: 12px;
+  }
 
   .btn-social-icon {
     color: #FFFFFF;
