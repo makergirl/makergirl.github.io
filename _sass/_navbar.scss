@@ -77,6 +77,14 @@ $color: #FFFFFF;
       }
     }
 
+    .social {
+      // padding-top: 15px;
+
+      > span {
+        border-bottom: none !important;
+      }
+    }
+
     > .active {
       background: $color-20;
 
