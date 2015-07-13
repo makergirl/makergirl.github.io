@@ -2,6 +2,10 @@
   -webkit-font-smoothing: antialiased;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /**
  * Reset some basic elements
  */
