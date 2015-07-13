@@ -1,12 +1,19 @@
 .section {
-  height: 100vh;
-  padding-top: 50px;
+  min-height: 100vh;
+  padding-top: 15vh;
+  text-align: center;
+
+  h1 {
+    font-family: $font-3;
+    text-align: center;
+  }
 }
 
 #home {
   background: #ce0b7b;
   // background: #CCCCCC;
   text-align: center;
+  // position: relative;
 
 
   img {
@@ -16,21 +23,70 @@
 
   h1 {
     color: #FFFFFF;
-    font-family: $secondary-font-family;
-    font-size: $base-font-size;
+    font-family: $font-2;
+    // font-size: $base-font-size;
+    font-weight: 300;
     line-height: 1.5;
     padding-top: 50px;
+    // text-transform: uppercase;
   }
 
   .gears-section {
     z-index: 10;
     // height: 100px;
     height: 100vh;
+    // position: abosolute;
   }
 
   .main-section {
     z-index: 5;
     // height: 100px;
     height: 100vh;
+  }
+}
+
+#about-us {
+  .col-md-4 > div {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100%;
+
+    img {
+      position:absolute;
+      min-width: 100%;
+      min-height: 100%;
+    }
+  }
+
+  .badge {
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 10em;
+    padding: 12px 12px;
+    vertical-align: middle;
+    outline: 0;
+    cursor: pointer;
+    height: 39px;
+    width: 39px;
+    background-color: $color-20;
+
+    &:focus,
+    &:hover {
+      opacity: 0.75;
+    }
+
+    &:active {
+      opacity: 0.90;
+    }
+
+    > a {
+      color: #FFFFFF;
+
+      &:focus,
+      &:hover,
+      &:active {
+        opacity: 1;
+      }
+    }
   }
 }
