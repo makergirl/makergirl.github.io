@@ -7,6 +7,9 @@
     font-family: $font-3;
     text-align: center;
   }
+
+  border: 5px dotted $color-20;
+  border-image: url("dot.png") 5 repeat;
 }
 
 #home {
