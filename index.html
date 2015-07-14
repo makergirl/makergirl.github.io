@@ -51,16 +51,27 @@ title: Home
         {% endif %}
 
         <div class="col-md-4">
+          {% if member.name %}
           <h1>{{ member.name }}</h1>
+          {% endif %}
           <div>
             <img src="public/img/{% if member.photo %}{{ member.photo }}{% else %}{{ member.name | downcase }}.png{% endif %}" class="img img-responsive full-width"/>
           </div>
           <span class="row">
+            {% if member.linkedin %}
+            <span class="badge">
+              <a href="https://www.linkedin.com/in/{{ member.linkedin }}"><span class="fa fa-linkedin"></span></a></p>
+            </span>
+            {% endif %}
+            {% if member.mail %}
             <span class="badge">
               <a href="mailto:{{ member.email }}?Subject=Hi%20{{ member.name }}" target="_top"><span class="glyphicon glyphicon-envelope"></span></a></p>
             </span>
+            {% endif %}
           </span>
+          {% if member.bio %}
           <p>{{ member.bio }}</p>
+          {% endif %}
         </div>
 
         {% if loopindex == 0 %}
