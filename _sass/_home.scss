@@ -14,15 +14,12 @@
 
 #home {
   // background: #ce0b7b;
-  // background: #CCCCCC;
   background: #ce0b7b url("bg.png");
-  text-align: center;
-  // position: relative;
-
   background-size: cover;
   background-attachment: fixed;
   background-position: 50% 50%;
-
+  text-align: center;
+  overflow-y: auto;
 
   img {
     max-height: 50vh;
@@ -32,23 +29,24 @@
   h1 {
     color: #FFFFFF;
     font-family: $font-2;
-    // font-size: $base-font-size;
     font-weight: 300;
     line-height: 1.5;
     padding-top: 50px;
-    // text-transform: uppercase;
+  }
+
+  @include media-query($on-palm) {
+    h1 {
+      font-size: 42px;
+    }
   }
 
   .gears-section {
     z-index: 10;
-    // height: 100px;
     height: 100vh;
-    // position: abosolute;
   }
 
   .main-section {
     z-index: 5;
-    // height: 100px;
     height: 100vh;
   }
 }
