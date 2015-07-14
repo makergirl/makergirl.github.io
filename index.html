@@ -20,9 +20,11 @@ title: Home
 
 <div class="container">
   <div id="video" class="row section">
+    <div class="container-fluid">
       <div class="embed-responsive embed-responsive-16by9">
         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WCAM7iw8__k?rel=0" frameborder="0" allowfullscreen></iframe>
       </div>
+    </div>
   </div>
 
   <div id="about-us" class="row section">
@@ -81,7 +83,7 @@ title: Home
           <span>
             {% if member.linkedin %}
             <span class="badge">
-              <a href="https://www.linkedin.com/in/{{ member.linkedin }}"><span class="fa fa-linkedin"></span></a></p>
+              <a href="{{ member.linkedin }}"><span class="fa fa-linkedin"></span></a></p>
             </span>
             {% endif %}
             {% if member.email %}
