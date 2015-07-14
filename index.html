@@ -4,13 +4,6 @@ title: Home
 ---
 
 <div id="home" class="row section">
-  <!-- <div class="gears-section">
-    <img src="public/gear2.png"/>
-    <img src="public/gear3.png"/>
-    <img src="public/gear4.png"/>
-    <img src="public/gear5.png"/>
-  </div> -->
-
   <div class="main-section">
     <img src="public/mg-logo.png"/>
     <h1>{{ site.tagline }}</h1>
@@ -33,96 +26,125 @@ title: Home
   </div>
 
   <div id="about-us" class="row section">
-    <h1>About Us</h1>
+    <div class="container-fluid">
+      <h1>About Us</h1>
 
-    <p>MakerGirl is a program led by University of Illinois students that educates 7-10 year old girls on STEM (Science, Technology, Engineering, Mathematics) fields through 3-D printing workshops at the College of Business MakerLab, creative activities, and lessons on leading women in STEM fields.</p>
-
-    <h2>Vision</h2>
-    <p>There will be gender equality in number, pay, and expectation in all STEM workplaces.</p>
-
-    <h2>Mission</h2>
-    <p>By 2025, there will be an equal number of women and men involved in STEM K-12 education programs and pursuing STEM degrees.</p>
-
-    {% for member in site.data.members %}
-      {% assign loopindex = forloop.index | modulo: 3 %}
-
-      {% if loopindex == 1 %}
-        <div class="row">
-      {% endif %}
-
-      <div class="col-md-4">
-        <div class="mg-member">
-          <img src="public/img/{% if member.photo %}{{ member.photo }}{% else %}{{ member.name | downcase }}.png{% endif %}" class="img img-responsive full-width"/>
-          <span>
-            {% if member.bio %}
-            {{ member.bio }}
-            {% endif %}
-          </span>
-        </div>
-
-        {% if member.name %}
-        <h1>{{ member.name }}</h1>
-        {% endif %}
-
-        <span>
-          {% if member.linkedin %}
-          <span class="badge">
-            <a href="https://www.linkedin.com/in/{{ member.linkedin }}"><span class="fa fa-linkedin"></span></a></p>
-          </span>
-          {% endif %}
-          {% if member.email %}
-          <span class="badge">
-            <a href="mailto:{{ member.email }}?Subject=Hi%20{{ member.name }}" target="_top"><span class="glyphicon glyphicon-envelope"></span></a></p>
-          </span>
-          {% endif %}
-        </span>
-
-        <br><br>
+      <div class="row">
+        Maybe a group photo here?
       </div>
 
-      {% if loopindex == 0 %}
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <p>MakerGirl is a program led by University of Illinois students that educates 7-10 year old girls on STEM (Science, Technology, Engineering, Mathematics) fields through 3-D printing workshops at the College of Business MakerLab, creative activities, and lessons on leading women in STEM fields.</p>
         </div>
-      {% endif %}
-    {% endfor %}
+        <div class="col-md-3"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Vision</h2>
+          <p>There will be gender equality in number, pay, and expectation in all STEM workplaces.</p>
+        </div>
+
+        <div class="col-md-6">
+          <h2>Mission</h2>
+          <p>By 2025, there will be an equal number of women and men involved in STEM K-12 education programs and pursuing STEM degrees.</p>
+        </div>
+      </div>
+
+      {% for member in site.data.members %}
+        {% assign loopindex = forloop.index | modulo: 3 %}
+
+        {% if loopindex == 1 %}
+          <div class="row">
+        {% endif %}
+
+        <div class="col-md-4">
+          <div class="mg-member">
+            <img src="public/img/{% if member.photo %}{{ member.photo }}{% else %}{{ member.name.first | downcase }}.png{% endif %}" class="img img-responsive full-width"/>
+            <span>
+              {% if member.name %}
+                <center><span class="name">{{ member.name.first }} {{ member.name.last }}</span></center>
+                <br><br>
+              {% endif %}
+              {% if member.bio %}
+              {{ member.bio }}
+              {% endif %}
+            </span>
+          </div>
+
+          {% if member.name.first %}
+          <h1>{{ member.name.first }}</h1>
+          {% endif %}
+
+          <span>
+            {% if member.linkedin %}
+            <span class="badge">
+              <a href="https://www.linkedin.com/in/{{ member.linkedin }}"><span class="fa fa-linkedin"></span></a></p>
+            </span>
+            {% endif %}
+            {% if member.email %}
+            <span class="badge">
+              <a href="mailto:{{ member.email }}?Subject=Hi%20{{ member.name.first }}" target="_top"><span class="glyphicon glyphicon-envelope"></span></a></p>
+            </span>
+            {% endif %}
+          </span>
+
+          <br><br>
+        </div>
+
+        {% if loopindex == 0 %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
   </div>
 
   <div id="events" class="row section">
-    <h1>Events</h1>
+    <div class="container-fluid">
+      <h1>Events</h1>
 
-    <div class="row">
-      <iframe width="600" height="450" frameborder="0" style="border:0"
-src="https://www.google.com/maps/embed/v1/place?q=Business+Instructional+Facility,+East+Gregory+Drive,+Champaign,+IL,+United+States&key=AIzaSyBxXhTfZYFacSr6nRmTT9zabPhPwSmj_HE"></iframe>
-    </div>
+      <div class="row">
+        <div class="col-md-12">
+          <iframe width="100%" height="450" frameborder="0" style="border:0"
+    src="https://www.google.com/maps/embed/v1/place?q=Business+Instructional+Facility,+East+Gregory+Drive,+Champaign,+IL,+United+States&key=AIzaSyBxXhTfZYFacSr6nRmTT9zabPhPwSmj_HE"></iframe>
+        </div>
+      </div>
 
-    <br>
+      <br>
 
-    <div class="row">
-      <h1>Location</h1>
-      The Business Instructional Facility <br>
-      515 East Gregory Avenue Champaign, IL <br>
-      Room 3030 <br>
-      <i>Enter via the east entrance and use the stairs directly after the first set of doors to your right for easiest entry.</i>
-    </div>
+      {% for info in site.data.events_info %}
+      <div class="row">
+        <div class="container-fluid">
+          <h1>{{ info.header}}</h1>
 
-    <br>
-
-    <div class="row">
-      <h1>Maker Girl Summer Sessions</h1>
-      <p>We are really excited to continue teaching girls about STEM this Summer through the following five unique programs. When signing up, it is imperative that you complete the Eventbrite (linked in the title of each session) and this UIUC form. It is imperative that you fill out the <a href="https://illinois.edu/sb/sec/1346930">UIUC form</a> one time for every girl that you sign up. Information about scholarships is given in the UIUC form. Looking forward to seeing you and your MakerGirls this Summer!</p>
-    </div>
-
-    <div class="row">
-      {% for event in site.data.events %}
-        <div class="row">
-          <div class="col-md-6">
-            <img src="{{ event.image }}"/>
-          </div>
-          <div class="col-md-6">
-            <a href="{{ event.link }}">{{ event.name }}</a><br>
-            <p>{{ event.description }}</p>
+          <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">{{ info.info }}</div>
+            <div class="col-md-3"></div>
           </div>
         </div>
+      </div>
+      <br>
       {% endfor %}
+
+      <div class="row">
+        <div class="col-md-12">
+          {% for event in site.data.events %}
+            <div class="row">
+              <div class="col-md-6">
+                <img src="{{ event.image }}"/>
+              </div>
+              <div class="col-md-6">
+                <a href="{{ event.link }}"><h2>{{ event.name }}</h2></a><br>
+                <p>{{ event.description }}</p>
+              </div>
+            </div>
+            <br><br>
+          {% endfor %}
+        </div>
+      </div>
     </div>
   </div>
 

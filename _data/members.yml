@@ -1,51 +1,71 @@
-- name: Elizabeth
+- name:
+    first: Elizabeth
+    last: Engele
   email: lizzyengele@gmail.com
   linkedin:
   bio: Elizabeth Engele is a Senior majoring in Supply Chain Management and Marketing and minoring in Technology & Management. She is very passionate about discovering and using her own skills in creative ways to better the world which is why she is interested in social entrepreneurship. She created the MakerGirl concept because it enables young women to collaboratively explore how fun STEM fields can be, and it serves as a guide for parents to inspire their daughters to pursue these fields. It is her hope that MakerGirl helps girls realize that they can do anything with knowledge and a willingness to follow their unique passions.
 
-- name: Sophie
+- name:
+    first: Sophie
+    last: Li
   email: sophieli933@gmail.com
   linkedin:
   bio: Sophie Li majors in Accountancy at the University of Illinois at Urbana-Champaign. Sophie plans to get her Master Degree in Accountancy at the University of Illinois as well. Sophie was born in China and spent her teenage years in Singapore. Sophie loves traveling and reading, and has lived in three continents so far. On campus, Sophie is involved in EntreCorps consulting organization, James Scholar Executive Committee, and Ascend. Born and raised in the family where independence is highly valued, Sophie is always passionate about women empowerment. Given the resources and opportunities on campus and beyond, Sophie hopes Makergirl can be a cradle for girls to realize their STEM dreams and further the impact in our society.
 
-- name: Julia
+- name:
+    first: Julia
+    last: Haried
   email: haried2@illinois.edu
   linkedin:
   bio: Julia Haried studies accountancy at the University of Illinois – Urbana-Champaign. As of Spring 2015 she graduated undergrad and plans to pursue her Masters in Accountancy during the 2015-2016 school year. The past two summers and this summer she is interning at Deloitte in Chicago for their audit practice. As an avid lover of art, reading, traveling, volunteering, playing Catan with her family, and working out, she has also spent countless hours participating in UIUC campus activities. She has participated with the Illini Mentor Program, Rent the Runway, Kappa Kappa Gamma, and now MakerGirl! She is excited to be a catalyst for equality, diversity, and for creating innovative possibilities for girls using on  UIUC campus resources.
 
-- name: Lauren
+- name:
+    first: Lauren
+    last: Wenig
   email: wenig2@illinois.edu
   linkedin:
   bio: Lauren Wenig is a sophomore studying Advertising and minoring in Informatics at the University of Illinois. Outside of MakerGirl Lauren is involved in two organizations through the American Advertising Federation, the Informatics Club, and Alpha Gamma Delta at the University of Illinois. As an advertising major she hopes to pursue a career in digital marketing or advertising. Lauren believes that women play an important role in the development of technology and more young girls need to learn more about STEM fields. Outside of the University of Illinois Lauren likes to spend her time outdoors, running, practicing yoga, and spending time with her family and friends.
 
-- name: Grace
+- name:
+    first: Grace
+    last: Henderson
   email: grace.m.henderson@gmail.com
   linkedin:
   bio: My name is Grace Henderson, I am from New Jersey and I am the oldest of five children. At U of I, I am involved in Engineering Council and I am a member of the Professional Business Fraternity, Phi Gamma Nu. I love playing and watching sports. I am a huge NY Giants football fan and I play on intramural flag football, basketball and soccer teams here in college. I also love dancing and listening to all kinds of music. I became interested in joining MakerGirl because I love the idea of promoting projects that involve math and science for younger girls. As a middle school student my school started a STEM program within the math and science departments and I loved all the areas of engineering that I was exposed to. I look forward to showing the girls who participate in MakerGirl all the exciting opportunities that engineering has in store for them.
 
-- name: Winnie
+- name:
+    first: Winnie
+    last: Yang
   email: huilinyang4@gmail.com
   linkedin:
   bio: Winnie Yang is a senior studying materials science and engineering and also pursuing a minor in the Hoeft Technology & Management program. She works as a Guru in the MakerLab and teaches the public about 3D printing using the MakerBots available.She's an active member of Society of Women Engineers and strives towards making STEM education more accessible to girls of all ages. In particular, she loves using the 3D printers for STEM education because it's very hands-on and allows people to customize designs to their needs.
 
-- name: Sona
+- name:
+    first: Sona
+    last: Kaul
   email: sakaul2@illinois.edu
   linkedin:
   bio: Sona Kaul is studying Industrial and Enterprise Systems Engineering at University of Illinois at Urbana-Champaign. This summer, she will be an intern at a manufacturing company based out of Chicago. She loves to travel, dance, and play with cats in her free time. At U of I, Sona has been involved in Society of Women Engineers, Institute of Industrial Engineers, Kappa Kappa Gamma, and MakerGirl. Sona is passionate about introducing more women to the STEM fields to help them discover what possibilities are open to them in the future.
 
-- name: Stephanie
+- name:
+    first: Stephanie
+    last: Hein
   email: shein8110@gmail.com
   linkedin:
   bio: Stephanie Hein is a junior studying Molecular & Cellular Biology and Chemistry at the University of Illinois at Urbana-Champaign. She hopes to pursue a PhD in Cell and Developmental Biology after she graduates. In addition to MakerGirl, Stephanie is a member of the varsity swim team and the Illini Leadership Academy. She also promotes chemistry education for children through the Chemistry REACT Program. Stephanie enjoys being a part of MakerGirl because she wants to show girls that STEM is fun and holds endless opportunities for them in the future.
 
-- name: Caitlyn
+- name:
+    first: Caitlyn
+    last: Deegan
   email: caitlyndeegs@gmail.com
   linkedin:
   photo: caitlyn.jpg
   bio: Caitlyn Deegan is a sophomore studying Materials Science and Engineering at the University of Illinois. She cannot wait to see what an education at Illinois will provide for her in the future. As a lover of dance, sports, and volunteering she is always participating in activities. On campus she is involved in the Society of Women Engineers, Kappa Kappa Gamma, as well as MakerGirl. Caitlyn enjoys offering new learning possibilities to young students and as an engineer she is excited to encourage young girls to come to the STEM fields and to help push past gender inequality.
 
-- name: Charlotte
+- name:
+    first: Charlotte
+    last: Israel
   email: cisrael2@illinois.edu
-  linkedin: 
+  linkedin:
   photo: charlotte.jpg
   bio: Charlotte is studying Materials Science and Engineering at the University of Illinois Urbana-Champaign. Originally from New York City, she loves exploring all that this University has to offer. On campus she is involved in Material Advantage and the Underwater Hockey team as well as MakerGirl!  Her passions include music, cooking and volunteering. She is very invested in women's education and encourages people to always pursue their passions. As part of the MakerGirl team, she is excited to inspire young girls and introduce them to STEM fields!
