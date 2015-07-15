@@ -130,3 +130,28 @@
     }
   }
 }
+
+#events {
+  .event-link {
+    text-decoration: none;
+    color: #000000;
+    padding-bottom: 10px;
+    border-bottom: 5px solid;
+    border-color: transparent;
+
+    &:focus,
+    &:hover {
+      opacity: 0.75;
+      border-bottom: 5px solid;
+      padding-bottom: 10px;
+      border-color: $color-20;
+    }
+
+    &:active {
+      opacity: 0.90;
+      border-bottom: 5px solid;
+      padding-bottom: 10px;
+      border-color: $color-20;
+    }
+  }
+}
