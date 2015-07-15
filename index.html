@@ -152,7 +152,20 @@ title: Home
   </div>
 
   <div id="activities" class="row section">
-    <h1>Archive</h1>
-    ???
+    <div class="container-fluid">
+      <h1>Archive</h1>
+      These are the past newsletters:
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <ul>
+          {% for newsletter in site.data.newsletters %}
+            <li><a href="{{ newsletter.link }}">{{ newsletter.link }}</a></li>
+          {% endfor %}
+          </ul>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+    </div>
   </div>
 </div>
