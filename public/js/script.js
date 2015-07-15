@@ -26,6 +26,16 @@ $(document).scroll(function(){
 
 $('body').scrollspy({ target: '#mg-navbar-target' });
 
+/* Tooltip */
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+/* Carousel */
+$('.carousel').carousel({
+  interval: 5000
+})
+
 /* ScrollMagic */
 /*
 $(function () { // wait for document ready

@@ -5,7 +5,7 @@ title: Home
 
 <div id="home" class="row section">
   <div class="main-section">
-    <img src="public/mg-logo.png"/>
+    <img src="public/mg-logo1.png"/>
     <h1>{{ site.tagline }}</h1>
 
     <br>
@@ -21,19 +21,20 @@ title: Home
 <div class="container">
   <div id="video" class="row section">
     <div class="container-fluid">
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WCAM7iw8__k?rel=0" frameborder="0" allowfullscreen></iframe>
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <br><br>
+        <div class="embed-responsive embed-responsive-4by3">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WCAM7iw8__k?rel=0" frameborder="0" allowfullscreen></iframe>
+        </div>
       </div>
+      <div class="col-md-2"></div>
     </div>
   </div>
 
   <div id="about-us" class="row section">
     <div class="container-fluid">
       <h1>About Us</h1>
-
-      <div class="row">
-        Maybe a group photo here?
-      </div>
 
       <div class="row">
         <div class="col-md-3"></div>
@@ -132,7 +133,7 @@ title: Home
       {% endfor %}
 
       <div class="row">
-        <div class="col-md-12">
+        <!-- <div class="col-md-12">
           {% for event in site.data.events %}
             <div class="row">
               <div class="col-md-6">
@@ -146,8 +147,53 @@ title: Home
             </div>
             <br><br>
           {% endfor %}
+        </div> -->
+
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              {% for data in site.data.carousel %}
+              {% assign loopindex = forloop.index %}
+              {% if loopindex == 1 %}
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              {% else %}
+              <li data-target="#carousel-example-generic" data-slide-to="{{ loopindex }}"></li>
+              {% endif %}
+              {% endfor %}
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              {% for data in site.data.carousel %}
+              {% assign loopindex = forloop.index %}
+              {% if loopindex == 1 %}
+                <div class="item active">
+              {% else %}
+                <div class="item">
+              {% endif %}
+                  <img src="public/img/carousel/{{ data.image }}" alt="{{ data.alt }}">
+                  <div class="carousel-caption">
+                    {{ data.caption }}
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
         </div>
       </div>
+      <div class="col-md-1"></div>
     </div>
   </div>
 
