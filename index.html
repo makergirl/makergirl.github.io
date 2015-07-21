@@ -10,7 +10,7 @@ title: Home
 
     <br>
 
-    <a href="http://www.eventbrite.com/o/makergirl-8181692733">
+    <a href="http://www.eventbrite.com/o/makergirl-8181692733" target="_blank">
       <button type="button" class="btn btn-default btn-lg">
         Sign-up for our sessions here!
       </button>
@@ -21,20 +21,18 @@ title: Home
 <div class="container">
   <div id="video" class="row section">
     <div class="container-fluid">
-      <div class="col-md-2"></div>
-      <div class="col-md-8">
-        <br><br>
-        <div class="embed-responsive embed-responsive-4by3">
-          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WCAM7iw8__k?rel=0" frameborder="0" allowfullscreen></iframe>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <br><br>
+          <div class="embed-responsive embed-responsive-4by3">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WCAM7iw8__k?rel=0" frameborder="0" allowfullscreen></iframe>
+          </div>
         </div>
+        <div class="col-md-2"></div>
       </div>
-      <div class="col-md-2"></div>
-    </div>
-  </div>
 
-  <div id="about-us" class="row section">
-    <div class="container-fluid">
-      <h1>About Us</h1>
+      <br>
 
       <div class="row">
         <div class="col-md-3"></div>
@@ -55,52 +53,6 @@ title: Home
           <p>By 2025, there will be an equal number of women and men involved in STEM K-12 education programs and pursuing STEM degrees.</p>
         </div>
       </div>
-
-      {% for member in site.data.members %}
-        {% assign loopindex = forloop.index | modulo: 3 %}
-
-        {% if loopindex == 1 %}
-          <div class="row">
-        {% endif %}
-
-        <div class="col-md-4">
-          <div class="mg-member">
-            <img src="public/img/{% if member.photo %}{{ member.photo }}{% else %}{{ member.name.first | downcase }}.png{% endif %}" class="img img-responsive full-width"/>
-            <span>
-              {% if member.name %}
-                <center><span class="name">{{ member.name.first }} {{ member.name.last }}</span></center>
-                <br><br>
-              {% endif %}
-              {% if member.bio %}
-              {{ member.bio }}
-              {% endif %}
-            </span>
-          </div>
-
-          {% if member.name.first %}
-          <h1>{{ member.name.first }}</h1>
-          {% endif %}
-
-          <span>
-            {% if member.linkedin %}
-            <span class="badge">
-              <a href="{{ member.linkedin }}"><span class="fa fa-linkedin"></span></a></p>
-            </span>
-            {% endif %}
-            {% if member.email %}
-            <span class="badge">
-              <a href="mailto:{{ member.email }}?Subject=Hi%20{{ member.name.first }}" target="_top"><span class="glyphicon glyphicon-envelope"></span></a></p>
-            </span>
-            {% endif %}
-          </span>
-
-          <br><br>
-        </div>
-
-        {% if loopindex == 0 %}
-          </div>
-        {% endif %}
-      {% endfor %}
     </div>
   </div>
 
@@ -182,11 +134,11 @@ title: Home
             </div>
 
             <!-- Controls -->
-            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev" target="_blank">
               <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
               <span class="sr-only">Previous</span>
             </a>
-            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next" target="_blank">
               <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
@@ -208,12 +160,41 @@ title: Home
           </div>
 
           <br>
-          
-          <ul>
+
+          {% for newsletter in site.data.newsletters %}
+
+          {% assign loopindex = forloop.index | modulo: 3 %}
+          {% assign imgindex = forloop.index | modulo: 5 %}
+
+          <a href="{{ newsletter.link }}" target="_blank">
+            <div class="col-md-4">
+              <div class="mg-newsletter">
+                <img src="public/gear{{ imgindex }}.png" class="img img-responsive full-width"/>
+
+                <span>
+                  <br>
+                  <center>
+                    {% if newsletter.month %}
+                    <span class="month">{{ newsletter.month }}</span>
+                    {% endif %}
+                    {% if newsletter.date %}
+                    <span class="date">{{ newsletter.date }}</span>
+                    {% endif %}
+                  </center>
+                </span>
+              </div>
+            </div>
+          </a>
+
+          {% endfor %}
+
+          <br>
+
+          <!-- <ul>
           {% for newsletter in site.data.newsletters %}
             <li><a href="{{ newsletter.link }}">{{ newsletter.link }}</a></li>
           {% endfor %}
-          </ul>
+          </ul> -->
         </div>
         <div class="col-md-3"></div>
       </div>
@@ -244,4 +225,60 @@ title: Home
       </div>
     </div>
   </div>
+
+  <div id="about-us" class="row section">
+    <div class="container-fluid">
+      <h1>About Us</h1>
+
+      <br>
+
+      {% for member in site.data.members %}
+        {% assign loopindex = forloop.index | modulo: 3 %}
+
+        {% if loopindex == 1 %}
+          <div class="row">
+        {% endif %}
+
+        <div class="col-md-4">
+          <div class="mg-member">
+            <img src="public/img/{% if member.photo %}{{ member.photo }}{% else %}{{ member.name.first | downcase }}.png{% endif %}" class="img img-responsive full-width"/>
+            <span>
+              {% if member.name %}
+                <center><span class="name">{{ member.name.first }} {{ member.name.last }}</span></center>
+                <br><br>
+              {% endif %}
+              {% if member.bio %}
+              {{ member.bio }}
+              {% endif %}
+            </span>
+          </div>
+
+          {% if member.name.first %}
+          <h1>{{ member.name.first }}</h1>
+          {% endif %}
+
+          <span>
+            {% if member.linkedin %}
+            <span class="badge">
+              <a href="{{ member.linkedin }}" target="_blank"><span class="fa fa-linkedin"></span></a></p>
+            </span>
+            {% endif %}
+            {% if member.email %}
+            <span class="badge">
+              <a href="mailto:{{ member.email }}?Subject=Hi%20{{ member.name.first }}" target="_top"><span class="glyphicon glyphicon-envelope"></span></a></p>
+            </span>
+            {% endif %}
+          </span>
+
+          <br><br>
+        </div>
+
+        {% if loopindex == 0 %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <br><br>
 </div>
