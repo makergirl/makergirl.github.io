@@ -2,14 +2,14 @@
   min-height: 100vh;
   padding-top: 15vh;
   text-align: center;
+  border-image: url("dot.png") 0 0 10 0 round round;
+  border-width: 10px;
+  padding-bottom: 100px;
 
   h1 {
     font-family: $font-4;
     text-align: center;
   }
-
-  // border: 5px dotted $color-20;
-  // border-image: url("dot.png") 5 repeat;
 }
 
 #video {
@@ -26,6 +26,7 @@
   background-position: 50% 50%;
   text-align: center;
   overflow-y: auto;
+  border: none;
 
   img {
     max-height: 50vh;
@@ -40,7 +41,7 @@
     padding-top: 50px;
   }
 
-  @include media-query($on-palm) {
+  @include media-query($screen-sm-min) {
     h1 {
       font-size: 42px;
     }
@@ -57,7 +58,15 @@
   }
 }
 
+@include media-query($screen-sm-min) {
+  #home {
+    background-position: 0% 0%;
+  }
+}
+
 #about-us {
+  border: none;
+
   .col-md-4 > div {
     position: relative;
     overflow: hidden;
@@ -120,7 +129,6 @@
       overflow: auto;
       padding: 15px;
       text-align: justify;
-      overflow: hidden;
 
       &:focus,
       &:hover {
@@ -191,7 +199,7 @@
       width: 100%;
       left: 0;
       opacity: 1;
-      overflow: auto;
+      overflow: hidden;
       padding: 15px;
       text-align: justify;
 
@@ -219,9 +227,26 @@
         top: -25px;
       }
 
-      @include media-query($on-palm) {
+      @include media-query($screen-md-min) {
+        .month {
+          font-size: 121px;
+          top: 40px;
+          position: relative;
+        }
+
+        .date {
+          font-size: 400px;
+          font-weight: 100;
+          position: relative;
+          top: -110px;
+        }
+      }
+
+      @include media-query($screen-sm-min) {
         .month {
           font-size: 64px;
+          position: relative;
+          top: 10px;
         }
 
         .date {
