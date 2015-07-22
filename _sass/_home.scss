@@ -58,11 +58,11 @@
   }
 }
 
-@include media-query($screen-sm-min) {
-  #home {
-    background-position: 0% 0%;
-  }
-}
+// @include media-query($screen-sm-min) {
+//   #home {
+//     background-position: 0% 0%;
+//   }
+// }
 
 #about-us {
   border: none;
