@@ -26,6 +26,7 @@ sitemap:
     - "/atom.xml"
     - "/feed.xml"
     - "/feed/index.xml"
+    - divshot.json
   include_posts:
     - "/index.html"
   change_frequency_name: "change_frequency"
