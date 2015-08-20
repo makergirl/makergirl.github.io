@@ -207,11 +207,39 @@ title: Home
       <h1>Donate</h1>
 
       <div class="row">
-        <div class="col-md-3"></div>
-        <div class="col-md-6">
+        <div class="col-md-12">
           {{ site.data.donate.description }}
         </div>
-        <div class="col-md-3"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+
+          <a href="#" target="_blank">
+            <button type="button" class="btn btn-default">
+              PayPal
+            </button>
+
+
+          </a>
+          <br>
+          {{ site.data.donate.paypal }}
+        </div>
+        <div class="col-md-6">
+          <a href="https://www.patreon.com/MakerGirl_UIUC?ty=h" target="_blank">
+            <button type="button" class="btn btn-default">
+              Patreon
+            </button>
+          </a>
+          <br>
+          {{ site.data.donate.patreon }}
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          {{ site.data.donate.exempt }}
+        </div>
       </div>
 
       <br>
