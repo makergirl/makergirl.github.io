@@ -145,7 +145,8 @@ title: Home
               {% endif %}
                   <img src="public/img/carousel/{{ data.image }}" alt="{{ data.alt }}">
                   <div class="carousel-caption">
-                    {{ data.caption }}
+                    <h3>{{ data.caption.h3 }}</h3>
+                    <p>{{ data.caption.p }}</p>
                   </div>
                 </div>
               {% endfor %}
