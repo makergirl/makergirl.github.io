@@ -1,29 +1,29 @@
 - name: Clipped to the Future
   level: 1
-  description: Girls will make simple hair barrettes with 3-D printing. "Branch 1" signifies that this is one of the easiest modules. Please do not sign your daughter(s) up if she/they have attended a "Clipped to the Future" Session before.
+  description: Girls customize a 3D printed charm to be made into a hair clip. Girls can add a cool design of their own creation made from their favorite shapes and then wear it around for all to admire!
   link: https&#58;//www.eventbrite.com/e/makergirl-branch-ia-tickets-17024252999
   image: public/img/clip.jpg
 
 - name: Make A Name for Yourself
   level: 1
-  description: Girls will make simple key chains with 3-D printing. "Branch 1" signifies that it this one of the easiest modules. Please do not sign your daughter(s) up if she/they have attended a "Make A Name for Yourself" Session before.
+  description: Girls design their own 3D printed name tags/keychains. A fun personal way to share your name and creativity with the world!
   link: https&#58;//www.eventbrite.com/e/makergirl-branch-i-b-tickets-17025271044
   image: public/img/name.jpg
 
 - name: Creativity With Criteria
   level: 2
-  description: Girls will make any object given certain criteria. "Branch 2" signifies that it is a more difficult module than "Branch 1" modules. Please do not sign your daughter(s) up if she/they attended the MakerGirl session on April 27.
+  description: Girls use 5 shapes and a lot of creative thinking to make whatever they desire.
   link: https&#58;//www.eventbrite.com/e/makergirl-branch-ii-c-tickets-17025353290
   image: public/img/creativity.jpg
 
 - name: Gummy Bears
   level: 2
-  description: Girls will make a gummy bear-like object. "Branch 2" signifies that it is a more difficult module than "Branch 1" modules.
+  description: Girls get to utilize more advanced creations and then add to them to make it there own. Our favorite shape is the gummy bear, so adorable!
   link: https&#58;//www.eventbrite.com/e/makergirl-branch-ii-d-tickets-17025389398
   image: public/img/gummy.jpg
 
 - name: 4D Camp
   level: 3
-  description: This is a progressive four day camp composed of the following elements&#58; "Dream, Design, Develop, and Display." Girls will learn how to take an idea from concept to displaying it. "Branch 3" signifies that it is a more in-depth module than the "Branch 1" and "Branch 2" modules.
+  description: This 4 day program guides the girls from concept to creation with our “Dream, Design, Develop and Display” lesson plan. The girls learn the importance of each step in order to have their finished products be amazing!
   link: https&#58;//www.eventbrite.com/e/makergirl-4d-workshop-dream-design-develop-display-tickets-17025545866
   image: public/img/4d.jpg
