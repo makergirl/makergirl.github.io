@@ -91,46 +91,46 @@ title: Home
 
       <div class="row">
         <h2>Example of Past Session</h2>
-        <div class="col-md-12">
-          {% for event in site.data.events %}
-            <!-- <div class="row">
+        {% for event in site.data.events %}
+          <!-- <div class="row">
+            <div class="col-md-6">
+              <img src="{{ event.image }}"/>
+              <br><br>
+            </div>
+            <div class="col-md-6">
+              <h1><a class="event-link" href="{{ event.link }}">{{ event.name }}</a></h1><br>
+              <p>{{ event.description }}</p>
+            </div>
+          </div>
+          <br><br> -->
+          <div class="row">
+            <h3><a class="event-link" href="{{ event.link }}">{{ event.name }}</a></h3>
+
+            <div class="row">
+              <div class="col-md-3"></div>
               <div class="col-md-6">
-                <img src="{{ event.image }}"/>
-                <br><br>
-              </div>
-              <div class="col-md-6">
-                <h1><a class="event-link" href="{{ event.link }}">{{ event.name }}</a></h1><br>
                 <p>{{ event.description }}</p>
               </div>
+              <div class="col-md-3"></div>
             </div>
-            <br><br> -->
-            <div class="row">
-              <h3><a class="event-link" href="{{ event.link }}">{{ event.name }}</a></h3>
+            <br>
+          </div>
+        {% endfor %}
+      </div>
 
-              <div class="row">
-                <div class="col-md-3"></div>
-                <div class="col-md-6">
-                  <p>{{ event.description }}</p>
-                </div>
-                <div class="col-md-3"></div>
-              </div>
-              <br>
-            </div>
-          {% endfor %}
-        </div>
-
+      <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8">
           <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
               {% for data in site.data.carousel %}
-              {% assign loopindex = forloop.index %}
-              {% if loopindex == 1 %}
-              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-              {% else %}
-              <li data-target="#carousel-example-generic" data-slide-to="{{ loopindex }}"></li>
-              {% endif %}
+                {% assign loopindex = forloop.index %}
+                {% if loopindex == 1 %}
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                {% else %}
+                <li data-target="#carousel-example-generic" data-slide-to="{{ loopindex }}"></li>
+                {% endif %}
               {% endfor %}
             </ol>
 
@@ -165,6 +165,29 @@ title: Home
         </div>
       </div>
       <div class="col-md-2"></div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <h2>Testimonials</h2>
+
+        {% for data in site.data.testimonials %}
+          {% assign loopindex = forloop.index | module 3 %}
+          {% if loopindex == 1 %}
+            <div class="row">
+          {% endif %}
+
+          <div class="col-md-4">
+            <p>{{ data.testimonial }}</p>
+            - {{ data.source }}
+          </div>
+
+          {% if loopindex == 0 %}
+            <br>
+            </div>
+          {% endif %}
+        {% endfor %}
     </div>
   </div>
 
