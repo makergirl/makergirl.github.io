@@ -159,18 +159,27 @@ title: Home
 
     <br>
 
-    <!-- <div class="row">
+    <div class="row">
       <h2>Testimonials</h2>
 
       {% for data in site.data.testimonials %}
-        {% assign loopindex = forloop.index | module 3 %}
+        {% assign loopindex = forloop.index | modulo: 3 %}
         {% if loopindex == 1 %}
           <div class="row">
         {% endif %}
 
         <div class="col-md-4">
-          <p>{{ data.testimonial }}</p>
-          - {{ data.source }}
+          <div class="mg-testimonial">
+            <span>
+              {% if data.testimonial %}
+                <center>{{ data.testimonial }}</center>
+              {% endif %}
+
+              {% if data.source %}
+              <span class="source">- {{ data.source }}</span>
+              {% endif %}
+            </span>
+          </div>
         </div>
 
         {% if loopindex == 0 %}
@@ -178,7 +187,7 @@ title: Home
           </div>
         {% endif %}
       {% endfor %}
-    </div> -->
+    </div>
   </div>
 
   <div id="archive" class="row section">
