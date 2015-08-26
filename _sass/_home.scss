@@ -44,6 +44,16 @@
   h2 {
     font-family: $font-4;
   }
+
+  .background-box {
+    font-size: 30px;
+    font-family: $font-4;
+    // background-color: #ce0b7b;
+    background-color: #99CC00; //Green
+    color: #FFFFFF;
+    padding: 5px;
+  }
+
 }
 
 #home {
@@ -346,4 +356,17 @@
 
 #donate {
   min-height: 60vh !important;
+
+  a {
+    text-decoration: none;
+  }
+
+  .background-box {
+    font-size: 30px;
+    font-family: $font-4;
+    background-color: #6b489d;
+    //background-color: #99CC00; Green
+    color: #FFFFFF;
+    padding: 5px;
+  }
 }
