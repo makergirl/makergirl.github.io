@@ -288,13 +288,21 @@
   }
 
   .feature {
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    border-bottom: 1px solid #000000;
-    padding-bottom: 15px;
+    > span {
+      font-family: 'Roboto', sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      border-bottom: 1px solid #000000;
+      padding-bottom: 15px;
+    }
+
+    img {
+      max-height: 25vh;
+      max-width: 80%;
+      padding: 10px;
+    }
   }
 
   .mg-newsletter {
