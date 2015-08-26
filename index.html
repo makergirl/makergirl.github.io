@@ -3,9 +3,12 @@ layout: default
 title: Home
 ---
 
+<!-- After every section, add a solid border line corresponding to the section color -->
+
 <div id="home" class="row section">
   <div class="main-section">
-    <img src="public/mg-logo1.png"/>
+    <!-- Update logo -->
+    <img src="public/mg-logo-new2.png"/>
     <h1>{{ site.tagline }}</h1>
 
     <br>
@@ -19,8 +22,20 @@ title: Home
 </div>
 
 <div class="container">
-  <div id="video" class="row section">
+  <div id="video" class="row section no-border-section">
     <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <!-- Make the font bigger -->
+          <center><p style="font-size: 36px;">MakerGirl brings 3D printing, Science, Technology, Engineering, and Math (STEM) to life for girls to start creating anything they want in their lives.<p></center>
+          <p>MakerGirl sessions are for girls aged 7-10 and are led by university STEM women. All of our sessions teach young girls 3D printing, while also teaching them about women leaders in STEM fields, innovative companies, cutting edge technology, and much more.  We want your MakerGirl to come to our session and depart wanting to actively participate in any and all parts of STEM!</p>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+
+      <br><br>
+
       <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8">
@@ -32,31 +47,24 @@ title: Home
         <div class="col-md-2"></div>
       </div>
 
-      <br>
-
-      <div class="row">
-        <div class="col-md-3"></div>
-        <div class="col-md-6">
-          <p>MakerGirl is a program led by University of Illinois students that educates 7-10 year-old girls on STEM (Science, Technology, Engineering, Mathematics) fields through 3-D printing workshops at the MakerLab, creative activities, and lessons about leading women in STEM fields.</p>
-        </div>
-        <div class="col-md-3"></div>
-      </div>
+      <br><br>
 
       <div class="row">
         <div class="col-md-6">
-          <h2>Vision</h2>
-          <h3>Girls live and dream as unstoppable forces that say yes to the challenges of the future which leads to gender equality in all workplaces</h3>
-        </div>
-
-        <div class="col-md-6">
-          <h2>Mission</h2>
+          <!-- Colored boxes for the Mission & Vision -->
+          <span class="background-box">Mission</span>
           <h3>Inspire girls to be active in STEM</h3>
+        </div>
+
+        <div class="col-md-6">
+          <span class="background-box">Vision</span>
+          <h3>Girls live and dream as unstoppable forces that say yes to the challenges of the future which leads to gender equality in all workplaces</h3>
         </div>
       </div>
     </div>
   </div>
 
-  <div id="events" class="row section">
+  <div id="events" class="row section section-2">
     <div class="container-fluid">
       <h1>Events</h1>
 
@@ -68,28 +76,45 @@ title: Home
         </div>
 
         <div class="col-md-6">
+          <br><br><br><br><br><br>
+          <h2>Location</h2>
+          <p>The Business Instructional Facility <br> 515 East Gregory Avenue Champaign, IL <br> Room 3030 <br> <i>Enter via the east entrance and use the stairs directly after the first set of doors to your right for easiest entry.</i></p>
+        </div>
+      </div>
+
+      <br><br>
+
+      <!--
+      <div class="row">
+        <div class="container-fluid">
+          <h2>Example of Past Session</h2>
+
           <div class="row">
-            <h2>Example of Past Session</h2>
-            {% for event in site.data.events %}
-              <!-- <div class="row">
-                <div class="col-md-6">
-                  <img src="{{ event.image }}"/>
-                  <br><br>
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+              {% for event in site.data.events %}
+                <!-- <div class="row">
+                  <div class="col-md-6">
+                    <img src="{{ event.image }}"/>
+                    <br><br>
+                  </div>
+                  <div class="col-md-6">
+                    <h1><a class="event-link" href="{{ event.link }}">{{ event.name }}</a></h1><br>
+                    <p>{{ event.description }}</p>
+                  </div>
                 </div>
-                <div class="col-md-6">
-                  <h1><a class="event-link" href="{{ event.link }}">{{ event.name }}</a></h1><br>
+                <br><br>
+                <div class="row">
+                  <h4><a class="event-link" href="{{ event.link }}">{{ event.name }}</a></h4>
                   <p>{{ event.description }}</p>
                 </div>
-              </div>
-              <br><br> -->
-              <div class="row">
-                <h4><a class="event-link" href="{{ event.link }}">{{ event.name }}</a></h4>
-                <p>{{ event.description }}</p>
-              </div>
-            {% endfor %}
+              {% endfor %}
+            </div>
+            <div class="col-md-3"></div>
           </div>
         </div>
       </div>
+      -->
 
       <br>
 
@@ -157,33 +182,56 @@ title: Home
       <div class="col-md-2"></div>
     </div>
 
-    <br>
+    <br><br>
 
-    <!-- <div class="row">
+    <div class="row">
       <h2>Testimonials</h2>
 
       {% for data in site.data.testimonials %}
-        {% assign loopindex = forloop.index | module 3 %}
-        {% if loopindex == 1 %}
-          <div class="row">
-        {% endif %}
+        {% assign loopindex = forloop.index %}
+        {% assign loopindex3 = forloop.index | modulo: 3 %}
 
-        <div class="col-md-4">
-          <p>{{ data.testimonial }}</p>
-          - {{ data.source }}
-        </div>
+        {% if loopindex <= 3%}
+          {% if loopindex3 == 1 %}
+            <div class="row">
+          {% endif %}
 
-        {% if loopindex == 0 %}
-          <br>
+          <div class="col-md-4">
+              {% if loopindex == 1 %}
+                <div class="mg-testimonial testimonial-1">
+              {% elsif loopindex == 2 %}
+                <div class="mg-testimonial testimonial-2">
+              {% else %}
+                <div class="mg-testimonial testimonial-3">
+              {% endif %}
+
+              <span>
+                {% if data.testimonial %}
+                  <center>{{ data.testimonial }}</center>
+                {% endif %}
+
+                <br>
+
+                {% if data.source %}
+                <span class="source">- {{ data.source }}</span>
+                {% endif %}
+              </span>
+            </div>
           </div>
+
+          {% if loopindex3 == 0 %}
+            <br>
+            </div>
+          {% endif %}
         {% endif %}
       {% endfor %}
-    </div> -->
+    </div>
   </div>
 
-  <div id="archive" class="row section">
+  <div id="archive" class="row section section-3">
     <div class="container-fluid">
       <h1>Archive</h1>
+      <!-- Make the older ones smaller -->
       <div class="row">
         <div class="col-md-3"></div>
         <div class="col-md-6">
@@ -231,11 +279,27 @@ title: Home
         <div class="col-md-3"></div>
       </div>
     </div>
+
+    <!-- Add news articles here with logos, pink background -->
+    <br><br>
+
+    <div class="row feature">
+      <span>As Seen On</span>
+      <br><br>
+      <img src="public/chambanamoms.jpg"/>
+      <img src="public/dailyillini.png"/>
+      <img src="public/CoB.jpg"/>
+      <br>
+      <img src="public/impulse.png"/>
+      <img src="public/misumi.png"/>
+    </div>
   </div>
 
-  <div id="donate" class="row section">
+  <div id="donate" class="row section section-4">
     <div class="container-fluid">
       <h1>Donate</h1>
+
+      <!-- Customized button for paypal and patreon, purple -->
 
       <div class="row">
         <div class="col-md-12">
@@ -246,21 +310,15 @@ title: Home
       <div class="row">
         <div class="col-md-6">
 
-          <a href="#" target="_blank">
-            <button type="button" class="btn btn-default">
-              PayPal
-            </button>
-
-
+          <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=H3SFUM3ENBPRU" target="_blank">
+            <span class="background-box">PayPal</span>
           </a>
           <br>
           {{ site.data.donate.paypal }}
         </div>
         <div class="col-md-6">
           <a href="https://www.patreon.com/MakerGirl_UIUC?ty=h" target="_blank">
-            <button type="button" class="btn btn-default">
-              Patreon
-            </button>
+            <span class="background-box">Patreon</span>
           </a>
           <br>
           {{ site.data.donate.patreon }}
@@ -288,7 +346,7 @@ title: Home
     </div>
   </div>
 
-  <div id="about-us" class="row section last-section">
+  <div id="about-us" class="row section section-5">
     <div class="container-fluid">
       <h1>About Us</h1>
 
