@@ -242,27 +242,36 @@
       }
     }
 
-    .t1 {
-      color: #55437e !important;
-      background: rgba(85, 67, 126, 0.5) !important;
-    }
-
-    .t2 {
-      color: #56c7da !important;
-      background: rgba(86, 199, 218, 0.5) !important;
-    }
-
-    .t3 {
-      color: #f16549 !important;
-      background: rgba(241, 101, 73, 0.5) !important;
-    }
-
     .source {
       float: right;
       font-size: 15px;
       font-style: italic;
     }
   }
+
+  .testimonial-1 {
+    color: #55437e !important;
+    background: rgba(85, 67, 126, 0.5) !important;
+  }
+
+  .testimonial-2 {
+    color: #56c7da !important;
+    background: rgba(86, 199, 218, 0.5) !important;
+  }
+
+  .testimonial-3 {
+    color: #f16549 !important;
+    background: rgba(241, 101, 73, 0.5) !important;
+  }
+
+  .testimonial-1,
+  .testimonial-2,
+  .testimonial-3 {
+    > span {
+      color: inherit;
+    }
+  }
+
 }
 
 #archive {
@@ -276,6 +285,16 @@
       min-width: 100%;
       min-height: 100%;
     }
+  }
+
+  .feature {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 15px;
   }
 
   .mg-newsletter {
