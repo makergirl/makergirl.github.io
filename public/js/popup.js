@@ -3,8 +3,8 @@ function loadPopup() {
 }
 
 jQuery(window).load(function() {
-    document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
-  });
+  document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+});
 
 jQuery('body').on('click', '.mc-closeModal', function() {
   document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
