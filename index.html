@@ -8,7 +8,7 @@ title: Home
 <div id="home" class="row section">
   <div class="main-section">
     <!-- Update logo -->
-    <img src="public/mg-logo-new2.png"/>
+    <img src="{{ site.baseurl }}public/mg-logo-new2.png"/>
     <h1>{{ site.tagline }}</h1>
 
     <br>
@@ -158,7 +158,7 @@ title: Home
               {% else %}
                 <div class="item">
               {% endif %}
-                  <img src="public/img/carousel/{{ data.image }}" alt="{{ data.alt }}">
+                  <img src="{{ site.baseurl }}public/img/carousel/{{ data.image }}" alt="{{ data.alt }}">
                   <div class="carousel-caption">
                     <h3>{{ data.caption.h3 }}</h3>
                     <p>{{ data.caption.p }}</p>
@@ -249,7 +249,7 @@ title: Home
           <a href="{{ newsletter.link }}" target="_blank">
             <div class="col-md-4">
               <div class="mg-newsletter">
-                <img src="public/gear{{ imgindex }}.png" class="img img-responsive full-width"/>
+                <img src="{{ site.baseurl }}public/gear{{ imgindex }}.png" class="img img-responsive full-width"/>
 
                 <span>
                   <br>
@@ -287,25 +287,25 @@ title: Home
       <span>As Seen On</span>
       <br><br>
       <a href="http://www.chambanamoms.com/2015/06/08/maker-girl-encourages-girls-to-pursue-stem-fields/" target="_blank">
-        <img src="public/chambanamoms.jpg"/>
+        <img src="{{ site.baseurl }}public/chambanamoms.jpg"/>
       </a>
       <a href="http://www.dailyillini.com/article/2015/03/inspiring-female-amibition-in-stem-through-makergirl" target="_blank">
-        <img src="public/dailyillini.png"/>
+        <img src="{{ site.baseurl }}public/dailyillini.png"/>
       </a>
       <a href="https://business.illinois.edu/perspectives/" target="_blank">
-        <img src="public/CoB.jpg"/>
+        <img src="{{ site.baseurl }}public/CoB.jpg"/>
       </a>
       <br>
       <a href="http://impulse-magazine.com/2015/05/06/
 makergirl-inspiring-women-to-pursue-careers-in-stem/" target="_blank">
-        <img src="public/impulse.png"/>
+        <img src="{{ site.baseurl }}public/impulse.png"/>
       </a>
       <br>
       <a href="http://blog.misumiusa.com/printing-inspiration/" target="_blank">
-        <img src="public/misumi.png"/>
+        <img src="{{ site.baseurl }}public/misumi.png"/>
       </a>
       <a href="http://www.smilepolitely.com/tech/makergirl_teaches_young_girls_stem_skills/" target="_blank">
-        <img src="public/smilepolitely.png"/>
+        <img src="{{ site.baseurl }}public/smilepolitely.png"/>
       </a>
     </div>
   </div>
@@ -380,7 +380,7 @@ makergirl-inspiring-women-to-pursue-careers-in-stem/" target="_blank">
 
         <div class="col-md-4">
           <div class="mg-member">
-            <img src="public/img/{% if member.photo %}{{ member.photo }}{% else %}{{ member.name.first | downcase }}.png{% endif %}" class="img img-responsive full-width"/>
+            <img src="{{ site.baseurl }}public/img/{% if member.photo %}{{ member.photo }}{% else %}{{ member.name.first | downcase }}.png{% endif %}" class="img img-responsive full-width"/>
             <span>
               {% if member.name %}
                 <center>
