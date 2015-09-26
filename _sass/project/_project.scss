@@ -3,6 +3,8 @@
  * - Project-based pages
  */
 
+$screen-edge-case: 420px;
+
 .project {
   .mg-navbar {
     visibility: visible !important;
@@ -32,6 +34,16 @@
       .separator {
         font-weight: 100;
         color: #FFFFFF;
+      }
+
+      @include media-query($screen-edge-case) {
+        .subtitle {
+          display: none;
+        }
+
+        .separator {
+          display: none;
+        }
       }
     }
 
