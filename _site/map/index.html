@@ -1,0 +1,23 @@
+<style>
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #map {
+    margin: 0 auto;
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+</style>
+
+<div id="map"></div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5JgjvRDF6mSI3NdBz1UtW4l5G_FApc_U"></script>
+
+<script>
+  var map = new google.maps.Map(document.getElementById('map'), {
+   center: {lat: 40.1150, lng: -88.2728},
+   zoom: 8
+  });
+</script>
