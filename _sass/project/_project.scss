@@ -16,22 +16,22 @@
       -ms-filter: "FlipH";
     }
 
-    .subtitle {
-      font-weight: 100;
-      text-transform: capitalize;
-      color: #FFFFFF;
-      font-size: 21px;
-      letter-spacing: 5px;
-    }
-
-    .separator {
-      font-weight: 100;
-      color: #FFFFFF;
-    }
-
     .navbar-brand {
       img {
         display: inline-block !important;
+      }
+
+      .subtitle {
+        font-weight: 100;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        font-size: 21px;
+        letter-spacing: 5px;
+      }
+
+      .separator {
+        font-weight: 100;
+        color: #FFFFFF;
       }
     }
 
