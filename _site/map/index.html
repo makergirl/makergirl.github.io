@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-us" prefix="og: http://ogp.me/ns">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <link rel="canonical" href="http://makergirl.us/map/ | replace:'index.html', ''" />
+  <link rel="alternate" type="application/rss+xml" title="MakerGirl" href="http://makergirl.us/feed.xml" />
+
+  <!-- METADATA -->
+  <meta name="description" content="MakerGirl is a program led by University of Illinois students that educates 7-10 year old girls on STEM (Science, Technology, Engineering, Mathematics) fields through 3-D printing workshops at the College of Business MakerLab, creative activities, and lessons on leading women in STEM fields." />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="MakerGirl, UIUC, Illinois, 3D, Printing, Engineering, STEM">
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:site_name" content="MakerGirl" />
+  <meta property="og:title" content="MakerGirl" />
+  <meta property="og:description" content="MakerGirl is a program led by University of Illinois students that educates 7-10 year old girls on STEM (Science, Technology, Engineering, Mathematics) fields through 3-D printing workshops at the College of Business MakerLab, creative activities, and lessons on leading women in STEM fields." />
+  <meta property="og:image" content="http://makergirl.us/public/mg-fb.jpg" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta property="og:url" content="http://makergirl.us/map/" />
+  <meta property="og:type" content="website" />
+
+  <!-- TWITTER CARD -->
+  <meta name="twitter:title" content="MakerGirl" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="http://makergirl.us/public/mg-tw.png" />
+  <meta name="twitter:url" content="http://makergirl.us/map/" />
+  <meta name="twitter:description" content="MakerGirl is a program led by University of Illinois students that educates 7-10 year old girls on STEM (Science, Technology, Engineering, Mathematics) fields through 3-D printing workshops at the College of Business MakerLab, creative activities, and lessons on leading women in STEM fields." />
+
+  <title>
+     Map &middot; MakerGirl 
+  </title>
+
+  <!-- ICONS -->
+  <link rel="image_src" href="/public/icon.jpg" />
+  <link rel="shortcut icon" href="/public/favicon.ico" />
+  <link rel="apple-touch-icon-precomposed" href="/public/icon.jpg" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/bower_components/bootstrap-social/bootstrap-social.css">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+
+
+  <body ontouchstart="">
+    <!-- DEMO
+- This is for demo purposes only
+- Make to enter fullscreen mode
+-->
+
+<style>
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #map {
+    margin: 0 auto;
+    height: 100vh;
+  }
+</style>
+
+<!-- Map
+- Displays all the MakerGirl participants in a single map
+-->
+
+<div id="map"></div>
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5JgjvRDF6mSI3NdBz1UtW4l5G_FApc_U"></script>
+<script>
+  var map = new google.maps.Map(document.getElementById('map'), {
+   center: {lat: 40.1105, lng: -88.2284},
+   zoom: 13
+  });
+</script> -->
+
+<script>
+  function initMap() {
+    /* Set center to UIUC */
+    var center = {
+      lat: 40.1105,
+      lng: -88.2284
+    };
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 14,
+      center: center
+    });
+
+    // var marker = new google.maps.Marker({
+    //   position: center,
+    //   map: map,
+    //   title: 'Hello World!'
+    // });
+
+    // Array of markers
+    var markers = [
+      {
+        title: "Marker 1",
+        lat: 40.1105,
+        lng: -88.2284,
+      },
+      {
+        title: "Marker 2",
+        lat: 40.1108,
+        lng: -88.2269,
+      },
+      {
+        title: "Marker 3",
+        lat: 40.1099,
+        lng: -88.2284,
+      },
+      {
+        title: "Marker 4",
+        lat: 40.1200,
+        lng: -88.2284,
+      },
+      {
+        title: "Marker 4",
+        lat: 40.1000,
+        lng: -88.2284,
+      }
+    ];
+
+    // Put markers on the map
+    var marker;
+    for(var i = 0; i < markers.length; i++) {
+      // for(var location in markers[i]) {}
+      marker = new google.maps.Marker({
+        position: {
+          lat: markers[i].lat,
+          lng: markers[i].lng
+        },
+        map: map,
+        title: markers[i].title
+      });
+    }
+  }
+</script>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5JgjvRDF6mSI3NdBz1UtW4l5G_FApc_U&signed_in=false&callback=initMap"></script>
+
+
+
+    <script src="/public/js/ga.js"></script>
+
+  </body>
+
+</html>

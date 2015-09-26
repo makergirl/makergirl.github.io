@@ -1,0 +1,45 @@
+/**
+ * Home
+ * - Home sections
+ * TODO: Needs refactoring
+ */
+#home {
+  // background: #ce0b7b;
+  background: #ce0b7b url("bg.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  text-align: center;
+  overflow-y: auto;
+  border: none;
+
+  img {
+    max-height: 50vh;
+    max-width: 80%;
+    margin-top: -30px;
+  }
+
+  h1 {
+    color: #FFFFFF;
+    font-family: $font-4;
+    font-weight: 300;
+    line-height: 1.5;
+    padding-top: 40px;
+  }
+
+  @include media-query($screen-sm-min) {
+    h1 {
+      font-size: 42px;
+    }
+  }
+
+  .gears-section {
+    z-index: 10;
+    height: 100vh;
+  }
+
+  .main-section {
+    z-index: 5;
+    height: 100vh;
+  }
+}

@@ -1,0 +1,78 @@
+<!-- Map
+- Displays all the MakerGirl participants in a single map
+-->
+
+<div id="map"></div>
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5JgjvRDF6mSI3NdBz1UtW4l5G_FApc_U"></script>
+<script>
+  var map = new google.maps.Map(document.getElementById('map'), {
+   center: {lat: 40.1105, lng: -88.2284},
+   zoom: 13
+  });
+</script> -->
+
+<script>
+  function initMap() {
+    /* Set center to UIUC */
+    var center = {
+      lat: 40.1105,
+      lng: -88.2284
+    };
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 14,
+      center: center
+    });
+
+    // var marker = new google.maps.Marker({
+    //   position: center,
+    //   map: map,
+    //   title: 'Hello World!'
+    // });
+
+    // Array of markers
+    var markers = [
+      {
+        title: "Marker 1",
+        lat: 40.1105,
+        lng: -88.2284,
+      },
+      {
+        title: "Marker 2",
+        lat: 40.1108,
+        lng: -88.2269,
+      },
+      {
+        title: "Marker 3",
+        lat: 40.1099,
+        lng: -88.2284,
+      },
+      {
+        title: "Marker 4",
+        lat: 40.1200,
+        lng: -88.2284,
+      },
+      {
+        title: "Marker 4",
+        lat: 40.1000,
+        lng: -88.2284,
+      }
+    ];
+
+    // Put markers on the map
+    var marker;
+    for(var i = 0; i < markers.length; i++) {
+      // for(var location in markers[i]) {}
+      marker = new google.maps.Marker({
+        position: {
+          lat: markers[i].lat,
+          lng: markers[i].lng
+        },
+        map: map,
+        title: markers[i].title
+      });
+    }
+  }
+</script>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5JgjvRDF6mSI3NdBz1UtW4l5G_FApc_U&signed_in=false&callback=initMap"></script>

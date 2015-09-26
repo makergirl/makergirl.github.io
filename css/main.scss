@@ -52,11 +52,17 @@ $color-5: #990066;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+  "index/about",
+  "index/archive",
   "base",
-  "layout",
-  "syntax-highlighting",
+  "index/donate",
+  "index/events",
   "fonts",
-  "navbar",
   "foot",
-  "about",
-  "home";
+  "index/home",
+  "layout",
+  "navbar",
+  "section",
+  "syntax-highlighting",
+  "index/video",
+  "project/project";

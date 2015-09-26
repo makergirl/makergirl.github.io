@@ -1,0 +1,51 @@
+/**
+ * Project
+ * - Project-based pages
+ */
+
+$screen-edge-case: 420px;
+
+.project {
+  .mg-navbar {
+    visibility: visible !important;
+
+    .flip {
+      -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      filter: FlipH;
+      -ms-filter: "FlipH";
+    }
+
+    .navbar-brand {
+      img {
+        display: inline-block !important;
+      }
+
+      .subtitle {
+        font-weight: 100;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        font-size: 21px;
+        letter-spacing: 5px;
+      }
+
+      .separator {
+        font-weight: 100;
+        color: #FFFFFF;
+      }
+
+      @include media-query($screen-edge-case) {
+        .subtitle {
+          display: none;
+        }
+
+        .separator {
+          display: none;
+        }
+      }
+    }
+
+  }
+}

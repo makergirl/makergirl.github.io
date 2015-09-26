@@ -1,0 +1,45 @@
+/**
+ * Section
+ * - Section styling
+ */
+.section {
+  min-height: 100vh;
+  padding-top: 15vh;
+  text-align: center;
+  // border-image: url("dot.png") 0 0 10 0 round round;
+  border-top: 5px dotted;
+  border-width: 10px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  h1 {
+    font-family: $font-4;
+    text-align: center;
+  }
+}
+
+/* Different border colors */
+
+.section-1 {
+  border-color: #FFCC00;
+}
+
+.section-2 {
+  border-color: #FF3B19;
+}
+
+.section-3 {
+  border-color: #99CC00;
+}
+
+.section-4 {
+  border-color: #0066FF;
+}
+
+.section-5 {
+  border-color: #990066;
+}
+
+.no-border-section {
+  border: none;
+}
