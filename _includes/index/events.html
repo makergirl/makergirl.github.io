@@ -1,0 +1,163 @@
+<div id="events" class="row section section-2">
+  <div class="container-fluid">
+    <h1>Events</h1>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="overlay" onClick="style.pointerEvents='none'"></div>
+        <iframe width="100%" height="550" frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/place?q=Business+Instructional+Facility,+East+Gregory+Drive,+Champaign,+IL,+United+States&key=AIzaSyBxXhTfZYFacSr6nRmTT9zabPhPwSmj_HE"></iframe>
+      </div>
+
+      <div class="col-md-6">
+        <br><br><br><br><br><br>
+        <h2>Location</h2>
+        <p>The Business Instructional Facility <br> 515 East Gregory Avenue Champaign, IL <br> Room 3030 <br> <i>Enter via the east entrance and use the stairs directly after the first set of doors to your right for easiest entry.</i></p>
+      </div>
+    </div>
+
+    <br><br>
+
+    <!--
+    <div class="row">
+      <div class="container-fluid">
+        <h2>Example of Past Session</h2>
+
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            {% for event in site.data.events %}
+              <!-- <div class="row">
+                <div class="col-md-6">
+                  <img src="{{ event.image }}"/>
+                  <br><br>
+                </div>
+                <div class="col-md-6">
+                  <h1><a class="event-link" href="{{ event.link }}">{{ event.name }}</a></h1><br>
+                  <p>{{ event.description }}</p>
+                </div>
+              </div>
+              <br><br>
+              <div class="row">
+                <h4><a class="event-link" href="{{ event.link }}">{{ event.name }}</a></h4>
+                <p>{{ event.description }}</p>
+              </div>
+            {% endfor %}
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+      </div>
+    </div>
+    -->
+
+    <br>
+
+    {% for info in site.data.events_info %}
+    <div class="row">
+      <div class="container-fluid">
+        <h2>{{ info.header}}</h2>
+
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">{{ info.info }}</div>
+          <div class="col-md-3"></div>
+        </div>
+      </div>
+    </div>
+    <br>
+    {% endfor %}
+
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            {% for data in site.data.carousel %}
+              {% assign loopindex = forloop.index %}
+              {% if loopindex == 1 %}
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              {% else %}
+              <li data-target="#carousel-example-generic" data-slide-to="{{ loopindex }}"></li>
+              {% endif %}
+            {% endfor %}
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            {% for data in site.data.carousel %}
+            {% assign loopindex = forloop.index %}
+            {% if loopindex == 1 %}
+              <div class="item active">
+            {% else %}
+              <div class="item">
+            {% endif %}
+                <img src="{{ site.baseurl }}public/img/carousel/{{ data.image }}" alt="{{ data.alt }}">
+                <div class="carousel-caption">
+                  <h3>{{ data.caption.h3 }}</h3>
+                  <p>{{ data.caption.p }}</p>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev" target="_blank">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next" target="_blank">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+
+  <br><br>
+
+  <div class="row">
+    <h2>Testimonials</h2>
+
+    {% for data in site.data.testimonials %}
+      {% assign loopindex = forloop.index %}
+      {% assign loopindex3 = forloop.index | modulo: 3 %}
+
+      {% if loopindex <= 3%}
+        {% if loopindex3 == 1 %}
+          <div class="row">
+        {% endif %}
+
+        <div class="col-md-4">
+            {% if loopindex == 1 %}
+              <div class="mg-testimonial testimonial-1">
+            {% elsif loopindex == 2 %}
+              <div class="mg-testimonial testimonial-2">
+            {% else %}
+              <div class="mg-testimonial testimonial-3">
+            {% endif %}
+
+            <span>
+              {% if data.testimonial %}
+                <center>{{ data.testimonial }}</center>
+              {% endif %}
+
+              <br>
+
+              {% if data.source %}
+              <span class="source">- {{ data.source }}</span>
+              {% endif %}
+            </span>
+          </div>
+        </div>
+
+        {% if loopindex3 == 0 %}
+          <br>
+          </div>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
