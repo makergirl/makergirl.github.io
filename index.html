@@ -383,8 +383,12 @@ makergirl-inspiring-women-to-pursue-careers-in-stem/" target="_blank">
             <img src="public/img/{% if member.photo %}{{ member.photo }}{% else %}{{ member.name.first | downcase }}.png{% endif %}" class="img img-responsive full-width"/>
             <span>
               {% if member.name %}
-                <center><span class="name">{{ member.name.first }} {{ member.name.last }}</span></center>
-                <br><br>
+                <center>
+                  <span class="name">{{ member.name.first }} {{ member.name.last }}</span>
+                  <br><br>
+                  <span class="position">{{ member.position }}</span>
+                </center>
+                <br>
               {% endif %}
               {% if member.bio %}
               {{ member.bio }}
