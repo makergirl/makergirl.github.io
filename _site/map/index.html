@@ -72,79 +72,118 @@
 -->
 
 <div id="map"></div>
-<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5JgjvRDF6mSI3NdBz1UtW4l5G_FApc_U"></script>
+
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
 <script>
-  var map = new google.maps.Map(document.getElementById('map'), {
-   center: {lat: 40.1105, lng: -88.2284},
-   zoom: 13
+  // Initialize variable
+  var delay = null;
+  var map = null;
+  var geocoder = null;
+  var bounds = null;
+  var infowindow = null;
+  var iterator = 0;
+  var locations = null;
+
+  // Set delay to 100ms
+  delay = 100;
+
+  // Set center to UIUC
+  var center = {
+    lat: 40.1105,
+    lng: -88.2284
+  };
+  map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 14,
+    center: center,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
   });
-</script> -->
 
-<script>
-  function initMap() {
-    /* Set center to UIUC */
-    var center = {
-      lat: 40.1105,
-      lng: -88.2284
-    };
+  geocoder = new google.maps.Geocoder();
+  bounds = new google.maps.LatLngBounds();
+  infowindow = new google.maps.InfoWindow();
 
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 14,
-      center: center
+
+  // Locations array
+  locations = [
+    61820,
+    61821,
+    61822,
+    61824,
+    61825,
+    61826,
+    61801,
+    61802,
+    61803
+  ];
+
+  /**
+   * getGeocode
+   * Fetches for the geocode of a given location
+   * Handles Google's query limit
+   * @param query
+   * @param next
+   */
+  function getGeocode(query, next) {
+    geocoder.geocode({address : query}, function (results, status) {
+      if (status == google.maps.GeocoderStatus.OK) {
+        var p = results[0].geometry.location;
+        var lat = p.lat();
+        var lng = p.lng();
+
+        var coordinate = new google.maps.LatLng(lat, lng);
+
+        createMarker(query, coordinate);
+      }
+      else {
+        if (status == google.maps.GeocoderStatus.OVER_QUERY_LIMIT) {
+          iterator--;
+          delay++;
+        } else {
+          console.log('Geocode was not successful for the following reason: ' + status);
+          console.log(request);
+        }
+      }
+      next();
+    });
+  }
+
+  /**
+   * createMarker
+   * Creates a map marker for the locations given
+   * @param query
+   * @param coordinate
+   */
+  function createMarker(query, coordinate) {
+    var marker = new google.maps.Marker({
+      map : map,
+      position : coordinate,
+      zIndex : Math.round(center.lat * -100000) << 5
     });
 
-    // var marker = new google.maps.Marker({
-    //   position: center,
-    //   map: map,
-    //   title: 'Hello World!'
-    // });
+    google.maps.event.addListener(marker, 'click', function() {
+      infowindow.setContent(query);
+      infowindow.open(map, marker);
+    });
 
-    // Array of markers
-    var markers = [
-      {
-        title: "Marker 1",
-        lat: 40.1105,
-        lng: -88.2284,
-      },
-      {
-        title: "Marker 2",
-        lat: 40.1108,
-        lng: -88.2269,
-      },
-      {
-        title: "Marker 3",
-        lat: 40.1099,
-        lng: -88.2284,
-      },
-      {
-        title: "Marker 4",
-        lat: 40.1200,
-        lng: -88.2284,
-      },
-      {
-        title: "Marker 4",
-        lat: 40.1000,
-        lng: -88.2284,
-      }
-    ];
+    bounds.extend(marker.position);
+  }
 
-    // Put markers on the map
-    var marker;
-    for(var i = 0; i < markers.length; i++) {
-      // for(var location in markers[i]) {}
-      marker = new google.maps.Marker({
-        position: {
-          lat: markers[i].lat,
-          lng: markers[i].lng
-        },
-        map: map,
-        title: markers[i].title
-      });
+  /**
+   * fetchData
+   * Runs all the helper functions and fetches data specific in the locations array
+   */
+  function fetchData() {
+    if (iterator < locations.length) {
+      setTimeout('getGeocode("' + locations[iterator] + '", fetchData)', delay);
+      iterator++;
+    } else {
+      map.fitBounds(bounds);
     }
   }
-</script>
 
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5JgjvRDF6mSI3NdBz1UtW4l5G_FApc_U&signed_in=false&callback=initMap"></script>
+   fetchData();
+ </script>
 
 
 
