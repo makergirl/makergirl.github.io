@@ -1,4 +1,5 @@
 # MakerGirl
+![MakerGirl](https://raw.githubusercontent.com/josephmilla/makergirl/master/public/mg-fb.jpg)
 
 ## What is MakerGirl?
 MakerGirl brings 3D printing, Science, Technology, Engineering, and Math (STEM) to life for girls to start creating anything they want in their lives.
