@@ -1,5 +1,5 @@
 # MakerGirl
-![MakerGirl](https://raw.githubusercontent.com/josephmilla/makergirl/master/public/mg-fb.jpg)
+![MakerGirl](http://makergirl.us/public/mg.jpg)
 
 :information_desk_person:
 
