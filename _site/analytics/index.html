@@ -44,6 +44,7 @@
   <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="/bower_components/bootstrap-social/bootstrap-social.css">
+  <link rel="stylesheet" href="/bower_components/chartist/dist/chartist.min.css">
   <link rel="stylesheet" href="/css/main.css">
 </head>
 
@@ -96,13 +97,17 @@ body {
   height: 50vh;
   /*width: 100vh;*/
   margin: 0 auto;
+}
+
+.section {
   margin-right: 40px;
   margin-left: 40px;
 }
 </style>
 
-<div id="analytics" class="row section">
-  <!-- Map
+<div class="container-fluid">
+  <div id="analytics" class="row section">
+    <!-- Map
 - Displays all the MakerGirl participants in a single map
 -->
 
@@ -220,6 +225,31 @@ body {
    fetchData();
  </script>
 
+
+    <br>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="ct-chart ct-square distribution-graph"></div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="ct-chart ct-square line-graph"></div>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="ct-chart ct-square pie-chart"></div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="ct-chart ct-square bipolar-graph"></div>
+      </div>
+    </div>
+  </div>
 </div>
 
     </div>
@@ -281,10 +311,12 @@ body {
 <script src="/bower_components/ScrollMagic/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
 <script src="/bower_components/ScrollMagic/scrollmagic/minified/plugins/animation.velocity.min.js"></script>
 <script src="/bower_components/ScrollMagic/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+<script src="/bower_components/chartist/dist/chartist.min.js"></script>
 <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
 <script src="/public/js/navbar.js"></script>
 <script src="/public/js/popup.js"></script>
 <script src="/public/js/script.js"></script>
+<script src="/public/js/project/analytics.js"></script>
 
 <script src="/public/js/ga.js"></script>
 
