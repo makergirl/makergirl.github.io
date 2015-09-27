@@ -15,11 +15,40 @@ body {
   height: 50vh;
   /*width: 100vh;*/
   margin: 0 auto;
+}
+
+.section {
   margin-right: 40px;
   margin-left: 40px;
 }
 </style>
 
-<div id="analytics" class="row section">
-  {% include project/map.html %}
+<div class="container-fluid">
+  <div id="analytics" class="row section">
+    {% include project/map.html %}
+
+    <br>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="ct-chart ct-square distribution-graph"></div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="ct-chart ct-square line-graph"></div>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="ct-chart ct-square pie-chart"></div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="ct-chart ct-square bipolar-graph"></div>
+      </div>
+    </div>
+  </div>
 </div>
