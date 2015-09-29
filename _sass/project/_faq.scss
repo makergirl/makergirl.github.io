@@ -3,6 +3,7 @@
     font-family: $font-1;
     text-align: left;
     font-weight: 500;
+    padding-bottom: 20px;
   }
 
   h2 {
@@ -11,5 +12,18 @@
 
   p {
     text-align: left;
+  }
+
+  .anchor {
+    padding-top: 100px;
+  }
+
+  #toc {
+    text-align: left;
+    margin-bottom: 50px;
+
+    a {
+      display: block;
+    }
   }
 }
