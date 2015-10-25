@@ -20,7 +20,7 @@
   position: Marketing Director
   email: lauren@makergirl.us
   linkedin: https&#58;//www.linkedin.com/pub/lauren-wenig/85/b7a/63a
-  bio: Lauren Wenig is a sophomore studying Advertising and minoring in Informatics at the University of Illinois. Outside of MakerGirl Lauren is involved in two organizations through the American Advertising Federation, the Informatics Club, and Alpha Gamma Delta at the University of Illinois. As an advertising major she hopes to pursue a career in digital marketing or advertising. Lauren believes that women play an important role in the development of technology and more young girls need to learn more about STEM fields. Outside of the University of Illinois Lauren likes to spend her time outdoors, running, practicing yoga, and spending time with her family and friends.
+  bio: I am currently a junior at the University of Illinois from Naperville, IL studying Advertising and minoring in Informatics. After interning at a startup in Chicago, I was able to expand my interest and knowledge in the technology field. Outside of MakerGirl, I am also involved in the American Advertising Federation’s National Student Advertising Competition, Alpha Gamma Delta, and the Informatics Club. In my free time I enjoy being outdoors, practicing yoga, playing soccer, and running. Looking towards the future, I hope to have a career in digital advertising or marketing. 
 
 - name:
     first: Stephanie
@@ -28,7 +28,7 @@
   position: Engagement Director
   email: stephanie@makergirl.us
   linkedin: https&#58;//www.linkedin.com/in/stephanieahein
-  bio: Stephanie Hein is a junior studying Molecular & Cellular Biology and Chemistry at the University of Illinois at Urbana-Champaign. She hopes to pursue a PhD in Cell and Developmental Biology after she graduates. In addition to MakerGirl, Stephanie is a member of the varsity swim team and the Illini Leadership Academy. She also promotes chemistry education for children through the Chemistry REACT Program. Stephanie enjoys being a part of MakerGirl because she wants to show girls that STEM is fun and holds endless opportunities for them in the future.
+  bio: Stephanie Hein is a senior studying Molecular and Cellular Biology and Chemistry at the University of Illinois at Urbana-Champaign. She plans to pursue a PhD in STEM Education after she graduates. In addition to MakerGirl, Stephanie is a member of the varsity swim team and the Illini Leadership Academy. She also promotes chemistry education for young children through the Chemistry REACT Program. Stephanie enjoys being a part of MakerGirl because she wants to show girls that STEM is fun and holds endless opportunities for them in the future.
 
 - name:
     first: Caitlyn
@@ -47,6 +47,15 @@
   linkedin: https&#58;//www.linkedin.com/pub/charlotte-israel/a3/430/aa8
   photo: charlotte.jpg
   bio: Charlotte is studying Materials Science and Engineering at the University of Illinois Urbana-Champaign. Originally from New York City, she loves exploring all that this University has to offer. On campus she is involved in Material Advantage and the Underwater Hockey team as well as MakerGirl!  Her passions include music, cooking and volunteering. She is very invested in women's education and encourages people to always pursue their passions. As part of the MakerGirl team, she is excited to inspire young girls and introduce them to STEM fields!
+
+- name:
+    first: Joseph
+    last: Milla
+  position: Data Analyst
+  email: joseph@makergirl.us
+  linkedin: https&#58;//www.linkedin.com/in/josephmilla
+  photo: joseph.jpg
+  bio: Joseph Milla is currently a senior at University of Illinois at Urbana-Champaign. He plans to get a major in Computer Science and a minor in Electrical and Computer Engineering. He is interested in a myriad of things like sports, music, tinkering, traveling, and food. In addition to MakerGirl, he is involved with a couple of organizations on campus including but not limited to Association for Computing Machinery, Engineers Without Borders, and HackIllinois. He has been exposed to the world of engineering at a very young age and has been participating in national and international competitions since then. He is very excited to see how MakerGirl could ignite interest in girls to be more involved in STEM fields.
 
 - name:
     first: Manisha
@@ -76,10 +85,37 @@
   bio: Katherine Grindstaff is a sophomore majoring in Mechanical Engineering and minoring in Mathematics at Southern Illinois University. After graduating, she plans on travelling internationally and working in the renewable energy industry. At Southern Illinois, Katherine is involved in the Society of Women Engineers, Engineers Without Borders, the University Honors Program, and previously played in the school marching band. In her free time, she enjoys writing music, hiking, and working out. Katherine is excited to be the first member of the Southern Illinois MakerGirl team and hopes to inspire young girls and inform them of the possibilities they have in STEM fields in the future.
 
 - name:
-    first: Joseph
-    last: Milla
-  position: Data Analyst
-  email: joseph@makergirl.us
-  linkedin: https&#58;//www.linkedin.com/in/josephmilla
-  photo: joseph.jpg
-  bio: Joseph Milla is currently a senior at University of Illinois at Urbana-Champaign. He plans to get a major in Computer Science and a minor in Electrical and Computer Engineering. He is interested in a myriad of things like sports, music, tinkering, traveling, and food. In addition to MakerGirl, he is involved with a couple of organizations on campus including but not limited to Association for Computing Machinery, Engineers Without Borders, and HackIllinois. He has been exposed to the world of engineering at a very young age and has been participating in national and international competitions since then. He is very excited to see how MakerGirl could ignite interest in girls to be more involved in STEM fields.
+    first: Alyssa
+    last: Raggio
+  position: Outreach Manager
+  email: alyssa@makergirl.us
+  linkedin: https&#58;//www.linkedin.com/pub/alyssa-raggio/101/593/b65
+  photo: alyssa.jpg
+  bio: Alyssa Raggio is a senior with a major in Psychology and a minor in Social Work at the University of Illinois at Urbana-Champaign. She hopes to pursue a Masters in Social Work or a PhD in psychology when she graduates. On campus she is a part of Alcohol Safety Awareness Peers, Illini LoL club, and the Counseling Center Advisory Committee. Alyssa believes in promoting diversity in the workplace and STEM fields, which is why she is excited to be a part of the MakerGirl team. 
+
+- name:
+    first: Marie
+    last: Millan
+  position: Social Media Manager
+  email: marie@makergirl.us
+  linkedin: https&#58;//www.linkedin.com/pub/marie-millan/107/86a/7a
+  photo: marie.png
+  bio: Marie is a Junior studying Mechanical Engineering at the University of Illinois Urbana-Champaign. She is originally from Northern California and decided to come to Illinois to explore a different part of the States. After graduation she hopes to pursue a career in Product Development. Outside of MakerGirl, she is part of the BAJA SAE club that designs, builds and races their own off road vehicles. In her spare time she likes to volunteer for organizations such as First LEGO League where she has been part of the panel as a Robotics Judge. Marie loves being outdoors and going on adventures, as well as reading, painting and cooking. She is thrilled to have the opportunity to be able to inspire girls to be a part of STEM and spark their curiosity for the world around them. 
+
+- name:
+    first: Premika
+    last: Pandian
+  position: Blogger / Web Designer
+  email: premika@makergirl.us
+  linkedin: https&#58;//www.linkedin.com/in/premikapandian
+  photo: premika.jpg
+  bio: Premika Pandian is currently a sophomore studying Computer Engineering at the University of Illinois at Urbana-Champaign. She hopes to use her degree to create education-oriented technology and applications. On campus, Premika is involved with Illini Rotaract, Alpha Epsilon Phi, and MakerGirl. In her free time, she enjoys reading, exploring new food places, and volunteering. She is an avid supporter of MakerGirl's mission to encourage young women in STEM because she is a strong supporter of equal opportunity and diversity. She is excited to show girls how fun STEM can be and hopes to inspire them to follow their passions.
+
+- name:
+    first: Lindsey
+    last: Mackey
+  position: Branch Manager
+  email: lindsey@makergirl.us
+  linkedin: https&#58;//www.linkedin.com/pub/lindsey-mackey/58/663/109
+  photo: lindsey.png
+  bio: Lindsey Mackey is a recent graduate from the University of Illinois Urbana - Champaign. She graduated with a degree in Supply Chain Management and a minor in Technology and Management. Lindsey is currently living in Chicago and working as a consultant for Deloitte. Outside of class Lindsey was involved in many things on campus, including her business fraternity, sorority, and intramural sports. She learned during her freshman year, leave the University in a better place than you found it; and being a part of MakerGirl will allow her to do that.
