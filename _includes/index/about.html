@@ -39,14 +39,18 @@
 
         <span>
           {% if member.linkedin %}
-          <span class="badge">
-            <a href="{{ member.linkedin }}" target="_blank"><span class="fa fa-linkedin"></span></a></p>
-          </span>
+          <a href="{{ member.linkedin }}" target="_blank">
+            <span class="badge">
+              <span class="fa fa-linkedin"></span>
+            </span>
+          </a>
           {% endif %}
           {% if member.email %}
-          <span class="badge">
-            <a href="mailto:{{ member.email }}?Subject=Hi%20{{ member.name.first }}" target="_top"><span class="glyphicon glyphicon-envelope"></span></a></p>
-          </span>
+          <a href="mailto:{{ member.email }}?Subject=Hi%20{{ member.name.first }}" target="_top">
+            <span class="badge">
+              <span class="glyphicon glyphicon-envelope"></span>
+            </span>
+          </a>
           {% endif %}
         </span>
 
