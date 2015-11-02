@@ -192,14 +192,22 @@
 }
 
 #mission_vision {
-  z-index: -1;
   position: relative;
+  // min-height: 60vh;
 
   .content {
     .col-md-5 {
       padding-top: 50px;
     }
   }
+}
+
+#airplane {
+  z-index: 20;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: -200px;
 }
 
 #events {
