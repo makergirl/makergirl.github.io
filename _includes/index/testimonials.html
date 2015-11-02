@@ -1,0 +1,48 @@
+<div class="container">
+  <div id="testimonials" class="row section overlay-lg">
+    <div class="content">
+      <div class="row">
+        <h2>Testimonials</h2>
+
+        {% for data in site.data.testimonials %}
+          {% assign loopindex = forloop.index %}
+          {% assign loopindex3 = forloop.index | modulo: 3 %}
+
+          {% if loopindex <= 3%}
+            {% if loopindex3 == 1 %}
+              <div class="row">
+            {% endif %}
+
+            <div class="col-md-4">
+                {% if loopindex == 1 %}
+                  <div class="mg-testimonial testimonial-1">
+                {% elsif loopindex == 2 %}
+                  <div class="mg-testimonial testimonial-2">
+                {% else %}
+                  <div class="mg-testimonial testimonial-3">
+                {% endif %}
+
+                <span>
+                  {% if data.testimonial %}
+                    <center>{{ data.testimonial }}</center>
+                  {% endif %}
+
+                  <br>
+
+                  {% if data.source %}
+                  <span class="source">- {{ data.source }}</span>
+                  {% endif %}
+                </span>
+              </div>
+            </div>
+
+            {% if loopindex3 == 0 %}
+              <br>
+              </div>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
