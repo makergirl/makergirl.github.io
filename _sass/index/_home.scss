@@ -14,17 +14,17 @@
   border: none;
 
   img {
-    max-height: 50vh;
+    max-height: 45vh;
     max-width: 80%;
-    margin-top: -30px;
+    margin-top: -40px;
   }
 
   h1 {
     color: #FFFFFF;
-    font-family: $font-4;
-    font-weight: 300;
-    line-height: 1.5;
     padding-top: 40px;
+    padding-bottom: 50px;
+    font-size: 60px;
+    font-weight: 900;
   }
 
   @include media-query($screen-sm-min) {

@@ -10,10 +10,16 @@
   border-width: 10px;
   padding-top: 100px;
   padding-bottom: 100px;
+  font-family: 'Roboto', sans-serif;
 
   h1 {
-    font-family: $font-4;
-    text-align: center;
+    font-family: inherit !important;
+    font-size: 48px;
+    font-weight: 300;
+  }
+
+  a {
+    text-decoration: none;
   }
 }
 
@@ -47,6 +53,15 @@
   border: none;
 }
 
+/* Buttons */
+.background-box {
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  //background-color: #99CC00; Green
+  color: #FFFFFF;
+  padding: 20px;
+}
 
 /* Different slant section background colors */
 .slant {
@@ -116,6 +131,12 @@
   border-top: 1px solid #a0cf67;
 }
 
+.darkgreen {
+  background: #0bce5e;
+  border-bottom: 1px solid #0bce5e;
+  border-top: 1px solid #0bce5e;
+}
+
 .red {
   background: #d83b34;
   border-bottom: 1px solid #d83b34;
@@ -126,6 +147,18 @@
   background: #0068dc;
   border-bottom: 1px solid #0068dc;
   border-top: 1px solid #0068dc;
+}
+
+.pastelblue {
+  background: #0b7bce;
+  border-bottom: 1px solid #0b7bce;
+  border-top: 1px solid #0b7bce;
+}
+
+.pink {
+  background: #ff4fa7;
+  border-bottom: 1px solid #ff4fa7;
+  border-top: 1px solid #ff4fa7;
 }
 
 .overlay {
