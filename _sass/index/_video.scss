@@ -1,4 +1,12 @@
 #video {
+  z-index: 20;
+  position: relative;
+
+  // .content {
+  //   -webkit-transform: skew(0deg, 0deg);
+  //   transform: skew(0deg, 0deg);
+  // }
+
   h2 {
     font-family: $font-4;
   }

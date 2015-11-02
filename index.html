@@ -5,14 +5,22 @@ title: Home
 
 <!-- After every section, add a solid border line corresponding to the section color -->
 
+<style>
+  body {
+    background: #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+  }
+</style>
+
 {% include index/home.html %}
-
-<div class="container">
-  {% include index/video.html %}
-  {% include index/events.html %}
-  {% include index/archive.html %}
-  {% include index/donate.html %}
-  {% include index/about.html %}
-
-  <br><br>
-</div>
+{% include index/intro.html %}
+{% include index/video.html %}
+{% include index/mission_vision.html %}
+<!-- {% include index/airplane.html %} -->
+{% include index/events.html %}
+<!-- {% include index/image_blocks.html %} -->
+{% include index/donate.html %}
+{% include index/image_break.html %}
+{% include index/featured.html %}
+{% include index/testimonials.html %}
