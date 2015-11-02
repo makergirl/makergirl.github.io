@@ -165,6 +165,10 @@
   margin-top: -150px;
 }
 
+.overlay-lg {
+  margin-top: -200px;
+}
+
 .overlay-md {
   margin-top: -100px;
 }
@@ -182,6 +186,9 @@
 }
 
 #mission_vision {
+  z-index: -1;
+  position: relative;
+
   .content {
     .col-md-5 {
       padding-top: 50px;
