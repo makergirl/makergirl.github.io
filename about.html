@@ -1,0 +1,70 @@
+---
+layout: project
+title: About
+---
+
+<div class="container">
+  <div id="about-us" class="row section">
+    <h1>About Us</h1>
+
+    <br>
+
+    {% for member in site.data.members %}
+      {% assign loopindex = forloop.index | modulo: 3 %}
+
+      {% if loopindex == 1 %}
+        <div class="row">
+
+          {% if forloop.last %}
+            <div class="col-md-4"></div>
+          {% endif %}
+      {% endif %}
+
+      <div class="col-md-4">
+        <div class="mg-member">
+          <img src="{{ site.baseurl }}public/img/{% if member.photo %}{{ member.photo }}{% else %}{{ member.name.first | downcase }}.png{% endif %}" class="img img-responsive full-width"/>
+          <span>
+            {% if member.name %}
+              <center>
+                <span class="name">{{ member.name.first }} {{ member.name.last }}</span>
+                <br><br>
+                <span class="position">{{ member.position }}</span>
+              </center>
+              <br>
+            {% endif %}
+            {% if member.bio %}
+            {{ member.bio }}
+            {% endif %}
+          </span>
+        </div>
+
+        {% if member.name.first %}
+        <h1>{{ member.name.first }}</h1>
+        {% endif %}
+
+        <span>
+          {% if member.linkedin %}
+          <a href="{{ member.linkedin }}" target="_blank">
+            <span class="badge">
+              <span class="fa fa-linkedin"></span>
+            </span>
+          </a>
+          {% endif %}
+          {% if member.email %}
+          <a href="mailto:{{ member.email }}?Subject=Hi%20{{ member.name.first }}" target="_top">
+            <span class="badge">
+              <span class="glyphicon glyphicon-envelope"></span>
+            </span>
+          </a>
+          {% endif %}
+        </span>
+
+        <br><br>
+      </div>
+
+      {% if loopindex == 0 %}
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
