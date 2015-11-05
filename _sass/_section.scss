@@ -61,11 +61,26 @@
   //background-color: #99CC00; Green
   color: #FFFFFF;
   padding: 20px;
+  margin: 30px;
+}
+
+.col3 {
+  font-size: 24px;
 }
 
 @include media-query($screen-sm-min) {
   .background-box {
     font-size: 18px;
+    display: block;
+
+    &:focus,
+    &:hover {
+      opacity: 0.75;
+    }
+
+    &:active {
+      opacity: 0.90;
+    }
   }
 }
 
@@ -110,6 +125,7 @@
       font-family: inherit !important;
       font-size: 16px;
       font-weight: 500;
+      margin-top: 20px;
     }
   }
 }
