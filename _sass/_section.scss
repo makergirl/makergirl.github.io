@@ -62,14 +62,9 @@
   color: #FFFFFF;
   padding: 20px;
   margin: 30px;
-}
+  white-space: nowrap;
 
-.col3 {
-  font-size: 24px;
-}
-
-@include media-query($screen-sm-min) {
-  .background-box {
+  @include media-query($screen-lg-min) {
     font-size: 18px;
     display: block;
 
@@ -82,7 +77,31 @@
       opacity: 0.90;
     }
   }
+
+  @include media-query($screen-sm-min) {
+    font-size: 14px;
+    display: block;
+
+    &:focus,
+    &:hover {
+      opacity: 0.75;
+    }
+
+    &:active {
+      opacity: 0.90;
+    }
+  }
 }
+
+.col3 {
+  font-size: 24px;
+
+  @include media-query($screen-lg-min) {
+    font-size: 18px;
+  }
+}
+
+
 
 /* Different slant section background colors */
 .slant {
