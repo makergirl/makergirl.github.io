@@ -62,14 +62,9 @@
   color: #FFFFFF;
   padding: 20px;
   margin: 30px;
-}
+  white-space: nowrap;
 
-.col3 {
-  font-size: 24px;
-}
-
-@include media-query($screen-sm-min) {
-  .background-box {
+  @include media-query($screen-lg-min) {
     font-size: 18px;
     display: block;
 
@@ -82,7 +77,31 @@
       opacity: 0.90;
     }
   }
+
+  @include media-query($screen-sm-min) {
+    font-size: 14px;
+    display: block;
+
+    &:focus,
+    &:hover {
+      opacity: 0.75;
+    }
+
+    &:active {
+      opacity: 0.90;
+    }
+  }
 }
+
+.col3 {
+  font-size: 24px;
+
+  @include media-query($screen-lg-min) {
+    font-size: 18px;
+  }
+}
+
+
 
 /* Different slant section background colors */
 .slant {
@@ -115,10 +134,28 @@
       white-space: nowrap;
     }
 
+    @include media-query($screen-sm-min) {
+      h1 {
+        font-size: 34px;
+      }
+    }
+
+    @include media-query($screen-iphone5) {
+      h1 {
+        font-size: 26px;
+      }
+    }
+
     h2 {
       font-family: inherit !important;
       font-size: 24px;
       font-weight: 300;
+    }
+
+    @include media-query($screen-sm-min) {
+      h2 {
+        font-size: 18px;
+      }
     }
 
     p {
@@ -126,6 +163,12 @@
       font-size: 16px;
       font-weight: 500;
       margin-top: 20px;
+    }
+
+    @include media-query($screen-sm-min) {
+      p {
+        font-size: 14px;
+      }
     }
   }
 }
@@ -202,9 +245,15 @@
   margin-top: -100px;
 }
 
+.overlay-xs {
+  margin-top: -75px;
+}
+
 .overlay-sm {
   margin-top: -50px;
 }
+
+
 
 /**
  * Overrides
@@ -266,6 +315,20 @@ h2 {
     margin-top: 15%;
   }
 
+  @include media-query($screen-sm-min) {
+    h1 {
+      font-size: 34px;
+      margin-top: 35%;
+    }
+  }
+
+  @include media-query($screen-iphone5) {
+    h1 {
+      font-size: 26px;
+      margin-top: 45%;
+    }
+  }
+
   h2 {
     font-family: inherit !important;
     font-size: 24px;
@@ -283,6 +346,10 @@ h2 {
   background: #ffffff;
   border-bottom: 1px solid #ffffff;
   border-top: 1px solid #ffffff;
+
+  img {
+    margin-bottom: 30px;
+  }
 }
 
 .white-wrapper {
@@ -343,12 +410,30 @@ h2 {
       &:hover {
         opacity: 0.75;
       }
+
+      @include media-query($screen-sm-min) {
+        font-size: 16px;
+        height: 240px;
+      }
+
+      @include media-query($screen-iphone5) {
+        font-size: 12px;
+        height: 180px;
+      }
     }
 
     .source {
       float: right;
       font-size: 15px;
       font-style: italic;
+
+      @include media-query($screen-sm-min) {
+        font-size: 14px;
+      }
+
+      @include media-query($screen-iphone5) {
+        font-size: 10px;
+      }
     }
   }
 
