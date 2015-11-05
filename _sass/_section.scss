@@ -115,10 +115,28 @@
       white-space: nowrap;
     }
 
+    @include media-query($screen-sm-min) {
+      h1 {
+        font-size: 34px;
+      }
+    }
+
+    @include media-query($screen-iphone5) {
+      h1 {
+        font-size: 26px;
+      }
+    }
+
     h2 {
       font-family: inherit !important;
       font-size: 24px;
       font-weight: 300;
+    }
+
+    @include media-query($screen-sm-min) {
+      h2 {
+        font-size: 18px;
+      }
     }
 
     p {
@@ -126,6 +144,12 @@
       font-size: 16px;
       font-weight: 500;
       margin-top: 20px;
+    }
+
+    @include media-query($screen-sm-min) {
+      p {
+        font-size: 14px;
+      }
     }
   }
 }
