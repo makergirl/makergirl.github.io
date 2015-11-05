@@ -63,6 +63,12 @@
   padding: 20px;
 }
 
+@include media-query($screen-sm-min) {
+  .background-box {
+    font-size: 18px;
+  }
+}
+
 /* Different slant section background colors */
 .slant {
   // position: absolute;
