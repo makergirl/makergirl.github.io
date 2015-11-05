@@ -1,0 +1,57 @@
+---
+layout: project
+title: Resources
+---
+
+<div class="container">
+  <div id="resources" class="row section">
+    <h1>Archive</h1>
+    <!-- Make the older ones smaller -->
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <div class="row">
+          Check out our past newsletters to see how we've grown, learn about girls and women in STEM, and find STEM-related activities that you can do at home with your MakerGirl!
+        </div>
+
+        <br>
+
+        {% for newsletter in site.data.newsletters %}
+
+        {% assign loopindex = forloop.index | modulo: 3 %}
+        {% assign imgindex = forloop.index | modulo: 5 %}
+
+        <a href="{{ newsletter.link }}" target="_blank">
+          <div class="col-md-4">
+            <div class="mg-newsletter">
+              <img src="{{ site.baseurl }}public/gear{{ imgindex }}.png" class="img img-responsive full-width"/>
+
+              <span>
+                <br>
+                <center>
+                  {% if newsletter.month %}
+                  <span class="month">{{ newsletter.month }}</span>
+                  {% endif %}
+                  {% if newsletter.date %}
+                  <span class="date">{{ newsletter.date }}</span>
+                  {% endif %}
+                </center>
+              </span>
+            </div>
+          </div>
+        </a>
+
+        {% endfor %}
+
+        <br>
+
+        <!-- <ul>
+        {% for newsletter in site.data.newsletters %}
+          <li><a href="{{ newsletter.link }}">{{ newsletter.link }}</a></li>
+        {% endfor %}
+        </ul> -->
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+  </div>
+</div>

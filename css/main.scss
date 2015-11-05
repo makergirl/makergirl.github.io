@@ -50,6 +50,10 @@ $color-5: #990066;
   }
 }
 
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
   "index/about",
@@ -66,4 +70,5 @@ $color-5: #990066;
   "syntax-highlighting",
   "index/video",
   "project/project",
-  "project/faq";
+  "project/faq",
+  "project/resources";

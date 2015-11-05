@@ -25,11 +25,13 @@
     padding-bottom: 50px;
     font-size: 60px;
     font-weight: 900;
+    white-space: nowrap;
   }
 
   @include media-query($screen-sm-min) {
     h1 {
-      font-size: 42px;
+      font-size: 30px;
+      white-space: nowrap;
     }
   }
 
