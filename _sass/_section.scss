@@ -99,6 +99,10 @@
   @include media-query($screen-lg-min) {
     font-size: 18px;
   }
+
+  @include media-query($screen-sm-min) {
+    font-size: 16px;
+  }
 }
 
 
