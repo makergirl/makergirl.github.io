@@ -25,6 +25,7 @@ $content-width: 800px;
 $on-palm: 600px;
 $on-laptop: 800px;
 
+$screen-iphone5: 320px;
 $screen-sm-min: 768px;
 $screen-md-min: 992px;
 $screen-lg-min: 1200px;
@@ -50,6 +51,10 @@ $color-5: #990066;
   }
 }
 
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
   "index/about",
@@ -66,4 +71,5 @@ $color-5: #990066;
   "syntax-highlighting",
   "index/video",
   "project/project",
-  "project/faq";
+  "project/faq",
+  "project/resources";

@@ -1,5 +1,5 @@
 /* Navbar Scrollspy */
-var start = $("#video").offset().top - 50;
+var start = $("#intro").offset().top - 50;
 
 $(document).scroll(function(){
   if($(this).scrollTop() > start) {
