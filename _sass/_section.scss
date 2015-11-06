@@ -301,7 +301,7 @@ h2 {
   // background: #ce0b7b;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("break.jpg");
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-position: 50% 50%;
   text-align: center;
   border: none;
@@ -320,6 +320,7 @@ h2 {
   }
 
   @include media-query($screen-sm-min) {
+    background-position: 60% 50%;
     h1 {
       font-size: 34px;
       margin-top: 35%;
@@ -327,6 +328,7 @@ h2 {
   }
 
   @include media-query($screen-iphone5) {
+    background-position: 60% 50%;
     h1 {
       font-size: 26px;
       margin-top: 45%;
