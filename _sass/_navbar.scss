@@ -81,6 +81,10 @@ $color: #FFFFFF;
         border-color: #0066FF;
       }
 
+      > a[href="#featured"] {
+        border-color: #0066FF;
+      }
+
       > a[href="#donate"] {
         border-color: #990066;
       }
@@ -122,6 +126,10 @@ $color: #FFFFFF;
       }
 
       > a[href="#archive"] {
+        border-color: #99CC00;
+      }
+
+      > a[href="#featured"] {
         border-color: #99CC00;
       }
 
