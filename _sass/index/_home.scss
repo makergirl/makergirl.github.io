@@ -16,13 +16,13 @@
 
   @include media-query($screen-sm-min) {
     background: #ce0b7b url("bg_mobile.png");
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     background-attachment: fixed;
-    background-position: 50% 50%;
-    text-align: center;
-    overflow-y: auto;
-    border: none;
-    min-height: 100vh;
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 
   img {
