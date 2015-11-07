@@ -3,91 +3,194 @@ layout: project
 title: About
 ---
 
-<div class="container">
-  <div id="about-us" class="row section">
-    <h1>About Us</h1>
+<div id="about-us" class="row section">
+  <h1>About Us</h1>
 
-    <div class="row">
-      <div class="col-md-1"></div>
-
-      <div class="col-md-10">
-        <p>In August of 2014, four diverse, young women began a Social Entrepreneurship class led by Noah Isserman and Ryan Singh at the University of Illinois, Champaign-Urbana.  Little did the women know, they would start a movement that would impact their own life trajectories in addition to the life trajectories of young girls and women in their dreams for a creating a promising future.</p>
-
-        <p>Mid-way into the semester, they were posed and challenged with a simple question,</p>
-
-        <p>“What bothers you?”</p>
-
-        <p>One of the four group members, Elizabeth Engele, immediately thought of some of her peers. On a campus that offered limitless opportunities for female students to make anything of themselves, she noticed and found herself oftentimes discussing meaningless, non-opportunistic topics.  She hoped there was more to campus life and her future career. Julia Haried quickly drew from her past research about the lack of women in C-suite positions. Their conversation moved to, “why is that?” and “What can we do to change these issues?”</p>
-
-        <p>From this inspiration, Engele, Haried, Sophie Li, and Emily Woodward created MakerGirl--a mission driven program about more than 3D printing. MakerGirl seeks to inspire young girls to be active in Science, Technology, Engineering, and Math (STEM) and to continue to say “Yes!” to future challenges by offering design and 3D printing workshops.</p>
-
-        <p>The first session was piloted in November of 2014 with seven 7-10 year old girls from the Champaign-Urbana community. From its inception, MakerGirl has gone on to provide classes for girls across the State of Illinois. Whether it be a beaming smile on a MakerGirl’s face as she watches her design come to life on a 3D printer or witnessing our own team members embrace and “lean in” to their leadership positions, we have had moments that continue to inspire us to create programs that support our mission and vision. We invite you to question what it means to be a  “Maker” in your own life and join and support us in this movement.</p>
-      </div>
-
-      <div class="col-md-1"></div>
-    </div>
+  <div class="row">
     <br>
-
-    <h1>The Team</h1>
-
-    <br>
-
-    {% for member in site.data.members %}
-      {% assign loopindex = forloop.index | modulo: 3 %}
-
-      {% if loopindex == 1 %}
-        <div class="row">
-
-          {% if forloop.last %}
-            <div class="col-md-4"></div>
-          {% endif %}
-      {% endif %}
-
-      <div class="col-md-4">
-        <div class="mg-member">
-          <img src="{{ site.baseurl }}public/img/{% if member.photo %}{{ member.photo }}{% else %}{{ member.name.first | downcase }}.png{% endif %}" class="img img-responsive full-width"/>
-          <span>
-            {% if member.name %}
-              <center>
-                <span class="name">{{ member.name.first }} {{ member.name.last }}</span>
-                <br><br>
-                <span class="position">{{ member.position }}</span>
-              </center>
-              <br>
-            {% endif %}
-            {% if member.bio %}
-            {{ member.bio }}
-            {% endif %}
-          </span>
+    <ul class="timeline">
+      <li>
+        <div class="timeline-badge">OCT <span class="day">10</span> 2014</div>
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4 class="timeline-title">First Logic Model</h4>
+            <!-- <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p> -->
+          </div>
+          <div class="timeline-body">
+            <p>The first logic model for MakerGirl is created after challenged to think about ‘what bothers you’ and create a program to counteract what bothers us</p>
+          </div>
         </div>
+      </li>
 
-        {% if member.name.first %}
-        <h1>{{ member.name.first }}</h1>
+      <li class="timeline-inverted">
+        <div class="timeline-badge">OCT <span class="day">15</span> 2014</div>
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4 class="timeline-title">Clump Day</h4>
+          </div>
+          <div class="timeline-body">
+            <p>Elizabeth and Julia meet on ‘Clump Day” and the idea of MakerGirl is formed</p>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="timeline-badge">NOV <span class="day">1</span> 2014</div>
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4 class="timeline-title">First Pilot Session</h4>
+          </div>
+          <div class="timeline-body">
+            <p>Introduces 6 new sessions for spring semester and all sell out</p>
+          </div>
+        </div>
+      </li>
+
+      <li class="timeline-inverted">
+        <div class="timeline-badge">MAR <span class="day">26</span> 2015</div>
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4 class="timeline-title">iVenture Accelerator</h4>
+          </div>
+          <div class="timeline-body">
+            <p>MakerGirl accepted into iVenture Accelerator</p>
+            <p>MakerGirl receives support from Johnson Controls</p>
+            <p>MakerGirl featured on TV</p>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="timeline-badge">JUL <span class="day">18</span> 2015</div>
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4 class="timeline-title">Southern Illinois Session</h4>
+          </div>
+          <div class="timeline-body">
+            <p>MakerGirl performs pilot session in Southern Illinois</p>
+          </div>
+        </div>
+      </li>
+
+      <li class="timeline-inverted">
+        <div class="timeline-badge">JUL <span class="day">8</span> 2015</div>
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4 class="timeline-title">501(c)3 Application</h4>
+          </div>
+          <div class="timeline-body">
+            <p>MakerGirl officially files as a 501c3</p>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="timeline-badge">OCT <span class="day">14</span> 2015</div>
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4 class="timeline-title">501(c) Status</h4>
+          </div>
+          <div class="timeline-body">
+            <p>MakerGirl officially receives 501c3 status </p>
+          </div>
+        </div>
+      </li>
+
+      <li class="timeline-inverted">
+        <div class="timeline-badge">OCT <span class="day">17</span> 2015</div>
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4 class="timeline-title">Preemadonna and That’s What She Said</h4>
+          </div>
+          <div class="timeline-body">
+            <p>Preemadonna and That’s What She Said partners for two sessions!</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <br>
+  </div>
+
+  <div class="row">
+    <div class="col-md-1"></div>
+
+    <div class="col-md-10">
+      <p>In August of 2014, four diverse, young women began a Social Entrepreneurship class led by Noah Isserman and Ryan Singh at the University of Illinois, Champaign-Urbana.  Little did the women know, they would start a movement that would impact their own life trajectories in addition to the life trajectories of young girls and women in their dreams for a creating a promising future.</p>
+
+      <p>Mid-way into the semester, they were posed and challenged with a simple question,</p>
+
+      <p class="blockquote">“What bothers you?”</p>
+
+      <p>One of the four group members, Elizabeth Engele, immediately thought of some of her peers. On a campus that offered limitless opportunities for female students to make anything of themselves, she noticed and found herself oftentimes discussing meaningless, non-opportunistic topics.  She hoped there was more to campus life and her future career. Julia Haried quickly drew from her past research about the lack of women in C-suite positions. Their conversation moved to, “why is that?” and “What can we do to change these issues?”</p>
+
+      <p>From this inspiration, Engele, Haried, Sophie Li, and Emily Woodward created MakerGirl--a mission driven program about more than 3D printing. MakerGirl seeks to inspire young girls to be active in Science, Technology, Engineering, and Math (STEM) and to continue to say “Yes!” to future challenges by offering design and 3D printing workshops.</p>
+
+      <p>The first session was piloted in November of 2014 with seven 7-10 year old girls from the Champaign-Urbana community. From its inception, MakerGirl has gone on to provide classes for girls across the State of Illinois. Whether it be a beaming smile on a MakerGirl’s face as she watches her design come to life on a 3D printer or witnessing our own team members embrace and “lean in” to their leadership positions, we have had moments that continue to inspire us to create programs that support our mission and vision. We invite you to question what it means to be a  “Maker” in your own life and join and support us in this movement.</p>
+    </div>
+
+    <div class="col-md-1"></div>
+  </div>
+  <br>
+
+  <h1>The Team</h1>
+
+  <br>
+
+  {% for member in site.data.members %}
+    {% assign loopindex = forloop.index | modulo: 3 %}
+
+    {% if loopindex == 1 %}
+      <div class="row">
+
+        {% if forloop.last %}
+          <div class="col-md-4"></div>
         {% endif %}
+    {% endif %}
 
+    <div class="col-md-4">
+      <div class="mg-member">
+        <img src="{{ site.baseurl }}public/img/{% if member.photo %}{{ member.photo }}{% else %}{{ member.name.first | downcase }}.png{% endif %}" class="img img-responsive full-width"/>
         <span>
-          {% if member.linkedin %}
-          <a href="{{ member.linkedin }}" target="_blank">
-            <span class="badge">
-              <span class="fa fa-linkedin"></span>
-            </span>
-          </a>
+          {% if member.name %}
+            <center>
+              <span class="name">{{ member.name.first }} {{ member.name.last }}</span>
+              <br><br>
+              <span class="position">{{ member.position }}</span>
+            </center>
+            <br>
           {% endif %}
-          {% if member.email %}
-          <a href="mailto:{{ member.email }}?Subject=Hi%20{{ member.name.first }}" target="_top">
-            <span class="badge">
-              <span class="glyphicon glyphicon-envelope"></span>
-            </span>
-          </a>
+          {% if member.bio %}
+          {{ member.bio }}
           {% endif %}
         </span>
-
-        <br><br>
       </div>
 
-      {% if loopindex == 0 %}
-        </div>
+      {% if member.name.first %}
+      <h1>{{ member.name.first }}</h1>
       {% endif %}
-    {% endfor %}
-  </div>
+
+      <span>
+        {% if member.linkedin %}
+        <a href="{{ member.linkedin }}" target="_blank">
+          <span class="badge">
+            <span class="fa fa-linkedin"></span>
+          </span>
+        </a>
+        {% endif %}
+        {% if member.email %}
+        <a href="mailto:{{ member.email }}?Subject=Hi%20{{ member.name.first }}" target="_top">
+          <span class="badge">
+            <span class="glyphicon glyphicon-envelope"></span>
+          </span>
+        </a>
+        {% endif %}
+      </span>
+
+      <br><br>
+    </div>
+
+    {% if loopindex == 0 %}
+      </div>
+    {% endif %}
+  {% endfor %}
 </div>
