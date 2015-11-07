@@ -1,0 +1,51 @@
+/* Buttons */
+.background-box {
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  //background-color: #99CC00; Green
+  color: #FFFFFF;
+  padding: 20px;
+  margin: 30px;
+  white-space: nowrap;
+
+  @include media-query($screen-lg-min) {
+    font-size: 18px;
+    display: block;
+
+    &:focus,
+    &:hover {
+      opacity: 0.75;
+    }
+
+    &:active {
+      opacity: 0.90;
+    }
+  }
+
+  @include media-query($screen-sm-min) {
+    font-size: 14px;
+    display: block;
+
+    &:focus,
+    &:hover {
+      opacity: 0.75;
+    }
+
+    &:active {
+      opacity: 0.90;
+    }
+  }
+}
+
+.col3 {
+  font-size: 24px;
+
+  @include media-query($screen-lg-min) {
+    font-size: 18px;
+  }
+
+  @include media-query($screen-sm-min) {
+    font-size: 16px;
+  }
+}

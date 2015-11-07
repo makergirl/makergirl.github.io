@@ -1,0 +1,15 @@
+/**
+ * _mission-vision.scss
+ * Mission and Vision Section Styling
+ */
+ 
+#mission_vision {
+  position: relative;
+
+  // min-height: 60vh;
+  .content {
+    .col-md-5 {
+      padding-top: 50px;
+    }
+  }
+}
