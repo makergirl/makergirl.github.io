@@ -25,10 +25,33 @@ $content-width: 800px;
 $on-palm: 600px;
 $on-laptop: 800px;
 
-$screen-iphone5: 320px;
+// Viewports
 $screen-sm-min: 768px;
 $screen-md-min: 992px;
 $screen-lg-min: 1200px;
+
+/**
+ * Devices
+ */
+
+$screen-iphone5: 320px; // TODO: Remove this
+
+// iPhone 4
+$screen-iphone4-x: 320px;
+$screen-iphone4-y: 372px;
+
+// iPhone 5
+$screen-iphone5-x: 320px;
+$screen-iphone5-y: 460px;
+
+// iPhone 6
+$screen-iphone6-x: 375px;
+$screen-iphone6-y: 559px;
+
+// iPhone 6 Plus
+$screen-iphone6p-x: 414px;
+$screen-iphone6p-y: 628px;
+
 
 // Color Pallette
 $color-1: #FFCC00;
@@ -62,12 +85,20 @@ $color-5: #990066;
   "base",
   "index/donate",
   "index/events",
+  "index/mission-vision",
+  "index/image-break",
+  "index/image-blocks",
+  "index/featured",
   "fonts",
   "foot",
   "index/home",
   "layout",
   "navbar",
   "section",
+  "background-box",
+  "slant",
+  "colors",
+  "overlay",
   "syntax-highlighting",
   "index/video",
   "project/project",
