@@ -3,34 +3,32 @@ layout: project
 title: FAQ
 ---
 
-<div class="container">
-  <div id="faq" class="row section">
-    <h1>Frequently Asked Questions</h1>
+<div id="faq" class="row section">
+  <h1>Frequently Asked Questions</h1>
 
-    <div id="toc">
-      <ul>
-        {% for data in site.data.faq %}
-          {% if data.question %}
-            <li><a href='#{{ data.question | replace: " ", "-" | replace: "?", "" | downcase }}'>{{ data.question }}</a></li>
-          {% else %}
-            <li><a href="#">No question available</a></li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-    </div>
-
-    {% for data in site.data.faq %}
-      {% if data.question %}
-        <h2 id="{{ data.question | replace: " ", "-" | replace: "?", "" | downcase }}" class="anchor">{{ data.question }}</h2>
-      {% else %}
-        <h2 id="#" class="anchor">No question available</h2>
-      {% endif %}
-
-      {% if data.answer %}
-        <p>{{ data.answer }}</p>
-      {% else %}
-        <p>No answer available</p>
-      {% endif %}
-    {% endfor %}
+  <div id="toc">
+    <ul>
+      {% for data in site.data.faq %}
+        {% if data.question %}
+          <li><a href='#{{ data.question | replace: " ", "-" | replace: "?", "" | downcase }}'>{{ data.question }}</a></li>
+        {% else %}
+          <li><a href="#">No question available</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
   </div>
+
+  {% for data in site.data.faq %}
+    {% if data.question %}
+      <h2 id="{{ data.question | replace: " ", "-" | replace: "?", "" | downcase }}" class="anchor">{{ data.question }}</h2>
+    {% else %}
+      <h2 id="#" class="anchor">No question available</h2>
+    {% endif %}
+
+    {% if data.answer %}
+      <p>{{ data.answer }}</p>
+    {% else %}
+      <p>No answer available</p>
+    {% endif %}
+  {% endfor %}
 </div>

@@ -1,0 +1,102 @@
+#featured {
+  background: #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+  border-top: 1px solid #FFFFFF;
+  color: #333333;
+
+  h1 {
+    color: #333333;
+  }
+
+  .feature {
+    > span {
+      font-family: 'Roboto', sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      border-bottom: 1px solid #000000;
+      padding-bottom: 15px;
+    }
+
+    img {
+      max-height: 25vh;
+      max-width: 80%;
+      padding: 10px;
+    }
+  }
+
+  .mg-testimonial {
+    > span {
+      // background: rgba(0, 0, 0, 0.8);
+      background: #FFFFFF;
+
+      display: block;
+      // color: #fff;
+      color: #55437e;
+      min-height: 100%;
+      height: 400px;
+      width: 100%;
+      left: 0;
+      overflow: hidden;
+      padding: 15px;
+      margin-bottom: 30px;
+      text-align: justify;
+      font-size: 21px;
+      line-height: 1.1;
+      font-weight: 400;
+
+      &:focus,
+      &:hover {
+        opacity: 0.75;
+      }
+
+      @include media-query($screen-sm-min) {
+        font-size: 16px;
+        height: 260px;
+      }
+
+      @include media-query($screen-iphone5) {
+        font-size: 12px;
+        height: 200px;
+      }
+    }
+
+    .source {
+      float: right;
+      font-size: 15px;
+      font-style: italic;
+
+      @include media-query($screen-sm-min) {
+        font-size: 14px;
+      }
+
+      @include media-query($screen-iphone5) {
+        font-size: 10px;
+      }
+    }
+  }
+
+  .testimonial-1 {
+    color: #55437e !important;
+    background: rgba(85, 67, 126, 0.5) !important;
+  }
+
+  .testimonial-2 {
+    color: #56c7da !important;
+    background: rgba(86, 199, 218, 0.5) !important;
+  }
+
+  .testimonial-3 {
+    color: #f16549 !important;
+    background: rgba(241, 101, 73, 0.5) !important;
+  }
+
+  .testimonial-1,
+  .testimonial-2,
+  .testimonial-3 {
+    > span {
+      color: inherit;
+    }
+  }
+}
