@@ -49,6 +49,11 @@ $color: #FFFFFF;
         padding-top: 23px;
         background: $color-20;
 
+        @include media-query($screen-sm-min) {
+          font-size: 14px;
+          padding-right: 10px;
+        }
+
         &:focus,
         &:hover {
           border-bottom: 5px solid;
@@ -99,6 +104,10 @@ $color: #FFFFFF;
 
       .glyphicon {
         font-size: 14px;
+
+        @include media-query($screen-sm-min) {
+          font-size: 12px;
+        }
       }
     }
 
