@@ -19,6 +19,13 @@ paginate_base: '/blog/'
 sass:
   style: :compressed
 
+# Social Media
+facebook: https&#58;//www.facebook.com/makergirlofficial
+twitter: https&#58;//twitter.com/_MakerGirl
+instagram: https&#58;//www.instagram.com/_MakerGirl/
+linkedin: https&#58;//www.linkedin.com/company/makergirl
+youtube: https&#58;//www.youtube.com/channel/UCbaoZ7g-5RYXhDFtYiulkog/feed
+
 # Sitemap
 sitemap:
   file: "/sitemap.xml"
