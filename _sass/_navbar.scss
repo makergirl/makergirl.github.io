@@ -74,23 +74,27 @@ $color: #FFFFFF;
         border-color: #FFCC00;
       }
 
-      > a[href="#about-us"] {
+      > a[href="#events"] {
         border-color: #FF3B19;
       }
 
-      > a[href="#events"] {
+      > a[href="#archive"] {
         border-color: #99CC00;
       }
 
-      > a[href="#archive"] {
-        border-color: #0066FF;
-      }
-
       > a[href="#featured"] {
-        border-color: #0066FF;
+        border-color: #99CC00;
       }
 
       > a[href="#donate"] {
+        border-color: #0066FF;
+      }
+
+      > a[href="#about-us"] {
+        border-color: #990066;
+      }
+
+      > a[id="about"] {
         border-color: #990066;
       }
     }
@@ -147,6 +151,10 @@ $color: #FFFFFF;
       }
 
       > a[href="#about-us"] {
+        border-color: #990066;
+      }
+
+      > a[id="about"] {
         border-color: #990066;
       }
     }
