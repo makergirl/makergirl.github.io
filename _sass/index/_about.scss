@@ -14,12 +14,17 @@
     }
   }
   a {
-    color: #fff;
+    color: #000000;
+    font-weight: 600;
     text-decoration: none;
+
     &:focus,
-    &:hover,
+    &:hover {
+      opacity: 0.75;
+    }
+
     &:active {
-      opacity: 1;
+      opacity: 0.95;
     }
   }
   .badge {
