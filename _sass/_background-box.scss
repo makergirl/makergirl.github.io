@@ -8,6 +8,16 @@
   padding: 20px;
   margin: 30px;
   white-space: nowrap;
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    opacity: 0.75;
+  }
+
+  &:active {
+    opacity: 0.90;
+  }
 
   @include media-query($screen-lg-min) {
     font-size: 18px;
