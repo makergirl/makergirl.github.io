@@ -21,6 +21,13 @@ body {
   margin-right: 40px;
   margin-left: 40px;
 }
+
+.survey {
+  color: #FFFFFF;
+  font-weight: 600;
+  padding: 20px;
+  display: block;
+}
 </style>
 
 <div class="container-fluid">
@@ -39,7 +46,14 @@ body {
       Mode Attendees Per Session: {{ site.data.statistics.modeAttendees }}
     </div>
 
-    <br>
+    <br><br>
+
+    <div class="row">
+      <div class="col-md-6"><span class="survey" style="background-color: #d70206">Pre-Session Survey</span></div>
+      <div class="col-md-6"><span class="survey" style="background-color: #f05b4f">Post-Session Survey</span></div>
+    </div>
+
+    <br><br>
 
     <div class="row">
       <div class="col-md-6">

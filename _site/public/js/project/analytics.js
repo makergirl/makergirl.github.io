@@ -49,11 +49,29 @@ new Chartist.Bar('.distribution-graph', {
 * Overlapping Bars
 */
 // How much do you like science?
+// new Chartist.Bar('.overlapping-bars-1', {
+//   labels: ['0', '1', '2', '3', '4', '5'],
+//   series: [
+//     [0, 1, 0, 4, 11, 25],
+//     [0, 0, 2, 0, 6, 23]
+//   ]
+// }, {
+//   seriesBarDistance: 10
+// },
+//   ['screen and (max-width: 640px)', {
+//     seriesBarDistance: 5,
+//     axisX: {
+//       labelInterpolationFnc: function (value) {
+//         return value[0];
+//       }
+//     }
+//   }]
+// );
 new Chartist.Bar('.overlapping-bars-1', {
   labels: ['0', '1', '2', '3', '4', '5'],
   series: [
-    [0, 1, 0, 4, 11, 25],
-    [0, 0, 2, 0, 6, 23]
+    [0, 2.4, 0, 9.8, 26.8, 61],
+    [0, 0, 6.5, 0, 19.4, 74.2]
   ]
 }, {
   seriesBarDistance: 10
@@ -68,12 +86,31 @@ new Chartist.Bar('.overlapping-bars-1', {
   }]
 );
 
+
 // How much do you like technology?
+// new Chartist.Bar('.overlapping-bars-2', {
+//   labels: ['0', '1', '2', '3', '4', '5'],
+//   series: [
+//     [0, 0, 0, 4, 10, 27],
+//     [0, 0, 2, 0, 6, 23]
+//   ]
+// }, {
+//   seriesBarDistance: 10
+// },
+//   ['screen and (max-width: 640px)', {
+//     seriesBarDistance: 5,
+//     axisX: {
+//       labelInterpolationFnc: function (value) {
+//         return value[0];
+//       }
+//     }
+//   }]
+// );
 new Chartist.Bar('.overlapping-bars-2', {
   labels: ['0', '1', '2', '3', '4', '5'],
   series: [
-    [0, 0, 0, 4, 10, 27],
-    [0, 0, 2, 0, 6, 23]
+    [0, 0, 0, 9.8, 24.4, 65.9],
+    [0, 0, 0, 6.5, 19.4, 74.2]
   ]
 }, {
   seriesBarDistance: 10
@@ -89,11 +126,29 @@ new Chartist.Bar('.overlapping-bars-2', {
 );
 
 // How much do you like engineering?
+// new Chartist.Bar('.overlapping-bars-3', {
+//   labels: ['0', '1', '2', '3', '4', '5'],
+//   series: [
+//     [0, 0, 3, 7, 6, 25],
+//     [0, 0, 1, 3, 6, 21]
+//   ]
+// }, {
+//   seriesBarDistance: 10
+// },
+//   ['screen and (max-width: 640px)', {
+//     seriesBarDistance: 5,
+//     axisX: {
+//       labelInterpolationFnc: function (value) {
+//         return value[0];
+//       }
+//     }
+//   }]
+// );
 new Chartist.Bar('.overlapping-bars-3', {
   labels: ['0', '1', '2', '3', '4', '5'],
   series: [
-    [0, 0, 3, 7, 6, 25],
-    [0, 0, 1, 3, 6, 21]
+    [0, 0, 7.3, 17.1, 14.6, 61],
+    [0, 0, 3.2, 9.7, 19.4, 67.7]
   ]
 }, {
   seriesBarDistance: 10
@@ -109,11 +164,29 @@ new Chartist.Bar('.overlapping-bars-3', {
 );
 
 // How much do you like math?
+// new Chartist.Bar('.overlapping-bars-4', {
+//   labels: ['0', '1', '2', '3', '4', '5'],
+//   series: [
+//     [0, 5, 3, 10, 8, 15],
+//     [0, 3, 2, 5, 8, 13]
+//   ]
+// }, {
+//   seriesBarDistance: 10
+// },
+//   ['screen and (max-width: 640px)', {
+//     seriesBarDistance: 5,
+//     axisX: {
+//       labelInterpolationFnc: function (value) {
+//         return value[0];
+//       }
+//     }
+//   }]
+// );
 new Chartist.Bar('.overlapping-bars-4', {
   labels: ['0', '1', '2', '3', '4', '5'],
   series: [
-    [0, 5, 3, 10, 8, 15],
-    [0, 3, 2, 5, 8, 13]
+    [0, 12.2, 7.3, 24.4, 19.5, 36.6],
+    [0, 9.7, 6.5, 16.1, 25.8, 41.9]
   ]
 }, {
   seriesBarDistance: 10
@@ -129,11 +202,29 @@ new Chartist.Bar('.overlapping-bars-4', {
 );
 
 // How much do you like 3D printing?
+// new Chartist.Bar('.overlapping-bars-5', {
+//   labels: ['0', '1', '2', '3', '4', '5'],
+//   series: [
+//     [0, 0, 0, 1, 4, 36],
+//     [0, 0, 0, 0, 3, 28]
+//   ]
+// }, {
+//   seriesBarDistance: 10
+// },
+//   ['screen and (max-width: 640px)', {
+//     seriesBarDistance: 5,
+//     axisX: {
+//       labelInterpolationFnc: function (value) {
+//         return value[0];
+//       }
+//     }
+//   }]
+// );
 new Chartist.Bar('.overlapping-bars-5', {
   labels: ['0', '1', '2', '3', '4', '5'],
   series: [
-    [0, 0, 0, 1, 4, 36],
-    [0, 0, 0, 0, 3, 28]
+    [0, 0, 0, 2.4, 9.8, 87.8],
+    [0, 0, 0, 0, 9.7, 90.3]
   ]
 }, {
   seriesBarDistance: 10
