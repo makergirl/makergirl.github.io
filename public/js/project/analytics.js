@@ -45,6 +45,109 @@ new Chartist.Bar('.distribution-graph', {
   distributeSeries: true
 });
 
+/**
+* Overlapping Bars
+*/
+// How much do you like science?
+new Chartist.Bar('.overlapping-bars-1', {
+  labels: ['0', '1', '2', '3', '4', '5'],
+  series: [
+    [0, 1, 0, 4, 11, 25],
+    [0, 0, 2, 0, 6, 23]
+  ]
+}, {
+  seriesBarDistance: 10
+},
+  ['screen and (max-width: 640px)', {
+    seriesBarDistance: 5,
+    axisX: {
+      labelInterpolationFnc: function (value) {
+        return value[0];
+      }
+    }
+  }]
+);
+
+// How much do you like technology?
+new Chartist.Bar('.overlapping-bars-2', {
+  labels: ['0', '1', '2', '3', '4', '5'],
+  series: [
+    [0, 0, 0, 4, 10, 27],
+    [0, 0, 2, 0, 6, 23]
+  ]
+}, {
+  seriesBarDistance: 10
+},
+  ['screen and (max-width: 640px)', {
+    seriesBarDistance: 5,
+    axisX: {
+      labelInterpolationFnc: function (value) {
+        return value[0];
+      }
+    }
+  }]
+);
+
+// How much do you like engineering?
+new Chartist.Bar('.overlapping-bars-3', {
+  labels: ['0', '1', '2', '3', '4', '5'],
+  series: [
+    [0, 0, 3, 7, 6, 25],
+    [0, 0, 1, 3, 6, 21]
+  ]
+}, {
+  seriesBarDistance: 10
+},
+  ['screen and (max-width: 640px)', {
+    seriesBarDistance: 5,
+    axisX: {
+      labelInterpolationFnc: function (value) {
+        return value[0];
+      }
+    }
+  }]
+);
+
+// How much do you like math?
+new Chartist.Bar('.overlapping-bars-4', {
+  labels: ['0', '1', '2', '3', '4', '5'],
+  series: [
+    [0, 5, 3, 10, 8, 15],
+    [0, 3, 2, 5, 8, 13]
+  ]
+}, {
+  seriesBarDistance: 10
+},
+  ['screen and (max-width: 640px)', {
+    seriesBarDistance: 5,
+    axisX: {
+      labelInterpolationFnc: function (value) {
+        return value[0];
+      }
+    }
+  }]
+);
+
+// How much do you like 3D printing?
+new Chartist.Bar('.overlapping-bars-5', {
+  labels: ['0', '1', '2', '3', '4', '5'],
+  series: [
+    [0, 0, 0, 1, 4, 36],
+    [0, 0, 0, 0, 3, 28]
+  ]
+}, {
+  seriesBarDistance: 10
+},
+  ['screen and (max-width: 640px)', {
+    seriesBarDistance: 5,
+    axisX: {
+      labelInterpolationFnc: function (value) {
+        return value[0];
+      }
+    }
+  }]
+);
+
 // Bipolar Graph
 new Chartist.Line('.bipolar-graph', {
   labels: [1, 2, 3, 4, 5, 6, 7, 8],

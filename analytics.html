@@ -30,12 +30,26 @@ body {
     <br>
 
     <div class="row">
+      Total Sessions: {{ site.data.statistics.totalSessions }} <br>
+      First Session: {{ site.data.statistics.firstSession }} <br>
+      Last Session: {{ site.data.statistics.lastSession }} <br>
+      Total Attendees: {{ site.data.statistics.totalAttendees }} <br>
+      Average Attendees Per Session: {{ site.data.statistics.averageAttendees }} <br>
+      Median Attendees Per Session: {{ site.data.statistics.medianAttendees }} <br>
+      Mode Attendees Per Session: {{ site.data.statistics.modeAttendees }}
+    </div>
+
+    <br>
+
+    <div class="row">
       <div class="col-md-6">
-        <div class="ct-chart ct-square distribution-graph"></div>
+        How much do you like science?
+        <div class="ct-chart ct-square overlapping-bars-1"></div>
       </div>
 
       <div class="col-md-6">
-        <div class="ct-chart ct-square line-graph"></div>
+        How much do you like technology?
+        <div class="ct-chart ct-square overlapping-bars-2"></div>
       </div>
     </div>
 
@@ -43,11 +57,25 @@ body {
 
     <div class="row">
       <div class="col-md-6">
-        <div class="ct-chart ct-square pie-chart"></div>
+        How much do you like engineering?
+        <div class="ct-chart ct-square overlapping-bars-3"></div>
       </div>
 
       <div class="col-md-6">
-        <div class="ct-chart ct-square bipolar-graph"></div>
+        How much do you like math?
+        <div class="ct-chart ct-square overlapping-bars-4"></div>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+      <div class="col-md-6">
+        How much do you like 3D printing?
+        <div class="ct-chart ct-square overlapping-bars-5"></div>
+      </div>
+
+      <div class="col-md-6">
       </div>
     </div>
   </div>
