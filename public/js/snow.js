@@ -16,7 +16,8 @@ var snowtype = new Array("Times", "Arial", "Times", "Verdana")
 var snowletter = "*"
 
 // Set the speed of sinking (recommended values range from 0.3 to 2)
-var sinkspeed = 0.6
+// var sinkspeed = 0.6
+var sinkspeed = 1.15
 
 // Set the maximum-size of your snowflakes
 var snowmaxsize = 50
@@ -31,7 +32,7 @@ var snowminsize = 15
 var snowingzone = 1
 
 // isClicked
-var isClicked = 0
+// var isClicked = 0
 
 ///////////////////////////////////////////////////////////////////////////
 // CONFIGURATION ENDS HERE
@@ -59,46 +60,42 @@ function randommaker(range) {
 }
 
 function initsnow() {
-  if(isClicked == 0) {
-    if (ie5 || opera) {
-      marginbottom = document.body.scrollHeight
-      marginright = document.body.clientWidth - 15
-    } else if (ns6) {
-      marginbottom = document.body.scrollHeight
-      marginright = window.innerWidth - 15
-    }
-    var snowsizerange = snowmaxsize - snowminsize
-    for (i = 0; i <= snowmax; i++) {
-      crds[i] = 0;
-      lftrght[i] = Math.random() * 15;
-      x_mv[i] = 0.03 + Math.random() / 10;
-      snow[i] = document.getElementById("s" + i)
-      snow[i].style.fontFamily = snowtype[randommaker(snowtype.length)]
-      snow[i].size = randommaker(snowsizerange) + snowminsize
-      snow[i].style.fontSize = snow[i].size + 'px';
-      snow[i].style.color = snowcolor[randommaker(snowcolor.length)]
-      snow[i].style.zIndex = 1000
-      snow[i].sink = sinkspeed * snow[i].size / 5
-      if (snowingzone == 1) {
-        snow[i].posx = randommaker(marginright - snow[i].size)
-      }
-      if (snowingzone == 2) {
-        snow[i].posx = randommaker(marginright / 2 - snow[i].size)
-      }
-      if (snowingzone == 3) {
-        snow[i].posx = randommaker(marginright / 2 - snow[i].size) + marginright / 4
-      }
-      if (snowingzone == 4) {
-        snow[i].posx = randommaker(marginright / 2 - snow[i].size) + marginright / 2
-      }
-      snow[i].posy = randommaker(2 * marginbottom - marginbottom - 2 * snow[i].size)
-      snow[i].style.left = snow[i].posx + 'px';
-      snow[i].style.top = snow[i].posy + 'px';
-    }
-    movesnow()
+  if (ie5 || opera) {
+    marginbottom = document.body.scrollHeight
+    marginright = document.body.clientWidth - 15
+  } else if (ns6) {
+    marginbottom = document.body.scrollHeight
+    marginright = window.innerWidth - 15
   }
-
-  isClicked = 1;
+  var snowsizerange = snowmaxsize - snowminsize
+  for (i = 0; i <= snowmax; i++) {
+    crds[i] = 0;
+    lftrght[i] = Math.random() * 15;
+    x_mv[i] = 0.03 + Math.random() / 10;
+    snow[i] = document.getElementById("s" + i)
+    snow[i].style.fontFamily = snowtype[randommaker(snowtype.length)]
+    snow[i].size = randommaker(snowsizerange) + snowminsize
+    snow[i].style.fontSize = snow[i].size + 'px';
+    snow[i].style.color = snowcolor[randommaker(snowcolor.length)]
+    snow[i].style.zIndex = 1000
+    snow[i].sink = sinkspeed * snow[i].size / 5
+    if (snowingzone == 1) {
+      snow[i].posx = randommaker(marginright - snow[i].size)
+    }
+    if (snowingzone == 2) {
+      snow[i].posx = randommaker(marginright / 2 - snow[i].size)
+    }
+    if (snowingzone == 3) {
+      snow[i].posx = randommaker(marginright / 2 - snow[i].size) + marginright / 4
+    }
+    if (snowingzone == 4) {
+      snow[i].posx = randommaker(marginright / 2 - snow[i].size) + marginright / 2
+    }
+    snow[i].posy = randommaker(2 * marginbottom - marginbottom - 2 * snow[i].size)
+    snow[i].style.left = snow[i].posx + 'px';
+    snow[i].style.top = snow[i].posy + 'px';
+  }
+  movesnow()
 }
 
 function movesnow() {
