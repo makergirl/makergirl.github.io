@@ -1,4 +1,15 @@
 /**
+* Holiday Special
+* Assets baclink: http://icons8.com
+*/
+function holiday() {
+  document.getElementById("home").style.backgroundImage = "url('/css/bg_holiday.png')";
+  document.getElementById("home").style.backgroundPosition = "50% 75%";
+  document.getElementById("homeLogo").src = "/public/mg-logo1_holiday.png";
+}
+
+
+/**
 * Let it snow!
 */
 
@@ -32,7 +43,7 @@ var snowminsize = 15
 var snowingzone = 1
 
 // isClicked
-// var isClicked = 0
+var isClicked = 0
 
 ///////////////////////////////////////////////////////////////////////////
 // CONFIGURATION ENDS HERE
@@ -60,6 +71,12 @@ function randommaker(range) {
 }
 
 function initsnow() {
+
+  if(isClicked == 0) {
+    holiday();
+  }
+
+
   if (ie5 || opera) {
     marginbottom = document.body.scrollHeight
     marginright = document.body.clientWidth - 15
@@ -96,6 +113,8 @@ function initsnow() {
     snow[i].style.top = snow[i].posy + 'px';
   }
   movesnow()
+
+  isClicked = 1;
 }
 
 function movesnow() {
