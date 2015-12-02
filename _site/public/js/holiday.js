@@ -2,6 +2,11 @@
 * Holiday Special
 * Assets baclink: http://icons8.com
 */
+preload1 = new Image();
+preload2 = new Image();
+preload1.src = "/css/bg_holiday.png";
+preload2.src = "/public/mg-logo1_holiday.png";
+
 function holiday() {
   document.getElementById("home").style.backgroundImage = "url('/css/bg_holiday.png')";
   document.getElementById("home").style.backgroundPosition = "50% 75%";
@@ -31,11 +36,11 @@ var snowletter = "*"
 var sinkspeed = 1.15
 
 // Set the maximum-size of your snowflakes
-var snowmaxsize = 50
+var snowmaxsize = 75
 
 // Set the minimal-size of your snowflakes
 // var snowminsize = 8
-var snowminsize = 15
+var snowminsize = 35
 
 // Set the snowing-zone
 // Set 1 for all-over-snowing, set 2 for left-side-snowing
