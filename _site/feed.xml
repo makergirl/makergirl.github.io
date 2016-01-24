@@ -5,34 +5,22 @@
     <description>MakerGirl is a program led by University of Illinois students that educates 7-10 year old girls on STEM (Science, Technology, Engineering, Mathematics) fields through 3-D printing workshops at the College of Business MakerLab, creative activities, and lessons on leading women in STEM fields.</description>
     <link>http://makergirl.us//</link>
     <atom:link href="http://makergirl.us//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 24 Jan 2016 15:50:40 -0600</pubDate>
-    <lastBuildDate>Sun, 24 Jan 2016 15:50:40 -0600</lastBuildDate>
+    <pubDate>Sun, 24 Jan 2016 16:00:41 -0600</pubDate>
+    <lastBuildDate>Sun, 24 Jan 2016 16:00:41 -0600</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
     
       <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+        <title>Hello, World 1!</title>
+        <description>&lt;p&gt;![Hello, World!](/public/img/gummy.jpg&lt;/p&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique interdum mattis. Curabitur congue a purus vel facilisis. Vivamus lacinia tempus nulla quis fermentum. Integer ac purus justo. Maecenas quis augue non ex aliquet fermentum. In eu porttitor velit. Nulla ex tellus, aliquam sit amet sagittis vitae, lobortis non neque. Suspendisse risus nibh, pulvinar ut orci non, iaculis porta tortor. Vestibulum dictum tristique dui non maximus. Curabitur est elit, pellentesque eu felis sed, dapibus egestas nibh. Sed accumsan porta ligula, ac ullamcorper massa viverra in. Duis id purus id quam interdum ultrices. Vivamus id sollicitudin mi. Aliquam erat volutpat.&lt;/p&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;Tom&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &#39;Hi, Tom&#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Aenean varius pharetra ex, sed semper ligula imperdiet a. Nulla sed justo orci. Vivamus porttitor, justo sed tristique condimentum, risus metus gravida sapien, at pulvinar lectus ex ut turpis. Vestibulum ut nisi ipsum. In quis tortor fringilla, posuere ligula aliquam, tincidunt nisl. Maecenas et nisi ut justo ornare vehicula a in nisi. Fusce fermentum ullamcorper turpis, ut maximus dui feugiat non. Cras efficitur tristique ligula eu viverra. Curabitur finibus augue at lorem placerat, vel finibus magna bibendum. Pellentesque lobortis ac velit vel accumsan. Etiam consectetur, leo non finibus sollicitudin, urna mi tempus nisl, ut finibus est diam at sem. Donec malesuada diam non enim feugiat, vel blandit lectus sagittis. Aenean tincidunt lacus et velit volutpat pulvinar. Sed interdum rutrum sem, at malesuada quam aliquet sit amet.&lt;/p&gt;
 </description>
-        <pubDate>Thu, 09 Jul 2015 14:28:51 -0500</pubDate>
-        <link>http://makergirl.us//jekyll/update/2015/07/09/welcome-to-jekyll/</link>
-        <guid isPermaLink="true">http://makergirl.us//jekyll/update/2015/07/09/welcome-to-jekyll/</guid>
+        <pubDate>Sun, 24 Jan 2016 00:00:00 -0600</pubDate>
+        <link>http://makergirl.us//2016/01/24/welcome-to-makergirl/</link>
+        <guid isPermaLink="true">http://makergirl.us//2016/01/24/welcome-to-makergirl/</guid>
         
-        
-        <category>jekyll</category>
-        
-        <category>update</category>
         
       </item>
     
