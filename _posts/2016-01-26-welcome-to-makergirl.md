@@ -5,7 +5,7 @@ thumbnail: public/img/gummy.jpg
 subtitle:
 ---
 
-![Hello, World!]({{ site.baseurl }}public/img/gummy.jpg
+![Hello, World!]({{ site.baseurl }}public/img/gummy.jpg)
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique interdum mattis. Curabitur congue a purus vel facilisis. Vivamus lacinia tempus nulla quis fermentum. Integer ac purus justo. Maecenas quis augue non ex aliquet fermentum. In eu porttitor velit. Nulla ex tellus, aliquam sit amet sagittis vitae, lobortis non neque. Suspendisse risus nibh, pulvinar ut orci non, iaculis porta tortor. Vestibulum dictum tristique dui non maximus. Curabitur est elit, pellentesque eu felis sed, dapibus egestas nibh. Sed accumsan porta ligula, ac ullamcorper massa viverra in. Duis id purus id quam interdum ultrices. Vivamus id sollicitudin mi. Aliquam erat volutpat.
 
