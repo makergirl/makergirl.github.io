@@ -1,25 +1,133 @@
 ---
-layout: default
+layout: project
 title: Blog
 ---
 
+<div class="posts preview">
+  {% for post in paginator.posts %}
+    {% if forloop.last %}
+      <div class="post">
+    {% else %}
+      <div class="post post-border">
+    {% endif %}
 
-<div class="home">
+    {% if post.thumbnail %}
+      {% if forloop.first and page.url == "/blog/" %}
+      <a href="{{ post.url }}">
+        <div class="thumbnail first-thumbnail">
+          <img src="{{ site.baseurl }}{{ post.thumbnail }}">
+        </div>
+      </a>
+      {% else %}
+      <a href="{{ post.url }}">
+        <div class="thumbnail">
+          <img src="{{ site.baseurl }}{{ post.thumbnail }}">
+        </div>
+      </a>
+      {% endif %}
+    {% endif %}
 
-  <h1 class="page-heading">Posts</h1>
+    {% if post.title %}
+      {% if forloop.first and page.url == "/blog/" %}
+      <h1 class="post-title preview-title first-title">
+        <a href="{{ post.url }}">
+          {{ post.title }}
+        </a>
+      </h1>
+      {% else %}
+      <h1 class="post-title preview-title">
+        <a href="{{ post.url }}">
+          {{ post.title }}
+        </a>
+      </h1>
+      {% endif %}
+    {% endif %}
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <span class="post-meta preview-post-meta">
+      <abbr class="timeago" title="{{ post.date | date: '%A, %b %-d, %Y' }}">
+        {{ post.date | date: "%A, %b %-d, %Y" }}
+      </abbr>
+      <!-- {{ post.date | date: "%A, %b %-d, %Y" }} -->
+      <!-- {{ post.date | timeago }} -->
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+      &nbsp; &middot; &nbsp;
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+      {% if site.wpm %}
+        {% assign readtime = post.content | strip_html | number_of_words | append: '.0' | divided_by:site.wpm %}
+      {% else %}
+        {% assign readtime = post.content | strip_html | number_of_words | append: '.0' | divided_by:180 %}
+      {% endif %}
 
+      {% if site.readtime %}
+        {% if readtime > 60 %}
+          {% assign readtime_hours = readtime | divided_by: 60 %}
+          {% assign readtime_minutes = readtime | modulo:60 %}
+          {% if readtime_hours > 1 and readtime_hours < 2 %} 1 hr
+          {% else %}<span class="hour">{{ readtime_hours }}</span> hr
+          {% endif %}
+
+          {% if readtime_minutes < 1 %}
+          {% elsif readtime_minutes > 1 and readtime_minutes < 1.5 %} and 1 min
+          {% elsif readtime_minutes > 1.5 %} and <span class="time">{{ readtime_minutes }}</span> min
+          {% endif %}
+        {% else %}
+          {% if readtime < 1 %} Less than 1 min
+          {% elsif readtime > 1 and readtime < 1.5 %} 1 min
+          {% elsif readtime > 1.5 %}<span class="time">{{ readtime }}</span> min
+          {% endif %}
+        {% endif %}
+        read
+      {% endif %}
+    </span>
+
+    {% if post.content %}
+      {% assign post_content = post.content | strip_html %}
+      {% if post_content.size > 30 %}
+        {{ post.content | strip_html | truncatewords: 30 }}
+      {% else %}
+        {% if post.subtitle %}
+          {{ post.subtitle }}
+        {% else %}
+          {{ post.subtitle }}
+        {% endif %}
+      {% endif %}
+    {% else %}
+      {% if post.subtitle %}
+        {{ post.subtitle }}
+      {% else %}
+        {{ post.subtitle }}
+      {% endif %}
+    {% endif %}
+    </div>
+  {% endfor %}
 </div>
+
+<center>
+  <div class="pagination">
+    {% if paginator.next_page %}
+      <a class="pagination-item older" href="{{ site.paginate_base }}page{{paginator.next_page}}">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+    {% else %}
+      <span class="pagination-item older">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </span>
+    {% endif %}
+
+    {% if paginator.previous_page %}
+      {% if paginator.page == 2 %}
+        <a class="pagination-item newer" href="/blog">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      {% else %}
+        <a class="pagination-item newer" href="{{ site.paginate_base }}page{{paginator.previous_page}}">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      {% endif %}
+    {% else %}
+      <span class="pagination-item newer">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </span>
+    {% endif %}
+  </div>
+</center>

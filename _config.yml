@@ -1,8 +1,7 @@
 # Dependencies
 markdown: redcarpet
 hightlighter: pygments
-gems:
-  - jekyll-paginate
+gems: [jekyll-paginate]
 
 # Permalinks
 permalink: pretty
@@ -39,6 +38,30 @@ sitemap:
     - "/index.html"
   change_frequency_name: "change_frequency"
   priority_name: "priority"
+
+# Time Ago
+jekyll_timeago:
+  depth:            2 # Level of detail
+  today:            'today'
+  yesterday:        'yesterday'
+  tomorrow:         'tomorrow'
+  and:              'and'
+  suffix:           'ago'
+  prefix:           ''
+  suffix_future:    ''
+  prefix_future:    'in'
+  years:            'years'
+  year:             'year'
+  months:           'months'
+  month:            'month'
+  weeks:            'weeks'
+  week:             'week'
+  days:             'days'
+  day:              'day'
+
+# Estimated Read Time
+readtime:            true
+wpm:                 200
 
 # Author
 author:

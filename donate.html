@@ -1,0 +1,33 @@
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+<script src="https://checkout.stripe.com/checkout.js"></script>
+
+<button id="customButton">Donate</button>
+
+<script>
+  var handler = StripeCheckout.configure({
+    key: 'pk_test_46nn6ZepvSacpzr0DJ9GfExc',
+    image: '/img/documentation/checkout/marketplace.png',
+    locale: 'auto',
+    token: function(token) {
+      // Use the token to create the charge with a server-side script.
+      // You can access the token ID with `token.id`
+    }
+  });
+
+  $('#customButton').on('click', function(e) {
+    // Open Checkout with further options
+    handler.open({
+      'name': 'MakerGirl',
+      'description': 'Donate to MakerGirl',
+      'amount': 4000,
+      'billing-address': true
+    });
+    e.preventDefault();
+  });
+
+  // Close Checkout on page navigation
+  $(window).on('popstate', function() {
+    handler.close();
+  });
+</script>

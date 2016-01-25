@@ -1,0 +1,266 @@
+
+/*
+ * Posts and pages
+ *
+ * Each post is wrapped in `.post` and is used on default and post layouts. Each
+ * page is wrapped in `.page` and is only used on the page layout.
+ */
+
+.page,
+.post {
+  margin-bottom: 4em;
+}
+
+/* Blog post or page title */
+.page-title,
+.post-title,
+.post-title a {
+  color: #303030;
+}
+.page-title,
+.post-title {
+  margin-top: 0;
+}
+
+/* Meta data line below post title */
+.post-date {
+  display: block;
+  margin-top: -.5rem;
+  margin-bottom: 1rem;
+  color: #9a9a9a;
+}
+
+/* Related posts */
+.related {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid #eee;
+}
+.related-posts {
+  padding-left: 0;
+  list-style: none;
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts li small {
+  font-size: 75%;
+  color: #999;
+}
+.related-posts li a:hover {
+  color: #268bd2;
+  text-decoration: none;
+}
+.related-posts li a:hover small {
+  color: inherit;
+}
+
+
+/*
+ * Pagination
+ *
+ * Super lightweight (HTML-wise) blog pagination. `span`s are provide for when
+ * there are no more previous or next posts to show.
+ */
+
+.pagination {
+  overflow: hidden; /* clearfix */
+  margin-left: -1rem;
+  margin-right: -1rem;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  color: #ccc;
+  text-align: center;
+}
+
+/* Pagination items can be `span`s or `a`s */
+.pagination-item {
+  display: block;
+  padding: 1rem;
+  border: 1px solid #eee;
+}
+.pagination-item:first-child {
+  margin-bottom: -1px;
+}
+
+/* Only provide a hover state for linked pagination items */
+a.pagination-item:hover {
+  background-color: #f5f5f5;
+}
+
+@media (min-width: 30em) {
+  .pagination {
+    margin: 3rem 0;
+  }
+  .pagination-item {
+    float: left;
+    width: 50%;
+  }
+  .pagination-item:first-child {
+    margin-bottom: 0;
+    border-top-left-radius:    4px;
+    border-bottom-left-radius: 4px;
+  }
+  .pagination-item:last-child {
+    margin-left: -1px;
+    border-top-right-radius:    4px;
+    border-bottom-right-radius: 4px;
+  }
+}
+
+
+.page, .post {
+  margin-bottom: 3em;
+  padding-bottom: 2em;
+}
+.post-border {
+  border-bottom-color: rgba(0, 0, 0, 0.0470588);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+.post-meta {
+  display: block;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+  color: #9a9a9a;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+.post-icon {
+  font-size: 16px;
+  vertical-align: middle;
+  margin-top: -2px;
+}
+.post-badge, .post-badge a {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 10em;
+  padding: 12px 12px;
+  vertical-align: middle;
+  outline: 0;
+  cursor: pointer;
+}
+.post-badge:hover, .post-badge:focus {
+  opacity: 0.80;
+}
+.post-badge:active {
+  opacity: 0.95;
+}
+a span.post-subtitle, .post-subtitle {
+  color: #9a9a9a;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+span a:hover, span a:focus {
+  border-bottom: none;
+}
+.badge-circle {
+  height: 39px;
+  width: 39px;
+}
+.badge-right {
+  float: right;
+}
+.badge-left {
+  float: left;
+}
+.pagination {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+a.pagination-item {
+  color: #333333;
+}
+@media (max-width: 48em) {
+  .pagination-item {
+    display: inline-block;
+  }
+}
+.thumbnail {
+  float: right;
+  display: block;
+  border: none;
+  height: 175px;
+  width: 175px;
+  overflow: hidden;
+  padding: 10px;
+}
+.thumbnail img {
+  width: 250px;
+}
+.first-thumbnail {
+  float: none;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+}
+.first-thumbnail img {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+@media (max-width: 48em) {
+  .thumbnail {
+    float: none;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+  }
+}
+.preview {
+  font-size: 18px;
+}
+.preview-title, .preview-title:hover, .preview-title:focus {
+  font-size: 24px;
+}
+
+/*.first-title, .first-title:hover, .first-title:focus, .first-title:active {
+  font-size: 36px;
+}*/
+
+
+/*@media (max-width: 48em) {
+  .first-title, .first-title:hover, .first-title:focus, .first-title:active  {
+    font-size: 24px;
+  }
+}*/
+
+.preview-post-meta {
+  font-size: 13px;
+}
+abbr {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  text-transform: none;
+}
+abbr[title] {
+  border: none;
+  cursor: initial;
+}
+#hide0, #hide1, #hide2 {
+  display: none;
+}
+.page-title, .post-title {
+  padding-bottom: 15px;
+}
+.post-subtitle {
+  font-family: 'Open Sans', sans-serif;
+  color: rgba(0, 0, 0, 0.44);
+  line-height: 1.2;
+  font-weight: 300;
+  font-size: 28px;
+  padding-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .post-subtitle {
+    font-size: 32px;
+  }
+}
+li p {
+  margin: auto !important;
+}
