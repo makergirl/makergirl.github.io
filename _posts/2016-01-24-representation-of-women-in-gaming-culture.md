@@ -4,31 +4,31 @@ title: Representation of Women in Gaming Culture
 thumbnail: public/img/2016/01/image1.png
 subtitle:
 ---
-#Representation of Women in Gaming Culture
+# Representation of Women in Gaming Culture
 
-My parents bought me my first video game system when I was five, and it was a Nintentdo 64. This was the start of my interest in video games, specifically console games, but I didn’t really get into them until I started playing PC (computer) games when I was 17.
+My parents bought me my first video game system when I was five, and it was a Nintendo 64. This was the start of my interest in video games, specifically console games, but I didn’t really get into them until I started playing PC (computer) games when I was 17.
 
 To name a few:
 
 Minecraft- Independent/Sandbox game
 
-![asdasds]({{ site.baseurl }}public/img/2016/01/image1.png)
+![asdasds]({{ site.baseurl }}public/img/2016/01/image1.jpg)
 
 Guild Wars 2- Massively Multiplayer Online Role-playing Game (MMORPG)
 
-![asdasds]({{ site.baseurl }}public/img/2016/01/image2.png)
+![asdasds]({{ site.baseurl }}public/img/2016/01/image2.jpg)
 
 Hearthstone- Strategy card game
 
-![asdasds]({{ site.baseurl }}public/img/2016/01/image3.png)
+![asdasds]({{ site.baseurl }}public/img/2016/01/image3.jpg)
 
 League of Legends- Multiplayer Online Battle Arena (MOBA)
 
-![asdasds]({{ site.baseurl }}public/img/2016/01/image4.png)
+![asdasds]({{ site.baseurl }}public/img/2016/01/image4.jpg)
 
 Counterstrike – First Person Shooter (FPS)
 
-![asdasds]({{ site.baseurl }}public/img/2016/01/image5.png)
+![asdasds]({{ site.baseurl }}public/img/2016/01/image5.jpg)
 
 
 Generally, I like to try different games with my friends, but these are the ones I play on a regular basis. Although the genres of all these games are significantly different most of their communities have something in common: A disproportionate number of males to females. While the number of female players to male players can change depending on the game, there is still an underrepresentation. This is largely due to the gaming industry in general catering their advertising to boys.
