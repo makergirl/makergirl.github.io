@@ -5,15 +5,9 @@
     <description>MakerGirl is a program led by University of Illinois students that educates 7-10 year old girls on STEM (Science, Technology, Engineering, Mathematics) fields through 3-D printing workshops at the College of Business MakerLab, creative activities, and lessons on leading women in STEM fields.</description>
     <link>http://makergirl.us//</link>
     <atom:link href="http://makergirl.us//feed.xml" rel="self" type="application/rss+xml"/>
-<<<<<<< HEAD
-    <pubDate>Sun, 24 Jan 2016 20:02:01 -0600</pubDate>
-    <lastBuildDate>Sun, 24 Jan 2016 20:02:01 -0600</lastBuildDate>
+    <pubDate>Sun, 14 Feb 2016 21:13:23 -0600</pubDate>
+    <lastBuildDate>Sun, 14 Feb 2016 21:13:23 -0600</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
-=======
-    <pubDate>Sun, 14 Feb 2016 19:48:59 -0600</pubDate>
-    <lastBuildDate>Sun, 14 Feb 2016 19:48:59 -0600</lastBuildDate>
-    <generator>Jekyll v3.1.1</generator>
->>>>>>> origin/master
     
       <item>
         <title>Hello, World 1!</title>
@@ -32,27 +26,47 @@
     
       <item>
         <title>Representation of Women in Gaming Culture</title>
-        <description>&lt;p&gt;Representation of Women in Gaming Culture
-My parents bought me my first video game system when I was five, and it was a Nintentdo 64. This was the start of my interest in video games, specifically console games, but I didn’t really get into them until I started playing PC (computer) games when I was 17.&lt;/p&gt;
+        <description>&lt;h1 id=&quot;representation-of-women-in-gaming-culture&quot;&gt;Representation of Women in Gaming Culture&lt;/h1&gt;
 
-&lt;p&gt;To name a few:
-&lt;img src=&quot;/public/img/2016/01/image1.png&quot; alt=&quot;asdasds&quot;&gt;
-Minecraft- Independent/Sandbox game
-Guild Wars 2- Massively Multiplayer Online Role-playing Game (MMORPG)
-Hearthstone- Strategy card game
-League of Legends- Multiplayer Online Battle Arena (MOBA)
-Counterstrike – First Person Shooter (FPS)&lt;/p&gt;
+&lt;p&gt;My parents bought me my first video game system when I was five, and it was a Nintendo 64. This was the start of my interest in video games, specifically console games, but I didn’t really get into them until I started playing PC (computer) games when I was 17.&lt;/p&gt;
+
+&lt;p&gt;To name a few:&lt;/p&gt;
+
+&lt;p&gt;Minecraft- Independent/Sandbox game&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/img/2016/01/image1.jpg&quot; alt=&quot;asdasds&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Guild Wars 2- Massively Multiplayer Online Role-playing Game (MMORPG)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/img/2016/01/image2.jpg&quot; alt=&quot;asdasds&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Hearthstone- Strategy card game&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/img/2016/01/image3.jpg&quot; alt=&quot;asdasds&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;League of Legends- Multiplayer Online Battle Arena (MOBA)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/img/2016/01/image4.png&quot; alt=&quot;asdasds&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Counterstrike – First Person Shooter (FPS)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/img/2016/01/image5.jpg&quot; alt=&quot;asdasds&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Generally, I like to try different games with my friends, but these are the ones I play on a regular basis. Although the genres of all these games are significantly different most of their communities have something in common: A disproportionate number of males to females. While the number of female players to male players can change depending on the game, there is still an underrepresentation. This is largely due to the gaming industry in general catering their advertising to boys.&lt;/p&gt;
 
-&lt;p&gt;When I am online I am almost always on some type of voice chat like skype. In my own personal experience, I am sometimes the only girl or one of two girls that are playing the game or in the voice chat. This has been consistently true for every chat and friend group I have joined. If you do a quick google search many statistics will come up showing that women make up 48%-52% of “gamers.” Personally, I do not agree with this statistic. After looking into the types of video games the polls consisted of, mobile games like Candy Crush and Trivia Crack are always included in these stats. Another example of this is a game like Farmville on Facebook. While these are technically a type of video game, people that play these games are not usually a part of what most gamers consider gaming culture. If I were to take a guess at the percentage of female to male gamers based on what I think a gamer is, I would say it is closer to 40-60.&lt;/p&gt;
+&lt;p&gt;When I am online I am almost always on some type of voice chat like Skype. In my own personal experience, I am sometimes the only girl or one of two girls that are playing the game or in the voice chat. This has been consistently true for every chat and friend group I have joined. If you do a quick google search many statistics will come up showing that women make up 48%-52% of “gamers.” Personally, I do not agree with this statistic. After looking into the types of video games the polls consisted of, mobile games like Candy Crush and Trivia Crack are always included in these stats. Another example of this is a game like Farmville on Facebook. While these are technically a type of video game, people that play these games are not usually a part of what most gamers consider gaming culture. If I were to take a guess at the percentage of female to male gamers based on what I think a gamer is, I would say it is closer to 40-60.&lt;/p&gt;
 
 &lt;p&gt;Regardless, the overwhelming perception is that “girl gamers” tend to be few and far between, which is something that will hopefully change with time. Since this is the perception of the gaming demographic the gaming industry will continue to cater to men. This is apparent in the objectification and sexualization of female characters in games. Unfortunately, this also translates to girl gamers in real life as well.&lt;/p&gt;
 
+&lt;p&gt;&lt;img src=&quot;/public/img/2016/01/image6.jpg&quot; alt=&quot;asdasds&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;Today is becoming increasingly popular to “stream” a video game. Streaming is when someone shares an online video in real time of them playing the video game. They will often have a webcam on them while they play the game as well; a very popular streamer known as Kaceytron often dresses provocatively in order to get more viewers for her channel. Is she an accurate representation of most girl gamers? No, but she is playing into how women are objectified in video games in order to make money.&lt;/p&gt;
 
-&lt;p&gt;I think that in order for the demographic in gaming culture to change, the stereotype that video games are for boys needs to change. If this changes the industry may start to change their target audience to include all genders instead of just catering to one.
--Alyssa&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/2016/01/image7.png&quot; alt=&quot;asdasds&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I think that in order for the demographic in gaming culture to change, the stereotype that video games are for boys needs to change. If this changes the industry may start to change their target audience to include all genders instead of just catering to one.&lt;/p&gt;
+
+&lt;p&gt;-Alyssa&lt;/p&gt;
 </description>
         <pubDate>Sun, 24 Jan 2016 00:00:00 -0600</pubDate>
         <link>http://makergirl.us//2016/01/24/representation-of-women-in-gaming-culture/</link>
