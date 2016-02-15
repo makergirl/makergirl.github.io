@@ -5,13 +5,19 @@
     <description>MakerGirl is a program led by University of Illinois students that educates 7-10 year old girls on STEM (Science, Technology, Engineering, Mathematics) fields through 3-D printing workshops at the College of Business MakerLab, creative activities, and lessons on leading women in STEM fields.</description>
     <link>http://makergirl.us//</link>
     <atom:link href="http://makergirl.us//feed.xml" rel="self" type="application/rss+xml"/>
+<<<<<<< HEAD
     <pubDate>Sun, 24 Jan 2016 20:02:01 -0600</pubDate>
     <lastBuildDate>Sun, 24 Jan 2016 20:02:01 -0600</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+=======
+    <pubDate>Sun, 14 Feb 2016 19:48:59 -0600</pubDate>
+    <lastBuildDate>Sun, 14 Feb 2016 19:48:59 -0600</lastBuildDate>
+    <generator>Jekyll v3.1.1</generator>
+>>>>>>> origin/master
     
       <item>
         <title>Hello, World 1!</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/public/img/gummy.jpg&quot; alt=&quot;Hello, World!&quot;&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;/public/img/gummy.jpg&quot; alt=&quot;Hello, World!&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique interdum mattis. Curabitur congue a purus vel facilisis. Vivamus lacinia tempus nulla quis fermentum. Integer ac purus justo. Maecenas quis augue non ex aliquet fermentum. In eu porttitor velit. Nulla ex tellus, aliquam sit amet sagittis vitae, lobortis non neque. Suspendisse risus nibh, pulvinar ut orci non, iaculis porta tortor. Vestibulum dictum tristique dui non maximus. Curabitur est elit, pellentesque eu felis sed, dapibus egestas nibh. Sed accumsan porta ligula, ac ullamcorper massa viverra in. Duis id purus id quam interdum ultrices. Vivamus id sollicitudin mi. Aliquam erat volutpat.&lt;/p&gt;
 
@@ -57,7 +63,7 @@ Counterstrike – First Person Shooter (FPS)&lt;/p&gt;
     
       <item>
         <title>Hello, World!</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/public/img/2013/02/hello_001.jpg&quot; alt=&quot;Hello, World!&quot;&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;/public/img/2013/02/hello_001.jpg&quot; alt=&quot;Hello, World!&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I have gone back and forth trying to decide whether I should continue this website or not. There were so many questions going inside my head for the past few days. &lt;em&gt;Will this be worth it? What will people say? Do I really have the time for this?&lt;/em&gt; In the end, I just decided to continue and be ready to face all the challenges that will come with it. So, here it is. Welcome to my new website, josephmilla.com!&lt;/p&gt;
 </description>
@@ -70,7 +76,7 @@ Counterstrike – First Person Shooter (FPS)&lt;/p&gt;
     
       <item>
         <title>Hello, World!</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/public/img/2013/02/hello_001.jpg&quot; alt=&quot;Hello, World!&quot;&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;/public/img/2013/02/hello_001.jpg&quot; alt=&quot;Hello, World!&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I have gone back and forth trying to decide whether I should continue this website or not. There were so many questions going inside my head for the past few days. &lt;em&gt;Will this be worth it? What will people say? Do I really have the time for this?&lt;/em&gt; In the end, I just decided to continue and be ready to face all the challenges that will come with it. So, here it is. Welcome to my new website, josephmilla.com!&lt;/p&gt;
 </description>
@@ -83,7 +89,7 @@ Counterstrike – First Person Shooter (FPS)&lt;/p&gt;
     
       <item>
         <title>Hasdasda</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/public/img/2013/02/hello_001.jpg&quot; alt=&quot;asdasds&quot;&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;/public/img/2013/02/hello_001.jpg&quot; alt=&quot;asdasds&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I have gone back and forth trying to decide whether I should continue this website or not. There were so many questions going inside my head for the past few days. &lt;em&gt;Will this be worth it? What will people say? Do I really have the time for this?&lt;/em&gt; In the end, I just decided to continue and be ready to face all the challenges that will come with it. So, here it is. Welcome to my new website, josephmilla.com!&lt;/p&gt;
 </description>
