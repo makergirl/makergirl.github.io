@@ -171,6 +171,13 @@ title: About
       {% endif %}
 
       <span>
+        {% if member.name.first %}
+        <a href="{{ site.baseurl }}{{ member.name.first | downcase }}" target="_blank">
+          <span class="badge">
+            <span class="glyphicon glyphicon-user"></span>
+          </span>
+        </a>
+        {% endif %}
         {% if member.linkedin %}
         <a href="{{ member.linkedin }}" target="_blank">
           <span class="badge">
