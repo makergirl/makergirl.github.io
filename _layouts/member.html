@@ -1,0 +1,10 @@
+---
+layout: project
+---
+
+<div class="row project-section">
+
+  <img src="{{ site.baseurl }}public/img/members/{% if page.photo %}{{ page.photo }}{% else %}{{ page.title | split:' ' | first | downcase }}.png{% endif %}" class="img img-responsive full-width"/>
+
+  <a href="{{ site.baseurl }}{{ page.title | split:' ' | first | downcase }}">{{ page.title }}</a>
+</div>
