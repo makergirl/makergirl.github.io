@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Representation of Women in Gaming Culture
-thumbnail: public/img/2016/01/image1.jpg
+thumbnail: public/img/2016/01/image1.png
 subtitle:
 ---
 # Representation of Women in Gaming Culture
@@ -12,7 +12,7 @@ To name a few:
 
 Minecraft- Independent/Sandbox game
 
-![Minecraft]({{ site.baseurl }}public/img/2016/01/image1.jpg)
+![Minecraft]({{ site.baseurl }}public/img/2016/01/image1.png)
 
 Guild Wars 2- Massively Multiplayer Online Role-playing Game (MMORPG)
 
