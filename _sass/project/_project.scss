@@ -36,6 +36,11 @@ $screen-edge-case: 420px;
         color: #FFFFFF;
       }
 
+      a {
+        text-decoration: none;
+        color: #FFFFFF;
+      }
+
       @include media-query($screen-edge-case) {
         .subtitle {
           display: none;
@@ -52,4 +57,10 @@ $screen-edge-case: 420px;
     margin-left: 10px;
     margin-right: 10px;
   }
+}
+
+.project-section {
+  min-height: 50vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }

@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Advice for college
+author: Lindsey Mackey
 thumbnail: public/img/2016/01/image1.jpg
 subtitle:
 ---
-# College Advice
 
 Going to college can be one of the scariest thoughts in life your life; having to move away from home; living with a roommate; finding new friends; an deciding what type of career you would like to have.  However college is also one of the best experiences of your life.  On campus there are endless opportunities to get involved and own your time at college.  Weather you love to dance, volunteer, play soccer, learn about new technologies or countless other things, there is always a way to get involved on campus.
 
@@ -17,5 +17,3 @@ While all of the fun opportunities are more enjoyable to talk about, at the end 
 Some advice that was given to me that I want to pass on to others, is take the time to get to you know teachers; they have a whirlwind of experiences that they love to share with their students, and taking a few minutes out of your day could really help you in finding your passion.
 
 A lastly remember to enjoy yourself; college is a time of trying new things, meeting new people, discovering who you are.  It is some of the best years of your life, which happen to fly by. Be spontaneous, be adventurous, discover yourself, but most importantly be a change maker.
-
--Lindsey

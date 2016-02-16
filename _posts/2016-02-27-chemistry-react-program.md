@@ -1,10 +1,10 @@
 ---
 layout: post
 title: REACT Program
-thumbnail: 
+author: Stephanie Hein
+thumbnail:
 subtitle:
 ---
-# The REACT Program
 
 The REACT program is a student run organization that visits local elementary schools and introduces the students to hands-on chemistry activities. I have participated in the REACT program for the past three years because I think introducing chemistry to kids at a young age helps reduce their apprehension towards the often-difficult subject in the future.
 At the beginning of the visit, we ask the kids if they know the definition of chemistry.
@@ -18,5 +18,3 @@ After the small group experiments are finished, we do a series of demonstrations
 ![Minecraft]({{ site.baseurl }}public/img/2016/01/chemistry2.jpg)
 
 The REACT program has been one of my favorite parts of my time at Illinois and I would definitely recommend getting involved in it if you love working with kids!
-
--Stephanie
