@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Representation of Women in Gaming Culture
+author: Alyssa Raggio
 thumbnail: public/img/2016/01/image1.png
 subtitle:
 ---
@@ -44,5 +45,3 @@ Today is becoming increasingly popular to “stream” a video game. Streaming i
 ![asdasds]({{ site.baseurl }}public/img/2016/01/image7.png)
 
 I think that in order for the demographic in gaming culture to change, the stereotype that video games are for boys needs to change. If this changes the industry may start to change their target audience to include all genders instead of just catering to one.
-
--Alyssa

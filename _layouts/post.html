@@ -49,7 +49,7 @@ comments: true
     <br>
     by
     {% if page.author %}
-      {{ page.author }}
+      <a href="{{ site.baseurl }}{{ page.author | split:' ' | first | downcase }}">{{ page.author }}</a>
     {% else %}
       MakerGirl
     {% endif %}
