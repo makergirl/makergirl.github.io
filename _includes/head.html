@@ -29,7 +29,7 @@
   <meta name="twitter:description" content="{{ site.description }}" />
 
   <title>
-    {% if page.title == "Home" %} {{ site.title }} {% else %} {{ page.title }} &middot; {{ site.title }} {% endif %}
+    {% if page.title == "Home" %} {{ site.title }} {% else %} {{ page.title | strip_html }} &middot; {{ site.title }} {% endif %}
   </title>
 
   <!-- ICONS -->
