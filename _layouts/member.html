@@ -1,0 +1,36 @@
+---
+layout: project
+---
+
+<div id="profile" class="row project-section">
+
+  <center>
+    <img src="{{ site.baseurl }}public/img/members/{% if page.photo %}{{ page.photo }}{% else %}{{ page.title | split:' ' | first | downcase }}.png{% endif %}" class="img img-responsive full-width"/>
+  </center>
+
+
+  <h1>
+    <a href="{{ site.baseurl }}{{ page.title | split:' ' | first | downcase }}">{{ page.title }}</a>
+  </h1>
+
+  <div class="row">
+    <div class="col-md-3"></div>
+
+    <div class="col-md-6">
+      {% for member in site.data.members %}
+        {% if member.name %}
+          {% assign memberfirst = member.name.first | downcase | strip | strip_html %}
+          {% assign pagefirst = page.title | split:' ' | first | downcase | strip | strip_htm%}
+
+          {% if memberfirst == pagefirst %}
+            {% if member.bio %}
+                {{ member.bio }}
+            {% endif %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="col-md-3"></div>
+  </div>
+</div>
