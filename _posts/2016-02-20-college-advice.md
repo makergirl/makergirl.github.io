@@ -5,7 +5,6 @@ author: Lindsey Mackey
 thumbnail: public/img/2016/01/image1.jpg
 subtitle:
 ---
-# College Advice
 
 Going to college can be one of the scariest thoughts in life your life; having to move away from home; living with a roommate; finding new friends; an deciding what type of career you would like to have.  However college is also one of the best experiences of your life.  On campus there are endless opportunities to get involved and own your time at college.  Weather you love to dance, volunteer, play soccer, learn about new technologies or countless other things, there is always a way to get involved on campus.
 

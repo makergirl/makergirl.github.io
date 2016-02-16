@@ -6,8 +6,6 @@ thumbnail:
 subtitle:
 ---
 
-# Changing Champaign
-
 Growing up in the Champaign-Urbana area, I wasn’t necessary always encouraged to explore the STEM field. Especially coming from a family where higher education wasn’t a common factor between generations, the STEM field wasn’t something my parents felt I needed to be a part of, thus, they never had the need to seek out opportunities for me as a young girl. In school, the word “innovation” wasn’t clearly defined for me or many of my female classmates. When I looked around at my classmates who were actively pursuing their interests within the STEM field, it was primarily boys with a few girls sprinkled into the mix. Regardless, both groups were introduced to the STEM field through parental influence, rather than through the education available in the schools. Therefore, it is so vital to have organizations such as MakerGirl be embedded into the Champaign-Urbana community.
 
 Champaign-Urbana is a unique area that encompasses various types of families. Being located in central Illinois along with having the University of Illinois in the background, the Champaign-Urbana area has the opportunity to be progressive in terms of promoting STEM education for children within the community. Compared to the rest of Illinois, Champaign – Urbana is considered as quite diverse, with the percentage of minorities often exceeding Illinois’s makeup for the state’s population. With such as diverse population, organizations that introduce and foster the interest for STEM fields, such as MakerGirl, has limitless opportunities to create a lasting impact for the generations of children who do not have the chance to understand or apply their interest in STEM.

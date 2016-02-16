@@ -5,7 +5,6 @@ author: Marie Millan
 thumbnail:
 subtitle:
 ---
-# Off Road Vehicles
 
 I have always loved cars. My dad would quiz five years old me on long road trips on the model of the cars that would pass by giving me his fatherly goofy smile when I would get them right. I was the type of kid that played with Hot Wheels instead of dolls and tried to fix old remote control racecars for fun. Therefore when I got to college being in a club that got to actually build cars was a dream come true.
 

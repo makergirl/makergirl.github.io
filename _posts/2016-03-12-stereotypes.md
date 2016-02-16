@@ -5,7 +5,6 @@ author: Caitlyn Deegan
 thumbnail:
 subtitle:
 ---
-# Stereotypes Girls Face
 
 According to Girl Scouts of America, only 13% of teenage girls say that their first career choice is a STEM career.  Unfortunately in this day and age, women of all ages fall victim to many stereotypes which can affect them for the rest of their lives.  Women are put in to a mold.  Starting from a young age, girls see what types of jobs and activities are meant for women.  This is the main problem, there are no activities we should limit ourselves to.  Women can do any activity and can perform any task they would like.  We should not disregard something we want to do just because we were taught it was not meant for women or that it does not fit into the stereotypical mold of a woman.
 

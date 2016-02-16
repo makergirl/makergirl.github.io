@@ -5,7 +5,6 @@ author: Alyssa Raggio
 thumbnail: public/img/2016/01/image1.png
 subtitle:
 ---
-# Representation of Women in Gaming Culture
 
 My parents bought me my first video game system when I was five, and it was a Nintendo 64. This was the start of my interest in video games, specifically console games, but I didn’t really get into them until I started playing PC (computer) games when I was 17.
 
