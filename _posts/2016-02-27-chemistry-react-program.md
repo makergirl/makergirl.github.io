@@ -1,7 +1,8 @@
 ---
 layout: post
 title: REACT Program
-thumbnail: 
+author: Stephanie Hein
+thumbnail:
 subtitle:
 ---
 # The REACT Program
@@ -18,5 +19,3 @@ After the small group experiments are finished, we do a series of demonstrations
 ![Minecraft]({{ site.baseurl }}public/img/2016/01/chemistry2.jpg)
 
 The REACT program has been one of my favorite parts of my time at Illinois and I would definitely recommend getting involved in it if you love working with kids!
-
--Stephanie

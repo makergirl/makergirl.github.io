@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Sterotypes of Girls
+author: Caitlyn Deegan
 thumbnail:
 subtitle:
 ---
@@ -13,5 +14,3 @@ One large stereotype these young girls are facing is that they are meant to be a
 Girls also face the stereotype that they are fragile and weak.  Women are portrayed as skinny and delicate while men are strong and muscular.  Girls are ballerinas and teachers and cooks, while men are football players and construction workers.  Girls are not shown they can be strong and that they can make big differences.  Young kids are taught about great men and women in our current and past history, but these stereotypes always linger.  At a young age, girls then start quitting sports they think are for boys only and do not participate in activities they feel are meant for boys.  These stereotypes are affecting girls and how they choose to live the rest of their lives.
 
 They way to reverse how young women see these stereotypes is not to try and eliminate them, but to instead prove them wrong.  Girls should be encouraged to do activities and tasks they see as for boys only.  They should be shown that they can make amazing things with building blocks and that they can be just as strong as the young men around them.  They need to be given tools to play with instead or another baby doll.  These girls learn from how others act around them, so it is the job of parents and teachers to help breakdown those stereotypes.  Without those limitations, girls can finally grow up to see their great potential.
-
--Caitlyn
