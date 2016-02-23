@@ -6,7 +6,7 @@ thumbnail: public/img/2016/02/chemistry1-thumb.jpg
 subtitle:
 ---
 
-The REACT program is a student run organization that visits local elementary schools and introduces the students to hands-on chemistry activities. I have participated in the REACT program for the past three years because I think introducing chemistry to kids at a young age helps reduce their apprehension towards the often-difficult subject in the future.
+The [REACT program](http://www.chemistry.illinois.edu/outreach/react/) is a student run organization that visits local elementary schools and introduces the students to hands-on chemistry activities. I have participated in the REACT program for the past three years because I think introducing chemistry to kids at a young age helps reduce their apprehension towards the often-difficult subject in the future.
 At the beginning of the visit, we ask the kids if they know the definition of chemistry.
 
 ![Minecraft]({{ site.baseurl }}public/img/2016/02/chemistry1.jpg)
