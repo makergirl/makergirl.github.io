@@ -2,7 +2,7 @@
 layout: post
 title: REACT Program
 author: Stephanie Hein
-thumbnail: public/img/2016/02/chemistry2-thumb.jpg
+thumbnail: public/img/2016/02/chemistry1-thumb.jpg
 subtitle:
 ---
 
