@@ -2,7 +2,7 @@
 layout: post
 title: Stereotypes of Girls
 author: Caitlyn Deegan
-thumbnail: public/img/2016/03/stereotypes2.jpg
+thumbnail: public/img/2016/03/DSC04922.jpg
 subtitle:
 ---
 
