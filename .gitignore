@@ -32,3 +32,5 @@ tokens.dat
 eids.dat
 _data/jobs/data
 *.pyc
+
+.jekyll-metadata
