@@ -59,3 +59,15 @@
     font-size: 16px;
   }
 }
+
+.col1 {
+  font-size: 36px;
+
+  @include media-query($screen-lg-min) {
+    font-size: 27px;
+  }
+
+  @include media-query($screen-sm-min) {
+    font-size: 24px;
+  }
+}
