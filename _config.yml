@@ -1,6 +1,6 @@
 # Dependencies
 markdown: kramdown
-hightlighter: pygments
+hightlighter: rouge
 gems: [jekyll-paginate]
 
 # Permalinks
