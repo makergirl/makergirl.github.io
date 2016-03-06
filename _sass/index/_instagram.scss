@@ -1,7 +1,22 @@
 #instagram {
   background-color: #FFFFFF;
+  margin: 0 auto;
+  margin-left: 50px;
+  margin-right: 50px;
 
   h1, a {
     color: #333333;
+  }
+
+  @include media-query($screen-sm-min) {
+    h1 {
+      font-size: 34px;
+    }
+  }
+
+  @include media-query($screen-iphone5) {
+    h1 {
+      font-size: 26px;
+    }
   }
 }
