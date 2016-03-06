@@ -1,17 +1,39 @@
 #profile {
   text-align: center;
-  
+
   h1 {
     text-align: center;
     text-transform: none;
     color: #000000;
     padding-top: 20px;
     padding-bottom: 20px;
+  }
 
-    a {
-      text-align: inherit;
-      text-transform: inherit;
-      color: inherit;
+  a {
+    text-align: inherit;
+    text-transform: inherit;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .badge {
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 10em;
+    padding: 12px;
+    vertical-align: middle;
+    outline: 0;
+    cursor: pointer;
+    height: 39px;
+    width: 39px;
+    background-color: $color-20;
+
+    &:focus,
+    &:hover {
+      opacity: 0.75;
+    }
+    &:active {
+      opacity: 0.90;
     }
   }
 }
