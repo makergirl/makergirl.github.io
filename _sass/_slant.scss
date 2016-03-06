@@ -2,7 +2,7 @@
  * _slant.scss
  * Slanted Sections
  */
- 
+
 .slant {
   // position: absolute;
   top: 43px;
@@ -68,6 +68,13 @@
       p {
         font-size: 14px;
       }
+    }
+
+    .link {
+      text-decoration: none;
+      border-bottom: 3px solid #FFFFFF;
+      color: #FFFFFF;
+      font-weight: 600;
     }
   }
 }
