@@ -68,10 +68,10 @@ new Chartist.Bar('.distribution-graph', {
 //   }]
 // );
 new Chartist.Bar('.overlapping-bars-1', {
-  labels: ['0', '1', '2', '3', '4', '5'],
+  labels: ['1', '2', '3', '4', '5'],
   series: [
-    [0, 2.4, 0, 9.8, 26.8, 61],
-    [0, 0, 6.5, 0, 19.4, 74.2]
+    [2.7, 2.7, 11.7, 20.7, 62.2],
+    [0, 4.2, 6.9, 11.1, 77.8]
   ]
 }, {
   seriesBarDistance: 10
@@ -107,10 +107,10 @@ new Chartist.Bar('.overlapping-bars-1', {
 //   }]
 // );
 new Chartist.Bar('.overlapping-bars-2', {
-  labels: ['0', '1', '2', '3', '4', '5'],
+  labels: ['1', '2', '3', '4', '5'],
   series: [
-    [0, 0, 0, 9.8, 24.4, 65.9],
-    [0, 0, 0, 6.5, 19.4, 74.2]
+    [0.9, 1.8, 11.7, 23.4, 62.2],
+    [0, 1.4, 4.2, 22.2, 72.2]
   ]
 }, {
   seriesBarDistance: 10
@@ -145,10 +145,10 @@ new Chartist.Bar('.overlapping-bars-2', {
 //   }]
 // );
 new Chartist.Bar('.overlapping-bars-3', {
-  labels: ['0', '1', '2', '3', '4', '5'],
+  labels: ['1', '2', '3', '4', '5'],
   series: [
-    [0, 0, 7.3, 17.1, 14.6, 61],
-    [0, 0, 3.2, 9.7, 19.4, 67.7]
+    [5.4, 5.4, 13.5, 24.3, 51.4],
+    [1.4, 5.6, 9.7, 18.1, 65.3]
   ]
 }, {
   seriesBarDistance: 10
@@ -183,10 +183,10 @@ new Chartist.Bar('.overlapping-bars-3', {
 //   }]
 // );
 new Chartist.Bar('.overlapping-bars-4', {
-  labels: ['0', '1', '2', '3', '4', '5'],
+  labels: ['1', '2', '3', '4', '5'],
   series: [
-    [0, 12.2, 7.3, 24.4, 19.5, 36.6],
-    [0, 9.7, 6.5, 16.1, 25.8, 41.9]
+    [11.7, 6.3, 19.8, 19.8, 42.3],
+    [12.5, 5.6, 13.9, 30.6, 37.5]
   ]
 }, {
   seriesBarDistance: 10
@@ -221,10 +221,10 @@ new Chartist.Bar('.overlapping-bars-4', {
 //   }]
 // );
 new Chartist.Bar('.overlapping-bars-5', {
-  labels: ['0', '1', '2', '3', '4', '5'],
+  labels: ['1', '2', '3', '4', '5'],
   series: [
-    [0, 0, 0, 2.4, 9.8, 87.8],
-    [0, 0, 0, 0, 9.7, 90.3]
+    [0.9, 0.9, 5.4, 10.8, 82],
+    [0, 0, 0, 11.1, 88.9]
   ]
 }, {
   seriesBarDistance: 10
