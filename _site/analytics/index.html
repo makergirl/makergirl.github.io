@@ -172,6 +172,7 @@ body {
         var lng = p.lng();
 
         var coordinate = new google.maps.LatLng(lat, lng);
+        // console.log("coordinate: " + coordinate);
 
         createMarker(query, coordinate);
       }
@@ -200,6 +201,8 @@ body {
       position : coordinate,
       zIndex : Math.round(center.lat * -100000) << 5
     });
+
+    // console.log("marker: " +  marker);
 
     google.maps.event.addListener(marker, 'click', function() {
       infowindow.setContent(query);
