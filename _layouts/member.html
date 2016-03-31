@@ -23,7 +23,22 @@ layout: project
           {% assign pagefirst = page.title | split:' ' | first | downcase | strip | strip_html %}
 
           {% if memberfirst == pagefirst %}
+            <span class="position">
+              {% if member.position %}
+                {{ member.position }}
+              {% else %}
+                Team Member
+              {% endif%}
+            </span>
+
             <span>
+              {% if member.site %}
+              <a href="{{ member.site }}" target="_blank">
+                <span class="badge">
+                  <span class="fa fa-link"></span>
+                </span>
+              </a>
+              {% endif %}
               {% if member.linkedin %}
               <a href="{{ member.linkedin }}" target="_blank">
                 <span class="badge">
