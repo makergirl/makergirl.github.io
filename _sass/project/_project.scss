@@ -57,6 +57,37 @@ $screen-edge-case: 420px;
     margin-left: 10px;
     margin-right: 10px;
   }
+  
+  h2 {
+    font-family: inherit !important;
+    font-size: 24px;
+    font-weight: 300;
+  }
+
+  @include media-query($screen-sm-min) {
+    h2 {
+      font-size: 18px;
+    }
+  }
+
+  p {
+    font-family: inherit !important;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+  }
+
+  @include media-query($screen-sm-min) {
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .link {
+    text-decoration: none;
+    border-bottom: 3px solid;
+    font-weight: 600;
+  }
 }
 
 .project-section {
@@ -69,5 +100,18 @@ $screen-edge-case: 420px;
   img {
     width: 100%;
     max-width: 100%;
+  }
+
+  p {
+    font-family: inherit !important;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 20px;
+  }
+
+  @include media-query($screen-sm-min) {
+    p {
+      font-size: 14px;
+    }
   }
 }

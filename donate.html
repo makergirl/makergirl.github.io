@@ -1,32 +1,46 @@
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
+---
+layout: project
+title: Donate
+---
 
-<script src="https://checkout.stripe.com/checkout.js"></script>
+<div id="donate" class="row section">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <h1>Donate</h1>
 
-<button id="customButton">Donate</button>
+    <div class="row">
+      <h2>{{ site.data.donate.description }}</h2>
 
-<script>
-  var handler = StripeCheckout.configure({
-    key: 'pk_test_46nn6ZepvSacpzr0DJ9GfExc',
-    image: 'public/mg-square.png',
-    locale: 'auto',
-    token: function(token) {
-      // Use the token to create the charge with a server-side script.
-      // You can access the token ID with `token.id`
-    }
-  });
+      <br><br><br>
+    </div>
 
-  $('#customButton').on('click', function(e) {
-    // Open Checkout with further options
-    handler.open({
-      name: 'MakerGirl',
-      description: "Today's makers. Tomorrow's life changers.",
-      amount: 2000
-    });
-    e.preventDefault();
-  });
+    <div class="row">
+      <div class="col-md-4">
+        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=H3SFUM3ENBPRU" target="_blank">
+          <span class="background-box orange">PayPal</span>
+        </a>
+        <p>{{ site.data.donate.paypal }}</p>
+      </div>
+      <div class="col-md-4">
+        <a href="https://publicgood.com/org/makergirl" target="_blank">
+          <span class="background-box orange"><small><small>PublicGood</small></small></span>
+        </a>
+        <p>{{ site.data.donate.publicgood }}</p>
+      </div>
+      <div class="col-md-4">
+        <a href="https://www.patreon.com/MakerGirl_UIUC?ty=h" target="_blank">
+          <span class="background-box orange">Patreon</span>
+        </a>
+        <p>{{ site.data.donate.patreon }}</p>
+      </div>
+    </div>
 
-  // Close Checkout on page navigation
-  $(window).on('popstate', function() {
-    handler.close();
-  });
-</script>
+    <br>
+
+    <div class="row">
+      <p>{{ site.data.donate.exempt }}</p>
+    </div>
+  </div>
+  <div class="col-md-2"></div>
+
+</div>
