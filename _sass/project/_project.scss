@@ -57,26 +57,7 @@ $screen-edge-case: 420px;
     margin-left: 10px;
     margin-right: 10px;
   }
-
-  @include media-query($screen-sm-min) {
-    h1 {
-      font-size: 34px;
-    }
-  }
-
-  h1 {
-    font-family: inherit !important;
-    font-size: 48px;
-    font-weight: 300;
-    white-space: nowrap;
-  }
-
-  @include media-query($screen-iphone5) {
-    h1 {
-      font-size: 26px;
-    }
-  }
-
+  
   h2 {
     font-family: inherit !important;
     font-size: 24px;
@@ -119,5 +100,18 @@ $screen-edge-case: 420px;
   img {
     width: 100%;
     max-width: 100%;
+  }
+
+  p {
+    font-family: inherit !important;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 20px;
+  }
+
+  @include media-query($screen-sm-min) {
+    p {
+      font-size: 14px;
+    }
   }
 }
