@@ -357,8 +357,21 @@
 </div>
 
 <div id="image-break" class="row section break overlay-md">
+  <video autoplay  poster="/public/break.jpg" id="bgvid" loop>
+  <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+  <source src="/public/breakvid.webm" type="video/webm">
+  <source src="/public/breakvid.mp4" type="video/mp4">
+  </video>
+
   <h1 onclick="barrel_roll()">Today’s makers. <br> Tomorrow’s life changers.</h1>
 </div>
+
+<script>
+  $('video').on('ended', function () {
+    this.load();
+    this.play();
+  });
+</script>
 
 <div class="white-wrapper">
   <div class="container">
