@@ -26,6 +26,7 @@
     "jquery-ui": "~1.11.4",
     "ScrollMagic": "~2.0.5",
     "skrollr": "~0.6.30",
-    "chartist": "~0.9.4"
+    "chartist": "~0.9.4",
+    "eonasdan-bootstrap-datetimepicker": "^4.17.37"
   }
 }

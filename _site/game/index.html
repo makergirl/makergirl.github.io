@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-us" prefix="og: http://ogp.me/ns">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <link rel="canonical" href="http://makergirl.us/game/ | replace:'index.html', ''" />
+  <link rel="alternate" type="application/rss+xml" title="MakerGirl" href="http://makergirl.us/feed.xml" />
+
+  <!-- METADATA -->
+  <meta name="description" content="MakerGirl is a program led by University of Illinois students that educates 7-10 year old girls on STEM (Science, Technology, Engineering, Mathematics) fields through 3-D printing workshops at the College of Business MakerLab, creative activities, and lessons on leading women in STEM fields." />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="MakerGirl, UIUC, Illinois, 3D, Printing, Engineering, STEM">
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:site_name" content="MakerGirl" />
+  <meta property="og:title" content="MakerGirl" />
+  <meta property="og:description" content="MakerGirl is a program led by University of Illinois students that educates 7-10 year old girls on STEM (Science, Technology, Engineering, Mathematics) fields through 3-D printing workshops at the College of Business MakerLab, creative activities, and lessons on leading women in STEM fields." />
+  <meta property="og:image" content="http://makergirl.us/public/mg-fb.jpg" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta property="og:url" content="http://makergirl.us/game/" />
+  <meta property="og:type" content="website" />
+
+  <!-- TWITTER CARD -->
+  <meta name="twitter:title" content="MakerGirl" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="http://makergirl.us/public/mg-tw.png" />
+  <meta name="twitter:url" content="http://makergirl.us/game/" />
+  <meta name="twitter:description" content="MakerGirl is a program led by University of Illinois students that educates 7-10 year old girls on STEM (Science, Technology, Engineering, Mathematics) fields through 3-D printing workshops at the College of Business MakerLab, creative activities, and lessons on leading women in STEM fields." />
+
+  <title>
+     Session Game Activity &middot; MakerGirl 
+  </title>
+
+  <!-- ICONS -->
+  <link rel="image_src" href="/public/icon.jpg" />
+  <link rel="shortcut icon" href="/public/favicon.ico" />
+  <link rel="apple-touch-icon-precomposed" href="/public/icon.jpg" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/bower_components/bootstrap-social/bootstrap-social.css">
+  <link rel="stylesheet" href="/bower_components/chartist/dist/chartist.min.css">
+  <link rel="stylesheet" href="/css/main.css">
+
+  <meta name="google-site-verification" content="eN0qj2hYoSML1QpSFytErssf0Jyx3PbQsk1W6u5PG9g" />
+</head>
+
+
+  <body ontouchstart="">
+    <link rel="stylesheet" href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+
+<style>
+  * {
+    -webkit-font-smoothing: antialiased;
+  }
+
+  html {
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ce0b7b;
+    color: #f6f1df;
+  }
+</style>
+
+
+<div id="activity">
+  <div id="activity-survey" class="container-fluid">
+    <div class="row text-center">
+      <h1>MakerGirl Session Activity</h1>
+    </div>
+
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Participant Information</h3>
+          </div>
+
+          <div class="panel-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="input-group input-group-lg">
+                    <span class="input-group-addon" id="sizing-addon1">First Name:</span>
+                    <input type="text" class="form-control" placeholder="Enter your first name here" aria-describedby="sizing-addon1">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-group input-group-lg">
+                    <span class="input-group-addon" id="sizing-addon1">Last Name:</span>
+                    <input type="text" class="form-control" placeholder="Enter your last name here" aria-describedby="sizing-addon1">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <div class="input-group input-group-lg date">
+                        <span class="input-group-addon">
+                          Birthday
+                        </span>
+                        <input type="text" class="form-control" id="datetimepicker1" placeholder="01/01/2001"/>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-8"></div>
+
+                <div class="col-md-4">
+                  <div class="btn-group">
+                    <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Choose Activity Type <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li>Pre-Session</li>
+                      <li>Post-Session</li>
+                    </ul>
+
+                    <button id="start-test" type="button" class="btn btn-lg btn-dark">Submit</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+  </div>
+
+  <!-- <div id="activity-splash" class="container-fluid">
+    <div class="row text-center">
+      <h1>Let's Play A Game</h1>
+    </div>
+
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <center>
+          <img src="//public/img/game/game/splash.png" class="img-responsive"/>
+
+          <a href="test.html">
+            <button id="start-test" type="button" class="btn btn-lg btn-o btn-dark">Start</button>
+          </a>
+        </center>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+  </div> -->
+</div>
+
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/bower_components/jquery-ui/jquery-ui.min.js"></script>
+<script src="/bower_components/moment/min/moment.min.js"></script>
+<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+<script src="/public/js/game.js"></script>
+
+<script type="text/javascript">
+  $(function () {
+      $('#datetimepicker1').datetimepicker();
+  });
+</script>
+
+    
+    <script src="/public/js/ga.js"></script>
+
+  </body>
+
+</html>
