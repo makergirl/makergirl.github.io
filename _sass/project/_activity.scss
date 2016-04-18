@@ -40,8 +40,11 @@
   /** Buttons **/
   .btn-o {
     font-weight: 900;
-    font-size: 32px;
+  }
+
+  .btn-w {
     width: 300px;
+    font-size: 32px;
   }
 
   @media (max-width: 768px) {
@@ -62,11 +65,6 @@
   }
 
   /** Button Colors **/
-  .btn-dark {
-    background-color: #2c3e50;
-    color: #f6f1df;
-  }
-
   .btn-dark {
     background-color: #2c3e50;
     color: #f6f1df;
@@ -194,5 +192,24 @@
 
   .screenshot {
     display: none;
+  }
+
+  /** Emoji **/
+  .emoji {
+    text-decoration: none;
+    cursor: pointer;
+
+    > li {
+      display: inline-block;
+
+      &:hover,
+      &:focus {
+        opacity: 0.75;
+      }
+
+      &:active {
+        opacity: 0.90;
+      }
+    }
   }
 }

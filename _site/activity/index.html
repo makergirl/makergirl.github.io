@@ -4,7 +4,7 @@
   <head>
   <link href="http://gmpg.org/xfn/11" rel="profile">
 
-  <link rel="canonical" href="http://makergirl.us/game/ | replace:'index.html', ''" />
+  <link rel="canonical" href="http://makergirl.us/activity/ | replace:'index.html', ''" />
   <link rel="alternate" type="application/rss+xml" title="MakerGirl" href="http://makergirl.us/feed.xml" />
 
   <!-- METADATA -->
@@ -21,18 +21,18 @@
   <meta property="og:image" content="http://makergirl.us/public/mg-fb.jpg" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
-  <meta property="og:url" content="http://makergirl.us/game/" />
+  <meta property="og:url" content="http://makergirl.us/activity/" />
   <meta property="og:type" content="website" />
 
   <!-- TWITTER CARD -->
   <meta name="twitter:title" content="MakerGirl" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:image" content="http://makergirl.us/public/mg-tw.png" />
-  <meta name="twitter:url" content="http://makergirl.us/game/" />
+  <meta name="twitter:url" content="http://makergirl.us/activity/" />
   <meta name="twitter:description" content="MakerGirl is a program led by University of Illinois students that educates 7-10 year old girls on STEM (Science, Technology, Engineering, Mathematics) fields through 3-D printing workshops at the College of Business MakerLab, creative activities, and lessons on leading women in STEM fields." />
 
   <title>
-     Session Game Activity &middot; MakerGirl 
+     Session Activity &middot; MakerGirl 
   </title>
 
   <!-- ICONS -->
@@ -53,6 +53,7 @@
 
   <body ontouchstart="">
     <link rel="stylesheet" href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+<script src="//twemoji.maxcdn.com/2/twemoji.min.js"></script>
 
 <style>
   * {
@@ -82,7 +83,7 @@
       <div class="col-md-10">
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h3 class="panel-title">Participant Information</h3>
+            <h3 class="panel-title">Session Survey</h3>
           </div>
 
           <div class="panel-body">
@@ -90,13 +91,21 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="input-group input-group-lg">
-                    <span class="input-group-addon" id="sizing-addon1">First Name:</span>
+                    <span class="input-group-addon" id="sizing-addon1">
+                      <span class="inside-title">
+                      First Name
+                      </span>
+                    </span>
                     <input type="text" class="form-control" placeholder="Enter your first name here" aria-describedby="sizing-addon1">
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="input-group input-group-lg">
-                    <span class="input-group-addon" id="sizing-addon1">Last Name:</span>
+                    <span class="input-group-addon" id="sizing-addon1">
+                      <span class="inside-title">
+                      Last Name
+                      </span>
+                    </span>
                     <input type="text" class="form-control" placeholder="Enter your last name here" aria-describedby="sizing-addon1">
                   </div>
                 </div>
@@ -107,12 +116,113 @@
                   <div class="form-group">
                     <div class="input-group input-group-lg date">
                         <span class="input-group-addon">
-                          Birthday
+                          <span class="inside-title">
+                            Birthday
+                          </span>
                         </span>
                         <input type="text" class="form-control" id="datetimepicker1" placeholder="01/01/2001"/>
                     </div>
                   </div>
 
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="input-group input-group-lg">
+                    <span class="input-group-addon" id="sizing-addon1">
+                      <span class="inside-title">What do you want to be when you grow up?</span>
+                    </span>
+                    <input type="text" class="form-control" placeholder="I want to be..." aria-describedby="sizing-addon1">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <span class="inside-title">What's your favorite subject at school?</span>
+                  <div class="btn-group btn-group-lg" role="group" aria-label="...">
+                    <button type="button" class="btn btn-default">Math</button>
+                    <button type="button" class="btn btn-default">Science</button>
+                    <button type="button" class="btn btn-default">Language Arts</button>
+                    <button type="button" class="btn btn-default">Art</button>
+                    <button type="button" class="btn btn-default">Music</button>
+                    <button type="button" class="btn btn-default">PE</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <span class="inside-title">
+                    Choose from this list all kinds of devices that you get to use at home.
+                  </span>
+                  <div class="btn-group btn-group-lg" role="group" aria-label="...">
+                    <button type="button" class="btn btn-default">TV</button>
+                    <button type="button" class="btn btn-default">Computer or laptop</button>
+                    <button type="button" class="btn btn-default">iPad or any tablet</button>
+                    <button type="button" class="btn btn-default">Phone</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <span class="inside-title">
+                    How much do you like science?
+                  </span>
+                  <ul class="emoji">
+                    <li>☹️</li>
+                    <li>🙁</li>
+                    <li>😐</li>
+                    <li>🙂</li>
+                    <li>😄</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <span class="inside-title">
+                    How much do you like technology?
+                  </span>
+                  <ul class="emoji">
+                    <li>☹️</li>
+                    <li>🙁</li>
+                    <li>😐</li>
+                    <li>🙂</li>
+                    <li>😄</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <span class="inside-title">
+                    How much do you like engineering? 
+                  </span>
+                  <ul class="emoji">
+                    <li>☹️</li>
+                    <li>🙁</li>
+                    <li>😐</li>
+                    <li>🙂</li>
+                    <li>😄</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <span class="inside-title">
+                    How much do you like math? 
+                  </span>
+                  <ul class="emoji">
+                    <li>☹️</li>
+                    <li>🙁</li>
+                    <li>😐</li>
+                    <li>🙂</li>
+                    <li>😄</li>
+                  </ul>
                 </div>
               </div>
 
@@ -129,7 +239,7 @@
                       <li>Post-Session</li>
                     </ul>
 
-                    <button id="start-test" type="button" class="btn btn-lg btn-dark">Submit</button>
+                    <button id="start-test" type="button" class="btn btn-lg btn-o btn-dark">Submit</button>
                   </div>
                 </div>
               </div>
@@ -156,7 +266,7 @@
           <img src="//public/img/game/game/splash.png" class="img-responsive"/>
 
           <a href="test.html">
-            <button id="start-test" type="button" class="btn btn-lg btn-o btn-dark">Start</button>
+            <button id="start-test" type="button" class="btn btn-lg btn-o btn-w btn-dark">Start</button>
           </a>
         </center>
       </div>
@@ -176,6 +286,11 @@
   $(function () {
       $('#datetimepicker1').datetimepicker();
   });
+
+  $(".emoji").each(function() {
+    $(this).html(twemoji.parse($(this).html()));
+  });
+
 </script>
 
     

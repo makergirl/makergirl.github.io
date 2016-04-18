@@ -1,0 +1,245 @@
+---
+layout: minimum
+title: Session Activity
+---
+
+<link rel="stylesheet" href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+<script src="//twemoji.maxcdn.com/2/twemoji.min.js"></script>
+
+<style>
+  * {
+    -webkit-font-smoothing: antialiased;
+  }
+
+  html {
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ce0b7b;
+    color: #f6f1df;
+  }
+</style>
+
+
+<div id="activity">
+  <div id="activity-survey" class="container-fluid">
+    <div class="row text-center">
+      <h1>MakerGirl Session Activity</h1>
+    </div>
+
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Session Survey</h3>
+          </div>
+
+          <div class="panel-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="input-group input-group-lg">
+                    <span class="input-group-addon" id="sizing-addon1">
+                      <span class="inside-title">
+                      First Name
+                      </span>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Enter your first name here" aria-describedby="sizing-addon1">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-group input-group-lg">
+                    <span class="input-group-addon" id="sizing-addon1">
+                      <span class="inside-title">
+                      Last Name
+                      </span>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Enter your last name here" aria-describedby="sizing-addon1">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <div class="input-group input-group-lg date">
+                        <span class="input-group-addon">
+                          <span class="inside-title">
+                            Birthday
+                          </span>
+                        </span>
+                        <input type="text" class="form-control" id="datetimepicker1" placeholder="01/01/2001"/>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="input-group input-group-lg">
+                    <span class="input-group-addon" id="sizing-addon1">
+                      <span class="inside-title">What do you want to be when you grow up?</span>
+                    </span>
+                    <input type="text" class="form-control" placeholder="I want to be..." aria-describedby="sizing-addon1">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <span class="inside-title">What's your favorite subject at school?</span>
+                  <div class="btn-group btn-group-lg" role="group" aria-label="...">
+                    <button type="button" class="btn btn-default">Math</button>
+                    <button type="button" class="btn btn-default">Science</button>
+                    <button type="button" class="btn btn-default">Language Arts</button>
+                    <button type="button" class="btn btn-default">Art</button>
+                    <button type="button" class="btn btn-default">Music</button>
+                    <button type="button" class="btn btn-default">PE</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <span class="inside-title">
+                    Choose from this list all kinds of devices that you get to use at home.
+                  </span>
+                  <div class="btn-group btn-group-lg" role="group" aria-label="...">
+                    <button type="button" class="btn btn-default">TV</button>
+                    <button type="button" class="btn btn-default">Computer or laptop</button>
+                    <button type="button" class="btn btn-default">iPad or any tablet</button>
+                    <button type="button" class="btn btn-default">Phone</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <span class="inside-title">
+                    How much do you like science?
+                  </span>
+                  <ul class="emoji">
+                    <li>☹️</li>
+                    <li>🙁</li>
+                    <li>😐</li>
+                    <li>🙂</li>
+                    <li>😄</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <span class="inside-title">
+                    How much do you like technology?
+                  </span>
+                  <ul class="emoji">
+                    <li>☹️</li>
+                    <li>🙁</li>
+                    <li>😐</li>
+                    <li>🙂</li>
+                    <li>😄</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <span class="inside-title">
+                    How much do you like engineering? 
+                  </span>
+                  <ul class="emoji">
+                    <li>☹️</li>
+                    <li>🙁</li>
+                    <li>😐</li>
+                    <li>🙂</li>
+                    <li>😄</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <span class="inside-title">
+                    How much do you like math? 
+                  </span>
+                  <ul class="emoji">
+                    <li>☹️</li>
+                    <li>🙁</li>
+                    <li>😐</li>
+                    <li>🙂</li>
+                    <li>😄</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-8"></div>
+
+                <div class="col-md-4">
+                  <div class="btn-group">
+                    <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Choose Activity Type <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li>Pre-Session</li>
+                      <li>Post-Session</li>
+                    </ul>
+
+                    <button id="start-test" type="button" class="btn btn-lg btn-o btn-dark">Submit</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+  </div>
+
+  <!-- <div id="activity-splash" class="container-fluid">
+    <div class="row text-center">
+      <h1>Let's Play A Game</h1>
+    </div>
+
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <center>
+          <img src="{{ site.baseurl}}{{ site.baseurl }}public/img/game/game/splash.png" class="img-responsive"/>
+
+          <a href="test.html">
+            <button id="start-test" type="button" class="btn btn-lg btn-o btn-w btn-dark">Start</button>
+          </a>
+        </center>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+  </div> -->
+</div>
+
+<script src="{{ site.baseurl }}bower_components/jquery/dist/jquery.min.js"></script>
+<script src="{{ site.baseurl }}bower_components/jquery-ui/jquery-ui.min.js"></script>
+<script src="{{ site.baseurl }}bower_components/moment/min/moment.min.js"></script>
+<script src="{{ site.baseurl }}bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="{{ site.baseurl }}bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+<script src="{{ site.baseurl }}public/js/game.js"></script>
+
+<script type="text/javascript">
+  $(function () {
+      $('#datetimepicker1').datetimepicker();
+  });
+
+  $(".emoji").each(function() {
+    $(this).html(twemoji.parse($(this).html()));
+  });
+
+</script>
