@@ -46,11 +46,11 @@ function nextItem() {
     counter = lastImageCounter;
 
     $('#game-title').html('Good Job!')
-    $('#test-body').html('<center><img src="public/img/game100.png" class="img-responsive"/><a href="index.html"><br><button type="button" class="btn btn-lg btn-o btn-dark">Done</button></a></center>');
+    $('#test-body').html('<center><img src="/public/img/game/100.png" class="img-responsive"/><a href="/"><br><button type="button" class="btn btn-lg btn-o btn-dark">Done</button></a></center>');
   }
 
-  $('.control-image').attr('src', 'public/img/game'+ counter + '.png');
-  $('.test-image').attr('src', 'public/img/game'+ counter + '.png');
+  $('.control-image').attr('src', '/public/img/game/'+ counter + '.png');
+  $('.test-image').attr('src', '/public/img/game/'+ counter + '.png');
 
   rotation = Math.floor((Math.random() * 360) + 1);
 

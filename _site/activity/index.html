@@ -227,19 +227,55 @@
               </div>
 
               <div class="row">
+                <div class="col-md-12">
+                  <span class="inside-title">
+                    Can you guess what 3D printing is? Choose one answer.
+                  </span>
+                  <div class="btn-group btn-group-lg" role="group" aria-label="...">
+                    <button type="button" class="btn btn-default">Answer 1</button>
+                    <button type="button" class="btn btn-default">Answer 2</button>
+                    <button type="button" class="btn btn-default">Answer 3</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="input-group input-group-lg">
+                    <span class="input-group-addon" id="sizing-addon1">
+                      <span class="inside-title">What is technology?</span>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Technology is..." aria-describedby="sizing-addon1">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <span class="inside-title">
+                    Have you attended MakerGirl sessions before?
+                  </span>
+                  <div class="btn-group btn-group-lg" role="group" aria-label="...">
+                    <button type="button" class="btn btn-default">Yes</button>
+                    <button type="button" class="btn btn-default">No</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
                 <div class="col-md-8"></div>
 
                 <div class="col-md-4">
                   <div class="btn-group">
                     <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Choose Activity Type <span class="caret"></span>
+                      Pre or Post? &nbsp; <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu">
                       <li>Pre-Session</li>
                       <li>Post-Session</li>
                     </ul>
 
-                    <button id="start-test" type="button" class="btn btn-lg btn-o btn-dark">Submit</button>
+                    <button id="start-test" type="button" class="btn btn-lg btn-o btn-dark" onclick="submitSurvey()">Submit</button>
                   </div>
                 </div>
               </div>
@@ -254,7 +290,7 @@
     </div>
   </div>
 
-  <!-- <div id="activity-splash" class="container-fluid">
+  <div id="activity-splash" class="container-fluid">
     <div class="row text-center">
       <h1>Let's Play A Game</h1>
     </div>
@@ -263,16 +299,78 @@
       <div class="col-md-1"></div>
       <div class="col-md-10">
         <center>
-          <img src="//public/img/game/game/splash.png" class="img-responsive"/>
+          <img src="/public/img/game/splash.png" class="img-responsive"/>
 
-          <a href="test.html">
-            <button id="start-test" type="button" class="btn btn-lg btn-o btn-w btn-dark">Start</button>
-          </a>
+          <button id="start-test" type="button" class="btn btn-lg btn-o btn-w btn-dark" onclick="startTest()">Start</button>
         </center>
       </div>
       <div class="col-md-1"></div>
     </div>
-  </div> -->
+  </div>
+
+  <div id="activity-test" class="container-fluid">
+    <div class="row text-center">
+      <h1 id="game-title">Let's Play A Game</h1>
+      <!-- <span class="subtitle"><small>in collaboration with </small> <a class="link" href="http://www.istem.illinois.edu/" target="_blank">I-STEM</a></span> -->
+    </div>
+
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div id="test-body" class="col-md-10">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Widget</h3>
+          </div>
+
+          <div class="panel-body">
+            <div class="container-fluid">
+              <div id="instructions">
+                <p>You’re going to see images of some animals. You’ll see two copies of the same animal. The images will be either the same, or a mirror image, as if the animal is looking in the mirror. Your goal is to decide whether the two pictures are the same or different. Let’s try it out:</p>
+                <p>See those crocodiles? Are those the same, or different (mirror image)? Use the mouse to move and click on either SAME or MIRROR IMAGE.</p>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <center>
+                    <img class="control-image" src="/public/img/game/1.png"/>
+                    <br>
+                    <!-- <button type="button" class="btn btn-lg btn-o btn-success click" onclick="clickSame()">Same</button> -->
+                  </center>
+                </div>
+                <div class="col-md-6">
+                  <center>
+                    <img class="test-image" src="/public/img/game/1.png"/>
+                    <br>
+                    <!-- <button type="button" class="btn btn-lg btn-o btn-danger click" onclick="clickDiff()">Different</button> -->
+                  </center>
+                </div>
+              </div>
+
+              <div class="row">
+                <center>
+                  <button type="button" class="btn btn-lg btn-o btn-success click" onclick="clickSame()">Same</button>
+                  <br><br>
+                  <button type="button" class="btn btn-lg btn-o btn-danger click" onclick="clickDiff()">Mirror Image</button>
+                </center>
+              </div>
+
+              <!-- <div class="row">
+                <center>
+                  <button type="button" class="btn btn-lg btn-o btn-dark click" onclick="nextItem()">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                  </button>
+                </center>
+              </div> -->
+
+              <div class="row">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+  </div>
 </div>
 
 <script src="/bower_components/jquery/dist/jquery.min.js"></script>
@@ -280,17 +378,26 @@
 <script src="/bower_components/moment/min/moment.min.js"></script>
 <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
-<script src="/public/js/game.js"></script>
+<script src="/public/js/activity.js"></script>
 
 <script type="text/javascript">
   $(function () {
       $('#datetimepicker1').datetimepicker();
   });
 
-  $(".emoji").each(function() {
+  $('.emoji').each(function() {
     $(this).html(twemoji.parse($(this).html()));
   });
 
+  function submitSurvey() {
+    $('#activity-survey').hide();
+    $('#activity-splash').show();
+  }
+
+  function startTest() {
+    $('#activity-splash').hide();
+    $('#activity-test').show();
+  }
 </script>
 
     

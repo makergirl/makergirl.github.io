@@ -1,4 +1,11 @@
 #activity {
+  /** Hidden divs **/
+  #activity-splash,
+  #activity-test {
+    display: none;
+  }
+
+
   /** Primary headers **/
   h1 {
     font-size: 48px;
