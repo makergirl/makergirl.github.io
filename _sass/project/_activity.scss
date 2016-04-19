@@ -208,14 +208,15 @@
 
     > li {
       display: inline-block;
+      opacity: 0.50;
 
       &:hover,
       &:focus {
-        opacity: 0.75;
+        opacity: 0.90;
       }
 
       &:active {
-        opacity: 0.90;
+        opacity: 1;
       }
     }
   }
