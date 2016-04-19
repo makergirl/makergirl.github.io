@@ -40,18 +40,29 @@ title: Session Activity
           <div class="panel-body">
             <div class="container-fluid">
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-4">
                   <div class="input-group input-group-lg">
                     <span class="input-group-addon" id="sizing-addon1">
                       <span class="inside-title">
-                      Name
+                        First Name
                       </span>
                     </span>
-                    <input type="text" class="form-control" placeholder="Enter your name here" aria-describedby="sizing-addon1">
+                    <input type="text" class="form-control" placeholder="Daenerys" aria-describedby="sizing-addon1">
                   </div>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-4">
+                  <div class="input-group input-group-lg">
+                    <span class="input-group-addon" id="sizing-addon1">
+                      <span class="inside-title">
+                        Last Name
+                      </span>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Targaryen" aria-describedby="sizing-addon1">
+                  </div>
+                </div>
+
+                <div class="col-md-4">
                   <div class="form-group">
                     <div class="input-group input-group-lg date">
                         <span class="input-group-addon">
@@ -193,6 +204,7 @@ title: Session Activity
                   <span class="inside-title">
                     Have you attended MakerGirl sessions before?
                   </span>
+
                   <div class="btn-group btn-group-lg" role="group" aria-label="...">
                     <button type="button" class="btn btn-default">Yes</button>
                     <button type="button" class="btn btn-default">No</button>
@@ -201,20 +213,10 @@ title: Session Activity
               </div>
 
               <div class="row">
-                <div class="col-md-8"></div>
-
-                <div class="col-md-4">
-                  <div class="btn-group">
-                    <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Pre or Post? &nbsp; <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li>Pre-Session</li>
-                      <li>Post-Session</li>
-                    </ul>
-
-                    <button id="start-test" type="button" class="btn btn-lg btn-o btn-dark" onclick="submitSurvey()">Submit</button>
-                  </div>
+                <div class="col-md-12">
+                  <center>
+                    <button id="start-test" type="button" class="btn btn-lg btn-o btn-w btn-dark" onclick="submitSurvey()">Submit</button>
+                  </center>
                 </div>
               </div>
 
