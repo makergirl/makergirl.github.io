@@ -320,7 +320,9 @@ title: Session Activity
 
 <script type="text/javascript">
   $(function () {
-      $('#datetimepicker1').datetimepicker();
+    $('#datetimepicker1').datetimepicker({
+      format: 'MM//DD/YYYY'
+   });
   });
 
   $('.emoji').each(function() {
