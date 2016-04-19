@@ -46,7 +46,7 @@ function nextItem() {
     counter = lastImageCounter;
 
     $('#game-title').html('Good Job!')
-    $('#test-body').html('<center><img src="/public/img/game/100.png" class="img-responsive"/><a href="/"><br><button type="button" class="btn btn-lg btn-o btn-dark">Done</button></a></center>');
+    $('#test-body').html('<center><img src="/public/img/game/100.png" class="img-responsive"/><a href="/"><br><button type="button" class="btn btn-lg btn-o btn-w btn-dark">Done</button></a></center>');
   }
 
   $('.control-image').attr('src', '/public/img/game/'+ counter + '.png');
