@@ -1,0 +1,63 @@
+<div id="activity-test" class="container-fluid">
+  <div class="row text-center">
+    <h1 id="game-title">Let's Play A Game</h1>
+    <!-- <span class="subtitle"><small>in collaboration with </small> <a class="link" href="http://www.istem.illinois.edu/" target="_blank">I-STEM</a></span> -->
+  </div>
+
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div id="test-body" class="col-md-10">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Game</h3>
+        </div>
+
+        <div class="panel-body">
+          <div class="container-fluid">
+            <div id="instructions">
+              <p>You’re going to see images of some animals. You’ll see two copies of the same animal. The images will be either the same, or a mirror image, as if the animal is looking in the mirror. Your goal is to decide whether the two pictures are the same or different. Let’s try it out:</p>
+              <p>See those crocodiles? Are those the same, or different (mirror image)? Use the mouse to move and click on either SAME or MIRROR IMAGE.</p>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <center>
+                  <img class="control-image" src="{{ site.baseurl }}public/img/game/1.png"/>
+                  <br>
+                  <!-- <button type="button" class="btn btn-lg btn-o btn-success click" onclick="clickSame()">Same</button> -->
+                </center>
+              </div>
+              <div class="col-md-6">
+                <center>
+                  <img class="test-image" src="{{ site.baseurl }}public/img/game/1.png"/>
+                  <br>
+                  <!-- <button type="button" class="btn btn-lg btn-o btn-danger click" onclick="clickDiff()">Different</button> -->
+                </center>
+              </div>
+            </div>
+
+            <div class="row">
+              <center>
+                <button type="button" class="btn btn-lg btn-w btn-o btn-success click" onclick="clickSame()">Same</button>
+                <br><br>
+                <button type="button" class="btn btn-lg btn-w btn-o btn-danger click" onclick="clickDiff()">Mirror Image</button>
+              </center>
+            </div>
+
+            <!-- <div class="row">
+              <center>
+                <button type="button" class="btn btn-lg btn-o btn-dark click" onclick="nextItem()">
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </button>
+              </center>
+            </div> -->
+
+            <div class="row">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+</div>
