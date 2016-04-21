@@ -247,6 +247,12 @@
 
   }
 
+  /** Test Image **/
+  .flip {
+    transform: scaleX(-1);
+    filter: flipH;
+  }
+
   /** Switch **/
 
   .onoffswitch {

@@ -36,10 +36,6 @@ function isPrime(number) {
 
 // Next Item Selector
 function nextItem() {
-  // var imageSource = $('.control-image').attr('src');
-  // console.log(counter);
-  // public/img/game01.png
-
   counter += 1;
 
   if(counter >= lastImageCounter) {
@@ -52,84 +48,64 @@ function nextItem() {
   $('.control-image').attr('src', '/public/img/game/'+ counter + '.png');
   $('.test-image').attr('src', '/public/img/game/'+ counter + '.png');
 
-  rotation = Math.floor((Math.random() * 360) + 1);
 
-  if(isPrime(counter)) {
-    rotation = 0;
+  if(counter > 2) {
+    index = Math.floor((Math.random() * 8) + 1);
+
+    if(isPrime(counter)) {
+      rotation = 0;
+      $('.test-image').addClass('flip');
+    } else {
+      $('.test-image').removeClass('flip');
+    }
+
+    $('#instructions').html('<center><span class="inside-title">Are they the same or not?</span></center>');
+    $('.test-image').css('transform', 'rotate(' + rotationDegrees[index] + 'deg)');
+  } else {
+    $('#instructions').html("<p>Now, see those cats? Are those the same, or different (mirror image)? Use the mouse to move and click on either SAME or MIRROR IMAGE.</p>");
+    $('.test-image').addClass('flip');
   }
 
-  $('.test-image').css('transform', 'rotate(' + rotation + 'deg)');
-
-  $('#instructions').html('<center><span class="inside-title">Are they the same or not?</span></center>');
-  $('#test-title').html('Test');
 
   console.log(counter);
 }
 
 function clickSame() {
-  if(rotation == 0) {
-    score += 10;
-    console.log(score);
+  if(counter > 2) {
+    if(rotation == 0) {
+      score += 10;
+    } else {
+      score -= 10;
+    }
+    nextItem();
   } else {
-    score -= 10;
-    console.log(score);
+    if(counter == 1) {
+      score += 10;
+      $('#correct').modal('show');
+      nextItem();
+    } else if (counter == 2) {
+      score -= 10;
+      $('#wrong').modal('show');
+    }
   }
-
-  nextItem();
 }
 
 function clickDiff() {
-  if(rotation != 0) {
-    score += 10;
-    console.log(score);
+  if(counter > 2) {
+    if(rotation != 0) {
+      score += 10;
+    } else {
+      score -= 10;
+    }
+    nextItem();
   } else {
-    score -= 10;
-    console.log(score);
+    if(counter == 1) {
+      score += 10;
+      $('#wrong').modal('show');
+    } else if (counter == 2) {
+      score -= 10;
+      $('#correct').modal('show');
+      nextItem();
+    }
   }
-
-  nextItem();
 }
-
-// // record start time
-// var startTime;
-//
-// function display() {
-//   // later record end time
-//   var endTime = new Date();
-//
-//   // time difference in ms
-//   var timeDiff = endTime - startTime;
-//
-//   // strip the miliseconds
-//   timeDiff /= 1000;
-//
-//   // get seconds
-//   var seconds = Math.round(timeDiff % 60);
-//
-//   // remove seconds from the date
-//   timeDiff = Math.floor(timeDiff / 60);
-//
-//   // get minutes
-//   var minutes = Math.round(timeDiff % 60);
-//
-//   // remove minutes from the date
-//   timeDiff = Math.floor(timeDiff / 60);
-//
-//   // get hours
-//   var hours = Math.round(timeDiff % 24);
-//
-//   // remove hours from the date
-//   timeDiff = Math.floor(timeDiff / 24);
-//
-//   // the rest of timeDiff is number of days
-//   var days = timeDiff;
-//
-//   // $('.time').text(days + ' days, ' + hours + ':' + minutes + ':' + seconds);
-//   console.log(days + ' days, ' + hours + ':' + minutes + ':' + seconds);
-//   setTimeout(display, 1000);
-// }
-//
-// $('#start-test').click(function () {
-//   startTime = new Date();
-//   setTimeout(display, 1000);
-// });
