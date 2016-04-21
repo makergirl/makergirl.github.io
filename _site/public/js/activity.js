@@ -4,6 +4,7 @@ var rotation = 0;
 var lastImageCounter = 34;
 var startTime;
 var endTime;
+var itemValue;
 
 var rotationDegrees = [
   22.5,
@@ -47,6 +48,8 @@ function nextItem() {
 
     $('#game-title').html('Good Job!')
     $('#test-body').html('<center><img src="/public/img/game/100.png" class="img-responsive"/><a href="/"><br><button type="button" class="btn btn-lg btn-o btn-w btn-dark">Done</button></a></center>');
+
+    console.log(results);
   }
 
   $('.control-image').attr('src', '/public/img/game/'+ counter + '.png');
@@ -81,12 +84,21 @@ function clickSame() {
   if(counter > 2) {
     if(rotation == 0) {
       score += 10;
+      itemValue = true;
     } else {
       score -= 10;
+      itemValue = false;
     }
 
     endTime = new Date();
     console.log(endTime - startTime);
+
+    results.push({
+      'id' : counter,
+      'value' : itemValue,
+      'time' : endTime - startTime
+    });
+
     nextItem();
   } else {
     if(counter == 1) {
@@ -105,12 +117,21 @@ function clickDiff() {
   if(counter > 2) {
     if(rotation != 0) {
       score += 10;
+      itemValue = true;
     } else {
       score -= 10;
+      itemValue = false;
     }
 
     endTime = new Date();
     console.log(endTime - startTime);
+
+    results.push({
+      'id' : counter,
+      'value' : itemValue,
+      'time' : endTime - startTime
+    });
+
     nextItem();
   } else {
     if(counter == 1) {
