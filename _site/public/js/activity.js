@@ -2,6 +2,8 @@ var score = 0;
 var counter = 1;
 var rotation = 0;
 var lastImageCounter = 34;
+var startTime;
+var endTime;
 
 var rotationDegrees = [
   22.5,
@@ -13,6 +15,8 @@ var rotationDegrees = [
   292.5,
   337.5
 ]
+
+var results = [];
 
 // Randomize animals and degrees
 // Timer won't start until trial 3
@@ -48,6 +52,9 @@ function nextItem() {
   $('.control-image').attr('src', '/public/img/game/'+ counter + '.png');
   $('.test-image').attr('src', '/public/img/game/'+ counter + '.png');
 
+  if(counter == 3) {
+    startTime = new Date();
+  }
 
   if(counter > 2) {
     index = Math.floor((Math.random() * 8) + 1);
@@ -77,11 +84,15 @@ function clickSame() {
     } else {
       score -= 10;
     }
+
+    endTime = new Date();
+    console.log(endTime - startTime);
     nextItem();
   } else {
     if(counter == 1) {
       score += 10;
       $('#correct').modal('show');
+
       nextItem();
     } else if (counter == 2) {
       score -= 10;
@@ -97,6 +108,9 @@ function clickDiff() {
     } else {
       score -= 10;
     }
+
+    endTime = new Date();
+    console.log(endTime - startTime);
     nextItem();
   } else {
     if(counter == 1) {
@@ -105,6 +119,7 @@ function clickDiff() {
     } else if (counter == 2) {
       score -= 10;
       $('#correct').modal('show');
+
       nextItem();
     }
   }
