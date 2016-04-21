@@ -8,14 +8,17 @@ var itemValue;
 var isFlipped;
 
 var rotationDegrees = [
-  22.5,
-  67.5,
-  112.5,
-  157.5,
-  202.5,
-  247.5,
-  292.5,
-  337.5
+  22.5, 67.5, 112.5, 157.5, 202.5, 247.5, 292.5, 337.5,
+  22.5, 67.5, 112.5, 157.5, 202.5, 247.5, 292.5, 337.5,
+  22.5, 67.5, 112.5, 157.5, 202.5, 247.5, 292.5, 337.5,
+  22.5, 67.5, 112.5, 157.5, 202.5, 247.5, 292.5, 337.5
+]
+
+var flipOptions = [
+  1, 0, 1, 0, 1, 0, 1, 0,
+  1, 0, 1, 0, 1, 0, 1, 0,
+  1, 0, 1, 0, 1, 0, 1, 0,
+  1, 0, 1, 0, 1, 0, 1, 0
 ]
 
 var results = [];
@@ -37,13 +40,13 @@ var results = [];
 
 
 // Prime Number Checker
-function isPrime(number) {
-    var start = 2;
-    while (start <= Math.sqrt(number)) {
-        if (number % start++ < 1) return false;
-    }
-    return number > 1;
-}
+// function isPrime(number) {
+//     var start = 2;
+//     while (start <= Math.sqrt(number)) {
+//         if (number % start++ < 1) return false;
+//     }
+//     return number > 1;
+// }
 
 if(counter == 1) {
   $('.test-image').css({
@@ -91,14 +94,15 @@ function nextItem() {
   }
 
   if(counter > 2) {
-    index = Math.floor((Math.random() * 8) + 1);
+    rotationIndex = Math.floor((Math.random() * rotationDegrees.length) + 1);
+    flipIndex = Math.floor((Math.random() * flipOptions.length) + 1);
 
-    if(isPrime(counter)) {
+    if(flipOptions[flipIndex] == 1) {
       rotation = 0;
       isFlipped = true;
 
       $('.test-image').css({
-        'transform' : 'rotate(' + (360 - rotationDegrees[index]) + 'deg) scaleX(-1)',
+        'transform' : 'rotate(' + (360 - rotationDegrees[rotationIndex]) + 'deg) scaleX(-1)',
         'filter': 'flipH'
       });
 
@@ -106,11 +110,23 @@ function nextItem() {
       $('.test-image').removeClass('flip');
 
       $('.test-image').css({
-        'transform' : 'rotate(' + (360 - 67.5) + 'deg)'
+        'transform' : 'rotate(' + (360 - rotationDegrees[rotationIndex]) + 'deg)'
       });
 
       isFlipped = false;
     }
+
+    rotationDegrees.splice(rotationIndex, 1);
+    flipOptions.splice(flipIndex, 1);
+    console.log('rotationIndex: ' + rotationIndex);
+    console.log('Removed: ' + rotationDegrees[rotationIndex]);
+    console.log('Array: ');
+    console.log(rotationDegrees);
+
+    console.log('flipIndex: ' + flipIndex);
+    console.log('Removed: ' + flipOptions[flipIndex]);
+    console.log('Array: ');
+    console.log(flipOptions);
 
     $('#instructions').html('');
   } else {
