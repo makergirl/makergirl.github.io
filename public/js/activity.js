@@ -5,6 +5,7 @@ var lastImageCounter = 34;
 var startTime;
 var endTime;
 var itemValue;
+var isFlipped;
 
 var rotationDegrees = [
   22.5,
@@ -64,9 +65,11 @@ function nextItem() {
 
     if(isPrime(counter)) {
       rotation = 0;
+      isFlipped = true;
       $('.test-image').addClass('flip');
     } else {
       $('.test-image').removeClass('flip');
+      isFlipped = false;
     }
 
     $('#instructions').html('<center><span class="inside-title">Are they the same or not?</span></center>');
@@ -95,7 +98,9 @@ function clickSame() {
 
     results.push({
       'id' : counter,
-      'value' : itemValue,
+      'isCorrect' : itemValue,
+      'isFlipped' : isFlipped,
+      'rotationValue' : rotation,
       'time' : endTime - startTime
     });
 
@@ -128,7 +133,9 @@ function clickDiff() {
 
     results.push({
       'id' : counter,
-      'value' : itemValue,
+      'isCorrect' : itemValue,
+      'isFlipped' : isFlipped,
+      'rotationValue' : rotation,
       'time' : endTime - startTime
     });
 
