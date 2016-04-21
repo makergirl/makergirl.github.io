@@ -5,6 +5,7 @@ var lastImageCounter = 34;
 var startTime;
 var endTime;
 var itemValue;
+var isFlipped;
 
 var rotationDegrees = [
   22.5,
@@ -26,9 +27,14 @@ var results = [];
 // 16 inverted, 16 mirror
 // Different animals for pre and post
 // Add description for cat
-
-
 // Frequency should normalized
+
+// Initial
+var initialSource =  $('.test-image').attr('src');
+if(initialSource == 'public/img/1.png') {
+  $('.test-image').css('transform', 'rotate(' + 22.5 + 'deg)');
+}
+
 
 // Prime Number Checker
 function isPrime(number) {
@@ -64,9 +70,11 @@ function nextItem() {
 
     if(isPrime(counter)) {
       rotation = 0;
+      isFlipped = true;
       $('.test-image').addClass('flip');
     } else {
       $('.test-image').removeClass('flip');
+      isFlipped = false;
     }
 
     $('#instructions').html('<center><span class="inside-title">Are they the same or not?</span></center>');
@@ -95,7 +103,9 @@ function clickSame() {
 
     results.push({
       'id' : counter,
-      'value' : itemValue,
+      'isCorrect' : itemValue,
+      'isFlipped' : isFlipped,
+      'rotationValue' : rotation,
       'time' : endTime - startTime
     });
 
@@ -128,7 +138,9 @@ function clickDiff() {
 
     results.push({
       'id' : counter,
-      'value' : itemValue,
+      'isCorrect' : itemValue,
+      'isFlipped' : isFlipped,
+      'rotationValue' : rotation,
       'time' : endTime - startTime
     });
 
