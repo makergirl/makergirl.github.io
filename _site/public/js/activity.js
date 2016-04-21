@@ -45,6 +45,12 @@ function isPrime(number) {
     return number > 1;
 }
 
+if(counter == 1) {
+  $('.test-image').css({
+    'transform' : 'rotate(' + (360 - 22.5) + 'deg)'
+  });
+}
+
 // Next Item Selector
 function nextItem() {
   counter += 1;
@@ -90,17 +96,29 @@ function nextItem() {
     if(isPrime(counter)) {
       rotation = 0;
       isFlipped = true;
-      $('.test-image').addClass('flip');
+
+      $('.test-image').css({
+        'transform' : 'rotate(' + (360 - rotationDegrees[index]) + 'deg) scaleX(-1)',
+        'filter': 'flipH'
+      });
+
     } else {
       $('.test-image').removeClass('flip');
+
+      $('.test-image').css({
+        'transform' : 'rotate(' + (360 - 67.5) + 'deg)'
+      });
+
       isFlipped = false;
     }
 
     $('#instructions').html('');
-    $('.test-image').css('transform', 'rotate(' + rotationDegrees[index] + 'deg)');
   } else {
     $('#instructions').html("<p>Let's try one more. Are these the same or different?</p><p>Remember, <b>SAME</b> means it’s the same image, just rotated, <b>MIRROR IMAGE</b> means it's as if the animal is looking in the mirror.</p>");
-    $('.test-image').addClass('flip');
+    $('.test-image').css({
+      'transform' : 'rotate(' + (360 - 67.5) + 'deg) scaleX(-1)',
+      'filter': 'flipH'
+    });
   }
 
 
