@@ -34,7 +34,7 @@ var results = [];
 
 // Initial
 // var initialSource =  $('.test-image').attr('src');
-// if(initialSource == 'public/img/1.png') {
+// if(initialSource == 'public/img/1.jpg') {
 //   $('.test-image').css('transform', 'rotate(' + 22.5 + 'deg)');
 // }
 
@@ -62,13 +62,13 @@ function nextItem() {
     counter = lastImageCounter;
 
     $('#game-title').html('Good Job!')
-    $('#test-body').html('<center><img src="/public/img/game/100.png" class="img-responsive"/><a href="/"><br><button type="button" class="btn btn-lg btn-o btn-w btn-dark">Done</button></a></center>');
+    $('#test-body').html('<center><img src="/public/img/game/100.jpg" class="img-responsive"/><a href="/"><br><button type="button" class="btn btn-lg btn-o btn-w btn-dark">Done</button></a></center>');
 
     console.log(results);
   }
 
-  $('.control-image').attr('src', '/public/img/game/'+ counter + '.png');
-  $('.test-image').attr('src', '/public/img/game/'+ counter + '.png');
+  $('.control-image').attr('src', '/public/img/game/'+ counter + '.jpg');
+  $('.test-image').attr('src', '/public/img/game/'+ counter + '.jpg');
 
   if(counter == 3) {
     $('#test-container').html(`
@@ -136,6 +136,11 @@ function nextItem() {
       'transform' : 'rotate(' + (360 - 67.5) + 'deg) scaleX(-1)',
       'filter': 'flipH'
     });
+
+    if(surveyType == 'post') {
+      counter = 34;
+      lastImageCounter = 44;
+    }
   }
 
 
@@ -214,14 +219,14 @@ function startTest() {
     <div class="row">
       <div class="col-md-6">
         <center>
-          <img class="control-image" src="/public/img/game/3.png"/>
+          <img class="control-image" src="/public/img/game/3.jpg"/>
           <br>
           <!-- <button type="button" class="btn btn-lg btn-o btn-success click" onclick="clickSame()">Same</button> -->
         </center>
       </div>
       <div class="col-md-6">
         <center>
-          <img class="test-image" src="/public/img/game/3.png"/>
+          <img class="test-image" src="/public/img/game/3.jpg"/>
           <br>
           <!-- <button type="button" class="btn btn-lg btn-o btn-danger click" onclick="clickDiff()">Different</button> -->
         </center>
@@ -238,4 +243,33 @@ function startTest() {
 
     <div class="row"></div>
   `);
+}
+
+// Interactions
+$(function () {
+  $('#birthday').datetimepicker({
+    format: 'MM//DD/YYYY'
+ });
+});
+
+$('.emoji').each(function() {
+  $(this).html(twemoji.parse($(this).html()));
+});
+
+function submitSurvey() {
+  $('#activity-survey').hide();
+  $('#activity-splash').show();
+
+  console.log($('#activity-survey').serializeArray());
+  return false;
+}
+
+function showInstructions() {
+  $('#activity-splash').hide();
+  $('#activity-instructions').show();
+}
+
+function startDemo() {
+  $('#activity-instructions').hide();
+  $('#activity-test').show();
 }
