@@ -94,7 +94,6 @@ function clickSame() {
       score += 10;
       itemValue = true;
     } else {
-      score -= 10;
       itemValue = false;
     }
 
@@ -117,7 +116,6 @@ function clickSame() {
 
       nextItem();
     } else if (counter == 2) {
-      score -= 10;
       $('#wrong').modal('show');
     }
   }
@@ -129,7 +127,6 @@ function clickDiff() {
       score += 10;
       itemValue = true;
     } else {
-      score -= 10;
       itemValue = false;
     }
 
@@ -147,10 +144,9 @@ function clickDiff() {
     nextItem();
   } else {
     if(counter == 1) {
-      score += 10;
       $('#wrong').modal('show');
     } else if (counter == 2) {
-      score -= 10;
+      score += 10;
       $('#correct').modal('show');
 
       nextItem();
