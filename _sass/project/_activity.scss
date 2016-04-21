@@ -219,6 +219,32 @@
         opacity: 1;
       }
     }
+
+    > label {
+      padding: 10px;
+      display: inline-block;
+
+      & > input{ /* HIDE RADIO */
+        visibility: hidden; /* Makes input not-clickable */
+        position: absolute; /* Remove input from document flow */
+      }
+
+      & > input + img { /* IMAGE STYLES */
+        cursor: pointer;
+        opacity: 0.50;
+      }
+
+      & > input + img:hover,
+      & > input + img:focus { /* IMAGE STYLES */
+        cursor: pointer;
+        opacity: 0.90;
+      }
+
+      & > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+        opacity: 1;
+      }
+    }
+
   }
 
   /** Switch **/

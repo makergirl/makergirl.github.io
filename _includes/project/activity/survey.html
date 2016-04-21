@@ -14,29 +14,29 @@
         <div class="panel-body">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-md-4">
+              <div class="col-md-6">
                 <div class="input-group input-group-lg">
                   <span class="input-group-addon" id="sizing-addon1">
                     <span class="inside-title">
                       First Name
                     </span>
                   </span>
-                  <input type="text" class="form-control" placeholder="Daenerys" aria-describedby="sizing-addon1">
+                  <input id="firstName" type="text" class="form-control" placeholder="Daenerys" aria-describedby="sizing-addon1">
                 </div>
-              </div>
 
-              <div class="col-md-4">
+                <br>
+
                 <div class="input-group input-group-lg">
                   <span class="input-group-addon" id="sizing-addon1">
                     <span class="inside-title">
                       Last Name
                     </span>
                   </span>
-                  <input type="text" class="form-control" placeholder="Targaryen" aria-describedby="sizing-addon1">
+                  <input id="lastName" type="text" class="form-control" placeholder="Targaryen" aria-describedby="sizing-addon1">
                 </div>
               </div>
 
-              <div class="col-md-4">
+              <div class="col-md-6">
                 <div class="form-group">
                   <div class="input-group input-group-lg date">
                       <span class="input-group-addon">
@@ -44,7 +44,7 @@
                           Birthday
                         </span>
                       </span>
-                      <input type="text" class="form-control" id="datetimepicker1" placeholder="01/01/2001"/>
+                      <input id="birthDay" type="text" class="form-control" placeholder="01/01/2001"/>
                   </div>
                 </div>
               </div>
@@ -56,7 +56,7 @@
                   <span class="input-group-addon" id="sizing-addon1">
                     <span class="inside-title">What do you want to be when you grow up?</span>
                   </span>
-                  <input type="text" class="form-control" placeholder="I want to be..." aria-describedby="sizing-addon1">
+                  <input id="qf1" type="text" class="form-control" placeholder="I want to be..." aria-describedby="sizing-addon1">
                 </div>
               </div>
             </div>
@@ -64,13 +64,25 @@
             <div class="row">
               <div class="col-md-12">
                 <span class="inside-title">What's your favorite subject at school?</span>
-                <div class="btn-group-vertical btn-group-lg" role="group" aria-label="...">
-                  <button type="button" class="btn btn-default">Math</button>
-                  <button type="button" class="btn btn-default">Science</button>
-                  <button type="button" class="btn btn-default">Language Arts</button>
-                  <button type="button" class="btn btn-default">Art</button>
-                  <button type="button" class="btn btn-default">Music</button>
-                  <button type="button" class="btn btn-default">PE</button>
+                <div class="btn-group-vertical btn-group-lg" data-toggle="buttons">
+                  <label class="btn btn-default">
+                    <input type="radio" name="What's your favorite subject at school?" value="Math" /> Math
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="radio"name="What's your favorite subject at school?" value="Science" /> Science
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="radio" name="What's your favorite subject at school?" value="Language Arts" /> Language Arts
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="radio" name="What's your favorite subject at school?" value="Art" /> Art
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="radio" name="What's your favorite subject at school?" value="Music" /> Music
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="radio" name="What's your favorite subject at school?" value="PE" /> PE
+                  </label>
                 </div>
               </div>
             </div>
@@ -80,11 +92,20 @@
                 <span class="inside-title">
                   Choose from this list all kinds of devices that you get to use at home.
                 </span>
-                <div class="btn-group-vertical btn-group-lg" role="group" aria-label="...">
-                  <button type="button" class="btn btn-default">TV</button>
-                  <button type="button" class="btn btn-default">Computer or laptop</button>
-                  <button type="button" class="btn btn-default">iPad or any tablet</button>
-                  <button type="button" class="btn btn-default">Phone</button>
+
+                <div class="btn-group-vertical btn-group-lg" data-toggle="buttons">
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="Choose from this list all kinds of devices that you get to use at home." value="TV" /> TV
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="Choose from this list all kinds of devices that you get to use at home." value="Computer or laptop" /> Computer or laptop
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="Choose from this list all kinds of devices that you get to use at home." value="iPad or any tablet" /> iPad or any tablet
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="Choose from this list all kinds of devices that you get to use at home." value="Phone" /> Phone
+                  </label>
                 </div>
               </div>
             </div>
@@ -94,13 +115,24 @@
                 <span class="inside-title">
                   How much do you like science?
                 </span>
-                <ul class="emoji">
-                  <li>☹️</li>
-                  <li>🙁</li>
-                  <li>😐</li>
-                  <li>🙂</li>
-                  <li>😄</li>
-                </ul>
+
+                <div class="btn-group btn-group-lg emoji">
+                  <label>
+                    <input type="radio" name="How much do you like science?" value="1" /> ☹️
+                  </label>
+                  <label>
+                    <input type="radio" name="How much do you like science?" value="2" /> 🙁
+                  </label>
+                  <label>
+                    <input type="radio" name="How much do you like science?" value="3" /> 😐
+                  </label>
+                  <label>
+                    <input type="radio" name="How much do you like science?" value="4" /> 🙂
+                  </label>
+                  <label>
+                    <input type="radio" name="How much do you like science?" value="5" /> 😄
+                  </label>
+                </div>
               </div>
             </div>
 
@@ -109,13 +141,24 @@
                 <span class="inside-title">
                   How much do you like technology?
                 </span>
-                <ul class="emoji">
-                  <li>☹️</li>
-                  <li>🙁</li>
-                  <li>😐</li>
-                  <li>🙂</li>
-                  <li>😄</li>
-                </ul>
+
+                <div class="btn-group btn-group-lg emoji">
+                  <label>
+                    <input type="radio" name="How much do you like technology?" value="1" /> ☹️
+                  </label>
+                  <label>
+                    <input type="radio" name="How much do you like technology?" value="2" /> 🙁
+                  </label>
+                  <label>
+                    <input type="radio" name="How much do you like technology?" value="3" /> 😐
+                  </label>
+                  <label>
+                    <input type="radio" name="How much do you like technology?" value="4" /> 🙂
+                  </label>
+                  <label>
+                    <input type="radio" name="How much do you like technology?" value="5" /> 😄
+                  </label>
+                </div>
               </div>
             </div>
 
@@ -124,28 +167,50 @@
                 <span class="inside-title">
                   How much do you like engineering? 
                 </span>
-                <ul class="emoji">
-                  <li>☹️</li>
-                  <li>🙁</li>
-                  <li>😐</li>
-                  <li>🙂</li>
-                  <li>😄</li>
-                </ul>
+
+                <div class="btn-group btn-group-lg emoji">
+                  <label>
+                    <input type="radio" name="How much do you like engineering?" value="1" /> ☹️
+                  </label>
+                  <label>
+                    <input type="radio" name="How much do you like engineering?" value="2" /> 🙁
+                  </label>
+                  <label>
+                    <input type="radio" name="How much do you like engineering?" value="3" /> 😐
+                  </label>
+                  <label>
+                    <input type="radio" name="How much do you like engineering?" value="4" /> 🙂
+                  </label>
+                  <label>
+                    <input type="radio" name="How much do you like engineering?" value="5" /> 😄
+                  </label>
+                </div>
               </div>
             </div>
 
             <div class="row">
               <div class="col-md-12">
                 <span class="inside-title">
-                  How much do you like math? 
+                  How much do you like math?
                 </span>
-                <ul class="emoji">
-                  <li>☹️</li>
-                  <li>🙁</li>
-                  <li>😐</li>
-                  <li>🙂</li>
-                  <li>😄</li>
-                </ul>
+
+                <div class="btn-group btn-group-lg emoji">
+                  <label>
+                    <input type="radio" name="How much do you like math?" value="1" /> ☹️
+                  </label>
+                  <label>
+                    <input type="radio" name="How much do you like math?" value="2" /> 🙁
+                  </label>
+                  <label>
+                    <input type="radio" name="How much do you like math?" value="3" /> 😐
+                  </label>
+                  <label>
+                    <input type="radio" name="How much do you like math?" value="4" /> 🙂
+                  </label>
+                  <label>
+                    <input type="radio" name="How much do you like math?" value="5" /> 😄
+                  </label>
+                </div>
               </div>
             </div>
 
@@ -154,11 +219,20 @@
                 <span class="inside-title">
                   Can you guess what 3D printing is? Choose one answer.
                 </span>
-                <div class="btn-group-vertical btn-group-lg" role="group" aria-label="...">
-                  <button type="button" class="btn btn-default">Printing you can only see properly if you wear 3D glasses</button>
-                  <button type="button" class="btn btn-default">A way to print objects from scratch</button>
-                  <button type="button" class="btn btn-default">A way to create special objects that you can design</button>
-                  <button type="button" class="btn btn-default">Printing that makes colors look three-dimensional</button>
+
+                <div class="btn-group-vertical btn-group-lg" data-toggle="buttons">
+                  <label class="btn btn-default">
+                    <input type="radio" name="Can you guess what 3D printing is? Choose one answer." value="Math" /> Printing you can only see properly if you wear 3D glasses
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="radio"name="Can you guess what 3D printing is? Choose one answer." value="Science" /> A way to print objects from scratch
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="radio" name="Can you guess what 3D printing is? Choose one answer." value="Language Arts" /> A way to create special objects that you can design
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="radio" name="Can you guess what 3D printing is? Choose one answer." value="Art" /> Printing that makes colors look three-dimensional
+                  </label>
                 </div>
               </div>
             </div>
@@ -169,7 +243,7 @@
                   <span class="input-group-addon" id="sizing-addon1">
                     <span class="inside-title">What is technology?</span>
                   </span>
-                  <input type="text" class="form-control" placeholder="Technology is..." aria-describedby="sizing-addon1">
+                  <input id="qf2" type="text" class="form-control" placeholder="Technology is..." aria-describedby="sizing-addon1">
                 </div>
               </div>
             </div>
@@ -180,9 +254,13 @@
                   Have you attended MakerGirl sessions before?
                 </span>
 
-                <div class="btn-group btn-group-lg" role="group" aria-label="...">
-                  <button type="button" class="btn btn-default">Yes</button>
-                  <button type="button" class="btn btn-default">No</button>
+                <div class="btn-group btn-group-lg" data-toggle="buttons">
+                  <label class="btn btn-default">
+                    <input type="radio" name="Have you attended MakerGirl sessions before?" value="Yes" /> Yes
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="radio"name="Have you attended MakerGirl sessions before?" value="No" /> No
+                  </label>
                 </div>
               </div>
             </div>
