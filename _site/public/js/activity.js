@@ -114,7 +114,8 @@ function nextItem() {
 
     $('#instructions').html('');
   } else {
-    $('#instructions').html("<p>Let's try one more. Are these the same or different?</p><p>Remember, <b>SAME</b> means it’s the same image, just rotated, <b>MIRROR IMAGE</b> means it's as if the animal is looking in the mirror.</p>");
+    $('#instructions').html(`<p>Let's try one more. Are these the same or different?</p><p>Remember, <b>SAME</b> means it’s the same image, just rotated, <b>MIRROR IMAGE</b> means it's as if the animal is looking in the mirror.</p>`);
+    $('#wrong-message').html(`Actually, those are mirror images. Do you see how the different cats look in different directions?`);
     $('.test-image').css({
       'transform' : 'rotate(' + (360 - 67.5) + 'deg) scaleX(-1)',
       'filter': 'flipH'
