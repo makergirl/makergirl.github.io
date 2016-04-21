@@ -38,7 +38,7 @@ title: Session Activity
 
 <script type="text/javascript">
   $(function () {
-    $('#birthDay').datetimepicker({
+    $('#birthday').datetimepicker({
       format: 'MM//DD/YYYY'
    });
   });
@@ -48,8 +48,11 @@ title: Session Activity
   });
 
   function submitSurvey() {
-    $('#activity-survey').hide();
-    $('#activity-splash').show();
+    // $('#activity-survey').hide();
+    // $('#activity-splash').show();
+
+    console.log($('#activity-survey').serializeArray());
+    return false;
   }
 
   function startTest() {
