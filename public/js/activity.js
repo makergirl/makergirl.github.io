@@ -27,9 +27,14 @@ var results = [];
 // 16 inverted, 16 mirror
 // Different animals for pre and post
 // Add description for cat
-
-
 // Frequency should normalized
+
+// Initial
+var initialSource =  $('.test-image').attr('src');
+if(initialSource == 'public/img/1.png') {
+  $('.test-image').css('transform', 'rotate(' + 22.5 + 'deg)');
+}
+
 
 // Prime Number Checker
 function isPrime(number) {
