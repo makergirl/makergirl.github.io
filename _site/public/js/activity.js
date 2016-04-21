@@ -30,10 +30,10 @@ var results = [];
 // Frequency should normalized
 
 // Initial
-var initialSource =  $('.test-image').attr('src');
-if(initialSource == 'public/img/1.png') {
-  $('.test-image').css('transform', 'rotate(' + 22.5 + 'deg)');
-}
+// var initialSource =  $('.test-image').attr('src');
+// if(initialSource == 'public/img/1.png') {
+//   $('.test-image').css('transform', 'rotate(' + 22.5 + 'deg)');
+// }
 
 
 // Prime Number Checker
@@ -62,6 +62,25 @@ function nextItem() {
   $('.test-image').attr('src', '/public/img/game/'+ counter + '.png');
 
   if(counter == 3) {
+    $('#test-container').html(`
+      <div>
+        <p>Now that you understand the game let’s do some more. Remember, <b>SAME</b> means it’s the exact same picture, only rotated, <b>MIRROR IMAGE</b> means it’s a mirror image of the first picture. You’re now going to see many other animals. For each animal you have to decide if the two pictures are the same or different. Use the mouse to move to the buttons of either SAME or DIFFERENT. When you finish each animal, a new animal will appear. You cannot change your mind about your choices. Try to work as fast as you can. You may see the same animals again, but think carefully and quickly each time if the pictures are the same or different.</p>
+
+        <p>Click <b>START</b> to begin the game.</p>
+
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <center>
+            <button id="start-test" type="button" class="btn btn-lg btn-o btn-w btn-dark" onclick="startTest()">Start</button>
+          </center>
+        </div>
+      </div>
+
+      <div class="row"></div>
+    `);
+
     startTime = new Date();
   }
 
@@ -77,10 +96,10 @@ function nextItem() {
       isFlipped = false;
     }
 
-    $('#instructions').html('<center><span class="inside-title">Are they the same or not?</span></center>');
+    $('#instructions').html('');
     $('.test-image').css('transform', 'rotate(' + rotationDegrees[index] + 'deg)');
   } else {
-    $('#instructions').html("<p>Now, see those cats? Are those the same, or different (mirror image)? Use the mouse to move and click on either SAME or MIRROR IMAGE.</p>");
+    $('#instructions').html("<p>Let's try one more. Are these the same or different?</p><p>Remember, <b>SAME</b> means it’s the same image, just rotated, <b>MIRROR IMAGE</b> means it's as if the animal is looking in the mirror.</p>");
     $('.test-image').addClass('flip');
   }
 
@@ -94,7 +113,6 @@ function clickSame() {
       score += 10;
       itemValue = true;
     } else {
-      score -= 10;
       itemValue = false;
     }
 
@@ -117,7 +135,6 @@ function clickSame() {
 
       nextItem();
     } else if (counter == 2) {
-      score -= 10;
       $('#wrong').modal('show');
     }
   }
@@ -129,7 +146,6 @@ function clickDiff() {
       score += 10;
       itemValue = true;
     } else {
-      score -= 10;
       itemValue = false;
     }
 
@@ -147,13 +163,44 @@ function clickDiff() {
     nextItem();
   } else {
     if(counter == 1) {
-      score += 10;
       $('#wrong').modal('show');
     } else if (counter == 2) {
-      score -= 10;
+      score += 10;
       $('#correct').modal('show');
 
       nextItem();
     }
   }
+}
+
+
+function startTest() {
+  $('#test-container').html(`
+    <div class="row">
+      <div class="col-md-6">
+        <center>
+          <img class="control-image" src="/public/img/game/3.png"/>
+          <br>
+          <!-- <button type="button" class="btn btn-lg btn-o btn-success click" onclick="clickSame()">Same</button> -->
+        </center>
+      </div>
+      <div class="col-md-6">
+        <center>
+          <img class="test-image" src="/public/img/game/3.png"/>
+          <br>
+          <!-- <button type="button" class="btn btn-lg btn-o btn-danger click" onclick="clickDiff()">Different</button> -->
+        </center>
+      </div>
+    </div>
+
+    <div class="row">
+      <center>
+        <button type="button" class="btn btn-lg btn-w btn-o btn-success click" onclick="clickSame()">Same</button>
+        <br><br>
+        <button type="button" class="btn btn-lg btn-w btn-o btn-danger click" onclick="clickDiff()">Mirror Image</button>
+      </center>
+    </div>
+
+    <div class="row"></div>
+  `);
 }

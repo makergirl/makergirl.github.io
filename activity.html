@@ -26,6 +26,7 @@ title: Session Activity
 <div id="activity">
   {% include project/activity/survey.html %}
   {% include project/activity/splash.html %}
+  {% include project/activity/instructions.html %}
   {% include project/activity/test.html %}
 </div>
 
@@ -55,8 +56,13 @@ title: Session Activity
     return false;
   }
 
-  function startTest() {
+  function showInstructions() {
     $('#activity-splash').hide();
+    $('#activity-instructions').show();
+  }
+
+  function startDemo() {
+    $('#activity-instructions').hide();
     $('#activity-test').show();
   }
 </script>
