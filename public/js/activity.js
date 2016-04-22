@@ -139,7 +139,7 @@ function nextItem() {
 
     if(surveyType == 'post') {
       counter = 34;
-      lastImageCounter = 44;
+      lastImageCounter = 66;
     }
   }
 
