@@ -7,6 +7,12 @@ var endTime;
 var itemValue;
 var isFlipped;
 
+var imageDir = '/public/img/game/';
+var preDir = '/public/img/game/pre/';
+var postDir = '/public/img/game/post/';
+
+imagDir = preDir;
+
 var rotationDegrees = [
   22.5, 67.5, 112.5, 157.5, 202.5, 247.5, 292.5, 337.5,
   22.5, 67.5, 112.5, 157.5, 202.5, 247.5, 292.5, 337.5,
@@ -67,8 +73,8 @@ function nextItem() {
     console.log(results);
   }
 
-  $('.control-image').attr('src', '/public/img/game/'+ counter + '.jpg');
-  $('.test-image').attr('src', '/public/img/game/'+ counter + '.jpg');
+  $('.control-image').attr('src', imageDir + counter + '.jpg');
+  $('.test-image').attr('src', imageDir + counter + '.jpg');
 
   if(counter == 3) {
     $('#test-container').html(`
@@ -138,8 +144,7 @@ function nextItem() {
     });
 
     if(surveyType == 'post') {
-      counter = 34;
-      lastImageCounter = 66;
+      imageDir = postDir;
     }
   }
 
@@ -219,14 +224,14 @@ function startTest() {
     <div class="row">
       <div class="col-md-6">
         <center>
-          <img class="control-image" src="/public/img/game/3.jpg"/>
+          <img class="control-image" src="` + imageDir + `3.jpg"/>
           <br>
           <!-- <button type="button" class="btn btn-lg btn-o btn-success click" onclick="clickSame()">Same</button> -->
         </center>
       </div>
       <div class="col-md-6">
         <center>
-          <img class="test-image" src="/public/img/game/3.jpg"/>
+          <img class="test-image" src="` + imageDir + `3.jpg"/>
           <br>
           <!-- <button type="button" class="btn btn-lg btn-o btn-danger click" onclick="clickDiff()">Different</button> -->
         </center>
