@@ -30,39 +30,13 @@ title: Post-Session Activity
   {% include project/activity/test.html %}
 </div>
 
+<script type="text/javascript">
+var surveyType = 'post';
+</script>
+
 <script src="{{ site.baseurl }}bower_components/jquery/dist/jquery.min.js"></script>
 <script src="{{ site.baseurl }}bower_components/jquery-ui/jquery-ui.min.js"></script>
 <script src="{{ site.baseurl }}bower_components/moment/min/moment.min.js"></script>
 <script src="{{ site.baseurl }}bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="{{ site.baseurl }}bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
 <script src="{{ site.baseurl }}public/js/activity.js"></script>
-
-<script type="text/javascript">
-  $(function () {
-    $('#birthday').datetimepicker({
-      format: 'MM//DD/YYYY'
-   });
-  });
-
-  $('.emoji').each(function() {
-    $(this).html(twemoji.parse($(this).html()));
-  });
-
-  function submitSurvey() {
-    $('#activity-survey').hide();
-    $('#activity-splash').show();
-
-    console.log($('#activity-survey').serializeArray());
-    return false;
-  }
-
-  function showInstructions() {
-    $('#activity-splash').hide();
-    $('#activity-instructions').show();
-  }
-
-  function startDemo() {
-    $('#activity-instructions').hide();
-    $('#activity-test').show();
-  }
-</script>
