@@ -38,6 +38,14 @@ var results = [];
 // Add description for cat
 // Frequency should normalized
 
+
+// 21, 21 for pre and post repeat for 32
+// double check randomization
+// second set of instructions were too Look
+// change the color the button
+// feedback mechanism for the demo
+// right before the example, show the right version
+
 // Initial
 // var initialSource =  $('.test-image').attr('src');
 // if(initialSource == 'public/img/1.jpg') {
