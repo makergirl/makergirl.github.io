@@ -27,44 +27,53 @@
           <li><a href="#featured">News</a></li>
           <li><a id="blog" href="{{ site.baseurl }}blog">Blog</a></li>
           <li><a id="about" href="{{ site.baseurl }}about">About</a></li>
-          <li class="social">
-            <a href="{{ site.facebook }}" data-toggle="tooltip" data-placement="bottom" title="Facebook" target="_blank">
-              <span class="fa fa-facebook"></span>
-            </a>
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Social <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li class="social">
+                <a href="{{ site.facebook }}" data-placement="bottom" title="Facebook" target="_blank">
+                  <span class="fa fa-facebook"></span> Facebook
+                </a>
+              </li>
+              <li class="social">
+                <a href="{{ site.twitter }}" data-placement="bottom" title="Twitter" target="_blank">
+                  <span class="fa fa-twitter"></span> Twitter
+                </a>
+              </li>
+              <li class="social">
+                <a href="{{ site.instagram }}" data-placement="bottom" title="Instagram" target="_blank">
+                  <span class="fa fa-instagram"></span> Instagram
+                </a>
+              </li>
+              <li class="social">
+                <a href="{{ site.linkedin }}" data-placement="bottom" title="LinkedIn" target="_blank">
+                  <span class="fa fa-linkedin"></span> LinkedIn
+                </a>
+              </li>
+              <li class="social">
+                <a href="{{ site.youtube }}" data-placement="bottom" title="YouTube" target="_blank">
+                  <span class="fa fa-youtube"></span> YouTube
+                </a>
+              </li>
+              <li class="social">
+                <!-- <a href="http://bit.ly/subscribemakergirl" data-placement="bottom" title="Newsletter" target="_blank">
+                  <span class="glyphicon glyphicon-list-alt"></span>
+                </a> -->
+                <a href="javascript:loadPopup()" data-placement="bottom" title="Newsletter" target="_blank">
+                  <span class="glyphicon glyphicon-list-alt"></span> Newsletter
+                </a>
+              </li>
+              <li class="social">
+                <a href="mailto:info@makergirl.us?Subject=Hello%20there" target="_top" data-placement="bottom" title="Email">
+                  <span class="glyphicon glyphicon-envelope"></span> Email
+                </a>
+              </li>
+            </ul>
           </li>
-          <li class="social">
-            <a href="{{ site.twitter }}" data-toggle="tooltip" data-placement="bottom" title="Twitter" target="_blank">
-              <span class="fa fa-twitter"></span>
-            </a>
-          </li>
-          <li class="social">
-            <a href="{{ site.instagram }}" data-toggle="tooltip" data-placement="bottom" title="Instagram" target="_blank">
-              <span class="fa fa-instagram"></span>
-            </a>
-          </li>
-          <li class="social">
-            <a href="{{ site.linkedin }}" data-toggle="tooltip" data-placement="bottom" title="LinkedIn" target="_blank">
-              <span class="fa fa-linkedin"></span>
-            </a>
-          </li>
-          <li class="social">
-            <a href="{{ site.youtube }}" data-toggle="tooltip" data-placement="bottom" title="YouTube" target="_blank">
-              <span class="fa fa-youtube"></span>
-            </a>
-          </li>
-          <li class="social">
-            <!-- <a href="http://bit.ly/subscribemakergirl" data-toggle="tooltip" data-placement="bottom" title="Newsletter" target="_blank">
-              <span class="glyphicon glyphicon-list-alt"></span>
-            </a> -->
-            <a href="javascript:loadPopup()" data-toggle="tooltip" data-placement="bottom" title="Newsletter" target="_blank">
-              <span class="glyphicon glyphicon-list-alt"></span>
-            </a>
-          </li>
-          <li class="social">
-            <a href="mailto:info@makergirl.us?Subject=Hello%20there" target="_top" data-toggle="tooltip" data-placement="bottom" title="Email">
-              <span class="glyphicon glyphicon-envelope"></span>
-            </a>
-          </li>
+
+
+
         </ul>
       </div>
     </div>
