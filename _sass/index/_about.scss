@@ -113,6 +113,12 @@
         -o-transform: rotateY(180deg) rotateZ(-0.7893703440204263deg) scale(1.07);
         transform: rotateY(180deg) rotateZ(-0.7893703440204263deg) scale(1.07);
     }
+    .boa:hover .card {
+        opacity: 0.75;
+    }
+    .boa:active .card {
+        opacity: 0.90;
+    }
     // Blockquote
     .blockquote {
         font-family: Merriweather, Georgia, 'Times New Roman', serif;
