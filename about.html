@@ -207,15 +207,17 @@ title: About
       <div class="cards">
         {% for member in site.data.members %}
           {% if member.name %}
-            <div class="person {{ member.name.first | downcase}}">
-        			<div class="card">
-        				<img src="{{ site.baseurl }}public/img/members/{% if member.photo %}{{ member.photo }}{% else %}{{ member.name.first | downcase }}.png{% endif %}" alt="">
-        				<div class="front"></div>
-        				<div class="back"></div>
-        			</div>
-        			<span class="name">{{ member.name.first }} {{ member.name.last }}</span>
-        			<span class="position">{{ member.position }}</span>
-        		</div>
+            <div class="col-md-3">
+              <div class="person {{ member.name.first | downcase}}">
+          			<div class="card">
+          				<img src="{{ site.baseurl }}public/img/members/{% if member.photo %}{{ member.photo }}{% else %}{{ member.name.first | downcase }}.png{% endif %}" alt="">
+          				<div class="front"></div>
+          				<div class="back"></div>
+          			</div>
+          			<span class="name">{{ member.name.first }} {{ member.name.last }}</span>
+          			<span class="position">{{ member.position }}</span>
+          		</div>
+            </div>
           {% endif %}
         {% endfor %}
       </div>

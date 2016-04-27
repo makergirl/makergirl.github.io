@@ -141,6 +141,7 @@
         -ms-transform: rotateY(0deg);
         -o-transform: rotateY(0deg);
         transform: rotateY(0deg);
+        min-width: 100%;
     }
     .back {
         -webkit-transform: rotateY(180deg);
@@ -148,13 +149,15 @@
         -ms-transform: rotateY(180deg);
         -o-transform: rotateY(180deg);
         transform: rotateY(180deg);
+        min-width: 100%;
     }
     .person {
-        width: 230px;
+        // width: 230px;
         float: left;
         text-align: center;
-        margin-right: 20px;
+        // margin-right: 20px;
         margin-bottom: 40px;
+        min-width: 100%;
     }
     .person .name {
         display: block;
@@ -496,7 +499,8 @@
             border-radius: 15px;
         }
         .person {
-            width: 46%;
+            // width: 46%;
+            min-width: 100%;
             margin-right: 7%;
             margin-bottom: 30px;
         }
