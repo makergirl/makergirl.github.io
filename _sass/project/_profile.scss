@@ -50,5 +50,9 @@
   img {
     width: 50%;
     max-width: 100%;
+
+    @include media-query($screen-sm-min) {
+      width: 100%;
+    }
   }
 }
