@@ -137,7 +137,7 @@ title: About
 
   <br>
 
-  {% for member in site.data.members %}
+  <!-- {% for member in site.data.members %}
     {% assign loopindex = forloop.index | modulo: 3 %}
 
     {% if loopindex == 1 %}
@@ -201,4 +201,42 @@ title: About
       </div>
     {% endif %}
   {% endfor %}
+
+  <br><br><br> -->
+  <div class="cards">
+    {% for member in site.data.members %}
+      {% assign loopindex2 = forloop.index | modulo: 2 %}
+      {% assign loopindex4 = forloop.index | modulo: 4 %}
+
+      {% if loopindex4 == 1 %}
+        <div class="row">
+      {% endif %}
+
+      {% if member.name %}
+        <style>
+          .{{ member.name.first | downcase }}:hover .card img {
+            content:url("{{ site.baseurl }}public/img/members/illustrations/{{ member.name.first | downcase }}.jpg");
+          }
+        </style>
+
+        <div class="col-md-3">
+          <div class="person {{ member.name.first | downcase }} {% if loopindex2 == 0 %} even {% else %} odd {% endif%}">
+            <a href="{{ site.baseurl }}{{ member.name.first | downcase }}" target="_blank">
+        			<div class="card">
+        				<img src="{{ site.baseurl }}public/img/members/{% if member.photo %}{{ member.photo }}{% else %}{{ member.name.first | downcase }}.png{% endif %}" alt="">
+        				<!-- <div class="front"></div>
+        				<div class="back"></div> -->
+        			</div>
+            </a>
+      			<span class="name">{{ member.name.first }} {{ member.name.last }}</span>
+      			<span class="position">{{ member.position }}</span>
+      		</div>
+        </div>
+      {% endif %}
+
+      {% if loopindex4 == 0 %}
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
 </div>
