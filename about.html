@@ -137,7 +137,7 @@ title: About
 
   <br>
 
-  {% for member in site.data.members %}
+  <!-- {% for member in site.data.members %}
     {% assign loopindex = forloop.index | modulo: 3 %}
 
     {% if loopindex == 1 %}
@@ -201,4 +201,23 @@ title: About
       </div>
     {% endif %}
   {% endfor %}
+
+  <br><br><br> -->
+    <div class="row">
+      <div class="cards">
+        {% for member in site.data.members %}
+          {% if member.name %}
+            <div class="person {{ member.name.first | downcase}}">
+        			<div class="card">
+        				<img src="{{ site.baseurl }}public/img/members/{% if member.photo %}{{ member.photo }}{% else %}{{ member.name.first | downcase }}.png{% endif %}" alt="">
+        				<div class="front"></div>
+        				<div class="back"></div>
+        			</div>
+        			<span class="name">{{ member.name.first }} {{ member.name.last }}</span>
+        			<span class="position">{{ member.position }}</span>
+        		</div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
 </div>
