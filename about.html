@@ -134,43 +134,6 @@ title: About
 
   <br><br>
 
-  <h1>Board of Advisors</h1>
-
-  <br>
-
-  <div class="cards">
-    {% for member in site.data.boa %}
-      {% assign loopindex2 = forloop.index | modulo: 2 %}
-      {% assign loopindex3 = forloop.index | modulo: 3 %}
-
-      {% if loopindex3 == 1 %}
-        <div class="row">
-      {% endif %}
-
-      {% if member.name %}
-        <div class="col-md-4">
-          <div class="person {{ member.name.first | downcase }} boa">
-            <a href="{{ site.baseurl }}{{ member.name.first | downcase }}" target="_blank">
-        			<div class="card">
-        				<img src="{{ site.baseurl }}public/img/members/{% if member.photo %}{{ member.photo }}{% else %}{{ member.name.first | downcase }}.png{% endif %}" alt="">
-        				<!-- <div class="front"></div>
-        				<div class="back"></div> -->
-        			</div>
-            </a>
-      			<span class="name">{{ member.name.first }} {{ member.name.last }}</span>
-      			<span class="position">{{ member.position }}</span>
-      		</div>
-        </div>
-      {% endif %}
-
-      {% if loopindex3 == 0 %}
-        </div>
-      {% endif %}
-    {% endfor %}
-  </div>
-
-  <br>
-
   <h1>The Team</h1>
 
   <br>
@@ -207,6 +170,43 @@ title: About
       {% endif %}
 
       {% if loopindex4 == 0 %}
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <br>
+
+  <h1>Board of Advisors</h1>
+
+  <br>
+
+  <div class="cards">
+    {% for member in site.data.boa %}
+      {% assign loopindex2 = forloop.index | modulo: 2 %}
+      {% assign loopindex3 = forloop.index | modulo: 3 %}
+
+      {% if loopindex3 == 1 %}
+        <div class="row">
+      {% endif %}
+
+      {% if member.name %}
+        <div class="col-md-4">
+          <div class="person {{ member.name.first | downcase }} boa">
+            <a href="{{ site.baseurl }}{{ member.name.first | downcase }}" target="_blank">
+        			<div class="card">
+        				<img src="{{ site.baseurl }}public/img/members/{% if member.photo %}{{ member.photo }}{% else %}{{ member.name.first | downcase }}.png{% endif %}" alt="">
+        				<!-- <div class="front"></div>
+        				<div class="back"></div> -->
+        			</div>
+            </a>
+      			<span class="name">{{ member.name.first }} {{ member.name.last }}</span>
+      			<span class="position">{{ member.position }}</span>
+      		</div>
+        </div>
+      {% endif %}
+
+      {% if loopindex3 == 0 %}
         </div>
       {% endif %}
     {% endfor %}
