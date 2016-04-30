@@ -20,12 +20,6 @@ $screen-edge-case: 420px;
       -ms-filter: "FlipH";
     }
 
-    li {
-      a {
-        background: transparent !important;
-      }
-    }
-
     .navbar-brand {
       img {
         display: inline-block !important;
@@ -64,6 +58,12 @@ $screen-edge-case: 420px;
   .mg-navbar-wide {
     background: transparent;
     opacity: 1;
+
+    li {
+      a {
+        background: transparent !important;
+      }
+    }
   }
 
   .section {
