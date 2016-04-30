@@ -50,7 +50,7 @@ $color: #FFFFFF;
       > a {
         color: $color !important;
         padding-top: 23px;
-        // background: $color-20;
+        background: $color-20;
 
         @include media-query($screen-sm-min) {
           font-size: 14px;
