@@ -20,6 +20,12 @@ $screen-edge-case: 420px;
       -ms-filter: "FlipH";
     }
 
+    li {
+      a {
+        background: transparent !important;
+      }
+    }
+
     .navbar-brand {
       img {
         display: inline-block !important;
