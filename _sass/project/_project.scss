@@ -7,7 +7,9 @@ $screen-edge-case: 420px;
 
 .project {
   .mg-navbar {
-    visibility: visible !important;
+    visibility: visible;
+    opacity: 1;
+    transition: background 0.2s ease;
 
     .flip {
       -moz-transform: scaleX(-1);
@@ -51,6 +53,11 @@ $screen-edge-case: 420px;
         }
       }
     }
+  }
+
+  .mg-navbar-wide {
+    background: transparent;
+    opacity: 1;
   }
 
   .section {

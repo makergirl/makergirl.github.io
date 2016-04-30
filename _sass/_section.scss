@@ -15,6 +15,10 @@
     font-family: inherit !important;
     font-size: 48px;
     font-weight: 300;
+
+    @include media-query($screen-sm-min) {
+      font-size: 34px;
+    }
   }
 
   h2 {
