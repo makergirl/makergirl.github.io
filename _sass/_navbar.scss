@@ -8,10 +8,13 @@
 $color: #FFFFFF;
 
 .mg-navbar {
+  transition: background 0.2s ease;
+  transition: opacity 0.2s ease;
   background: $color-20;
   border: none;
   height: 65px;
-  visibility: hidden;
+  // visibility: hidden;
+  opacity: 0;
   font-family: $font-2;
   font-weight: 700;
   color: $color;
@@ -47,7 +50,7 @@ $color: #FFFFFF;
       > a {
         color: $color !important;
         padding-top: 23px;
-        background: $color-20;
+        // background: $color-20;
 
         @include media-query($screen-sm-min) {
           font-size: 14px;
