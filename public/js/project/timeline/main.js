@@ -132,8 +132,8 @@ jQuery(document).ready(function($){
 		    var distance = daydiff(timelineComponents['timelineDates'][0], timelineComponents['timelineDates'][i]),
 		    	distanceNorm = Math.round(distance/timelineComponents['eventsMinLapse']) + 2;
 
-				console.log(distanceNorm);
-				console.log(min);
+				// console.log(distanceNorm);
+				// console.log(min);
 		    timelineComponents['timelineEvents'].eq(i).css('left', distanceNorm*min +'px');
 				// timelineComponents['timelineEvents'].eq(i).css('left', i*200+'px');
 		}
