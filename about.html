@@ -59,8 +59,11 @@ title: About
 
           {% if member.name %}
             <style>
+              .{{ member.name.first | downcase }} .card {
+                background: url("{{ site.baseurl }}public/img/members/illustrations/{{ member.name.first | downcase }}.jpg");
+              }
               .{{ member.name.first | downcase }}:hover .card img {
-                content:url("{{ site.baseurl }}public/img/members/illustrations/{{ member.name.first | downcase }}.jpg");
+                content: url("{{ site.baseurl }}public/img/members/illustrations/{{ member.name.first | downcase }}.jpg");
               }
             </style>
 
