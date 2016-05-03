@@ -187,6 +187,9 @@ function clickSame() {
 
     results.push({
       'id' : counter,
+      'currentTime' : endTime,
+      'elapsedTime' : endTime - startTime,
+      'surveyType' : surveyType,
       'rotationIndex' :  rotationIndex,
       'rotationDegree' : rotationDegrees[rotationIndex],
       'flipIndex' :  flipIndex,
@@ -196,8 +199,7 @@ function clickSame() {
       'clickOption' : 'same',
       'isCorrect' : itemValue,
       'isFlipped' : isFlipped,
-      'rotationValue' : rotation,
-      'time' : endTime - startTime
+      'rotationValue' : rotation
     });
 
     nextItem();
@@ -227,6 +229,9 @@ function clickDiff() {
 
     results.push({
       'id' : counter,
+      'currentTime' : endTime,
+      'elapsedTime' : endTime - startTime,
+      'surveyType' : surveyType,
       'rotationIndex' :  rotationIndex,
       'rotationDegree' : rotationDegrees[rotationIndex],
       'flipIndex' :  flipIndex,
@@ -236,8 +241,7 @@ function clickDiff() {
       'clickOption' : 'different',
       'isCorrect' : itemValue,
       'isFlipped' : isFlipped,
-      'rotationValue' : rotation,
-      'time' : endTime - startTime
+      'rotationValue' : rotation
     });
 
     nextItem();
@@ -305,7 +309,7 @@ function submitSurvey() {
   results.push({
     'survey' : surveyData
   })
-  
+
   return false;
 }
 
