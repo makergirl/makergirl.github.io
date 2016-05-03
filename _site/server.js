@@ -36,7 +36,8 @@ app.get(activityEndpoint, function(req, res, next) {
 
     // Locate all the entries using find
     collection.find().toArray(function(err, results) {
-      console.dir(resultJSON);
+      // console.dir(resultJSON);
+      console.dir(results);
       // Let's close the db
       db.close();
     });
