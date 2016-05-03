@@ -1,7 +1,7 @@
 var score = 0;
 var counter = 1;
 var rotation = 0;
-var lastImageCounter = 34;
+var lastImageCounter = 23;
 var startTime;
 var endTime;
 var itemValue;
@@ -13,19 +13,21 @@ var postDir = '/public/img/game/post/';
 
 imagDir = preDir;
 
+// 20 degrees
 var rotationDegrees = [
-  22.5, 67.5, 112.5, 157.5, 202.5, 247.5, 292.5, 337.5,
-  22.5, 67.5, 112.5, 157.5, 202.5, 247.5, 292.5, 337.5,
-  22.5, 67.5, 112.5, 157.5, 202.5, 247.5, 292.5, 337.5,
-  22.5, 67.5, 112.5, 157.5, 202.5, 247.5, 292.5, 337.5
+  22.5, 67.5, 112.5, 157.5, 202.5, 247.5, 292.5, 337.5, 22.5, 67.5,
+  22.5, 67.5, 112.5, 157.5, 202.5, 247.5, 292.5, 337.5, 22.5, 67.5
 ]
 
+// 20 flips
 var flipOptions = [
-  1, 0, 1, 0, 1, 0, 1, 0,
-  1, 0, 1, 0, 1, 0, 1, 0,
-  1, 0, 1, 0, 1, 0, 1, 0,
-  1, 0, 1, 0, 1, 0, 1, 0
+  1, 0, 1, 0, 1, 0, 1, 0, 1, 0,
+  1, 0, 1, 0, 1, 0, 1, 0, 1, 0
 ]
+
+// 20 items
+var imgOptions = [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23];
+var rotationIndex, flipIndex, imgIndex;
 
 var results = [];
 
@@ -72,17 +74,15 @@ if(counter == 1) {
 function nextItem() {
   counter += 1;
 
+  // Test is done
   if(counter >= lastImageCounter) {
     counter = lastImageCounter;
 
     $('#game-title').html('Good Job!')
     $('#test-body').html('<center><img src="/public/img/game/100.png" class="img-responsive"/><a href="/"><br><button type="button" class="btn btn-lg btn-o btn-w btn-dark">Done</button></a></center>');
 
-    console.log(results);
+    // console.log(results);
   }
-
-  $('.control-image').attr('src', imageDir + counter + '.jpg');
-  $('.test-image').attr('src', imageDir + counter + '.jpg');
 
   if(counter == 3) {
     $('#test-container').html(`
@@ -108,8 +108,16 @@ function nextItem() {
   }
 
   if(counter > 2) {
-    rotationIndex = Math.floor((Math.random() * rotationDegrees.length) + 1);
-    flipIndex = Math.floor((Math.random() * flipOptions.length) + 1);
+    rotationIndex = Math.floor((Math.random() * (rotationDegrees.length - 1)) + 0);
+    flipIndex = Math.floor((Math.random() * (flipOptions.length - 1)) + 0);
+    imgIndex = Math.floor((Math.random() * (imgOptions.length - 1)) + 0);
+
+    // console.log(imgOptions);
+    // console.log(imgIndex);
+    // console.log("imgIndex: " + imgOptions[imgIndex]);
+
+    $('.control-image').attr('src', imageDir + imgOptions[imgIndex] + '.jpg');
+    $('.test-image').attr('src', imageDir + imgOptions[imgIndex] + '.jpg');
 
     if(flipOptions[flipIndex] == 1) {
       rotation = 0;
@@ -132,18 +140,23 @@ function nextItem() {
 
     rotationDegrees.splice(rotationIndex, 1);
     flipOptions.splice(flipIndex, 1);
-    console.log('rotationIndex: ' + rotationIndex);
-    console.log('Removed: ' + rotationDegrees[rotationIndex]);
-    console.log('Array: ');
-    console.log(rotationDegrees);
+    imgOptions.splice(imgIndex, 1);
 
-    console.log('flipIndex: ' + flipIndex);
-    console.log('Removed: ' + flipOptions[flipIndex]);
-    console.log('Array: ');
-    console.log(flipOptions);
+    // console.log('rotationIndex: ' + rotationIndex);
+    // console.log('Removed: ' + rotationDegrees[rotationIndex]);
+    // console.log('Array: ');
+    // console.log(rotationDegrees);
+    //
+    // console.log('flipIndex: ' + flipIndex);
+    // console.log('Removed: ' + flipOptions[flipIndex]);
+    // console.log('Array: ');
+    // console.log(flipOptions);
 
     $('#instructions').html('');
   } else {
+    $('.control-image').attr('src', imageDir + counter + '.jpg');
+    $('.test-image').attr('src', imageDir + counter + '.jpg');
+
     $('#instructions').html(`<p>Let's try one more. Are these the same or different?</p><p>Remember, <b>SAME</b> means it’s the same image, just rotated, <b>MIRROR IMAGE</b> means it's as if the animal is looking in the mirror.</p>`);
     $('#wrong-message').html(`Actually, those are mirror images. Do you see how the different cats look in different directions?`);
     $('.test-image').css({
@@ -157,7 +170,7 @@ function nextItem() {
   }
 
 
-  console.log(counter);
+  // console.log("counter: " + counter);
 }
 
 function clickSame() {
@@ -170,14 +183,23 @@ function clickSame() {
     }
 
     endTime = new Date();
-    console.log(endTime - startTime);
+    // console.log(endTime - startTime);
 
     results.push({
       'id' : counter,
+      'currentTime' : endTime,
+      'elapsedTime' : endTime - startTime,
+      'surveyType' : surveyType,
+      'rotationIndex' :  rotationIndex,
+      'rotationDegree' : rotationDegrees[rotationIndex],
+      'flipIndex' :  flipIndex,
+      'flipOption' : flipOptions[flipIndex],
+      'imgIndex' : imgIndex,
+      'imgOption' : imgOptions[imgIndex],
+      'clickOption' : 'same',
       'isCorrect' : itemValue,
       'isFlipped' : isFlipped,
-      'rotationValue' : rotation,
-      'time' : endTime - startTime
+      'rotationValue' : rotation
     });
 
     nextItem();
@@ -203,14 +225,23 @@ function clickDiff() {
     }
 
     endTime = new Date();
-    console.log(endTime - startTime);
+    // console.log(endTime - startTime);
 
     results.push({
       'id' : counter,
+      'currentTime' : endTime,
+      'elapsedTime' : endTime - startTime,
+      'surveyType' : surveyType,
+      'rotationIndex' :  rotationIndex,
+      'rotationDegree' : rotationDegrees[rotationIndex],
+      'flipIndex' :  flipIndex,
+      'flipOption' : flipOptions[flipIndex],
+      'imgIndex' : imgIndex,
+      'imgOption' : imgOptions[imgIndex],
+      'clickOption' : 'different',
       'isCorrect' : itemValue,
       'isFlipped' : isFlipped,
-      'rotationValue' : rotation,
-      'time' : endTime - startTime
+      'rotationValue' : rotation
     });
 
     nextItem();
@@ -273,7 +304,16 @@ function submitSurvey() {
   $('#activity-survey').hide();
   $('#activity-splash').show();
 
-  console.log($('#activity-survey').serializeArray());
+  var surveyData = $('#activity-survey').serializeArray();
+  var currentTime = new Date();
+  // console.log(surveyData);
+
+  results.push({
+    'surveyType' : surveyType,
+    'survey' : surveyData,
+    'currentTime' : currentTime
+  })
+
   return false;
 }
 
