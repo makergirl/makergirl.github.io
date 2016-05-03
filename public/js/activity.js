@@ -285,6 +285,7 @@ function startTest() {
   if(surveyType == 'post') {
     counter = 3;
     startTime = new Date();
+    imageDir = postDir;
   }
 
   $('#test-container').html(`
