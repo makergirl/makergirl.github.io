@@ -6,6 +6,10 @@
     display: none;
   }
 
+  .btn:focus {
+    outline: none;
+  }
+
 
   /** Primary headers **/
   h1 {
