@@ -279,6 +279,14 @@ function clickDiff() {
 
 
 function startTest() {
+  $('#activity-instructions').hide();
+  $('#activity-test').show();
+
+  if(surveyType == 'post') {
+    counter = 3;
+    startTime = new Date();
+  }
+
   $('#test-container').html(`
     <div class="row">
       <div class="col-md-6">
@@ -341,12 +349,25 @@ function showInstructions() {
   $('#activity-splash').hide();
   $('#activity-instructions').show();
 
-  if(surveyType == 'pre') {
-    $('#startInstructions').html(`You’re going to see images of some animals. You’ll see two copies of the same animal. The images will be either the same, or a mirror image, as if the animal is looking in the mirror. Your goal is to decide whether the two pictures are the same or different.`);
-  } else if(surveyType == 'post') {
-    $('#startInstructions').html(`Remember the game we played at the beginning of the session? Well now we’re going to play that again, but this time you’re going to see different animals. Remember, SAME means it’s the same image, just rotated, MIRROR IMAGE means it’s as if the animal is looking in the mirror. <br><br> Click the button when you’re ready!`);
-  }
+  if(surveyType == 'post') {
+    $('#instructions-container').html(`
+      <div>
+        <p>Remember the game we played at the beginning of the session? Well now we’re going to play that again, but this time you’re going to see different animals. Remember, <b>SAME</b> means it’s the same image, just rotated, <b>MIRROR IMAGE</b> means it’s as if the animal is looking in the mirror.</p>
 
+        <p>Click <b>START</b> when you're ready!</p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <center>
+            <button id="start-test" type="button" class="btn btn-lg btn-o btn-w btn-dark" onclick="startTest()">Start</button>
+          </center>
+        </div>
+      </div>
+
+      <div class="row"></div>
+    `);
+  }
 }
 
 function startDemo() {
