@@ -70,6 +70,23 @@ if(counter == 1) {
   });
 }
 
+// API Access
+function forResponse(url, callback) {
+  $.ajax({
+    url : url,
+    cache : false,
+    success : callback,
+    error : function(err) {
+      console.log(err);
+    },
+    dataType : 'jsonp'
+  });
+}
+
+function endpointForResponse(url, callback) {
+  forResponse("http://198.199.83.108:8081/api/" + url, callback);
+}
+
 // Next Item Selector
 function nextItem() {
   counter += 1;
@@ -81,7 +98,10 @@ function nextItem() {
     $('#game-title').html('Good Job!')
     $('#test-body').html('<center><img src="/public/img/game/100.png" class="img-responsive"/><a href="/"><br><button type="button" class="btn btn-lg btn-o btn-w btn-dark">Done</button></a></center>');
 
-    // console.log(results);
+    console.log(results);
+    endpointForResponse("activity?activityData=" + results, function(json) {
+      console.log(json.result);
+    });
   }
 
   if(counter == 3) {
@@ -265,23 +285,23 @@ function startTest() {
         <center>
           <img class="control-image" src="` + imageDir + `3.jpg"/>
           <br>
-          <!-- <button type="button" class="btn btn-lg btn-o btn-success click" onclick="clickSame()">Same</button> -->
+          <!-- <button type="button" class="btn btn-lg btn-o btn-default click" onclick="clickSame()">Same</button> -->
         </center>
       </div>
       <div class="col-md-6">
         <center>
           <img class="test-image" src="` + imageDir + `3.jpg"/>
           <br>
-          <!-- <button type="button" class="btn btn-lg btn-o btn-danger click" onclick="clickDiff()">Different</button> -->
+          <!-- <button type="button" class="btn btn-lg btn-o btn-default click" onclick="clickDiff()">Different</button> -->
         </center>
       </div>
     </div>
 
     <div class="row">
       <center>
-        <button type="button" class="btn btn-lg btn-w btn-o btn-success click" onclick="clickSame()">Same</button>
+        <button type="button" class="btn btn-lg btn-w btn-o btn-default click" onclick="clickSame()">Same</button>
         <br><br>
-        <button type="button" class="btn btn-lg btn-w btn-o btn-danger click" onclick="clickDiff()">Mirror Image</button>
+        <button type="button" class="btn btn-lg btn-w btn-o btn-default click" onclick="clickDiff()">Mirror Image</button>
       </center>
     </div>
 
