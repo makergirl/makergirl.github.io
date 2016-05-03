@@ -340,6 +340,13 @@ function submitSurvey() {
 function showInstructions() {
   $('#activity-splash').hide();
   $('#activity-instructions').show();
+
+  if(surveyType == 'pre') {
+    $('#startInstructions').html(`You’re going to see images of some animals. You’ll see two copies of the same animal. The images will be either the same, or a mirror image, as if the animal is looking in the mirror. Your goal is to decide whether the two pictures are the same or different.`);
+  } else if(surveyType == 'post') {
+    $('#startInstructions').html(`Remember the game we played at the beginning of the session? Well now we’re going to play that again, but this time you’re going to see different animals. Remember, SAME means it’s the same image, just rotated, MIRROR IMAGE means it’s as if the animal is looking in the mirror. <br><br> Click the button when you’re ready!`);
+  }
+
 }
 
 function startDemo() {
