@@ -107,7 +107,7 @@ function nextItem() {
   if(counter == 3) {
     $('#test-container').html(`
       <div>
-        <p>Now that you understand the game let’s do some more. Remember, <b>SAME</b> means it’s the exact same picture, only rotated, <b>MIRROR IMAGE</b> means it’s a mirror image of the first picture. You’re now going to see many other animals. For each animal you have to decide if the two pictures are the same or different. Use the mouse to move to the buttons of either SAME or DIFFERENT. When you finish each animal, a new animal will appear. You cannot change your mind about your choices. Try to work as fast as you can. You may see the same animals again, but think carefully and quickly each time if the pictures are the same or different.</p>
+        <p>Now that you understand the game let’s do some more. Remember, <b>SAME</b> means it’s the exact same picture, only rotated, <b>MIRROR IMAGE</b> means it’s a mirror image of the first picture. You’re now going to see many other animals. For each animal you have to decide if the two pictures are the same or mirror image. Use the mouse to move to the buttons of either SAME or MIRROR IMAGE. When you finish each animal, a new animal will appear. You cannot change your mind about your choices. Try to work as fast as you can. You may see the same animals again, but think carefully and quickly each time if the pictures are the same or different.</p>
 
         <p>Click <b>START</b> to begin the game.</p>
 
