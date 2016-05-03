@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us" prefix="og: http://ogp.me/ns">
+
+  {% include head.html %}
+
+  <body ontouchstart="">
+    <script src="{{ site.baseurl }}public/js/project/timeline/modernizr.js"></script>
+
+    {% include project/navbar-project-wide.html %}
+
+    <div class="wrapper">
+      <div class="project">
+        {{ content }}
+      </div>
+    </div>
+
+    {% include foot.html %}
+
+    <script src="{{ site.baseurl }}public/js/project/timeline/jquery.mobile.custom.min.js"></script>
+    <script src="{{ site.baseurl }}public/js/project/timeline/main.js"></script>
+  </body>
+
+</html>

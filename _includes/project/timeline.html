@@ -1,0 +1,54 @@
+<section class="cd-horizontal-timeline">
+  <div class="timeline">
+    <div class="events-wrapper">
+      <div class="events">
+        <ol>
+          {% for entry in site.data.timeline %}
+            {% if forloop.index == 1 %}
+              <li><a href="#0" data-date="{{ entry.date }}" class="selected">{{ entry.date | date: "%-m/%-d/%y" }}</a></li>
+            {% else %}
+              <li><a href="#0" data-date="{{ entry.date }}">{{ entry.date | date: "%-m/%-d/%y" }}</a></li>
+            {% endif %}
+          {% endfor %}
+        </ol>
+
+        <span class="filling-line" aria-hidden="true"></span>
+      </div> <!-- .events -->
+    </div> <!-- .events-wrapper -->
+
+    <ul class="cd-timeline-navigation">
+      <li><a href="#0" class="prev inactive">Prev</a></li>
+      <li><a href="#0" class="next">Next</a></li>
+    </ul> <!-- .cd-timeline-navigation -->
+  </div> <!-- .timeline -->
+
+  <div class="events-content">
+    <ol>
+      {% for entry in site.data.timeline %}
+        {% if forloop.index == 1 %}
+          <li class="selected" data-date="{{ entry.date }}">
+        {% else%}
+          <li data-date="{{ entry.date }}">
+        {% endif %}
+            {% if entry.photo %}
+            <img src="{{ site.baseurl }}public/img/about/{{ entry.photo }}">
+            {% endif %}
+
+            {% if entry.title %}
+            <h3>{{ entry.title }}</h3>
+            {% endif %}
+
+            {% if entry.date %}
+            <h5>{{ entry.date | date: "%B %-d, %Y"}}</h5>
+            {% endif %}
+
+            {% if entry.description.short %}
+            <p>
+              {{ entry.description.short }}
+            </p>
+            {% endif %}
+          </li>
+      {% endfor %}
+    </ol>
+  </div> <!-- .events-content -->
+</section>

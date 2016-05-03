@@ -1,0 +1,94 @@
+---
+layout: project
+---
+
+<div id="profile" class="row project-section">
+
+  <center>
+    <img src="{{ site.baseurl }}public/img/members/{% if page.photo %}{{ page.photo }}{% else %}{{ page.title | split:' ' | first | downcase }}.png{% endif %}" class="img img-responsive full-width"/>
+  </center>
+
+
+  <h1>
+    <a href="{{ site.baseurl }}{{ page.title | split:' ' | first | downcase }}">{{ page.title }}</a>
+  </h1>
+
+  <div class="row">
+    <div class="col-md-3"></div>
+
+    <div class="col-md-6">
+      {% for member in site.data.boa %}
+        {% if member.name %}
+          {% assign memberfirst = member.name.first | downcase | strip | strip_html %}
+          {% assign pagefirst = page.title | split:' ' | first | downcase | strip | strip_html %}
+
+          {% if memberfirst == pagefirst %}
+            <span class="position">
+              {% if member.position %}
+                {{ member.position }}
+              {% else %}
+                Team Member
+              {% endif%}
+            </span>
+
+            <span>
+              {% if member.site %}
+              <a href="{{ member.site }}" target="_blank">
+                <span class="badge">
+                  <span class="fa fa-link"></span>
+                </span>
+              </a>
+              {% endif %}
+              {% if member.linkedin %}
+              <a href="{{ member.linkedin }}" target="_blank">
+                <span class="badge">
+                  <span class="fa fa-linkedin"></span>
+                </span>
+              </a>
+              {% endif %}
+              {% if member.email %}
+              <a href="mailto:{{ member.email }}?Subject=Hi%20{{ member.name.first }}" target="_top">
+                <span class="badge">
+                  <span class="glyphicon glyphicon-envelope"></span>
+                </span>
+              </a>
+              {% endif %}
+            </span>
+
+            <br><br><br>
+
+            <b>Area of Expertise</b>
+
+            <br>
+
+            {% if member.expertise %}
+                {{ member.expertise }}
+            {% endif %}
+
+            <br><br>
+
+            <b>Why you're passionate about getting more girls interested in STEM</b>
+
+            <br>
+
+            {% if member.passion %}
+                {{ member.passion }}
+            {% endif %}
+
+            <br><br>
+
+            <b>Your advice for little kids (girls) to be successful</b>
+
+            <br>
+
+            {% if member.advice %}
+                {{ member.advice }}
+            {% endif %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="col-md-3"></div>
+  </div>
+</div>

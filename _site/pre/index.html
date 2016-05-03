@@ -97,7 +97,7 @@
                       First Name
                     </span>
                   </span>
-                  <input id="firstName" type="text" name="First Name" class="form-control" placeholder="Daenerys" aria-describedby="sizing-addon1">
+                  <input id="firstName" type="text" name="First Name" class="form-control" placeholder="" aria-describedby="sizing-addon1">
                 </div>
 
                 <br>
@@ -108,11 +108,11 @@
                       Last Name
                     </span>
                   </span>
-                  <input id="lastName" type="text" name="Last Name" class="form-control" placeholder="Targaryen" aria-describedby="sizing-addon1">
+                  <input id="lastName" type="text" name="Last Name" class="form-control" placeholder="" aria-describedby="sizing-addon1">
                 </div>
-              </div>
 
-              <div class="col-md-6">
+                <br>
+
                 <div class="form-group">
                   <div class="input-group input-group-lg date">
                       <span class="input-group-addon">
@@ -124,6 +124,8 @@
                   </div>
                 </div>
               </div>
+
+              <div class="col-md-6"></div>
             </div>
 
             <div class="row">
@@ -313,7 +315,7 @@
               </div>
             </div>
 
-            <div class="row">
+            <!-- <div class="row">
               <div class="col-md-12">
                 <div class="input-group input-group-lg">
                   <span class="input-group-addon" id="sizing-addon1">
@@ -322,7 +324,7 @@
                   <input id="qf2" type="text" name="What is technology?" class="form-control" placeholder="Technology is..." aria-describedby="sizing-addon1">
                 </div>
               </div>
-            </div>
+            </div> -->
 
             <div class="row">
               <div class="col-md-12">
@@ -392,7 +394,7 @@
         </div> -->
 
         <div class="panel-body">
-          <div class="container-fluid">
+          <div id="instructions-container" class="container-fluid">
             <div>
               <p>You’re going to see images of some animals. You’ll see two copies of the same animal. The images will be either the same, or a mirror image, as if the animal is looking in the mirror. Your goal is to decide whether the two pictures are the same or different.</p>
             </div>
@@ -464,14 +466,14 @@
             <div class="row">
               <div class="col-md-6">
                 <center>
-                  <img class="control-image" src="/public/img/game/1.png"/>
+                  <img class="control-image" src="/public/img/game/pre/1.jpg"/>
                   <br>
                   <!-- <button type="button" class="btn btn-lg btn-o btn-success click" onclick="clickSame()">Same</button> -->
                 </center>
               </div>
               <div class="col-md-6">
                 <center>
-                  <img class="test-image" src="/public/img/game/1.png"/>
+                  <img class="test-image" src="/public/img/game/pre/1.jpg"/>
                   <br>
                   <!-- <button type="button" class="btn btn-lg btn-o btn-danger click" onclick="clickDiff()">Different</button> -->
                 </center>
@@ -480,9 +482,9 @@
 
             <div class="row">
               <center>
-                <button type="button" class="btn btn-lg btn-w btn-o btn-success click" onclick="clickSame()">Same</button>
+                <button type="button" class="btn btn-lg btn-w btn-o btn-w btn-dark click" onclick="clickSame()">Same</button>
                 <br><br>
-                <button type="button" class="btn btn-lg btn-w btn-o btn-danger click" onclick="clickDiff()">Mirror Image</button>
+                <button type="button" class="btn btn-lg btn-w btn-o btn-w btn-dark click" onclick="clickDiff()">Mirror Image</button>
               </center>
             </div>
 
@@ -506,42 +508,16 @@
 
 </div>
 
+<script type="text/javascript">
+var surveyType = 'pre';
+</script>
+
 <script src="/bower_components/jquery/dist/jquery.min.js"></script>
 <script src="/bower_components/jquery-ui/jquery-ui.min.js"></script>
 <script src="/bower_components/moment/min/moment.min.js"></script>
 <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
 <script src="/public/js/activity.js"></script>
-
-<script type="text/javascript">
-  $(function () {
-    $('#birthday').datetimepicker({
-      format: 'MM//DD/YYYY'
-   });
-  });
-
-  $('.emoji').each(function() {
-    $(this).html(twemoji.parse($(this).html()));
-  });
-
-  function submitSurvey() {
-    $('#activity-survey').hide();
-    $('#activity-splash').show();
-
-    console.log($('#activity-survey').serializeArray());
-    return false;
-  }
-
-  function showInstructions() {
-    $('#activity-splash').hide();
-    $('#activity-instructions').show();
-  }
-
-  function startDemo() {
-    $('#activity-instructions').hide();
-    $('#activity-test').show();
-  }
-</script>
 
     
     <script src="/public/js/ga.js"></script>

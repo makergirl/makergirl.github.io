@@ -8,10 +8,13 @@
 $color: #FFFFFF;
 
 .mg-navbar {
+  transition: background 0.2s ease;
+  transition: opacity 0.2s ease;
   background: $color-20;
   border: none;
   height: 65px;
-  visibility: hidden;
+  // visibility: hidden;
+  opacity: 0;
   font-family: $font-2;
   font-weight: 700;
   color: $color;
@@ -101,6 +104,10 @@ $color: #FFFFFF;
       > a[id="blog"] {
         border-color: #21a7b6;
       }
+    }
+
+    .dropdown-menu {
+      background: #FFFFFF;
     }
 
     .social {
