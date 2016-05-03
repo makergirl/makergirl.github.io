@@ -70,6 +70,23 @@ if(counter == 1) {
   });
 }
 
+// API Access
+function forResponse(url, callback) {
+  $.ajax({
+    url : url,
+    cache : false,
+    success : callback,
+    error : function(err) {
+      console.log(err);
+    },
+    dataType : 'jsonp'
+  });
+}
+
+function endpointForResponse(url, callback) {
+  forResponse("http://198.199.83.108:8081/api/" + url, callback);
+}
+
 // Next Item Selector
 function nextItem() {
   counter += 1;
@@ -81,7 +98,10 @@ function nextItem() {
     $('#game-title').html('Good Job!')
     $('#test-body').html('<center><img src="/public/img/game/100.png" class="img-responsive"/><a href="/"><br><button type="button" class="btn btn-lg btn-o btn-w btn-dark">Done</button></a></center>');
 
-    // console.log(results);
+    console.log(results);
+    endpointForResponse("activity?activityData=" + results, function(json) {
+      console.log(json.result);
+    });
   }
 
   if(counter == 3) {
