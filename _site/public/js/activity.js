@@ -285,23 +285,23 @@ function startTest() {
         <center>
           <img class="control-image" src="` + imageDir + `3.jpg"/>
           <br>
-          <!-- <button type="button" class="btn btn-lg btn-o btn-success click" onclick="clickSame()">Same</button> -->
+          <!-- <button type="button" class="btn btn-lg btn-o btn-default click" onclick="clickSame()">Same</button> -->
         </center>
       </div>
       <div class="col-md-6">
         <center>
           <img class="test-image" src="` + imageDir + `3.jpg"/>
           <br>
-          <!-- <button type="button" class="btn btn-lg btn-o btn-danger click" onclick="clickDiff()">Different</button> -->
+          <!-- <button type="button" class="btn btn-lg btn-o btn-default click" onclick="clickDiff()">Different</button> -->
         </center>
       </div>
     </div>
 
     <div class="row">
       <center>
-        <button type="button" class="btn btn-lg btn-w btn-o btn-success click" onclick="clickSame()">Same</button>
+        <button type="button" class="btn btn-lg btn-w btn-o btn-default click" onclick="clickSame()">Same</button>
         <br><br>
-        <button type="button" class="btn btn-lg btn-w btn-o btn-danger click" onclick="clickDiff()">Mirror Image</button>
+        <button type="button" class="btn btn-lg btn-w btn-o btn-default click" onclick="clickDiff()">Mirror Image</button>
       </center>
     </div>
 
