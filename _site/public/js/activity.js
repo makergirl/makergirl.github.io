@@ -27,6 +27,7 @@ var flipOptions = [
 
 // 20 items
 var imgOptions = [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23];
+var rotationIndex, flipIndex, imgIndex;
 
 var results = [];
 
@@ -186,6 +187,13 @@ function clickSame() {
 
     results.push({
       'id' : counter,
+      'rotationIndex' :  rotationIndex,
+      'rotationDegree' : rotationDegrees[rotationIndex],
+      'flipIndex' :  flipIndex,
+      'flipOption' : flipOptions[flipIndex],
+      'imgIndex' : imgIndex,
+      'imgOption' : imgOptions[imgIndex],
+      'clickOption' : 'same',
       'isCorrect' : itemValue,
       'isFlipped' : isFlipped,
       'rotationValue' : rotation,
@@ -219,6 +227,13 @@ function clickDiff() {
 
     results.push({
       'id' : counter,
+      'rotationIndex' :  rotationIndex,
+      'rotationDegree' : rotationDegrees[rotationIndex],
+      'flipIndex' :  flipIndex,
+      'flipOption' : flipOptions[flipIndex],
+      'imgIndex' : imgIndex,
+      'imgOption' : imgOptions[imgIndex],
+      'clickOption' : 'different',
       'isCorrect' : itemValue,
       'isFlipped' : isFlipped,
       'rotationValue' : rotation,
@@ -285,7 +300,12 @@ function submitSurvey() {
   $('#activity-survey').hide();
   $('#activity-splash').show();
 
-  console.log($('#activity-survey').serializeArray());
+  var surveyData = $('#activity-survey').serializeArray();
+  console.log(surveyData);
+  results.push({
+    'survey' : surveyData
+  })
+  
   return false;
 }
 
