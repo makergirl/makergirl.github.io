@@ -1,24 +1,227 @@
 ---
-layout: minimum
+layout: project
 title: Trip
 ---
 
-<!-- DEMO
-- This is for demo purposes only
-- Make to enter fullscreen mode
--->
-
 <style>
-  body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
-  #trip {
-    margin: 0 auto;
-    height: 100vh;
-  }
+#trip {
+  height: 50vh;
+  /*width: 100vh;*/
+  margin: 0 auto;
+}
+
+.section {
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.survey {
+  color: #FFFFFF;
+  font-weight: 600;
+  padding: 20px;
+  display: block;
+}
+
+th, td {
+  text-align: left;
+}
 </style>
 
-{% include project/trip.html %}
+<div class="container-fluid">
+  <div id="analytics" class="row section">
+    {% include project/trip.html %}
+
+    <br>
+
+    <div class="row">
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Location</th>
+              <th>Address</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>6/1/2016</td>
+              <td>6/1/2016</td>
+              <td>6/2/2016</td>
+              <td>6/2/2016</td>
+              <td>6/3/2016</td>
+              <td>6/3/2016</td>
+              <td>6/4/2016</td>
+              <td>6/6/2016</td>
+              <td>6/7/2016</td>
+              <td>6/8/2016</td>
+              <td>6/8/2016</td>
+              <td>6/9/2016</td>
+              <td>6/9/2016</td>
+              <td>6/10/2016</td>
+              <td>6/13/2016</td>
+              <td>6/13/2016</td>
+              <td>6/14/2016</td>
+              <td>6/15/2016</td>
+              <td>6/16/2016</td>
+              <td>6/16/2016</td>
+              <td>6/17/2016</td>
+              <td>6/17/2016</td>
+              <td>6/18/2016</td>
+              <td>6/18/2016</td>
+              <td>6/20/2016</td>
+              <td>6/21/2016</td>
+              <td>6/22/2016</td>
+              <td>6/23/2016</td>
+              <td>6/24/2016</td>
+              <td>6/27/2016</td>
+              <td>7/1/2016</td>
+              <td>7/5/2016</td>
+              <td>7/5/2016</td>
+              <td>7/8/2016</td>
+              <td>7/9/2016</td>
+              <td>7/11/2016</td>
+              <td>7/12/2016</td>
+              <td>7/15/2016</td>
+              <td>7/16/2016</td>
+              <td>7/16/2016</td>
+              <td>7/18/2016</td>
+              <td>7/20/2016</td>
+              <td>7/21/2016</td>
+              <td>7/22/2016</td>
+              <td>7/25/2016</td>
+              <td>7/27/2016</td>
+              <td>7/28/2016</td>
+              <td>7/29/2016</td>
+              <td>8/1/2016</td>
+              <td>8/2/2016</td>
+              <td>8/2/2016</td>
+              <td>8/3/2016</td>
+            </tr>
+            <tr>
+              <td>Mary</td>
+              <td>Moe</td>
+              <td>mary@example.com</td>
+              <td>Hope Welty Public Library</td>
+              <td>University of Illinois Extension Office</td>
+              <td>Farm Credit Illinois</td>
+              <td>University of Illinois Extension Office</td>
+              <td>University of Illinois Extension Office</td>
+              <td>Carnegie-Schuyler Library</td>
+              <td>St. Louis Confluence Fab Lab at Lewis and Clark Community College</td>
+              <td>Fulton High School Fab Lab</td>
+              <td>Independence Community College Fab Lab</td>
+              <td>Muskogee High School Fab Lab</td>
+              <td>Fab Lab Tulsa</td>
+              <td>Scott Family Amazeum</td>
+              <td>Rogers Public Library</td>
+              <td>Fayetteville, AR (don't have location yet)</td>
+              <td>MakerLab</td>
+              <td>Orpheum Children's Science Museum</td>
+              <td>Mundelein High School</td>
+              <td>Zion Benton Public Library</td>
+              <td>SC Johnson iMET Center</td>
+              <td>Gateway Technical College - Elkhorn Campus</td>
+              <td>Cedarburg Girl Scout House</td>
+              <td>Arrowhead High School</td>
+              <td>Town Hall Library</td>
+              <td>Betty Brinn Children's Museum</td>
+              <td>Pearl City Elementary School</td>
+              <td>United Presbyterian Home</td>
+              <td>Washington Public Library</td>
+              <td>Girl Scouts Spirit of Nebraska Camp Catron & Retreat Center</td>
+              <td>Girl Scouts Spirit of Nebraska Grand Island Service Center</td>
+              <td>Colorado (don't have location yet)</td>
+              <td>San Francisco City Academy</td>
+              <td>REALM Charter School</td>
+              <td>Palo Alto, CA (don't have location yet)</td>
+              <td>New Mexico (don't have location yet)</td>
+              <td>Girl Scouts of New Mexico Trails Council HQ</td>
+              <td>The Biodiversity Education Center at Coppell Nature Park</td>
+              <td>Houston, TX (unconfirmed)</td>
+              <td>Cumberland Business Incubator at Roane State Community College</td>
+              <td>STEM Preperatory Academy</td>
+              <td>Bowling Green, KY (don't have location yet)</td>
+              <td>Louisville Program Learning Center</td>
+              <td>New York, NY (unconfirmed)</td>
+              <td>Voodoo Manufacturing</td>
+              <td>The Ethel Walker School</td>
+              <td>Groveton, NH (don't have location yet)</td>
+              <td>Kent State University</td>
+              <td>Case Western Reserve University</td>
+              <td>Ann Arbor, MI (don't have location yet)</td>
+              <td>Muskegon Community College Fab Lab</td>
+              <td>Roslyn Road Elementary School</td>
+              <td>Chinmaya Mission Chicago</td>
+              <td>Chicago, IL (unconfirmed)</td>
+            </tr>
+            <tr>
+              <td>100 Madison Street, Cerro Gordo, IL 61818</td>
+              <td>700 S Airport Drive, Springfield, IL 62707</td>
+              <td>27049 State Highway 16, Jerseyville, IL 62052</td>
+              <td>60 Carlinville Plaza, Carlinville, IL 62626</td>
+              <td>1 Industrial Park Drive, Hillsboro, IL 62049</td>
+              <td>303 E Second Street, Pana, IL 62557</td>
+              <td>622 Troy Road, Edwardsville, IL 62025</td>
+              <td>1 Hornet Dr, Fulton, MO 65251</td>
+              <td>1057 W College Ave, Independence, KS 67301</td>
+              <td>3200 E Shawnee Rd, Muskogee, OK 74403</td>
+              <td>710 S Lewis Ave, Tulsa, OK 74104</td>
+              <td>1009 Museum Way, Bentonville, AR, 72712</td>
+              <td>711 S Dixieland Rd, Rogers, AR 72758</td>
+              <td></td>
+              <td>515 E Gregory Drive, Champaign, IL 61820</td>
+              <td>346 N Neil Street, Champaign, IL 61820</td>
+              <td>1350 W Hawley Street, Mundelein, IL 60060</td>
+              <td>2400 Gabriel Ave, Zion, IL 60099</td>
+              <td>2320 Renaissance Blvd, Sturtevant, WI 53177</td>
+              <td>400 County Road H, Elkhorn, WI 53121</td>
+              <td>W57N475 Hilbert Ave, Cedarburg, WI 53012</td>
+              <td>700 North Ave, Hartland, WI 53029</td>
+              <td>N76 W31429 Cty TK VV, North Lake, WI 53064</td>
+              <td>929 E Wisconsin Ave, Milwaukee, WI 53202</td>
+              <td>100 S Summit Street, Pearl City, IL 61062</td>
+              <td>1203 E Washington Street, Washington, IA 52353</td>
+              <td>115 W Washington Street, Washington, IA 52353</td>
+              <td>609 N 60th Road, Nebraska City, NE 68410</td>
+              <td>820 N Webb Road #104, Grand Island, NE 68803</td>
+              <td></td>
+              <td>230 Jones Street, San Francisco, CA 94102</td>
+              <td>2023 8th Street, Berkeley, CA 94710</td>
+              <td></td>
+              <td></td>
+              <td>4000 Jefferson Plaza NE, Albuquerque, NM 87109</td>
+              <td>367 Freeport Parkway, Coppell, TX 75019</td>
+              <td></td>
+              <td>2569 Cook Road, Crossville, TN 38571</td>
+              <td>1162 Foster Ave, Nashville, TN 37210</td>
+              <td></td>
+              <td>2115 Lexington Road, Louisville, KY 40206</td>
+              <td></td>
+              <td>361 Stagg Street #408, Brooklyn, NY 11206</td>
+              <td>230 Bushy Hill Road, Simsbury, CT 06070</td>
+              <td></td>
+              <td>800 E Summitt Street, Kent, OH 44240</td>
+              <td>10900 Euclid Ave, Cleveland, OH 44106</td>
+              <td></td>
+              <td>221 Quarterline Road, Muskegon, MI 49442</td>
+              <td>224 W Roslyn Road, Barrington, IL 60010</td>
+              <td>30877 N Fairfield Road, Grayslake, IL 60030</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="{{ site.baseurl }}bower_components/chartist/dist/chartist.min.js"></script>
+<script src="{{ site.baseurl }}public/js/project/analytics.js"></script>
