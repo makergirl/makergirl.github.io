@@ -1,0 +1,174 @@
+<!-- Map
+- Displays all the MakerGirl participants in a single map
+-->
+
+<div id="map"></div>
+
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+<script>
+  // Initialize variable
+  var delay = null;
+  var map = null;
+  var geocoder = null;
+  var bounds = null;
+  var infowindow = null;
+  var iterator = 0;
+  var zipCodes = null;
+  var locations = [
+    60642,
+    60614,
+    60642,
+    60642,
+    60642,
+    60642,
+    60610,
+    60622,
+    60611,
+    60622,
+    60610,
+    60654,
+    60611,
+    60647,
+    60622,
+    60614,
+    60614,
+    60611,
+    60611,
+    60610,
+    60614,
+    60614,
+    60610,
+    60641,
+    60614,
+    60614,
+    60618,
+    60614,
+    60657,
+    60657,
+    60657,
+    60610,
+    60614,
+    61802,
+    61802,
+    61853,
+    61853,
+    61801,
+    61801,
+    61856,
+    61856,
+    61822,
+    61822,
+
+
+
+  ]
+
+  // Set delay to 100ms
+  delay = 100;
+
+  // Set center to UIUC
+  var center = {
+    lat: 40.1105,
+    lng: -88.2284
+  };
+  map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 14,
+    center: center,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  });
+
+  geocoder = new google.maps.Geocoder();
+  bounds = new google.maps.LatLngBounds();
+  infowindow = new google.maps.InfoWindow();
+</script>
+
+<!-- <script src="{{ site.baseurl }}public/js/project/locations.js"></script> -->
+
+<script>
+  /**
+   * getGeocode
+   * Fetches for the geocode of a given location
+   * Handles Google's query limit
+   * @param query
+   * @param next
+   */
+  function getGeocode(query, next) {
+    geocoder.geocode({address : query}, function (results, status) {
+      if (status == google.maps.GeocoderStatus.OK) {
+        var p = results[0].geometry.location;
+        var lat = p.lat();
+        var lng = p.lng();
+
+        var coordinate = new google.maps.LatLng(lat, lng);
+        // console.log("coordinate: " + coordinate);
+
+        // tripPathCoordinates.push({
+        //   lat: lat,
+        //   lng: lng
+        // })
+
+        console.log("{lat: " + lat + ", lng: " + lng + "}");
+
+        // tripPath.setMap(map);
+
+        createMarker(query, coordinate);
+      }
+      else {
+        if (status == google.maps.GeocoderStatus.OVER_QUERY_LIMIT) {
+          iterator--;
+          delay++;
+        } else {
+          console.log('Geocode was not successful for the following reason: ' + status);
+          console.log(request);
+        }
+      }
+      next();
+    });
+  }
+
+  /**
+   * createMarker
+   * Creates a map marker for the locations given
+   * @param query
+   * @param coordinate
+   */
+  function createMarker(query, coordinate) {
+    var marker = new google.maps.Marker({
+      map : map,
+      position : coordinate,
+      zIndex : Math.round(center.lat * -100000) << 5
+    });
+
+    // console.log("marker: " +  marker);
+
+    google.maps.event.addListener(marker, 'click', function() {
+      infowindow.setContent(query);
+      infowindow.open(map, marker);
+    });
+
+    bounds.extend(marker.position);
+  }
+
+  /**
+   * fetchData
+   * Runs all the helper functions and fetches data specific in the locations array
+   */
+  function fetchData() {
+    if (iterator < locations.length) {
+      setTimeout('getGeocode("' + locations[iterator] + '", fetchData)', delay);
+      iterator++;
+    } else {
+      map.fitBounds(bounds);
+    }
+  }
+
+  fetchData();
+
+  // for(var i = 0; i < locations.length; i++) {
+  //   console.log(locations[i]);
+  //   var coordinate = new google.maps.LatLng(locations[i]["lat"], locations[i]["lng"]);
+  //   createMarker(locations[i], coordinate);
+  //   map.fitBounds(bounds);
+  // }
+ </script>

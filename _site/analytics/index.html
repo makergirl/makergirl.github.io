@@ -117,110 +117,82 @@ body {
 
 <div id="map"></div>
 
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-
 <script>
-  // Initialize variable
-  var delay = null;
-  var map = null;
-  var geocoder = null;
-  var bounds = null;
-  var infowindow = null;
-  var iterator = 0;
-  var locations = null;
+  function initMap() {
+    var map, heatmap, heatMapData = [];
+    var bounds = new google.maps.LatLngBounds();
 
-  // Set delay to 100ms
-  delay = 100;
+    var locations = [
 
-  // Set center to UIUC
-  var center = {
-    lat: 40.1105,
-    lng: -88.2284
-  };
-  map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 14,
-    center: center,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-  });
+      {lat: 40.10395949999999, lng: -88.43069550000001},
+      {lat: 40.1017582, lng: -88.27531440000001},
+      {lat: 40.1539406, lng: -88.34336229999997},
+      {lat: 40.1490751, lng: -88.03141740000001},
+      {lat: 40.0552842, lng: -88.2509857},
+      {lat: 40.0226578, lng: -87.83532780000002},
+      {lat: 39.9888361, lng: -88.26558449999999},
+      {lat: 40.1059233, lng: -88.21203149999997},
+      {lat: 39.9022894, lng: -87.9922684},
+      {lat: 40.1166102, lng: -88.24125040000001},
+      {lat: 39.7040471, lng: -88.4984991},
+      {lat: 40.1953992, lng: -87.9739055},
+      {lat: 39.99713939999999, lng: -88.13889890000002},
+      {lat: 40.2368389, lng: -88.42100060000001},
+      {lat: 40.110052, lng: -88.14865700000001},
+      {lat: 40.4368639, lng: -88.14865700000001},
+      {lat: 39.7838178, lng: -88.3044908},
+      {lat: 41.54297, lng: -87.68276759999998},
+      {lat: 40.3065518, lng: -88.29476749999998},
+      {lat: 39.6601288, lng: -88.3044908},
+      {lat: 41.9909198, lng: -87.70248170000002},
+      {lat: 41.8733696, lng: -87.650714},
+      {lat: 41.9203468, lng: -87.64331390000001},
+      {lat: 41.8929153, lng: -87.63591250000002},
+      {lat: 41.9403795, lng: -87.65318049999996},
+      {lat: 41.9013087, lng: -87.68276759999998},
+      {lat: 41.8925085, lng: -87.61616959999998},
+      {lat: 41.9577761, lng: -87.6556468},
+      {lat: 41.90070970000001, lng: -87.65318049999996},
+      {lat: 41.9464283, lng: -87.70740890000002},
+      {lat: 40.1581268, lng: -87.96288400000003},
+      {lat: 40.1101584, lng: -88.3694595},
+      {lat: 41.9003099, lng: -87.6333871},
+      {lat: 41.9215421, lng: -87.70248170000002},
+      {lat: 41.9472058, lng: -87.74680710000001},
 
-  geocoder = new google.maps.Geocoder();
-  bounds = new google.maps.LatLngBounds();
-  infowindow = new google.maps.InfoWindow();
+    ];
+
+    var uiuc = {
+      lat: 40.1105,
+      lng: -88.2284
+    };
+
+    for(var i = 0; i < locations.length; i++) {
+      heatMapData.push({
+        location : new google.maps.LatLng(locations[i]["lat"], locations[i]["lng"]),
+      });
+      bounds.extend(new google.maps.LatLng(locations[i]["lat"], locations[i]["lng"]));
+    }
+
+    map = new google.maps.Map(document.getElementById('map'), {
+      center: uiuc,
+      zoom: 13,
+      mapTypeId: google.maps.MapTypeId.MAP
+    });
+
+    heatmap = new google.maps.visualization.HeatmapLayer({
+      data: heatMapData,
+      map: map
+    });
+
+    map.fitBounds(bounds);
+    heatmap.setMap(map);
+  }
 </script>
 
-<script src="/public/js/project/locations.js"></script>
-
-<script>
-  /**
-   * getGeocode
-   * Fetches for the geocode of a given location
-   * Handles Google's query limit
-   * @param query
-   * @param next
-   */
-  function getGeocode(query, next) {
-    geocoder.geocode({address : query}, function (results, status) {
-      if (status == google.maps.GeocoderStatus.OK) {
-        var p = results[0].geometry.location;
-        var lat = p.lat();
-        var lng = p.lng();
-
-        var coordinate = new google.maps.LatLng(lat, lng);
-        // console.log("coordinate: " + coordinate);
-
-        createMarker(query, coordinate);
-      }
-      else {
-        if (status == google.maps.GeocoderStatus.OVER_QUERY_LIMIT) {
-          iterator--;
-          delay++;
-        } else {
-          console.log('Geocode was not successful for the following reason: ' + status);
-          console.log(request);
-        }
-      }
-      next();
-    });
-  }
-
-  /**
-   * createMarker
-   * Creates a map marker for the locations given
-   * @param query
-   * @param coordinate
-   */
-  function createMarker(query, coordinate) {
-    var marker = new google.maps.Marker({
-      map : map,
-      position : coordinate,
-      zIndex : Math.round(center.lat * -100000) << 5
-    });
-
-    // console.log("marker: " +  marker);
-
-    google.maps.event.addListener(marker, 'click', function() {
-      infowindow.setContent(query);
-      infowindow.open(map, marker);
-    });
-
-    bounds.extend(marker.position);
-  }
-
-  /**
-   * fetchData
-   * Runs all the helper functions and fetches data specific in the locations array
-   */
-  function fetchData() {
-    if (iterator < locations.length) {
-      setTimeout('getGeocode("' + locations[iterator] + '", fetchData)', delay);
-      iterator++;
-    } else {
-      map.fitBounds(bounds);
-    }
-  }
-
-   fetchData();
- </script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaSVCVccHdvCw8Rw01-U9xau4DqYbJxxw&libraries=visualization&callback=initMap">
+</script>
 
 
     <br>
