@@ -153,6 +153,7 @@
     console.log(tripPathCoordinates[i]);
     var coordinate = new google.maps.LatLng(tripPathCoordinates[i]["lat"], tripPathCoordinates[i]["lng"]);
     createMarker(locations[i], coordinate);
+    map.fitBounds(bounds);
   }
 
  </script>
