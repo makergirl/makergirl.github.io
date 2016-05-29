@@ -1,24 +1,70 @@
 ---
-layout: minimum
+layout: project
 title: Trip
 ---
 
-<!-- DEMO
-- This is for demo purposes only
-- Make to enter fullscreen mode
--->
-
 <style>
-  body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
-  #trip {
-    margin: 0 auto;
-    height: 100vh;
-  }
+#trip {
+  height: 50vh;
+  /*width: 100vh;*/
+  margin: 0 auto;
+}
+
+.section {
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.survey {
+  color: #FFFFFF;
+  font-weight: 600;
+  padding: 20px;
+  display: block;
+}
+
+th, td {
+  text-align: left;
+}
 </style>
 
-{% include project/trip.html %}
+<div class="container-fluid">
+  <div id="analytics" class="row section">
+    {% include project/trip.html %}
+
+    <br>
+
+    <div class="row">
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Location</th>
+              <th>Address</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for stop in site.data.stops %}
+            <tr>
+              <td>{{ stop.date }}</td>
+              <td>{{ stop.location }}</td>
+              <td>{{ stop.address }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="{{ site.baseurl }}bower_components/chartist/dist/chartist.min.js"></script>
+<script src="{{ site.baseurl }}public/js/project/analytics.js"></script>
