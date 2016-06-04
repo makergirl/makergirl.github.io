@@ -105,8 +105,18 @@ title: About
           {% endif %}
 
           {% if member.name %}
+            <style>
+              .{{ member.name.first | downcase }} .card {
+                background: url("{{ site.baseurl }}public/img/members/illustrations/{{ member.name.first | downcase }}.jpg");
+                border-radius: 25px;
+              }
+              .{{ member.name.first | downcase }}:hover .card img {
+                content: url("{{ site.baseurl }}public/img/members/illustrations/{{ member.name.first | downcase }}.jpg");
+              }
+            </style>
+
             <div class="col-md-4">
-              <div class="person {{ member.name.first | downcase }} boa">
+              <div class="person {{ member.name.first | downcase }} {% if loopindex2 == 0 %} even {% else %} odd {% endif%}">
                 <a href="{{ site.baseurl }}{{ member.name.first | downcase }}" target="_blank">
             			<div class="card">
             				<img src="{{ site.baseurl }}public/img/members/{% if member.photo %}{{ member.photo }}{% else %}{{ member.name.first | downcase }}.png{% endif %}" alt="">
