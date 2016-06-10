@@ -57,8 +57,7 @@
     "tag": "v2.0.5",
     "commit": "ad8b4c280d15777e0a8e6dece58763a9e622fdfa"
   },
-  "_source": "git://github.com/janpaepke/ScrollMagic.git",
+  "_source": "https://github.com/janpaepke/ScrollMagic.git",
   "_target": "~2.0.5",
-  "_originalSource": "ScrollMagic",
-  "_direct": true
+  "_originalSource": "ScrollMagic"
 }
