@@ -21,7 +21,7 @@ title: Trip
           </thead>
           <tbody>
             {% for stop in site.data.stops %}
-            {% assign loopindex = forloop.index - 1 %}
+            {% assign loopindex = forloop.index | minus: 1 %}
             <tr onclick="google.maps.event.trigger(markers[{{ loopindex }}], 'click');">
               <td>{{ stop.date }}</td>
               <td>{{ stop.location }}</td>
