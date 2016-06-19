@@ -83,15 +83,15 @@
   files:
 
 - date: 6/13/2016
-  location: MakerLab
-  address: 515 E Gregory Drive, Champaign, IL 61820
-  latlng: '{lat: 40.1037865, lng: -88.23093030000001}'
-  files:
-
-- date: 6/13/2016
   location: Orpheum Children's Science Museum
   address: 346 N Neil Street, Champaign, IL 61820
   latlng: '{lat: 40.1194863, lng: -88.2425121}'
+  files:
+
+- date: 6/13/2016
+  location: iVenture Accelerator
+  address: 2001 S First Street, Suite 109, Champaign, IL 61820
+  latlng: {lat: 40.0901223, lng: -88.23924420000003}
   files:
 
 - date: 6/14/2016
@@ -117,12 +117,6 @@
   address: 400 County Road H, Elkhorn, WI 53121
   latlng: '{lat: 42.6660742, lng: -88.52321239999998}'
   files: https&#58;//www.youmagine.com/designs/elkhorn-wi
-
-- date: 6/17/2016
-  location: Cedarburg Girl Scout House
-  address: W57N475 Hilbert Ave, Cedarburg, WI 53012
-  latlng: '{lat: 43.290802, lng: -87.9831044}'
-  files:
 
 - date: 6/17/2016
   location: Arrowhead High School
@@ -173,7 +167,7 @@
   files:
 
 - date: 6/27/2016
-  location:
+  location: Colorado (unconfirmed)
   address: Colorado (don't have location yet)
   latlng: '{lat: 39.5500507, lng: -105.78206740000002}'
   files:
@@ -197,7 +191,7 @@
   files:
 
 - date: 7/8/2016
-  location:
+  location: New Mexico (unconfirmed)
   address: New Mexico (don't have location yet)
   latlng: '{lat: 34.5199402, lng: -105.87009009999997}'
   files:
@@ -215,7 +209,7 @@
   files:
 
 - date: 7/12/2016
-  location:
+  location: Houston, TX (unconfirmed)
   address: Houston, TX (unconfirmed)
   latlng: '{lat: 29.7604267, lng: -95.3698028}'
   files:
@@ -233,7 +227,7 @@
   files:
 
 - date: 7/16/2016
-  location:
+  location: Bowling Green, KY (don't have location yet)
   address: Bowling Green, KY (don't have location yet)
   latlng: '{lat: 36.9685219, lng: -86.48080429999999}'
   files:
@@ -275,7 +269,7 @@
   files:
 
 - date: 7/29/2016
-  location:
+  location: Ann Arbor, MI (don't have location yet)
   address: Ann Arbor, MI (don't have location yet)
   latlng: '{lat: 42.2808256, lng: -83.74303780000002}'
   files:
