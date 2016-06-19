@@ -91,7 +91,7 @@
 - date: 6/13/2016
   location: iVenture Accelerator
   address: 2001 S First Street, Suite 109, Champaign, IL 61820
-  latlng: {lat: 40.0901223, lng: -88.23924420000003}
+  latlng: '{lat: 40.0901223, lng: -88.23924420000003}'
   files:
 
 - date: 6/14/2016
