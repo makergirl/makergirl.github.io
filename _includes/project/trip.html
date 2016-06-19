@@ -17,6 +17,8 @@
   var locations = [];
   var tripPathCoordinates = [];
   var tripCoordinates = [];
+  var tripFiles = [];
+  var markers = [];
 </script>
 
 {% for stop in site.data.stops %}
@@ -24,6 +26,7 @@
   dates.push("{{ stop.date }}");
   locations.push("{{ stop.location }}");
   tripCoordinates.push({{ stop.latlng }});
+  tripFiles.push("{{ stop.files }}");
 
   var stopDate = new Date("{{ stop.date }}");
   var currentDate = new Date();
@@ -80,8 +83,9 @@
     });
 
     var infowindow = new google.maps.InfoWindow({
-      content : '<b>' + query["date"] + ' ' + query["location"]+ '</b>',
-      maxWidth: 200
+      content : '<p><b>' + query["location"]  + ' (' + query["date"] + ')</b></p>' +
+      '<p><a href="'+ query["file"] + '" target="_blank">' +  query["file"] + '</a></p>',
+      maxWidth: 500
     });
 
     var stopDate = new Date(query["date"]);
@@ -95,6 +99,8 @@
     });
 
     bounds.extend(marker.position);
+
+    markers.push(marker);
   }
 
 
@@ -102,10 +108,19 @@
     var coordinate = new google.maps.LatLng(tripCoordinates[i]["lat"], tripCoordinates[i]["lng"]);
     var query = {
       date : dates[i],
-      location : locations[i]
+      location : locations[i],
+      file : tripFiles[i]
     }
     createMarker(query, coordinate);
     map.fitBounds(bounds);
+  }
+
+  for(var i = 0; i < tripCoordinates.length; i++) {
+    var markerObject = document.getElementById("marker" + i);
+    markerObject.onclick = function() {
+      google.maps.event.trigger(markers[i], 'click');
+      console.log("hello");
+    }
   }
 
  </script>

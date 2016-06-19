@@ -3,31 +3,6 @@ layout: project-wide
 title: Trip
 ---
 
-<style>
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.section {
-  margin-right: 40px;
-  margin-left: 40px;
-}
-
-.survey {
-  color: #FFFFFF;
-  font-weight: 600;
-  padding: 20px;
-  display: block;
-}
-
-th, td {
-  text-align: left;
-}
-</style>
-
 <div id="trip">
   <div id="splash">
     {% include project/trip.html %}
@@ -46,7 +21,8 @@ th, td {
           </thead>
           <tbody>
             {% for stop in site.data.stops %}
-            <tr>
+            {% assign loopindex = forloop.index - 1 %}
+            <tr onclick="google.maps.event.trigger(markers[{{ loopindex }}], 'click');">
               <td>{{ stop.date }}</td>
               <td>{{ stop.location }}</td>
               <td>{{ stop.address }}</td>
