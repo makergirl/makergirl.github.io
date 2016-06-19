@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: project-wide
 title: Trip
 ---
 
@@ -9,12 +9,6 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-}
-
-#trip {
-  height: 50vh;
-  /*width: 100vh;*/
-  margin: 0 auto;
 }
 
 .section {
@@ -34,13 +28,13 @@ th, td {
 }
 </style>
 
-<div class="container-fluid">
-  <div id="analytics" class="row section">
+<div id="trip">
+  <div id="splash">
     {% include project/trip.html %}
+  </div>
 
-    <br>
-
-    <div class="row">
+  <div class="container project">
+    <div class="row section scrollspyhook">
       <div class="table-responsive">
         <table class="table">
           <thead>
