@@ -84,17 +84,640 @@
   var map = null;
   var geocoder = null;
   var bounds = null;
-  var infowindow = null;
   var iterator = 0;
-  var locations = null;
-  var tripPathCoordinates = null;
+  var dates = [];
+  var locations = [];
+  var tripPathCoordinates = [];
+  var tripCoordinates = [];
 </script>
 
-<script src="/public/js/project/trip.js"></script>
 
 <script>
+  dates.push("6/1/2016");
+  locations.push("Hope Welty Public Library");
+  tripCoordinates.push({lat: 39.8905196, lng: -88.73045460000003});
+
+  var stopDate = new Date("6/1/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push({lat: 39.8905196, lng: -88.73045460000003});
+  }
+</script>
+
+<script>
+  dates.push("6/1/2016");
+  locations.push("University of Illinois Extension Office");
+  tripCoordinates.push({lat: 39.84104689999999, lng: -89.66499959999999});
+
+  var stopDate = new Date("6/1/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push({lat: 39.84104689999999, lng: -89.66499959999999});
+  }
+</script>
+
+<script>
+  dates.push("6/2/2016");
+  locations.push("Farm Credit Illinois");
+  tripCoordinates.push({lat: 39.115841, lng: -90.29415399999999});
+
+  var stopDate = new Date("6/2/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push({lat: 39.115841, lng: -90.29415399999999});
+  }
+</script>
+
+<script>
+  dates.push("6/2/2016");
+  locations.push("University of Illinois Extension Office");
+  tripCoordinates.push({lat: 39.2933729, lng: -89.87625380000003});
+
+  var stopDate = new Date("6/2/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push({lat: 39.2933729, lng: -89.87625380000003});
+  }
+</script>
+
+<script>
+  dates.push("6/3/2016");
+  locations.push("University of Illinois Extension Office");
+  tripCoordinates.push({lat: 39.1561664, lng: -89.47535119999998});
+
+  var stopDate = new Date("6/3/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push({lat: 39.1561664, lng: -89.47535119999998});
+  }
+</script>
+
+<script>
+  dates.push("6/3/2016");
+  locations.push("Carnegie-Schuyler Library");
+  tripCoordinates.push({lat: 39.3886087, lng: -89.07860319999998});
+
+  var stopDate = new Date("6/3/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push({lat: 39.3886087, lng: -89.07860319999998});
+  }
+</script>
+
+<script>
+  dates.push("6/4/2016");
+  locations.push("St. Louis Confluence Fab Lab at Lewis and Clark Community College");
+  tripCoordinates.push({lat: 38.80627810000001, lng: -89.94994099999997});
+
+  var stopDate = new Date("6/4/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push({lat: 38.80627810000001, lng: -89.94994099999997});
+  }
+</script>
+
+<script>
+  dates.push("6/6/2016");
+  locations.push("Fulton High School Fab Lab");
+  tripCoordinates.push({lat: 38.87201049999999, lng: -91.9413146});
+
+  var stopDate = new Date("6/6/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push({lat: 38.87201049999999, lng: -91.9413146});
+  }
+</script>
+
+<script>
+  dates.push("6/7/2016");
+  locations.push("Independence Community College Fab Lab");
+  tripCoordinates.push({lat: 37.1964732, lng: -95.71967670000004});
+
+  var stopDate = new Date("6/7/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push({lat: 37.1964732, lng: -95.71967670000004});
+  }
+</script>
+
+<script>
+  dates.push("6/8/2016");
+  locations.push("Muskogee High School Fab Lab");
+  tripCoordinates.push({lat: 35.7702783, lng: -95.32287309999998});
+
+  var stopDate = new Date("6/8/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push({lat: 35.7702783, lng: -95.32287309999998});
+  }
+</script>
+
+<script>
+  dates.push("6/8/2016");
+  locations.push("Fab Lab Tulsa");
+  tripCoordinates.push({lat: 36.1504991, lng: -95.95841289999998});
+
+  var stopDate = new Date("6/8/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push({lat: 36.1504991, lng: -95.95841289999998});
+  }
+</script>
+
+<script>
+  dates.push("6/9/2016");
+  locations.push("Scott Family Amazeum");
+  tripCoordinates.push({lat: 36.3817244, lng: -94.20286970000001});
+
+  var stopDate = new Date("6/9/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push({lat: 36.3817244, lng: -94.20286970000001});
+  }
+</script>
+
+<script>
+  dates.push("6/9/2016");
+  locations.push("Rogers Public Library");
+  tripCoordinates.push({lat: 36.3280933, lng: -94.1428017});
+
+  var stopDate = new Date("6/9/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push({lat: 36.3280933, lng: -94.1428017});
+  }
+</script>
+
+<script>
+  dates.push("6/10/2016");
+  locations.push("");
+  tripCoordinates.push();
+
+  var stopDate = new Date("6/10/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push();
+  }
+</script>
+
+<script>
+  dates.push("6/13/2016");
+  locations.push("MakerLab");
+  tripCoordinates.push({lat: 40.1037865, lng: -88.23093030000001});
+
+  var stopDate = new Date("6/13/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push({lat: 40.1037865, lng: -88.23093030000001});
+  }
+</script>
+
+<script>
+  dates.push("6/13/2016");
+  locations.push("Orpheum Children's Science Museum");
+  tripCoordinates.push({lat: 40.1194863, lng: -88.2425121});
+
+  var stopDate = new Date("6/13/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push({lat: 40.1194863, lng: -88.2425121});
+  }
+</script>
+
+<script>
+  dates.push("6/14/2016");
+  locations.push("Mundelein High School");
+  tripCoordinates.push({lat: 42.27167499999999, lng: -88.021413});
+
+  var stopDate = new Date("6/14/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push({lat: 42.27167499999999, lng: -88.021413});
+  }
+</script>
+
+<script>
+  dates.push("6/15/2016");
+  locations.push("Zion Benton Public Library");
+  tripCoordinates.push({lat: 42.4510349, lng: -87.83959270000003});
+
+  var stopDate = new Date("6/15/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push({lat: 42.4510349, lng: -87.83959270000003});
+  }
+</script>
+
+<script>
+  dates.push("6/16/2016");
+  locations.push("SC Johnson iMET Center");
+  tripCoordinates.push({lat: 42.7081086, lng: -87.91376600000001});
+
+  var stopDate = new Date("6/16/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push({lat: 42.7081086, lng: -87.91376600000001});
+  }
+</script>
+
+<script>
+  dates.push("6/16/2016");
+  locations.push("Gateway Technical College - Elkhorn Campus");
+  tripCoordinates.push({lat: 42.6660742, lng: -88.52321239999998});
+
+  var stopDate = new Date("6/16/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push({lat: 42.6660742, lng: -88.52321239999998});
+  }
+</script>
+
+<script>
+  dates.push("6/17/2016");
+  locations.push("Cedarburg Girl Scout House");
+  tripCoordinates.push({lat: 43.290802, lng: -87.9831044});
+
+  var stopDate = new Date("6/17/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push({lat: 43.290802, lng: -87.9831044});
+  }
+</script>
+
+<script>
+  dates.push("6/17/2016");
+  locations.push("Arrowhead High School");
+  tripCoordinates.push({lat: 43.1142172, lng: -88.34312339999997});
+
+  var stopDate = new Date("6/17/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push({lat: 43.1142172, lng: -88.34312339999997});
+  }
+</script>
+
+<script>
+  dates.push("6/18/2016");
+  locations.push("Town Hall Library");
+  tripCoordinates.push({lat: 43.1591371, lng: -88.3710302});
+
+  var stopDate = new Date("6/18/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push({lat: 43.1591371, lng: -88.3710302});
+  }
+</script>
+
+<script>
+  dates.push("6/18/2016");
+  locations.push("Betty Brinn Children's Museum");
+  tripCoordinates.push({lat: 43.039374, lng: -87.89924200000002});
+
+  var stopDate = new Date("6/18/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push({lat: 43.039374, lng: -87.89924200000002});
+  }
+</script>
+
+<script>
+  dates.push("6/20/2016");
+  locations.push("Pearl City Elementary School");
+  tripCoordinates.push({lat: 42.2670229, lng: -89.8300362});
+
+  var stopDate = new Date("6/20/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push({lat: 42.2670229, lng: -89.8300362});
+  }
+</script>
+
+<script>
+  dates.push("6/21/2016");
+  locations.push("United Presbyterian Home");
+  tripCoordinates.push({lat: 41.2980211, lng: -91.67833559999997});
+
+  var stopDate = new Date("6/21/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push({lat: 41.2980211, lng: -91.67833559999997});
+  }
+</script>
+
+<script>
+  dates.push("6/22/2016");
+  locations.push("Washington Public Library");
+  tripCoordinates.push({lat: 41.2981276, lng: -91.69236440000003});
+
+  var stopDate = new Date("6/22/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push({lat: 41.2981276, lng: -91.69236440000003});
+  }
+</script>
+
+<script>
+  dates.push("6/23/2016");
+  locations.push("Girl Scouts Spirit of Nebraska Camp Catron & Retreat Center");
+  tripCoordinates.push({lat: 40.7042113, lng: -95.89216820000001});
+
+  var stopDate = new Date("6/23/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push({lat: 40.7042113, lng: -95.89216820000001});
+  }
+</script>
+
+<script>
+  dates.push("6/24/2016");
+  locations.push("Girl Scouts Spirit of Nebraska Grand Island Service Center");
+  tripCoordinates.push({lat: 40.9265173, lng: -98.37906450000003});
+
+  var stopDate = new Date("6/24/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push({lat: 40.9265173, lng: -98.37906450000003});
+  }
+</script>
+
+<script>
+  dates.push("6/27/2016");
+  locations.push("");
+  tripCoordinates.push();
+
+  var stopDate = new Date("6/27/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push();
+  }
+</script>
+
+<script>
+  dates.push("7/1/2016");
+  locations.push("San Francisco City Academy");
+  tripCoordinates.push({lat: 37.7834452, lng: -122.4121695});
+
+  var stopDate = new Date("7/1/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push({lat: 37.7834452, lng: -122.4121695});
+  }
+</script>
+
+<script>
+  dates.push("7/5/2016");
+  locations.push("REALM Charter School");
+  tripCoordinates.push({lat: 37.8674569, lng: -122.2949122});
+
+  var stopDate = new Date("7/5/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push({lat: 37.8674569, lng: -122.2949122});
+  }
+</script>
+
+<script>
+  dates.push("7/5/2016");
+  locations.push("");
+  tripCoordinates.push();
+
+  var stopDate = new Date("7/5/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push();
+  }
+</script>
+
+<script>
+  dates.push("7/8/2016");
+  locations.push("");
+  tripCoordinates.push();
+
+  var stopDate = new Date("7/8/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push();
+  }
+</script>
+
+<script>
+  dates.push("7/9/2016");
+  locations.push("Girl Scouts of New Mexico Trails Council HQ");
+  tripCoordinates.push({lat: 35.150666, lng: -106.59626709999998});
+
+  var stopDate = new Date("7/9/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push({lat: 35.150666, lng: -106.59626709999998});
+  }
+</script>
+
+<script>
+  dates.push("7/11/2016");
+  locations.push("The Biodiversity Education Center at Coppell Nature Park");
+  tripCoordinates.push({lat: 32.962855, lng: -97.01522449999999});
+
+  var stopDate = new Date("7/11/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push({lat: 32.962855, lng: -97.01522449999999});
+  }
+</script>
+
+<script>
+  dates.push("7/12/2016");
+  locations.push("");
+  tripCoordinates.push();
+
+  var stopDate = new Date("7/12/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push();
+  }
+</script>
+
+<script>
+  dates.push("7/15/2016");
+  locations.push("Cumberland Business Incubator at Roane State Community College");
+  tripCoordinates.push({lat: 35.979714, lng: -85.002789});
+
+  var stopDate = new Date("7/15/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push({lat: 35.979714, lng: -85.002789});
+  }
+</script>
+
+<script>
+  dates.push("7/16/2016");
+  locations.push("STEM Preperatory Academy");
+  tripCoordinates.push({lat: 36.1359854, lng: -86.7401797});
+
+  var stopDate = new Date("7/16/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push({lat: 36.1359854, lng: -86.7401797});
+  }
+</script>
+
+<script>
+  dates.push("7/16/2016");
+  locations.push("");
+  tripCoordinates.push();
+
+  var stopDate = new Date("7/16/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push();
+  }
+</script>
+
+<script>
+  dates.push("7/18/2016");
+  locations.push("Louisville Program Learning Center");
+  tripCoordinates.push({lat: 38.2480653, lng: -85.70830039999998});
+
+  var stopDate = new Date("7/18/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push({lat: 38.2480653, lng: -85.70830039999998});
+  }
+</script>
+
+<script>
+  dates.push("7/20/2016");
+  locations.push("");
+  tripCoordinates.push();
+
+  var stopDate = new Date("7/20/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push();
+  }
+</script>
+
+<script>
+  dates.push("7/21/2016");
+  locations.push("Voodoo Manufacturing");
+  tripCoordinates.push({lat: 40.710731, lng: -73.93440720000001});
+
+  var stopDate = new Date("7/21/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push({lat: 40.710731, lng: -73.93440720000001});
+  }
+</script>
+
+<script>
+  dates.push("7/22/2016");
+  locations.push("The Ethel Walker School");
+  tripCoordinates.push({lat: 41.849445, lng: -72.8340455});
+
+  var stopDate = new Date("7/22/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push({lat: 41.849445, lng: -72.8340455});
+  }
+</script>
+
+<script>
+  dates.push("7/25/2016");
+  locations.push("");
+  tripCoordinates.push();
+
+  var stopDate = new Date("7/25/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push();
+  }
+</script>
+
+<script>
+  dates.push("7/27/2016");
+  locations.push("Kent State University");
+  tripCoordinates.push({lat: 41.1471302, lng: -81.3476771});
+
+  var stopDate = new Date("7/27/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push({lat: 41.1471302, lng: -81.3476771});
+  }
+</script>
+
+<script>
+  dates.push("7/28/2016");
+  locations.push("Case Western Reserve University");
+  tripCoordinates.push({lat: 41.5074022, lng: -81.6083276});
+
+  var stopDate = new Date("7/28/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push({lat: 41.5074022, lng: -81.6083276});
+  }
+</script>
+
+<script>
+  dates.push("7/29/2016");
+  locations.push("");
+  tripCoordinates.push();
+
+  var stopDate = new Date("7/29/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push();
+  }
+</script>
+
+<script>
+  dates.push("8/1/2016");
+  locations.push("Muskegon Community College Fab Lab");
+  tripCoordinates.push({lat: 43.2479538, lng: -86.1962777});
+
+  var stopDate = new Date("8/1/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push({lat: 43.2479538, lng: -86.1962777});
+  }
+</script>
+
+<script>
+  dates.push("8/2/2016");
+  locations.push("Roslyn Road Elementary School");
+  tripCoordinates.push({lat: 42.1666005, lng: -88.13923920000002});
+
+  var stopDate = new Date("8/2/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push({lat: 42.1666005, lng: -88.13923920000002});
+  }
+</script>
+
+<script>
+  dates.push("8/2/2016");
+  locations.push("Chinmaya Mission Chicago");
+  tripCoordinates.push({lat: 42.3117542, lng: -88.10928489999998});
+
+  var stopDate = new Date("8/2/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push({lat: 42.3117542, lng: -88.10928489999998});
+  }
+</script>
+
+<script>
+  dates.push("8/3/2016");
+  locations.push("");
+  tripCoordinates.push();
+
+  var stopDate = new Date("8/3/2016");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push();
+  }
+</script>
 
 
+<script>
   // Set delay to 100ms
   delay = 100;
 
@@ -108,190 +731,12 @@
     center: center,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
     scrollwheel: false,
-    styles: [
-    {
-        "featureType": "all",
-        "elementType": "labels.text.fill",
-        "stylers": [
-            {
-                "saturation": 36
-            },
-            {
-                "color": "#333333"
-            },
-            {
-                "lightness": 40
-            }
-        ]
-    },
-    {
-        "featureType": "all",
-        "elementType": "labels.text.stroke",
-        "stylers": [
-            {
-                "visibility": "on"
-            },
-            {
-                "color": "#e0e0e0"
-            },
-            {
-                "lightness": 16
-            }
-        ]
-    },
-    {
-        "featureType": "all",
-        "elementType": "labels.icon",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "administrative",
-        "elementType": "geometry.fill",
-        "stylers": [
-            {
-                "color": "#fefefe"
-            },
-            {
-                "lightness": 20
-            }
-        ]
-    },
-    {
-        "featureType": "administrative",
-        "elementType": "geometry.stroke",
-        "stylers": [
-            {
-                "color": "#fefefe"
-            },
-            {
-                "lightness": 17
-            },
-            {
-                "weight": 1.2
-            }
-        ]
-    },
-    {
-        "featureType": "landscape",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "lightness": 20
-            },
-            {
-                "color": "#cecece"
-            }
-        ]
-    },
-    {
-        "featureType": "poi",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#cecece"
-            },
-            {
-                "lightness": 21
-            }
-        ]
-    },
-    {
-        "featureType": "poi.park",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#cecece"
-            },
-            {
-                "lightness": 21
-            }
-        ]
-    },
-    {
-        "featureType": "road.highway",
-        "elementType": "geometry.fill",
-        "stylers": [
-            {
-                "color": "#e0e0e0"
-            },
-            {
-                "lightness": 17
-            }
-        ]
-    },
-    {
-        "featureType": "road.highway",
-        "elementType": "geometry.stroke",
-        "stylers": [
-            {
-                "color": "#e0e0e0"
-            },
-            {
-                "lightness": 29
-            },
-            {
-                "weight": 0.2
-            }
-        ]
-    },
-    {
-        "featureType": "road.arterial",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#e0e0e0"
-            },
-            {
-                "lightness": 18
-            }
-        ]
-    },
-    {
-        "featureType": "road.local",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#e0e0e0"
-            },
-            {
-                "lightness": 16
-            }
-        ]
-    },
-    {
-        "featureType": "transit",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#e0e0e0"
-            },
-            {
-                "lightness": 19
-            }
-        ]
-    },
-    {
-        "featureType": "water",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#e0e0e0"
-            },
-            {
-                "lightness": 17
-            }
-        ]
-    }
-    ],
+    styles: [{featureType:"all",elementType:"labels.text.fill",stylers:[{saturation:36},{color:"#333333"},{lightness:40}]},{featureType:"all",elementType:"labels.text.stroke",stylers:[{visibility:"on"},{color:"#e0e0e0"},{lightness:16}]},{featureType:"all",elementType:"labels.icon",stylers:[{visibility:"off"}]},{featureType:"administrative",elementType:"geometry.fill",stylers:[{color:"#fefefe"},{lightness:20}]},{featureType:"administrative",elementType:"geometry.stroke",stylers:[{color:"#fefefe"},{lightness:17},{weight:1.2}]},{featureType:"landscape",elementType:"geometry",stylers:[{lightness:20},{color:"#cecece"}]},{featureType:"poi",elementType:"geometry",stylers:[{color:"#cecece"},{lightness:21}]},{featureType:"poi.park",elementType:"geometry",stylers:[{color:"#cecece"},{lightness:21}]},{featureType:"road.highway",elementType:"geometry.fill",stylers:[{color:"#e0e0e0"},{lightness:17}]},{featureType:"road.highway",elementType:"geometry.stroke",stylers:[{color:"#e0e0e0"},{lightness:29},{weight:.2}]},{featureType:"road.arterial",elementType:"geometry",stylers:[{color:"#e0e0e0"},{lightness:18}]},{featureType:"road.local",elementType:"geometry",stylers:[{color:"#e0e0e0"},{lightness:16}]},{featureType:"transit",elementType:"geometry",stylers:[{color:"#e0e0e0"},{lightness:19}]},{featureType:"water",elementType:"geometry",stylers:[{color:"#e0e0e0"},{lightness:17}]}],
   });
 
   geocoder = new google.maps.Geocoder();
   bounds = new google.maps.LatLngBounds();
-  infowindow = new google.maps.InfoWindow();
+
 
   var tripPath = new google.maps.Polyline({
     path: tripPathCoordinates,
@@ -318,10 +763,18 @@
       zIndex : Math.round(center.lat * -100000) << 5
     });
 
-    // console.log("marker: " +  marker);
+    var infowindow = new google.maps.InfoWindow({
+      content : '<b>' + query["date"] + ' ' + query["location"]+ '</b>',
+      maxWidth: 200
+    });
+
+    var stopDate = new Date(query["date"]);
+    var currentDate = new Date();
+    if(stopDate.toDateString() === currentDate.toDateString()) {
+      infowindow.open(map, marker);
+    }
 
     google.maps.event.addListener(marker, 'click', function() {
-      infowindow.setContent(query);
       infowindow.open(map, marker);
     });
 
@@ -329,10 +782,13 @@
   }
 
 
-  for(var i = 0; i < tripPathCoordinates.length; i++) {
-    console.log(tripPathCoordinates[i]);
-    var coordinate = new google.maps.LatLng(tripPathCoordinates[i]["lat"], tripPathCoordinates[i]["lng"]);
-    createMarker(locations[i], coordinate);
+  for(var i = 0; i < tripCoordinates.length; i++) {
+    var coordinate = new google.maps.LatLng(tripCoordinates[i]["lat"], tripCoordinates[i]["lng"]);
+    var query = {
+      date : dates[i],
+      location : locations[i]
+    }
+    createMarker(query, coordinate);
     map.fitBounds(bounds);
   }
 
