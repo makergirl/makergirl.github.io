@@ -77,9 +77,9 @@
   files: https&#58;//www.youmagine.com/designs/rogers-ar
 
 - date: 6/10/2016
-  location:
-  address: Fayetteville, AR (don't have location yet)
-  latlng:
+  location: Fayetteville Town Square
+  address: 15 W Mountain Street, Fayetteville, AR 72701
+  latlng: '{lat: 36.061728, lng: -94.16017099999999}'
   files:
 
 - date: 6/13/2016
@@ -175,7 +175,7 @@
 - date: 6/27/2016
   location:
   address: Colorado (don't have location yet)
-  latlng:
+  latlng: '{lat: 39.5500507, lng: -105.78206740000002}'
   files:
 
 - date: 7/1/2016
@@ -191,15 +191,15 @@
   files:
 
 - date: 7/5/2016
-  location:
-  address: Palo Alto, CA (don't have location yet)
-  latlng:
+  location: Mitchell Park Community Center
+  address: 3700 Middlefield Road, Palo Alto, CA 94303
+  latlng: '{lat: 37.4223141, lng: -122.11265209999999}'
   files:
 
 - date: 7/8/2016
   location:
   address: New Mexico (don't have location yet)
-  latlng:
+  latlng: '{lat: 34.5199402, lng: -105.87009009999997}'
   files:
 
 - date: 7/9/2016
@@ -217,7 +217,7 @@
 - date: 7/12/2016
   location:
   address: Houston, TX (unconfirmed)
-  latlng:
+  latlng: '{lat: 29.7604267, lng: -95.3698028}'
   files:
 
 - date: 7/15/2016
@@ -235,7 +235,7 @@
 - date: 7/16/2016
   location:
   address: Bowling Green, KY (don't have location yet)
-  latlng:
+  latlng: '{lat: 36.9685219, lng: -86.48080429999999}'
   files:
 
 - date: 7/18/2016
@@ -245,12 +245,6 @@
   files:
 
 - date: 7/20/2016
-  location:
-  address: New York, NY (unconfirmed)
-  latlng:
-  files:
-
-- date: 7/21/2016
   location: Voodoo Manufacturing
   address: 361 Stagg Street #408, Brooklyn, NY 11206
   latlng: '{lat: 40.710731, lng: -73.93440720000001}'
@@ -263,9 +257,9 @@
   files:
 
 - date: 7/25/2016
-  location:
-  address: Groveton, NH (don't have location yet)
-  latlng:
+  location: Groveton High School
+  address: 65 State Street, Groveton, NH 03582
+  latlng: '{lat: 44.6002893, lng: -71.51699489999999}'
   files:
 
 - date: 7/27/2016
@@ -283,7 +277,7 @@
 - date: 7/29/2016
   location:
   address: Ann Arbor, MI (don't have location yet)
-  latlng:
+  latlng: '{lat: 42.2808256, lng: -83.74303780000002}'
   files:
 
 - date: 8/1/2016
@@ -305,7 +299,7 @@
   files:
 
 - date: 8/3/2016
-  location:
-  address: Chicago, IL (unconfirmed)
-  latlng:
+  location: Avant
+  address: 222 N La Salle St, Suite 1700, Chicago, IL 60601
+  latlng: '{lat: 41.8865068, lng: -87.63323450000001}'
   files:
