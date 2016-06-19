@@ -12,17 +12,28 @@
   var map = null;
   var geocoder = null;
   var bounds = null;
-  var infowindow = null;
   var iterator = 0;
-  var locations = null;
-  var tripPathCoordinates = null;
+  var dates = [];
+  var locations = [];
+  var tripPathCoordinates = [];
+  var tripCoordinates = [];
 </script>
 
-<script src="{{ site.baseurl }}public/js/project/trip.js"></script>
+{% for stop in site.data.stops %}
+<script>
+  dates.push("{{ stop.date }}");
+  locations.push("{{ stop.location }}");
+  tripCoordinates.push({{ stop.latlng }});
+
+  var stopDate = new Date("{{ stop.date }}");
+  var currentDate = new Date();
+  if(stopDate <= currentDate) {
+    tripPathCoordinates.push({{ stop.latlng }});
+  }
+</script>
+{% endfor %}
 
 <script>
-
-
   // Set delay to 100ms
   delay = 100;
 
@@ -41,7 +52,7 @@
 
   geocoder = new google.maps.Geocoder();
   bounds = new google.maps.LatLngBounds();
-  infowindow = new google.maps.InfoWindow();
+
 
   var tripPath = new google.maps.Polyline({
     path: tripPathCoordinates,
@@ -68,10 +79,18 @@
       zIndex : Math.round(center.lat * -100000) << 5
     });
 
-    // console.log("marker: " +  marker);
+    var infowindow = new google.maps.InfoWindow({
+      content : '<b>' + query["date"] + ' ' + query["location"]+ '</b>',
+      maxWidth: 200
+    });
+
+    var stopDate = new Date(query["date"]);
+    var currentDate = new Date();
+    if(stopDate.toDateString() === currentDate.toDateString()) {
+      infowindow.open(map, marker);
+    }
 
     google.maps.event.addListener(marker, 'click', function() {
-      infowindow.setContent(query);
       infowindow.open(map, marker);
     });
 
@@ -79,10 +98,13 @@
   }
 
 
-  for(var i = 0; i < tripPathCoordinates.length; i++) {
-    console.log(tripPathCoordinates[i]);
-    var coordinate = new google.maps.LatLng(tripPathCoordinates[i]["lat"], tripPathCoordinates[i]["lng"]);
-    createMarker(locations[i], coordinate);
+  for(var i = 0; i < tripCoordinates.length; i++) {
+    var coordinate = new google.maps.LatLng(tripCoordinates[i]["lat"], tripCoordinates[i]["lng"]);
+    var query = {
+      date : dates[i],
+      location : locations[i]
+    }
+    createMarker(query, coordinate);
     map.fitBounds(bounds);
   }
 
