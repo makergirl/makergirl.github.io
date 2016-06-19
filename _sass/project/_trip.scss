@@ -4,7 +4,7 @@
   #tripMap {
     height: 100vh;
   }
-  
+
   // Splash
   #splash {
     text-align: center;
@@ -33,6 +33,35 @@
         color: #FFFFFF;
         font-size: 50px;
       }
+    }
+  }
+
+  .section {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+
+  .survey {
+    color: #FFFFFF;
+    font-weight: 600;
+    padding: 20px;
+    display: block;
+  }
+
+  th, td {
+    text-align: left;
+  }
+
+  tr {
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background: #f3f3f3;
+    }
+
+    &:active {
+      background: #e5e5e5;
     }
   }
 }

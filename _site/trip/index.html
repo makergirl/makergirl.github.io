@@ -83,32 +83,7 @@
 
     <div class="wrapper">
       <div class="project">
-        <style>
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.section {
-  margin-right: 40px;
-  margin-left: 40px;
-}
-
-.survey {
-  color: #FFFFFF;
-  font-weight: 600;
-  padding: 20px;
-  display: block;
-}
-
-th, td {
-  text-align: left;
-}
-</style>
-
-<div id="trip">
+        <div id="trip">
   <div id="splash">
     <!-- Map
 - Displays all the MakerGirl participants in a single map
@@ -129,6 +104,8 @@ th, td {
   var locations = [];
   var tripPathCoordinates = [];
   var tripCoordinates = [];
+  var tripFiles = [];
+  var markers = [];
 </script>
 
 
@@ -136,6 +113,7 @@ th, td {
   dates.push("6/1/2016");
   locations.push("Hope Welty Public Library");
   tripCoordinates.push({lat: 39.8905196, lng: -88.73045460000003});
+  tripFiles.push("https&#58;//www.youmagine.com/designs/cerro-gordo");
 
   var stopDate = new Date("6/1/2016");
   var currentDate = new Date();
@@ -148,6 +126,7 @@ th, td {
   dates.push("6/1/2016");
   locations.push("University of Illinois Extension Office");
   tripCoordinates.push({lat: 39.84104689999999, lng: -89.66499959999999});
+  tripFiles.push("https&#58;//www.youmagine.com/designs/springfield-il");
 
   var stopDate = new Date("6/1/2016");
   var currentDate = new Date();
@@ -160,6 +139,7 @@ th, td {
   dates.push("6/2/2016");
   locations.push("Farm Credit Illinois");
   tripCoordinates.push({lat: 39.115841, lng: -90.29415399999999});
+  tripFiles.push("");
 
   var stopDate = new Date("6/2/2016");
   var currentDate = new Date();
@@ -172,6 +152,7 @@ th, td {
   dates.push("6/2/2016");
   locations.push("University of Illinois Extension Office");
   tripCoordinates.push({lat: 39.2933729, lng: -89.87625380000003});
+  tripFiles.push("https&#58;//www.youmagine.com/designs/carlsville-sessions");
 
   var stopDate = new Date("6/2/2016");
   var currentDate = new Date();
@@ -184,6 +165,7 @@ th, td {
   dates.push("6/3/2016");
   locations.push("University of Illinois Extension Office");
   tripCoordinates.push({lat: 39.1561664, lng: -89.47535119999998});
+  tripFiles.push("https&#58;//www.youmagine.com/designs/hillsboro-il");
 
   var stopDate = new Date("6/3/2016");
   var currentDate = new Date();
@@ -196,6 +178,7 @@ th, td {
   dates.push("6/3/2016");
   locations.push("Carnegie-Schuyler Library");
   tripCoordinates.push({lat: 39.3886087, lng: -89.07860319999998});
+  tripFiles.push("https&#58;//www.youmagine.com/designs/pana-session");
 
   var stopDate = new Date("6/3/2016");
   var currentDate = new Date();
@@ -208,6 +191,7 @@ th, td {
   dates.push("6/4/2016");
   locations.push("St. Louis Confluence Fab Lab at Lewis and Clark Community College");
   tripCoordinates.push({lat: 38.80627810000001, lng: -89.94994099999997});
+  tripFiles.push("");
 
   var stopDate = new Date("6/4/2016");
   var currentDate = new Date();
@@ -220,6 +204,7 @@ th, td {
   dates.push("6/6/2016");
   locations.push("Fulton High School Fab Lab");
   tripCoordinates.push({lat: 38.87201049999999, lng: -91.9413146});
+  tripFiles.push("https&#58;//www.youmagine.com/designs/fulton-fablab-session-1");
 
   var stopDate = new Date("6/6/2016");
   var currentDate = new Date();
@@ -232,6 +217,7 @@ th, td {
   dates.push("6/7/2016");
   locations.push("Independence Community College Fab Lab");
   tripCoordinates.push({lat: 37.1964732, lng: -95.71967670000004});
+  tripFiles.push("https&#58;//www.youmagine.com/designs/independence-ks");
 
   var stopDate = new Date("6/7/2016");
   var currentDate = new Date();
@@ -244,6 +230,7 @@ th, td {
   dates.push("6/8/2016");
   locations.push("Muskogee High School Fab Lab");
   tripCoordinates.push({lat: 35.7702783, lng: -95.32287309999998});
+  tripFiles.push("https&#58;//www.youmagine.com/designs/muskogee-session");
 
   var stopDate = new Date("6/8/2016");
   var currentDate = new Date();
@@ -256,6 +243,7 @@ th, td {
   dates.push("6/8/2016");
   locations.push("Fab Lab Tulsa");
   tripCoordinates.push({lat: 36.1504991, lng: -95.95841289999998});
+  tripFiles.push("https&#58;//www.youmagine.com/designs/tulsa-ok");
 
   var stopDate = new Date("6/8/2016");
   var currentDate = new Date();
@@ -268,6 +256,7 @@ th, td {
   dates.push("6/9/2016");
   locations.push("Scott Family Amazeum");
   tripCoordinates.push({lat: 36.3817244, lng: -94.20286970000001});
+  tripFiles.push("");
 
   var stopDate = new Date("6/9/2016");
   var currentDate = new Date();
@@ -280,6 +269,7 @@ th, td {
   dates.push("6/9/2016");
   locations.push("Rogers Public Library");
   tripCoordinates.push({lat: 36.3280933, lng: -94.1428017});
+  tripFiles.push("https&#58;//www.youmagine.com/designs/rogers-ar");
 
   var stopDate = new Date("6/9/2016");
   var currentDate = new Date();
@@ -290,13 +280,14 @@ th, td {
 
 <script>
   dates.push("6/10/2016");
-  locations.push("");
-  tripCoordinates.push();
+  locations.push("Fayetteville Town Square");
+  tripCoordinates.push({lat: 36.061728, lng: -94.16017099999999});
+  tripFiles.push("");
 
   var stopDate = new Date("6/10/2016");
   var currentDate = new Date();
   if(stopDate <= currentDate) {
-    tripPathCoordinates.push();
+    tripPathCoordinates.push({lat: 36.061728, lng: -94.16017099999999});
   }
 </script>
 
@@ -304,6 +295,7 @@ th, td {
   dates.push("6/13/2016");
   locations.push("MakerLab");
   tripCoordinates.push({lat: 40.1037865, lng: -88.23093030000001});
+  tripFiles.push("");
 
   var stopDate = new Date("6/13/2016");
   var currentDate = new Date();
@@ -316,6 +308,7 @@ th, td {
   dates.push("6/13/2016");
   locations.push("Orpheum Children's Science Museum");
   tripCoordinates.push({lat: 40.1194863, lng: -88.2425121});
+  tripFiles.push("");
 
   var stopDate = new Date("6/13/2016");
   var currentDate = new Date();
@@ -328,6 +321,7 @@ th, td {
   dates.push("6/14/2016");
   locations.push("Mundelein High School");
   tripCoordinates.push({lat: 42.27167499999999, lng: -88.021413});
+  tripFiles.push("https&#58;//www.youmagine.com/designs/mundelein-session");
 
   var stopDate = new Date("6/14/2016");
   var currentDate = new Date();
@@ -340,6 +334,7 @@ th, td {
   dates.push("6/15/2016");
   locations.push("Zion Benton Public Library");
   tripCoordinates.push({lat: 42.4510349, lng: -87.83959270000003});
+  tripFiles.push("");
 
   var stopDate = new Date("6/15/2016");
   var currentDate = new Date();
@@ -352,6 +347,7 @@ th, td {
   dates.push("6/16/2016");
   locations.push("SC Johnson iMET Center");
   tripCoordinates.push({lat: 42.7081086, lng: -87.91376600000001});
+  tripFiles.push("https&#58;//www.youmagine.com/designs/sturtevant-wi");
 
   var stopDate = new Date("6/16/2016");
   var currentDate = new Date();
@@ -364,6 +360,7 @@ th, td {
   dates.push("6/16/2016");
   locations.push("Gateway Technical College - Elkhorn Campus");
   tripCoordinates.push({lat: 42.6660742, lng: -88.52321239999998});
+  tripFiles.push("https&#58;//www.youmagine.com/designs/elkhorn-wi");
 
   var stopDate = new Date("6/16/2016");
   var currentDate = new Date();
@@ -376,6 +373,7 @@ th, td {
   dates.push("6/17/2016");
   locations.push("Cedarburg Girl Scout House");
   tripCoordinates.push({lat: 43.290802, lng: -87.9831044});
+  tripFiles.push("");
 
   var stopDate = new Date("6/17/2016");
   var currentDate = new Date();
@@ -388,6 +386,7 @@ th, td {
   dates.push("6/17/2016");
   locations.push("Arrowhead High School");
   tripCoordinates.push({lat: 43.1142172, lng: -88.34312339999997});
+  tripFiles.push("");
 
   var stopDate = new Date("6/17/2016");
   var currentDate = new Date();
@@ -400,6 +399,7 @@ th, td {
   dates.push("6/18/2016");
   locations.push("Town Hall Library");
   tripCoordinates.push({lat: 43.1591371, lng: -88.3710302});
+  tripFiles.push("");
 
   var stopDate = new Date("6/18/2016");
   var currentDate = new Date();
@@ -412,6 +412,7 @@ th, td {
   dates.push("6/18/2016");
   locations.push("Betty Brinn Children's Museum");
   tripCoordinates.push({lat: 43.039374, lng: -87.89924200000002});
+  tripFiles.push("");
 
   var stopDate = new Date("6/18/2016");
   var currentDate = new Date();
@@ -424,6 +425,7 @@ th, td {
   dates.push("6/20/2016");
   locations.push("Pearl City Elementary School");
   tripCoordinates.push({lat: 42.2670229, lng: -89.8300362});
+  tripFiles.push("");
 
   var stopDate = new Date("6/20/2016");
   var currentDate = new Date();
@@ -436,6 +438,7 @@ th, td {
   dates.push("6/21/2016");
   locations.push("United Presbyterian Home");
   tripCoordinates.push({lat: 41.2980211, lng: -91.67833559999997});
+  tripFiles.push("");
 
   var stopDate = new Date("6/21/2016");
   var currentDate = new Date();
@@ -448,6 +451,7 @@ th, td {
   dates.push("6/22/2016");
   locations.push("Washington Public Library");
   tripCoordinates.push({lat: 41.2981276, lng: -91.69236440000003});
+  tripFiles.push("");
 
   var stopDate = new Date("6/22/2016");
   var currentDate = new Date();
@@ -460,6 +464,7 @@ th, td {
   dates.push("6/23/2016");
   locations.push("Girl Scouts Spirit of Nebraska Camp Catron & Retreat Center");
   tripCoordinates.push({lat: 40.7042113, lng: -95.89216820000001});
+  tripFiles.push("");
 
   var stopDate = new Date("6/23/2016");
   var currentDate = new Date();
@@ -472,6 +477,7 @@ th, td {
   dates.push("6/24/2016");
   locations.push("Girl Scouts Spirit of Nebraska Grand Island Service Center");
   tripCoordinates.push({lat: 40.9265173, lng: -98.37906450000003});
+  tripFiles.push("");
 
   var stopDate = new Date("6/24/2016");
   var currentDate = new Date();
@@ -483,12 +489,13 @@ th, td {
 <script>
   dates.push("6/27/2016");
   locations.push("");
-  tripCoordinates.push();
+  tripCoordinates.push({lat: 39.5500507, lng: -105.78206740000002});
+  tripFiles.push("");
 
   var stopDate = new Date("6/27/2016");
   var currentDate = new Date();
   if(stopDate <= currentDate) {
-    tripPathCoordinates.push();
+    tripPathCoordinates.push({lat: 39.5500507, lng: -105.78206740000002});
   }
 </script>
 
@@ -496,6 +503,7 @@ th, td {
   dates.push("7/1/2016");
   locations.push("San Francisco City Academy");
   tripCoordinates.push({lat: 37.7834452, lng: -122.4121695});
+  tripFiles.push("");
 
   var stopDate = new Date("7/1/2016");
   var currentDate = new Date();
@@ -508,6 +516,7 @@ th, td {
   dates.push("7/5/2016");
   locations.push("REALM Charter School");
   tripCoordinates.push({lat: 37.8674569, lng: -122.2949122});
+  tripFiles.push("");
 
   var stopDate = new Date("7/5/2016");
   var currentDate = new Date();
@@ -518,25 +527,27 @@ th, td {
 
 <script>
   dates.push("7/5/2016");
-  locations.push("");
-  tripCoordinates.push();
+  locations.push("Mitchell Park Community Center");
+  tripCoordinates.push({lat: 37.4223141, lng: -122.11265209999999});
+  tripFiles.push("");
 
   var stopDate = new Date("7/5/2016");
   var currentDate = new Date();
   if(stopDate <= currentDate) {
-    tripPathCoordinates.push();
+    tripPathCoordinates.push({lat: 37.4223141, lng: -122.11265209999999});
   }
 </script>
 
 <script>
   dates.push("7/8/2016");
   locations.push("");
-  tripCoordinates.push();
+  tripCoordinates.push({lat: 34.5199402, lng: -105.87009009999997});
+  tripFiles.push("");
 
   var stopDate = new Date("7/8/2016");
   var currentDate = new Date();
   if(stopDate <= currentDate) {
-    tripPathCoordinates.push();
+    tripPathCoordinates.push({lat: 34.5199402, lng: -105.87009009999997});
   }
 </script>
 
@@ -544,6 +555,7 @@ th, td {
   dates.push("7/9/2016");
   locations.push("Girl Scouts of New Mexico Trails Council HQ");
   tripCoordinates.push({lat: 35.150666, lng: -106.59626709999998});
+  tripFiles.push("");
 
   var stopDate = new Date("7/9/2016");
   var currentDate = new Date();
@@ -556,6 +568,7 @@ th, td {
   dates.push("7/11/2016");
   locations.push("The Biodiversity Education Center at Coppell Nature Park");
   tripCoordinates.push({lat: 32.962855, lng: -97.01522449999999});
+  tripFiles.push("");
 
   var stopDate = new Date("7/11/2016");
   var currentDate = new Date();
@@ -567,12 +580,13 @@ th, td {
 <script>
   dates.push("7/12/2016");
   locations.push("");
-  tripCoordinates.push();
+  tripCoordinates.push({lat: 29.7604267, lng: -95.3698028});
+  tripFiles.push("");
 
   var stopDate = new Date("7/12/2016");
   var currentDate = new Date();
   if(stopDate <= currentDate) {
-    tripPathCoordinates.push();
+    tripPathCoordinates.push({lat: 29.7604267, lng: -95.3698028});
   }
 </script>
 
@@ -580,6 +594,7 @@ th, td {
   dates.push("7/15/2016");
   locations.push("Cumberland Business Incubator at Roane State Community College");
   tripCoordinates.push({lat: 35.979714, lng: -85.002789});
+  tripFiles.push("");
 
   var stopDate = new Date("7/15/2016");
   var currentDate = new Date();
@@ -592,6 +607,7 @@ th, td {
   dates.push("7/16/2016");
   locations.push("STEM Preperatory Academy");
   tripCoordinates.push({lat: 36.1359854, lng: -86.7401797});
+  tripFiles.push("");
 
   var stopDate = new Date("7/16/2016");
   var currentDate = new Date();
@@ -603,12 +619,13 @@ th, td {
 <script>
   dates.push("7/16/2016");
   locations.push("");
-  tripCoordinates.push();
+  tripCoordinates.push({lat: 36.9685219, lng: -86.48080429999999});
+  tripFiles.push("");
 
   var stopDate = new Date("7/16/2016");
   var currentDate = new Date();
   if(stopDate <= currentDate) {
-    tripPathCoordinates.push();
+    tripPathCoordinates.push({lat: 36.9685219, lng: -86.48080429999999});
   }
 </script>
 
@@ -616,6 +633,7 @@ th, td {
   dates.push("7/18/2016");
   locations.push("Louisville Program Learning Center");
   tripCoordinates.push({lat: 38.2480653, lng: -85.70830039999998});
+  tripFiles.push("");
 
   var stopDate = new Date("7/18/2016");
   var currentDate = new Date();
@@ -626,22 +644,11 @@ th, td {
 
 <script>
   dates.push("7/20/2016");
-  locations.push("");
-  tripCoordinates.push();
-
-  var stopDate = new Date("7/20/2016");
-  var currentDate = new Date();
-  if(stopDate <= currentDate) {
-    tripPathCoordinates.push();
-  }
-</script>
-
-<script>
-  dates.push("7/21/2016");
   locations.push("Voodoo Manufacturing");
   tripCoordinates.push({lat: 40.710731, lng: -73.93440720000001});
+  tripFiles.push("");
 
-  var stopDate = new Date("7/21/2016");
+  var stopDate = new Date("7/20/2016");
   var currentDate = new Date();
   if(stopDate <= currentDate) {
     tripPathCoordinates.push({lat: 40.710731, lng: -73.93440720000001});
@@ -652,6 +659,7 @@ th, td {
   dates.push("7/22/2016");
   locations.push("The Ethel Walker School");
   tripCoordinates.push({lat: 41.849445, lng: -72.8340455});
+  tripFiles.push("");
 
   var stopDate = new Date("7/22/2016");
   var currentDate = new Date();
@@ -662,13 +670,14 @@ th, td {
 
 <script>
   dates.push("7/25/2016");
-  locations.push("");
-  tripCoordinates.push();
+  locations.push("Groveton High School");
+  tripCoordinates.push({lat: 44.6002893, lng: -71.51699489999999});
+  tripFiles.push("");
 
   var stopDate = new Date("7/25/2016");
   var currentDate = new Date();
   if(stopDate <= currentDate) {
-    tripPathCoordinates.push();
+    tripPathCoordinates.push({lat: 44.6002893, lng: -71.51699489999999});
   }
 </script>
 
@@ -676,6 +685,7 @@ th, td {
   dates.push("7/27/2016");
   locations.push("Kent State University");
   tripCoordinates.push({lat: 41.1471302, lng: -81.3476771});
+  tripFiles.push("");
 
   var stopDate = new Date("7/27/2016");
   var currentDate = new Date();
@@ -688,6 +698,7 @@ th, td {
   dates.push("7/28/2016");
   locations.push("Case Western Reserve University");
   tripCoordinates.push({lat: 41.5074022, lng: -81.6083276});
+  tripFiles.push("");
 
   var stopDate = new Date("7/28/2016");
   var currentDate = new Date();
@@ -699,12 +710,13 @@ th, td {
 <script>
   dates.push("7/29/2016");
   locations.push("");
-  tripCoordinates.push();
+  tripCoordinates.push({lat: 42.2808256, lng: -83.74303780000002});
+  tripFiles.push("");
 
   var stopDate = new Date("7/29/2016");
   var currentDate = new Date();
   if(stopDate <= currentDate) {
-    tripPathCoordinates.push();
+    tripPathCoordinates.push({lat: 42.2808256, lng: -83.74303780000002});
   }
 </script>
 
@@ -712,6 +724,7 @@ th, td {
   dates.push("8/1/2016");
   locations.push("Muskegon Community College Fab Lab");
   tripCoordinates.push({lat: 43.2479538, lng: -86.1962777});
+  tripFiles.push("");
 
   var stopDate = new Date("8/1/2016");
   var currentDate = new Date();
@@ -724,6 +737,7 @@ th, td {
   dates.push("8/2/2016");
   locations.push("Roslyn Road Elementary School");
   tripCoordinates.push({lat: 42.1666005, lng: -88.13923920000002});
+  tripFiles.push("");
 
   var stopDate = new Date("8/2/2016");
   var currentDate = new Date();
@@ -736,6 +750,7 @@ th, td {
   dates.push("8/2/2016");
   locations.push("Chinmaya Mission Chicago");
   tripCoordinates.push({lat: 42.3117542, lng: -88.10928489999998});
+  tripFiles.push("");
 
   var stopDate = new Date("8/2/2016");
   var currentDate = new Date();
@@ -746,13 +761,14 @@ th, td {
 
 <script>
   dates.push("8/3/2016");
-  locations.push("");
-  tripCoordinates.push();
+  locations.push("Avant");
+  tripCoordinates.push({lat: 41.8865068, lng: -87.63323450000001});
+  tripFiles.push("");
 
   var stopDate = new Date("8/3/2016");
   var currentDate = new Date();
   if(stopDate <= currentDate) {
-    tripPathCoordinates.push();
+    tripPathCoordinates.push({lat: 41.8865068, lng: -87.63323450000001});
   }
 </script>
 
@@ -804,8 +820,9 @@ th, td {
     });
 
     var infowindow = new google.maps.InfoWindow({
-      content : '<b>' + query["date"] + ' ' + query["location"]+ '</b>',
-      maxWidth: 200
+      content : '<p><b>' + query["location"]  + ' (' + query["date"] + ')</b></p>' +
+      '<p><a href="'+ query["file"] + '" target="_blank">' +  query["file"] + '</a></p>',
+      maxWidth: 500
     });
 
     var stopDate = new Date(query["date"]);
@@ -819,6 +836,8 @@ th, td {
     });
 
     bounds.extend(marker.position);
+
+    markers.push(marker);
   }
 
 
@@ -826,10 +845,19 @@ th, td {
     var coordinate = new google.maps.LatLng(tripCoordinates[i]["lat"], tripCoordinates[i]["lng"]);
     var query = {
       date : dates[i],
-      location : locations[i]
+      location : locations[i],
+      file : tripFiles[i]
     }
     createMarker(query, coordinate);
     map.fitBounds(bounds);
+  }
+
+  for(var i = 0; i < tripCoordinates.length; i++) {
+    var markerObject = document.getElementById("marker" + i);
+    markerObject.onclick = function() {
+      google.maps.event.trigger(markers[i], 'click');
+      console.log("hello");
+    }
   }
 
  </script>
@@ -849,316 +877,361 @@ th, td {
           </thead>
           <tbody>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[1], 'click');">
               <td>6/1/2016</td>
               <td>Hope Welty Public Library</td>
               <td>100 Madison Street, Cerro Gordo, IL 61818</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[2], 'click');">
               <td>6/1/2016</td>
               <td>University of Illinois Extension Office</td>
               <td>700 S Airport Drive, Springfield, IL 62707</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[3], 'click');">
               <td>6/2/2016</td>
               <td>Farm Credit Illinois</td>
               <td>27049 State Highway 16, Jerseyville, IL 62052</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[4], 'click');">
               <td>6/2/2016</td>
               <td>University of Illinois Extension Office</td>
               <td>60 Carlinville Plaza, Carlinville, IL 62626</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[5], 'click');">
               <td>6/3/2016</td>
               <td>University of Illinois Extension Office</td>
               <td>1 Industrial Park Drive, Hillsboro, IL 62049</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[6], 'click');">
               <td>6/3/2016</td>
               <td>Carnegie-Schuyler Library</td>
               <td>303 E Second Street, Pana, IL 62557</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[7], 'click');">
               <td>6/4/2016</td>
               <td>St. Louis Confluence Fab Lab at Lewis and Clark Community College</td>
               <td>622 Troy Road, Edwardsville, IL 62025</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[8], 'click');">
               <td>6/6/2016</td>
               <td>Fulton High School Fab Lab</td>
               <td>1 Hornet Dr, Fulton, MO 65251</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[9], 'click');">
               <td>6/7/2016</td>
               <td>Independence Community College Fab Lab</td>
               <td>1057 W College Ave, Independence, KS 67301</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[10], 'click');">
               <td>6/8/2016</td>
               <td>Muskogee High School Fab Lab</td>
               <td>3200 E Shawnee Rd, Muskogee, OK 74403</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[11], 'click');">
               <td>6/8/2016</td>
               <td>Fab Lab Tulsa</td>
               <td>710 S Lewis Ave, Tulsa, OK 74104</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[12], 'click');">
               <td>6/9/2016</td>
               <td>Scott Family Amazeum</td>
               <td>1009 Museum Way, Bentonville, AR, 72712</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[13], 'click');">
               <td>6/9/2016</td>
               <td>Rogers Public Library</td>
               <td>711 S Dixieland Rd, Rogers, AR 72758</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[14], 'click');">
               <td>6/10/2016</td>
-              <td></td>
-              <td>Fayetteville, AR (don't have location yet)</td>
+              <td>Fayetteville Town Square</td>
+              <td>15 W Mountain Street, Fayetteville, AR 72701</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[15], 'click');">
               <td>6/13/2016</td>
               <td>MakerLab</td>
               <td>515 E Gregory Drive, Champaign, IL 61820</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[16], 'click');">
               <td>6/13/2016</td>
               <td>Orpheum Children's Science Museum</td>
               <td>346 N Neil Street, Champaign, IL 61820</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[17], 'click');">
               <td>6/14/2016</td>
               <td>Mundelein High School</td>
               <td>1350 W Hawley Street, Mundelein, IL 60060</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[18], 'click');">
               <td>6/15/2016</td>
               <td>Zion Benton Public Library</td>
               <td>2400 Gabriel Ave, Zion, IL 60099</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[19], 'click');">
               <td>6/16/2016</td>
               <td>SC Johnson iMET Center</td>
               <td>2320 Renaissance Blvd, Sturtevant, WI 53177</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[20], 'click');">
               <td>6/16/2016</td>
               <td>Gateway Technical College - Elkhorn Campus</td>
               <td>400 County Road H, Elkhorn, WI 53121</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[21], 'click');">
               <td>6/17/2016</td>
               <td>Cedarburg Girl Scout House</td>
               <td>W57N475 Hilbert Ave, Cedarburg, WI 53012</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[22], 'click');">
               <td>6/17/2016</td>
               <td>Arrowhead High School</td>
               <td>700 North Ave, Hartland, WI 53029</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[23], 'click');">
               <td>6/18/2016</td>
               <td>Town Hall Library</td>
               <td>N76 W31429 Cty TK VV, North Lake, WI 53064</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[24], 'click');">
               <td>6/18/2016</td>
               <td>Betty Brinn Children's Museum</td>
               <td>929 E Wisconsin Ave, Milwaukee, WI 53202</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[25], 'click');">
               <td>6/20/2016</td>
               <td>Pearl City Elementary School</td>
               <td>100 S Summit Street, Pearl City, IL 61062</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[26], 'click');">
               <td>6/21/2016</td>
               <td>United Presbyterian Home</td>
               <td>1203 E Washington Street, Washington, IA 52353</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[27], 'click');">
               <td>6/22/2016</td>
               <td>Washington Public Library</td>
               <td>115 W Washington Street, Washington, IA 52353</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[28], 'click');">
               <td>6/23/2016</td>
               <td>Girl Scouts Spirit of Nebraska Camp Catron & Retreat Center</td>
               <td>609 N 60th Road, Nebraska City, NE 68410</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[29], 'click');">
               <td>6/24/2016</td>
               <td>Girl Scouts Spirit of Nebraska Grand Island Service Center</td>
               <td>820 N Webb Road</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[30], 'click');">
               <td>6/27/2016</td>
               <td></td>
               <td>Colorado (don't have location yet)</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[31], 'click');">
               <td>7/1/2016</td>
               <td>San Francisco City Academy</td>
               <td>230 Jones Street, San Francisco, CA 94102</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[32], 'click');">
               <td>7/5/2016</td>
               <td>REALM Charter School</td>
               <td>2023 8th Street, Berkeley, CA 94710</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[33], 'click');">
               <td>7/5/2016</td>
-              <td></td>
-              <td>Palo Alto, CA (don't have location yet)</td>
+              <td>Mitchell Park Community Center</td>
+              <td>3700 Middlefield Road, Palo Alto, CA 94303</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[34], 'click');">
               <td>7/8/2016</td>
               <td></td>
               <td>New Mexico (don't have location yet)</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[35], 'click');">
               <td>7/9/2016</td>
               <td>Girl Scouts of New Mexico Trails Council HQ</td>
               <td>4000 Jefferson Plaza NE, Albuquerque, NM 87109</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[36], 'click');">
               <td>7/11/2016</td>
               <td>The Biodiversity Education Center at Coppell Nature Park</td>
               <td>367 Freeport Parkway, Coppell, TX 75019</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[37], 'click');">
               <td>7/12/2016</td>
               <td></td>
               <td>Houston, TX (unconfirmed)</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[38], 'click');">
               <td>7/15/2016</td>
               <td>Cumberland Business Incubator at Roane State Community College</td>
               <td>2569 Cook Road, Crossville, TN 38571</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[39], 'click');">
               <td>7/16/2016</td>
               <td>STEM Preperatory Academy</td>
               <td>1162 Foster Ave, Nashville, TN 37210</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[40], 'click');">
               <td>7/16/2016</td>
               <td></td>
               <td>Bowling Green, KY (don't have location yet)</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[41], 'click');">
               <td>7/18/2016</td>
               <td>Louisville Program Learning Center</td>
               <td>2115 Lexington Road, Louisville, KY 40206</td>
             </tr>
             
-            <tr>
-              <td>7/20/2016</td>
-              <td></td>
-              <td>New York, NY (unconfirmed)</td>
-            </tr>
             
-            <tr>
-              <td>7/21/2016</td>
+            <tr onclick="google.maps.event.trigger(markers[42], 'click');">
+              <td>7/20/2016</td>
               <td>Voodoo Manufacturing</td>
               <td>361 Stagg Street</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[43], 'click');">
               <td>7/22/2016</td>
               <td>The Ethel Walker School</td>
               <td>230 Bushy Hill Road, Simsbury, CT 06070</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[44], 'click');">
               <td>7/25/2016</td>
-              <td></td>
-              <td>Groveton, NH (don't have location yet)</td>
+              <td>Groveton High School</td>
+              <td>65 State Street, Groveton, NH 03582</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[45], 'click');">
               <td>7/27/2016</td>
               <td>Kent State University</td>
               <td>800 E Summitt Street, Kent, OH 44240</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[46], 'click');">
               <td>7/28/2016</td>
               <td>Case Western Reserve University</td>
               <td>10900 Euclid Ave, Cleveland, OH 44106</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[47], 'click');">
               <td>7/29/2016</td>
               <td></td>
               <td>Ann Arbor, MI (don't have location yet)</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[48], 'click');">
               <td>8/1/2016</td>
               <td>Muskegon Community College Fab Lab</td>
               <td>221 Quarterline Road, Muskegon, MI 49442</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[49], 'click');">
               <td>8/2/2016</td>
               <td>Roslyn Road Elementary School</td>
               <td>224 W Roslyn Road, Barrington, IL 60010</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[50], 'click');">
               <td>8/2/2016</td>
               <td>Chinmaya Mission Chicago</td>
               <td>30877 N Fairfield Road, Grayslake, IL 60030</td>
             </tr>
             
-            <tr>
+            
+            <tr onclick="google.maps.event.trigger(markers[51], 'click');">
               <td>8/3/2016</td>
-              <td></td>
-              <td>Chicago, IL (unconfirmed)</td>
+              <td>Avant</td>
+              <td>222 N La Salle St, Suite 1700, Chicago, IL 60601</td>
             </tr>
             
           </tbody>
