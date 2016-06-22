@@ -51,16 +51,11 @@ title: About
 
         <div class="col-md-10">
           <ol>
-            <li><p>1. Communicate candidly through thick and thin!<p></li>
-            <li><p>2. Be enthusiastic and passionate! Positivity is contagious.<p></li>
-            <li><p>3. Changemakers exceed expectations.<p></li>
-            <li><p>4. Make the game so big that failure is inevitable, and when failure happens, celebrate it.<p></li>
-            <li><p>5. Enjoy constraints - they drive creativity.<p></li>
-            <li><p>6. Be accountable for your work. Have integrity.<p></li>
-            <li><p>7. Roll up your sleeves and get involved with every aspect of MakerGirl. Everyone should be accessible every day.<p></li>
-            <li><p>8. Don’t wait for someone to tell you what to do. Take initiative, and make it so good that they can’t refuse.<p></li>
-            <li><p>9. No idea is too large, wild, or small; however, ideas are a commodity, and execution of them is not.<p></li>
-            <li><p>10. WE ARE ALL FOUNDERS OF MakerGirl - so make your mark.<p></li>
+            {% for data in site.data.corevalues %}
+            {% assign loopindex = forloop.index %}
+            <li><p>{{ loopindex }}. {{ data.value }}<p></li>
+
+            {% endfor %}
           </ol>
         </div>
 
