@@ -165,13 +165,7 @@
   address: 820 N Webb Road #104, Grand Island, NE 68803
   latlng: '{lat: 40.9265173, lng: -98.37906450000003}'
   files:
-
-- date: 6/27/2016
-  location: Colorado (unconfirmed)
-  address: Colorado (don't have location yet)
-  latlng: '{lat: 39.5500507, lng: -105.78206740000002}'
-  files:
-
+    
 - date: 7/1/2016
   location: San Francisco City Academy
   address: 230 Jones Street, San Francisco, CA 94102
