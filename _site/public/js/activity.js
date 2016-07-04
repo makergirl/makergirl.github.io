@@ -207,7 +207,7 @@ function clickSame() {
     endTime = new Date();
     // console.log(endTime - startTime);
 
-    results.push({
+    results.push(JSON.stringify({
       'id' : counter,
       'currentTime' : endTime,
       'elapsedTime' : endTime - startTime,
@@ -222,7 +222,7 @@ function clickSame() {
       'isCorrect' : itemValue,
       'isFlipped' : isFlipped,
       'rotationValue' : rotation
-    });
+    }));
 
     nextItem();
   } else {
@@ -249,7 +249,7 @@ function clickDiff() {
     endTime = new Date();
     // console.log(endTime - startTime);
 
-    results.push({
+    results.push(JSON.stringify({
       'id' : counter,
       'currentTime' : endTime,
       'elapsedTime' : endTime - startTime,
@@ -264,7 +264,7 @@ function clickDiff() {
       'isCorrect' : itemValue,
       'isFlipped' : isFlipped,
       'rotationValue' : rotation
-    });
+    }));
 
     nextItem();
   } else {
@@ -339,11 +339,11 @@ function submitSurvey() {
   var currentTime = new Date();
   // console.log(surveyData);
 
-  results.push({
-    'surveyType' : JSON.stringify(surveyType),
-    'survey' : JSON.stringify(surveyData),
-    'currentTime' : JSON.stringify(currentTime)
-  })
+  results.push(JSON.stringify({
+    'surveyType' : surveyType,
+    'survey' : surveyData,
+    'currentTime' : currentTime
+  }))
 
   return false;
 }
