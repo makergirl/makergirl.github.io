@@ -340,9 +340,9 @@ function submitSurvey() {
   // console.log(surveyData);
 
   results.push({
-    'surveyType' : surveyType,
-    'survey' : surveyData,
-    'currentTime' : currentTime
+    'surveyType' : JSON.stringify(surveyType),
+    'survey' : JSON.stringify(surveyData),
+    'currentTime' : JSON.stringify(currentTime)
   })
 
   return false;
