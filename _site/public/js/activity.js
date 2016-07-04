@@ -222,7 +222,7 @@ function clickSame() {
       'isCorrect' : itemValue,
       'isFlipped' : isFlipped,
       'rotationValue' : rotation
-    }));
+    }, null, 3));
 
     nextItem();
   } else {
@@ -264,7 +264,7 @@ function clickDiff() {
       'isCorrect' : itemValue,
       'isFlipped' : isFlipped,
       'rotationValue' : rotation
-    }));
+    }, null, 3));
 
     nextItem();
   } else {
@@ -343,7 +343,7 @@ function submitSurvey() {
     'surveyType' : surveyType,
     'survey' : surveyData,
     'currentTime' : currentTime
-  }))
+  }, null, 3))
 
   return false;
 }
