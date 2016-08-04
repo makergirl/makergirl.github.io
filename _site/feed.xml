@@ -5,9 +5,50 @@
     <description>MakerGirl is a program led by University of Illinois students that educates 7-10 year old girls on STEM (Science, Technology, Engineering, Mathematics) fields through 3-D printing workshops at the College of Business MakerLab, creative activities, and lessons on leading women in STEM fields.</description>
     <link>http://makergirl.us//</link>
     <atom:link href="http://makergirl.us//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 22 Jul 2016 15:52:52 -0500</pubDate>
-    <lastBuildDate>Fri, 22 Jul 2016 15:52:52 -0500</lastBuildDate>
+    <pubDate>Thu, 04 Aug 2016 08:08:07 -0500</pubDate>
+    <lastBuildDate>Thu, 04 Aug 2016 08:08:07 -0500</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Understanding why 3D Printing is a Game-Changer for All Industries</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/public/img/2016/08/AMShow.jpg&quot; alt=&quot;Understanding why 3D Printing is a Game-Changer for All Industries&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I recently had the privilege of attending the Additive Manufacturing Europe 2016 show in Amsterdam with the co-founders of MakerGirl, &lt;a href=&quot;/julia&quot;&gt;Julia Haried&lt;/a&gt; and &lt;a href=&quot;/elizabeth&quot;&gt;Elizabeth Engle&lt;/a&gt;. MakerGirl was welcomed on behalf of &lt;a href=&quot;https://ultimaker.com/&quot;&gt;Ultimaker&lt;/a&gt;, who is our exclusive 3D printer provider for &lt;a href=&quot;https://www.kickstarter.com/projects/1501163298/makergirl-goes-mobile-introducing-stem-through-3-d&quot;&gt;#MakerGirlGoesMobile&lt;/a&gt;. It was a privilege to be a part of Ultimaker’s exhibit, especially considering the impactful work of our counterparts at the show. For context, the target market for the AM Show was largely industrial. For those unfamiliar with the additive manufacturing industry, there are a wide variety of ways 3D printers can benefit companies throughout their design or manufacturing processes. Siert Wijnia, co-founder of Ultimaker, demonstrated the areas that Ultimakers are used for with this graphic:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/img/2016/08/image1.png&quot; alt=&quot;Understanding why 3D Printing is a Game-Changer for All Industries&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It is truly powerful that the same machine that can print a model aircraft to prototype the aerodynamics of the design can also be used in healthcare to print out models of tumors in patients to help surgeons prepare for their operations. The diverse missions of the community partners Ultimaker invited to participate in their exhibit is a testament to how game-changing this industry is for all industries.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Here’s some information on what I learned about MakerGirl’s peers at the exhibit:&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://www.structur3d.io/&quot;&gt;Structur3D&lt;/a&gt;&lt;/strong&gt; – Challenging the ways healthcare solutions have typically been approached, this Canadian company offers a feature that enhances the traditional Ultimaker printer giving it the ability to print flexible silicon. In addition to medical solutions, this one application can range from printing shock absorption materials to allowing for customization in the culinary industry.&lt;/p&gt;
+
+&lt;p&gt;That’s right – Structur3D allows for recreational uses like custom printing frosting designs on cookies!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://www.eventuri.net/&quot;&gt;Eventuri&lt;/a&gt;&lt;/strong&gt; – This company founded in the UK uses Ultimakers to prototype their designs to maximize air-flow efficiency for air intake valves in the automotive industry. These valves, which are sold in the after-market, replace existing intake valves in certain luxury car engines to improve maximum speed capabilities.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://www.openbionics.com/&quot;&gt;Open Bionics&lt;/a&gt;&lt;/strong&gt; – From Bristol, UK, Open Bionics provides affordable, prosthetic arms that are 3D printed to fit the individual user. These prosthetics can be printed in less than 24 hours and are thirty times more affordable than similar products in the market.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Team FAST&lt;/strong&gt; – This team of students from the Netherlands used Ultimakers to prove their concept of creating vehicles powered by formic acid. Formic acid is a renewable alternative to traditional fossil fuels with improved efficiencies. This team is currently crowd funding to put their technology in buses!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Coursera&lt;/strong&gt; – The &lt;a href=&quot;http://illinois.edu/&quot;&gt;University of Illinois&lt;/a&gt; was represented at the show by professor &lt;a href=&quot;https://business.illinois.edu/profile/aric-rindfleisch&quot;&gt;Aric Rindfleisch&lt;/a&gt; who spoke about the free five-part course in 3D printing offered by UIUC through Coursera. These courses are the first of their kind and can be accessed all across the globe!&lt;/p&gt;
+
+&lt;p&gt;In addition to learning about Ultimaker’s community partners, I found myself constantly in awe of the innovative technology at this conference. One of my favorite printers being shown was from the Italian company WASP who had an add-on that allowed for their printer to print with clay. They also featured an industrial sized, wide-nozzle printer that used filament pellets as the raw material input; this allows for faster and more cost effective printing. Another fan favorite was AMR Europe who exhibited a machine with a new take on the traditional SLS (Selective Laser Sintering) strategy. Their machines printing strategy was SHS (Selective Heat Sintering). These printers work selectively heating particular regions on a thin layer of powder and building up from there.&lt;/p&gt;
+
+&lt;p&gt;In my opinion, ColorFabb stole the show when it comes to filament. They offered four unique filaments that allow you to polish the print to look like a different material. These different finishes include brass, cork, bamboo, copper, wood and bronze. The opportunities for printing vastly increase when you can give your design these elegant appearances. One of the most unique exhibits was from Delta Tower, who offered full body scans resulting in a custom print of your body in full color. This company may have launched what will become the modern day portrait.&lt;/p&gt;
+
+&lt;p&gt;This is just the beginning of what innovations are coming out of the 3D printing industry. I find it all fascinating and can’t wait for the day when everyone has a 3D printer in their home.&lt;/p&gt;
+
+&lt;p&gt;A special thank you to all the wonderful people I met and learned from during my short stay in Amsterdam.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/img/2016/08/image2.png&quot; alt=&quot;Understanding why 3D Printing is a Game-Changer for All Industries&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 04 Aug 2016 00:00:00 -0500</pubDate>
+        <link>http://makergirl.us//2016/08/04/understanding-why-3d-printing-is-a-game-changer-for-all-industries/</link>
+        <guid isPermaLink="true">http://makergirl.us//2016/08/04/understanding-why-3d-printing-is-a-game-changer-for-all-industries/</guid>
+        
+        
+      </item>
     
       <item>
         <title>How we inspired 1200 7-10 year old girls in 53 cities to pursue STEM</title>
