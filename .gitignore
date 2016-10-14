@@ -35,3 +35,6 @@ _data/jobs/data
 *.pyc
 
 .jekyll-metadata
+
+# Bin files
+_site/
